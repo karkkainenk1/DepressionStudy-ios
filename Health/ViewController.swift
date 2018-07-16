@@ -23,7 +23,6 @@ class ViewController: UIViewController {
     
     @IBAction func TestESM(_ sender: UIButton) {
         startESM()
-        //viewDidAppear()
     }
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -94,7 +93,7 @@ class ViewController: UIViewController {
         for n in 8...24 {
             schdule.addHour(NSNumber(value: n))
         }
-     
+        // Radio button questions (10)
         let radio1 = ESMItem.init(asRadioESMWithTrigger: "1_radio", radioItems: ["None of the time", "A little of the time","Some of the time","Most of the time","All of the time"])
         radio1?.setTitle("[1 of 10] During the past day, about how often did you feel ...")
         radio1?.setInstructions("... tired out for no good reason?")

@@ -27,12 +27,14 @@ class ViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib
+        // initializing SensorManager, Study, and Core
         let core = AWARECore.shared()
         let study = AWAREStudy.shared()
         let manager = AWARESensorManager.shared()
+        // Prompt user for notification and background sensing (Required for app)
         core?.requestPermissionForBackgroundSensing()
         core?.requestPermissionForPushNotification()
+        // URL for study on AWAREFramework
         let url = "https://api.awareframework.com/index.php/webservice/index/1881/EEHEVhZ94rRJ"
         study?.setStudyURL(url)
         // initialize sensors in DB
@@ -45,8 +47,7 @@ class ViewController: UIViewController {
         let location = Locations(awareStudy: study)
         let screen = Screen(awareStudy: study)
         let time = Timezone(awareStudy: study)
-        
-        // Setting up sensors & syncing them to database on api.AwareFramework.com
+        // Starting sensors & syncing them to database on api.AwareFramework.com
         noise?.startSensor()
         noise?.startSyncDB()
         conversation?.startSensor()
@@ -65,29 +66,15 @@ class ViewController: UIViewController {
         screen?.startSyncDB()
         time?.startSensor()
         time?.startSyncDB()
-       /* manager?.add(noise)
-        manager?.add(conversation)
-        manager?.add(battery)
-        manager?.add(calls)
-        manager?.add(iosESM)
-        manager?.add(lin_acc)
-        manager?.add(location)
-        manager?.add(screen)
-        manager?.add(time)*/
-        
-        // join ongoing study and start sensors with debugging option
+        // join study and start sensors with debugging options
         study?.join(withURL: url, completion: { (settings, studyState, error) in
             manager?.createDBTablesOnAwareServer()
             manager?.addSensors(with: study)
             manager?.setDebugToAllSensors(true)
             manager?.startAllSensors()
-            
         })
         study?.setDebug(true)
         manager?.syncAllSensors()
-        // data saved into sub-thread?
-        // data saved into main-thread?
-        // no data inside of sequel pro or on the awarestudy website
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

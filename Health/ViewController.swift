@@ -10,6 +10,7 @@ import UIKit
 import AWAREFramework
 
 class ViewController: UIViewController {
+    // buttons for interface
     @IBOutlet weak var welcome: UILabel!
     @IBOutlet var subjectName: UILabel!
     @IBOutlet var subjectID: UITextField!
@@ -26,16 +27,21 @@ class ViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         // initializing SensorManager, Study, and Core
         let core = AWARECore.shared()
         let study = AWAREStudy.shared()
         let manager = AWARESensorManager.shared()
+        
         // Prompt user for notification and background sensing (Required for app)
         core?.requestPermissionForBackgroundSensing()
         core?.requestPermissionForPushNotification()
+        
         // URL for study on AWAREFramework
         let url = "https://api.awareframework.com/index.php/webservice/index/1881/EEHEVhZ94rRJ"
+        //let url = "https://api.awareframework.com/index.php/webservice/index/1893/8r5QnY0m2YAy" //only for ESM test
         study?.setStudyURL(url)
+        
         // initialize sensors in DB
         let noise = AmbientNoise(awareStudy: study)
         let conversation = Conversation(awareStudy: study)
@@ -46,6 +52,8 @@ class ViewController: UIViewController {
         let location = Locations(awareStudy: study)
         let screen = Screen(awareStudy: study)
         let time = Timezone(awareStudy: study)
+        let esm = ESM(awareStudy: study)
+        
         // Starting sensors & syncing them to database on api.AwareFramework.com
         noise?.startSensor()
         noise?.startSyncDB()
@@ -65,6 +73,9 @@ class ViewController: UIViewController {
         screen?.startSyncDB()
         time?.startSensor()
         time?.startSyncDB()
+        esm?.startSensor()
+        esm?.startSyncDB()
+        
         // join study and start sensors with debugging options
         study?.join(withURL: url, completion: { (settings, studyState, error) in
             manager?.createDBTablesOnAwareServer()
@@ -90,9 +101,13 @@ class ViewController: UIViewController {
         schdule.startDate = Date.init(timeIntervalSinceNow: -60*60*24*10)
         schdule.endDate = Date.init(timeIntervalSinceNow: 60*60*24*10)
         //schdule.fireHours = [12, 22]
+        
+        // testing start (uncomment below to test)
         for n in 8...24 {
             schdule.addHour(NSNumber(value: n))
         }
+        // testing end (comment above if finished testing)
+        
         // Radio button questions (10)
         let radio1 = ESMItem.init(asRadioESMWithTrigger: "1_radio", radioItems: ["None of the time", "A little of the time","Some of the time","Most of the time","All of the time"])
         radio1?.setTitle("[1 of 10] During the past day, about how often did you feel ...")
@@ -163,14 +178,19 @@ class ViewController: UIViewController {
         radio10?.setExpirationWithMinute(5)
         radio10?.setSubmitButtonName("Next")
         schdule.addESM(radio10)
- 
-        
+
         let esmManager = ESMScheduleManager.shared()
-        // esmManager.removeAllNotifications()
-        // esmManager.removeAllESMHitoryFromDB()
-        // esmManager.removeAllSchedulesFromDB()
+        
+        // testing start (uncomment below when testing)
+        esmManager?.removeAllNotifications()
+        esmManager?.removeAllESMHitoryFromDB()
+        esmManager?.removeAllSchedulesFromDB()
+        // testing end (comment above when finished testing)
+        
         esmManager?.add(schdule)
         
+        
+        // allows viewcontrol to display ESM
         let schedules = esmManager?.getValidSchedules()
         if let unwrappedSchedules = schedules {
             if(unwrappedSchedules.count > 0){
@@ -179,8 +199,6 @@ class ViewController: UIViewController {
                 }
             }
         }
-        
-        
     }
     func viewDidAppear() {
         // base code from github

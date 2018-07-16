@@ -5,7 +5,11 @@
 //  Created by Admin on 7/2/18.
 //  Copyright © 2018 Admin. All rights reserved.
 //  Helpful Source: "https://github.com/tetujin/AWAREFramework-iOS"
-// Menu source: "https://www.thorntech.com/2016/03/ios-tutorial-make-interactive-slide-menu-swift/"
+//  Menu source: "https://www.thorntech.com/2016/03/ios-tutorial-make-interactive-slide-menu-swift/"
+//  Current Goals:
+//          1. Get ESM to save on database
+//          2. Test Application on a device
+//          3. Create user interface
 
 import UIKit
 import AWAREFramework
@@ -15,8 +19,8 @@ class AppDelegate: AWAREDelegate {
     override func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         super.application(application, didFinishLaunchingWithOptions: launchOptions)
-        let core = AWARECore.shared()!
-        core.activate()
+        let core = AWARECore.shared()
+        core?.activate()
         return true
     }
 

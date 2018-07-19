@@ -10,10 +10,13 @@ import UIKit
 import AWAREFramework
 
 class ViewController: UIViewController {
+    // NSDefault (boolean check for first launch)
+    let hasLaunchedKey = "HasLaunched"                          // string key for boolean
+    let userDef = UserDefaults.standard                         // userdefault class (has different default types)
+    lazy var hasLaunched = userDef.bool(forKey: hasLaunchedKey) // sets key to false if no value
+    
     // test buttons for interface
-    @IBAction func TestID(_ sender: UIButton) {
-        startSubjectID()
-    }
+    @IBOutlet weak var SubjectID: UILabel!
     @IBAction func TestESM(_ sender: UIButton) {
         startESM()
     }
@@ -74,6 +77,15 @@ class ViewController: UIViewController {
         })
         study?.setDebug(true)
         manager?.syncAllSensors()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+            if (!self.hasLaunched) {                                   // if application has not launched before,
+                self.userDef.set(true, forKey: self.hasLaunchedKey)    // bool will always be true from here on out
+                self.startSubjectID()                                  // prompt user for ID
+            }
+        }
+        
+        
+        
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

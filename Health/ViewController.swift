@@ -11,12 +11,11 @@ import AWAREFramework
 
 class ViewController: UIViewController {
     // NSDefault (boolean check for first launch)
-    let hasLaunchedKey = "HasLaunched"                          // string key for boolean
-    let userDef = UserDefaults.standard                         // userdefault class (has different default types)
+    let hasLaunchedKey = "HasLaunched"              // string key for boolean
+    let userDef = UserDefaults.standard             // userdefault class (has different default types)
     lazy var hasLaunched = userDef.bool(forKey: hasLaunchedKey) // sets key to false if no value
     
     // test buttons for interface
-    @IBOutlet weak var SubjectID: UILabel!
     @IBAction func TestESM(_ sender: UIButton) {
         startESM()
     }
@@ -77,7 +76,8 @@ class ViewController: UIViewController {
         })
         study?.setDebug(true)
         manager?.syncAllSensors()
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+        // 5 second delay after seconds are activated
+        DispatchQueue.main.asyncAfter(deadline: .now() + 5.0) {
             if (!self.hasLaunched) {                                   // if application has not launched before,
                 self.userDef.set(true, forKey: self.hasLaunchedKey)    // bool will always be true from here on out
                 self.startSubjectID()                                  // prompt user for ID
@@ -104,7 +104,7 @@ class ViewController: UIViewController {
         }
     }
     func startSubjectID() {
-        // Create a FreeText ESM that essentially accepts subject ID to store in DB
+        // Create a FreeNumeric ESM that essentially accepts subject ID to store in DB
         let schedule = ESMSchedule.init()
         let text = ESMItem.init(asNumericESMWithTrigger: "ID")
         text?.setTitle("Study ID")
@@ -124,7 +124,6 @@ class ViewController: UIViewController {
         // allows viewcontrol to display ESM
         viewDidAppear()
         
-        //esmManager?.removeAllSchedulesFromDB()
     }
  
     //generic radio creation function

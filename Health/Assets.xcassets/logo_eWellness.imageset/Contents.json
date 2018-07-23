@@ -2,12 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "green-1.jpg",
+      "filename" : "ewellness_logo3.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "green.jpg",
       "scale" : "2x"
     },
     {

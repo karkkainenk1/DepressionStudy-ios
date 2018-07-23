@@ -8,8 +8,8 @@
 //  Menu source: "https://www.thorntech.com/2016/03/ios-tutorial-make-interactive-slide-menu-swift/"
 //  Current Goals:
 //          1. Get ESM to save on database --- DONE
-//          2. Test Application on a device
-//          3. Create user interface
+//          2. Test Application on a device --- TBD
+//          3. Create user interface --- IP
 
 import UIKit
 import AWAREFramework

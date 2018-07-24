@@ -16,6 +16,9 @@
 		846B532920EACB16002CF471 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 846B532720EACB16002CF471 /* LaunchScreen.storyboard */; };
 		846B533420EACB16002CF471 /* HealthTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846B533320EACB16002CF471 /* HealthTests.swift */; };
 		846B533F20EACB16002CF471 /* HealthUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846B533E20EACB16002CF471 /* HealthUITests.swift */; };
+		84C19F7721078A6F00C1C932 /* splashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C19F7621078A6F00C1C932 /* splashViewController.swift */; };
+		84C19F7E2107BD6800C1C932 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C19F7D2107BD6800C1C932 /* PageViewController.swift */; };
+		84C19F802107D68100C1C932 /* firstLaunch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C19F7F2107D68100C1C932 /* firstLaunch.swift */; };
 		84C38B1720FE99940090C891 /* Obsolete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C38B1620FE99940090C891 /* Obsolete.swift */; };
 		F93348ADB98AF13F3E6CB019 /* Pods_HealthTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 897EFA36D6834949B1D6139B /* Pods_HealthTests.framework */; };
 /* End PBXBuildFile section */
@@ -56,6 +59,9 @@
 		846B533A20EACB16002CF471 /* HealthUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HealthUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		846B533E20EACB16002CF471 /* HealthUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthUITests.swift; sourceTree = "<group>"; };
 		846B534020EACB16002CF471 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84C19F7621078A6F00C1C932 /* splashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = splashViewController.swift; sourceTree = "<group>"; };
+		84C19F7D2107BD6800C1C932 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		84C19F7F2107D68100C1C932 /* firstLaunch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firstLaunch.swift; sourceTree = "<group>"; };
 		84C38B1620FE99940090C891 /* Obsolete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Obsolete.swift; sourceTree = "<group>"; };
 		897EFA36D6834949B1D6139B /* Pods_HealthTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HealthTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B19D708FE10C4BA1612F9939 /* Pods-HealthTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HealthTests/Pods-HealthTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -148,6 +154,9 @@
 				846B532720EACB16002CF471 /* LaunchScreen.storyboard */,
 				846B532A20EACB16002CF471 /* Info.plist */,
 				8465771E20FD557E0017EA56 /* Health-Bridging-Header.h */,
+				84C19F7621078A6F00C1C932 /* splashViewController.swift */,
+				84C19F7D2107BD6800C1C932 /* PageViewController.swift */,
+				84C19F7F2107D68100C1C932 /* firstLaunch.swift */,
 			);
 			path = Health;
 			sourceTree = "<group>";
@@ -430,8 +439,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				846B532120EACB12002CF471 /* ViewController.swift in Sources */,
+				84C19F802107D68100C1C932 /* firstLaunch.swift in Sources */,
+				84C19F7E2107BD6800C1C932 /* PageViewController.swift in Sources */,
 				846B531F20EACB12002CF471 /* AppDelegate.swift in Sources */,
 				84C38B1720FE99940090C891 /* Obsolete.swift in Sources */,
+				84C19F7721078A6F00C1C932 /* splashViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,11 +10,6 @@ import UIKit
 import AWAREFramework
 
 class ViewController: UIViewController {
-    // NSDefault (boolean check for first launch)
-    let hasLaunchedKey = "HasLaunched"              // string key for boolean
-    let userDef = UserDefaults.standard             // userdefault class (has different default types)
-    lazy var hasLaunched = userDef.bool(forKey: hasLaunchedKey) // sets key to false if no value
-    
     // test buttons for interface
     @IBAction func TestESM2(_ sender: UIButton) {
         startWeeklyESM()
@@ -36,7 +31,6 @@ class ViewController: UIViewController {
         
         // URL for study on AWAREFramework
         let url = "https://api.awareframework.com/index.php/webservice/index/1881/EEHEVhZ94rRJ"
-        //let url = "https://api.awareframework.com/index.php/webservice/index/1893/8r5QnY0m2YAy" //only for ESM test
         study?.setStudyURL(url)
         
         // initialize sensors in DB
@@ -79,21 +73,18 @@ class ViewController: UIViewController {
         })
         study?.setDebug(true)
         manager?.syncAllSensors()
-        // 5 second delay after seconds are activated
-        DispatchQueue.main.asyncAfter(deadline: .now() + 5.0) {
-            if (!self.hasLaunched) {                                   // if application has not launched before,
-                self.userDef.set(true, forKey: self.hasLaunchedKey)    // bool will always be true from here on out
-                self.startSubjectID()                                  // prompt user for ID
-            }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
+            // Prompt user for notification and background sensing (Required for app)
+            self.startSubjectID()
         }
         
-        
-        
     }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
     func viewDidAppear() {
         // base code from github
         let esmManager = ESMScheduleManager.shared()
@@ -106,6 +97,7 @@ class ViewController: UIViewController {
             }
         }
     }
+    
     func startSubjectID() {
         // Create a FreeNumeric ESM that essentially accepts subject ID to store in DB
         let schedule = ESMSchedule.init()
@@ -140,6 +132,7 @@ class ViewController: UIViewController {
         radio?.setSubmitButtonName("Next")
         sch.addESM(radio)
     }
+    
     func startWeeklyESM(){
         // base code from github
         let schdule = ESMSchedule.init()
@@ -186,7 +179,14 @@ class ViewController: UIViewController {
         radioButtons(radioNum: 21, radioTitle: title3, radioInstr: "... you have an urge to drink alcohol or take street drugs?", radioAns: ans3, sch: schdule)
         radioButtons(radioNum: 22, radioTitle: title3, radioInstr: "... anyone talk to you about your drinking or drug use?", radioAns: ans3, sch: schdule)
         radioButtons(radioNum: 23, radioTitle: title3, radioInstr: "... you try to hide your drinking or drug use?", radioAns: ans3, sch: schdule)
-        radioButtons(radioNum: 24, radioTitle: title3, radioInstr: "... you have problems from your drinking or drug use?", radioAns: ans3, sch: schdule)
+        // Last radio completed manually
+        let radioLast = ESMItem.init(asRadioESMWithTrigger: "24_radio", radioItems: ans3)
+        radioLast?.setTitle("[24 of 24] During the PAST WEEK, how often did ...")
+        radioLast?.setInstructions("... you have problems from your drinking or drug use?")
+        radioLast?.setExpirationWithMinute(5)
+        radioLast?.setSubmitButtonName("Submit")
+        schdule.addESM(radioLast)
+        
         let esmManager = ESMScheduleManager.shared()
         
         // testing start (uncomment below when testing)
@@ -199,6 +199,7 @@ class ViewController: UIViewController {
         // allows viewcontrol to display ESM
         viewDidAppear()
     }
+    
     func startDailyESM(){
         // base code from github
         let schdule = ESMSchedule.init()
@@ -227,7 +228,14 @@ class ViewController: UIViewController {
         radioButtons(radioNum: 7, radioTitle: title, radioInstr: "... depressed?", radioAns: ans, sch: schdule)
         radioButtons(radioNum: 8, radioTitle: title, radioInstr: "... so depressed that nothing could cheer you up?", radioAns: ans, sch: schdule)
         radioButtons(radioNum: 9, radioTitle: title, radioInstr: "... that everything was an effort?", radioAns: ans,  sch: schdule)
-        radioButtons(radioNum: 10, radioTitle: title, radioInstr: "... worthless?", radioAns: ans, sch: schdule)
+        // Last radio completed manually
+        let radioLast = ESMItem.init(asRadioESMWithTrigger: "10_radio", radioItems: ans)
+        radioLast?.setTitle("[10 of 10] During the PAST DAY, about how often did you feel ...")
+        radioLast?.setInstructions("... worthless?")
+        radioLast?.setExpirationWithMinute(5)
+        radioLast?.setSubmitButtonName("Submit")
+        schdule.addESM(radioLast)
+        
         let esmManager = ESMScheduleManager.shared()
         
         // testing start (uncomment below when testing)

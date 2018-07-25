@@ -7,8 +7,28 @@
 //
 
 import UIKit
-import AWAREFramework
 
 class splashViewController: UIViewController{
+    // NSDefault (boolean check for first launch)
+    let hasLaunchedKey = "HasLaunched"              // string key for boolean
+    let userDef = UserDefaults.standard             // userdefault class (has different default types)
+    lazy var hasLaunched = userDef.bool(forKey: hasLaunchedKey) // sets key to false if no value
     
+    @IBOutlet weak var tapToStart: UILabel!
+    @IBAction func NextViewController(_ sender: UIButton){
+        tapToStart.text = "Loading ..."
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+            if (!self.hasLaunched){
+                self.performSegue(withIdentifier: "firstLaunch", sender: self)
+            }
+            else {
+                self.performSegue(withIdentifier: "launchedBefore", sender: self)
+                self.userDef.set(true, forKey: self.hasLaunchedKey)
+            }
+        }
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
 }

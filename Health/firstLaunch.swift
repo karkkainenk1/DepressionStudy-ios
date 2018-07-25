@@ -7,16 +7,13 @@
 //
 
 import UIKit
-import AWAREFramework
 
 class firstLaunch: UIViewController {
-    // NSDefault (boolean check for first launch)
-    let hasLaunchedKey = "HasLaunched"              // string key for boolean
-    let userDef = UserDefaults.standard             // userdefault class (has different default types)
-    lazy var hasLaunched = userDef.bool(forKey: hasLaunchedKey) // sets key to false if no value
-    
+    @IBAction func startStudy(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "startStudy", sender: self)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
 }
+

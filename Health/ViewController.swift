@@ -10,6 +10,10 @@ import UIKit
 import AWAREFramework
 
 class ViewController: UIViewController {
+    // NSDefault (boolean check for first launch)
+    let hasLaunchedKey = "HasLaunched"              // string key for boolean
+    let userDef = UserDefaults.standard             // userdefault class (has different default types)
+    lazy var hasLaunched = userDef.bool(forKey: hasLaunchedKey) // sets key to false if no value
     // test buttons for interface
     @IBAction func TestESM2(_ sender: UIButton) {
         startWeeklyESM()
@@ -19,7 +23,7 @@ class ViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        userDef.set(true, forKey: hasLaunchedKey)
         // initializing SensorManager, Study, and Core
         let core = AWARECore.shared()
         let study = AWAREStudy.shared()
@@ -74,8 +78,9 @@ class ViewController: UIViewController {
         study?.setDebug(true)
         manager?.syncAllSensors()
         DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
-            // Prompt user for notification and background sensing (Required for app)
-            self.startSubjectID()
+            if (!self.hasLaunched){
+                 self.startSubjectID()
+            }
         }
         
     }

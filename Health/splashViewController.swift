@@ -15,6 +15,10 @@ class splashViewController: UIViewController{
     lazy var hasLaunched = userDef.bool(forKey: hasLaunchedKey) // sets key to false if no value
     
     @IBOutlet weak var tapToStart: UILabel!
+    @IBAction func startStudy(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "startStudy", sender: self)
+        userDef.set(true, forKey: hasLaunchedKey)
+    }
     @IBAction func NextViewController(_ sender: UIButton){
         tapToStart.text = "Loading ..."
         DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
@@ -23,7 +27,6 @@ class splashViewController: UIViewController{
             }
             else {
                 self.performSegue(withIdentifier: "launchedBefore", sender: self)
-                self.userDef.set(true, forKey: self.hasLaunchedKey)
             }
         }
     }

@@ -10,11 +10,11 @@ import UIKit
 import AWAREFramework
 
 class ViewController: UIViewController {
-    // NSDefault (boolean check for first launch)
+
     let firstKey = "first"              // string key for boolean
     let userDef = UserDefaults.standard             // userdefault class (has different default types)
     lazy var firstLaunched = userDef.bool(forKey: firstKey) // sets key to false if no value
-    // test buttons for interface
+    
     @IBAction func TestESM2(_ sender: UIButton) {
         startWeeklyESM()
     }
@@ -32,57 +32,59 @@ class ViewController: UIViewController {
         core?.requestPermissionForBackgroundSensing()
         core?.requestPermissionForPushNotification()
         
+        
         // URL for study on AWAREFramework
-        let url = "https://api.awareframework.com/index.php/webservice/index/1881/EEHEVhZ94rRJ"
+        let url = "https://api.awareframework.com/index.php/webservice/index/1910/cR0naPzp48ge"
         study?.setStudyURL(url)
         
         // initialize sensors in DB
         let noise = AmbientNoise(awareStudy: study)
         let conversation = Conversation(awareStudy: study)
-        let battery = Battery(awareStudy: study)
-        let calls = Calls(awareStudy: study)
-        let iosESM = IOSESM(awareStudy: study)
-        let lin_acc = LinearAccelerometer(awareStudy: study)
-        let location = Locations(awareStudy: study)
-        let screen = Screen(awareStudy: study)
-        let time = Timezone(awareStudy: study)
+        
+        //let battery = Battery(awareStudy: study)
+        //let calls = Calls(awareStudy: study)
+        //let iosESM = IOSESM(awareStudy: study)
+        //let lin_acc = LinearAccelerometer(awareStudy: study)
+        //let location = Locations(awareStudy: study)
+        //let screen = Screen(awareStudy: study)
+        //let time = Timezone(awareStudy: study)
         
         // Starting sensors & syncing them to database on api.AwareFramework.com
-        noise?.startSensor()
-        noise?.startSyncDB()
-        conversation?.startSensor()
-        conversation?.startSyncDB()
-        battery?.startSensor()
-        battery?.startSyncDB()
-        calls?.startSensor()
-        calls?.startSyncDB()
-        iosESM?.startSensor()
-        iosESM?.startSyncDB()
-        lin_acc?.startSensor()
-        lin_acc?.startSyncDB()
-        location?.startSensor()
-        location?.startSyncDB()
-        screen?.startSensor()
-        screen?.startSyncDB()
-        time?.startSensor()
-        time?.startSyncDB()
+        
+        manager?.add(noise)
+        manager?.add(conversation)
+        
+        /* battery?.startSensor()
+         battery?.startSyncDB()
+         calls?.startSensor()
+         calls?.startSyncDB()
+         iosESM?.startSensor()
+         iosESM?.startSyncDB()
+         lin_acc?.startSensor()
+         lin_acc?.startSyncDB()
+         location?.startSensor()
+         location?.startSyncDB()
+         screen?.startSensor()
+         screen?.startSyncDB()
+         time?.startSensor()
+         time?.startSyncDB()*/
         
         // join study and start sensors with debugging options
         study?.join(withURL: url, completion: { (settings, studyState, error) in
-            manager?.createDBTablesOnAwareServer()
             manager?.addSensors(with: study)
+            manager?.createDBTablesOnAwareServer()
             manager?.setDebugToAllSensors(true)
+            study?.setDebug(true)
             manager?.startAllSensors()
+            manager?.syncAllSensors()
         })
-        study?.setDebug(true)
-        manager?.syncAllSensors()
-        DispatchQueue.main.asyncAfter(deadline: .now() + 5.0) {
+        manager?.startAutoSyncTimer(withIntervalSecond: 20.0)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 7.0) {
             if (!self.firstLaunched){
                 self.startSubjectID()
                 self.userDef.set(true, forKey: self.firstKey)
             }
         }
-        
     }
     
     override func didReceiveMemoryWarning() {

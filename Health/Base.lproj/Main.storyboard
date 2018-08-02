@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="o1u-dZ-Gtq">
-    <device id="retina5_5" orientation="portrait">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -23,7 +23,7 @@
             <objects>
                 <viewController id="o1u-dZ-Gtq" customClass="splashViewController" customModule="Health" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="V0E-gd-rEB">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="77W-pb-QW7">
@@ -34,19 +34,19 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background_eWellness" translatesAutoresizingMaskIntoConstraints="NO" id="2T3-MQ-Vta">
-                                <rect key="frame" x="0.0" y="20" width="414" height="716"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="0.0" y="20" width="374" height="647"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tap to Start" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="85L-b1-kcB">
-                                <rect key="frame" x="107" y="526" width="200" height="92"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="83" y="490" width="200" height="92"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo_eWellness" translatesAutoresizingMaskIntoConstraints="NO" id="PvU-lO-Pob">
-                                <rect key="frame" x="41" y="199" width="333" height="359"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="35" y="181" width="302" height="324"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -60,27 +60,27 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="66Z-7c-xf9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-906" y="-911"/>
+            <point key="canvasLocation" x="-906.39999999999998" y="-911.69415292353835"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="oER-Ti-8ih">
             <objects>
                 <viewController storyboardIdentifier="term1" id="aXS-Sd-C8B" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eQA-4g-DfC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background_dep" translatesAutoresizingMaskIntoConstraints="NO" id="8wD-tB-sY5">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo_eWellness" translatesAutoresizingMaskIntoConstraints="NO" id="oDD-Th-3tn">
-                                <rect key="frame" x="143" y="55" width="128" height="125"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="123" y="68" width="128" height="125"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="geQ-op-YEi">
-                                <rect key="frame" x="20" y="188" width="374" height="467"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="16" y="201" width="343" height="454"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">This application is used for data collection of passive sensing of mental health study by UCLA ER (eHealth Research) Lab and MITRE. 
 
@@ -94,16 +94,6 @@ Please get in touch with us to report any issues or recommendations about the ap
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="&gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wjh-eD-kg3">
-                                <rect key="frame" x="369" y="628" width="25" height="88"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <accessibility key="accessibilityConfiguration">
-                                    <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
-                                </accessibility>
-                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.98774117231369019" green="0.68526738882064819" blue="0.64316129684448242" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="Fyl-Nc-esV"/>
@@ -111,32 +101,32 @@ Please get in touch with us to report any issues or recommendations about the ap
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SeB-JJ-hP2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="713.04347826086962" y="-1661.413043478261"/>
+            <point key="canvasLocation" x="712.79999999999995" y="-1661.9190404797603"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="H2A-2g-rPS">
             <objects>
                 <viewController storyboardIdentifier="term2" id="Zj1-17-vTt" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="H6v-1r-WVO">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background_dep" translatesAutoresizingMaskIntoConstraints="NO" id="Scq-lw-bAN">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="0.0" y="0.0" width="376" height="667"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Data Collection Permission" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="nt9-gi-ld3">
-                                <rect key="frame" x="20" y="31" width="374" height="55"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="20" y="31" width="339" height="55"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" indicatorStyle="black" keyboardDismissMode="interactive" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aQA-Yw-9pl">
-                                <rect key="frame" x="20" y="82" width="374" height="557"/>
+                                <rect key="frame" x="20" y="83" width="339" height="488"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <mutableString key="text">We’re about to ask you to allow a bunch of intrusive permissions for our app, so before we do, we wanted to explain precisely what information we will be collecting and how it will be used.
+                                <string key="text">We’re about to ask you to allow a bunch of intrusive permissions for our app, so before we do, we wanted to explain precisely what information we will be collecting and how it will be used.
 
 Firstly, please note that we will NOT be collecting any personally identifiable information on you, including taking any photos, videos, or recording any conversations.
 
@@ -172,30 +162,10 @@ CAPS (24 hours): (310) 825-0768 National Suicide Prevention Hotline: (24 hours):
 
 If you are a UCLA student experiencing a mental health crisis:
 
-Call (310) 825-0768 or visit CAPS during Brief Screen Hours: Monday-Friday 9am-4pm</mutableString>
+Call (310) 825-0768 or visit CAPS during Brief Screen Hours: Monday-Friday 9am-4pm</string>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="&gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KIR-4z-ohU">
-                                <rect key="frame" x="379" y="627" width="25" height="88"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <accessibility key="accessibilityConfiguration">
-                                    <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
-                                </accessibility>
-                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="&lt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fTa-ov-2JO">
-                                <rect key="frame" x="11" y="628" width="27" height="88"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <accessibility key="accessibilityConfiguration">
-                                    <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
-                                </accessibility>
-                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.98774117230000003" green="0.68526738880000004" blue="0.6431612968" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="yFx-TJ-5bS"/>
@@ -203,70 +173,50 @@ Call (310) 825-0768 or visit CAPS during Brief Screen Hours: Monday-Friday 9am-4
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xsg-Sw-eIM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1421.7391304347827" y="-1661.413043478261"/>
+            <point key="canvasLocation" x="1421.5999999999999" y="-1661.9190404797603"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="os1-eO-85n">
             <objects>
                 <viewController storyboardIdentifier="term3" id="sac-hz-AW4" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UL5-Sv-ovE">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background_dep" translatesAutoresizingMaskIntoConstraints="NO" id="z0h-k3-Rlh">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="A brief note on your mental health:" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="wFs-70-iQR">
-                                <rect key="frame" x="20" y="80" width="374" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="20" y="80" width="339" height="42"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Mental Health Notice" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="uW0-zt-R3N">
-                                <rect key="frame" x="20" y="30" width="374" height="55"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="20" y="30" width="339" height="55"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ivJ-Bk-SU2">
-                                <rect key="frame" x="20" y="112" width="374" height="124"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="20" y="112" width="339" height="114"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">Our daily survey will be prompting you for information on your mental well-being. This will include some specific prompts around your feelings of depression and anxiety. Although this information is being recorded for the study, your responses will not be reviewed regularly by researchers.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="J6a-W4-Qsy">
-                                <rect key="frame" x="20" y="234" width="374" height="150"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="18" y="234" width="341" height="150"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">As such, if you ever feel overwhelmed, or that you need help, please do not expect us to detect this and act on your behalf, but instead reach out to the appropriate resource. We’ve included a ‘Need Help?’ tab in the menu with contact info for a variety of UCLA and community resources available to you.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="&gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B7c-98-S5L">
-                                <rect key="frame" x="379" y="627" width="25" height="88"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <accessibility key="accessibilityConfiguration">
-                                    <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
-                                </accessibility>
-                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="&lt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cYg-Se-ETL">
-                                <rect key="frame" x="11" y="628" width="27" height="88"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <accessibility key="accessibilityConfiguration">
-                                    <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
-                                </accessibility>
-                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.98774117230000003" green="0.68526738880000004" blue="0.6431612968" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="BTq-mz-Pia"/>
@@ -274,23 +224,23 @@ Call (310) 825-0768 or visit CAPS during Brief Screen Hours: Monday-Friday 9am-4
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xQT-ri-skr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2098.5507246376815" y="-1661.413043478261"/>
+            <point key="canvasLocation" x="2098.4000000000001" y="-1661.9190404797603"/>
         </scene>
         <!--Splash View Controller-->
         <scene sceneID="QSY-cx-uSk">
             <objects>
                 <viewController storyboardIdentifier="term4" id="OOx-j8-ThA" customClass="splashViewController" customModule="Health" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8Fi-w8-lEI">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background_dep" translatesAutoresizingMaskIntoConstraints="NO" id="x2L-na-J8r">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="dXe-HM-dzX">
-                                <rect key="frame" x="20" y="26.000000000000114" width="374" height="105.66666666666667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="16" y="20" width="343" height="106"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">UNIVERSITY OF CALIFORNIA
 LOS ANGELES (UCLA)
@@ -298,11 +248,22 @@ STUDY INFORMATION SHEET</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vwp-NY-4HC">
+                                <rect key="frame" x="244" y="580" width="131" height="87"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Agree">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="startStudy:" destination="OOx-j8-ThA" eventType="touchUpInside" id="iUQ-Ax-SAY"/>
+                                </connections>
+                            </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" indicatorStyle="black" keyboardDismissMode="interactive" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="waR-Fq-bqE">
-                                <rect key="frame" x="20" y="120" width="374" height="520"/>
+                                <rect key="frame" x="16" y="121" width="343" height="451"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <mutableString key="text">Passive Sensing of Mental Wellness
+                                <string key="text">Passive Sensing of Mental Wellness
 
 Dr. Majid Sarrafzadeh, from the Computer Science Department at the University of California, Los Angeles (UCLA) is conducting a research study.
 
@@ -369,31 +330,10 @@ If you have any questions, comments or concerns about the research, you can talk
 ● UCLA Office of the Human Research Protection Program (OHRPP):
 If you have questions about your rights as a research subject, or you have concerns or suggestions and you want to talk to someone other than the researchers, you may contact the UCLA OHRPP by phone: (310) 206-2040; by email: participants@research.ucla.edu or by mail: Box 951406, Los Angeles, CA 90095-1406.
 
-By selecting AGREE you acknowledge that you have received and understood the terms of the study. By proceeding to study enrollment you are agreeing to participate in the study.</mutableString>
+By selecting AGREE you acknowledge that you have received and understood the terms of the study. By proceeding to study enrollment you are agreeing to participate in the study.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="&lt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ER3-vH-rnv">
-                                <rect key="frame" x="11" y="628" width="27" height="88"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <accessibility key="accessibilityConfiguration">
-                                    <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
-                                </accessibility>
-                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vwp-NY-4HC">
-                                <rect key="frame" x="294" y="648" width="100" height="49"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="Agree">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="startStudy:" destination="OOx-j8-ThA" eventType="touchUpInside" id="iUQ-Ax-SAY"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.98774117230000003" green="0.68526738880000004" blue="0.6431612968" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="RA7-yr-kYG"/>
@@ -404,64 +344,57 @@ By selecting AGREE you acknowledge that you have received and understood the ter
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="As0-J4-bXK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2826.0869565217395" y="-1661.413043478261"/>
+            <point key="canvasLocation" x="2824.8000000000002" y="-1661.9190404797603"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Health" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background_dep" translatesAutoresizingMaskIntoConstraints="NO" id="WFV-62-PYZ">
-                                <rect key="frame" x="0.0" y="20" width="414" height="716"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome to the IOS Version" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CYm-W9-097">
-                                <rect key="frame" x="100" y="165" width="215" height="33"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="80" y="175" width="215" height="33"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="of the eWellness" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cxB-eS-jeY">
-                                <rect key="frame" x="144" y="191" width="126" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="124" y="201" width="126" height="21"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Home Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lYx-Gk-Zb9">
-                                <rect key="frame" x="163" y="210" width="89" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="143" y="220" width="89" height="21"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="66B-xg-QgT">
-                                <rect key="frame" x="20" y="20" width="90" height="77"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Daily Test"/>
-                                <connections>
-                                    <action selector="TestESM:" destination="BYZ-38-t0r" eventType="touchUpInside" id="na9-gu-iLt"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gtJ-rO-tBd">
-                                <rect key="frame" x="278" y="37" width="106" height="43"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="253" y="54" width="106" height="43"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <state key="normal" title="Weekly Test"/>
                                 <connections>
                                     <action selector="TestESM2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mdN-W3-nnr"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Tasks: (1) Add menu with options (2) Test on device (3) Clean functionality ie: scheduling and windows" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Jyc-Lp-ABN">
-                                <rect key="frame" x="87" y="354" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="66B-xg-QgT">
+                                <rect key="frame" x="16" y="37" width="90" height="77"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <state key="normal" title="Daily Test"/>
+                                <connections>
+                                    <action selector="TestESM:" destination="BYZ-38-t0r" eventType="touchUpInside" id="na9-gu-iLt"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -469,12 +402,12 @@ By selecting AGREE you acknowledge that you have received and understood the ter
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2826.0869565217395" y="-911.41304347826099"/>
+            <point key="canvasLocation" x="2824.8000000000002" y="-911.69415292353835"/>
         </scene>
     </scenes>
     <resources>
         <image name="background_dep" width="452" height="723"/>
-        <image name="background_eWellness" width="150" height="241"/>
+        <image name="background_eWellness" width="225" height="361"/>
         <image name="logo_eWellness" width="763" height="764"/>
     </resources>
     <inferredMetricsTieBreakers>

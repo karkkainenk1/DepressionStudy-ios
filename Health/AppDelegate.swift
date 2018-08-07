@@ -2,14 +2,9 @@
 //  AppDelegate.swift
 //  Health
 //
-//  Created by Admin on 7/2/18.
-//  Copyright © 2018 Admin. All rights reserved.
+//  Created by Arthur Lobins on 7/2/18.
+//  Copyright © 2018 Arthur Lobins. All rights reserved.
 //  Helpful Source: "https://github.com/tetujin/AWAREFramework-iOS"
-//  Menu source: "https://www.thorntech.com/2016/03/ios-tutorial-make-interactive-slide-menu-swift/"
-//  Current Goals:
-//          1. Get ESM to save on database --- DONE
-//          2. Test Application on a device --- TBD
-//          3. Create user interface --- IP
 
 import UIKit
 import AWAREFramework

@@ -4,12 +4,11 @@
 //
 //  Created by Admin on 7/24/18.
 //  Copyright © 2018 Admin. All rights reserved.
-//
+//  This file is for the Terms & Conditions section of the application
 
 import UIKit
 
 class PageViewController: UIPageViewController, UIPageViewControllerDelegate, UIPageViewControllerDataSource {
-    
     
     var pageControl = UIPageControl()
     
@@ -28,7 +27,7 @@ class PageViewController: UIPageViewController, UIPageViewControllerDelegate, UI
         self.dataSource = self
         self.delegate = self
         
-        // First page options "if" is so I can use variable parameter: "[firstViewController]"
+        // First page options "if" to use variable parameter: "[firstViewController]"
         if let firstViewController = orderedViewControllers.first {
             setViewControllers([firstViewController],
                                direction: .forward,
@@ -36,11 +35,13 @@ class PageViewController: UIPageViewController, UIPageViewControllerDelegate, UI
                                completion: nil)
         }
         
+      
         configurePageControl()
         
         // Do any additional setup after loading the view.
     }
     
+    // Sets up the pageviewcontroller navigation dots
     func configurePageControl() {
         pageControl = UIPageControl(frame: CGRect(x: UIScreen.main.bounds.maxX / 2 - 50,y: UIScreen.main.bounds.maxY - 50,width: 100,height: 50))
         self.pageControl.numberOfPages = orderedViewControllers.count
@@ -51,15 +52,18 @@ class PageViewController: UIPageViewController, UIPageViewControllerDelegate, UI
         self.view.addSubview(pageControl)
     }
     
+    // instantiating a new ViewController page
     func newVc(viewController: String) -> UIViewController {
         return UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: viewController)
     }
     
+    // Function for the current page in the view (animations completed)
     func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
         let pageContentViewController = pageViewController.viewControllers![0]
         self.pageControl.currentPage = orderedViewControllers.index(of: pageContentViewController)!
     }
-
+    
+    // Function for the previous page in the view
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
         guard let viewControllerIndex = orderedViewControllers.index(of: viewController) else {
             return nil
@@ -69,7 +73,7 @@ class PageViewController: UIPageViewController, UIPageViewControllerDelegate, UI
         let previousIndex = viewControllerIndex - 1
         guard previousIndex >= 0 else {
             //return orderedViewControllers.last
-            // Uncommment the line below, remove the line above if you don't want the page control to loop.
+            // Commment the line below, then uncomment the line above for pages to loop.
             return nil
         }
         
@@ -80,6 +84,7 @@ class PageViewController: UIPageViewController, UIPageViewControllerDelegate, UI
         return orderedViewControllers[previousIndex]
     }
     
+    // Function for the next page in the view
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
         guard let viewControllerIndex = orderedViewControllers.index(of: viewController) else {
             return nil
@@ -91,7 +96,7 @@ class PageViewController: UIPageViewController, UIPageViewControllerDelegate, UI
         // behavior at end of the view page array [loop/no loop]
         guard orderedViewControllersCount != nextIndex else {
             //return orderedViewControllers.first
-            // Uncommment the line below, remove the line above if you don't want the page control to loop.
+            // Commment the line below, then uncomment the line above for pages to loop.
             return nil
         }
         

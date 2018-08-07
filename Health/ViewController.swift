@@ -4,7 +4,7 @@
 //
 //  Created by Arthur Lobins on 7/2/18.
 //  Copyright © 2018 Arthur Lobins. All rights reserved.
-//
+//  The main file of the background sensing
 
 import UIKit
 import AWAREFramework
@@ -20,6 +20,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var leadingConstraint: NSLayoutConstraint!
     @IBOutlet weak var ubeView: UIView!
     var menuButtonIsVisible = false
+    // Menu options are hidden behind ubeView and appear when menu button is pressed
     @IBAction func menuPressed(_sender: Any) {
         if !menuButtonIsVisible {
             leadingConstraint.constant = 150
@@ -37,7 +38,7 @@ class ViewController: UIViewController {
         }
     }
 
-    // Test Codes
+    // Tests
     @IBAction func TestESM2(_ sender: UIButton) {
         startWeeklyESM()
     }
@@ -119,7 +120,7 @@ class ViewController: UIViewController {
     }
     
     func viewDidAppear() {
-        // modular; shows ESM on screen
+        // shows any ESM on screen
         let esmManager = ESMScheduleManager.shared()
         let schedules = esmManager?.getValidSchedules()
         if let unwrappedSchedules = schedules {
@@ -238,6 +239,7 @@ class ViewController: UIViewController {
         schdule.expirationThreshold = 60
         schdule.startDate = Date.init(timeIntervalSinceNow: -60*60*24*10)
         schdule.endDate = Date.init(timeIntervalSinceNow: 60*60*24*10)
+        // uncomment when adding schedule (fire hours are the (1-24) hour time slots)
         //schdule.fireHours = [12, 22]
         
         // testing start (uncomment below to test)
@@ -266,15 +268,14 @@ class ViewController: UIViewController {
         schdule.addESM(radioLast)
         
         let esmManager = ESMScheduleManager.shared()
-        
-        // testing start (uncomment below when testing)
+
         esmManager?.removeAllNotifications()
         esmManager?.removeAllESMHitoryFromDB()
+        // Tentative code
         esmManager?.removeAllSchedulesFromDB()
-        // testing end (comment above when finished testing)
-        
+
         esmManager?.add(schdule)
-        // allows viewcontrol to display ESM
+        // allows ESM to display
         viewDidAppear()
     }
 }

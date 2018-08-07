@@ -15,7 +15,8 @@ class PageViewController: UIPageViewController, UIPageViewControllerDelegate, UI
     
     // add pages to viewcontroller here (needs storyboard id)
     lazy var orderedViewControllers: [UIViewController] = {
-        return [self.newVc(viewController: "term1"),
+        return [self.newVc(viewController: "term0"),
+                self.newVc(viewController: "term1"),
                 self.newVc(viewController: "term2"),
                 self.newVc(viewController: "term3"),
                 self.newVc(viewController: "term4")]
@@ -41,7 +42,7 @@ class PageViewController: UIPageViewController, UIPageViewControllerDelegate, UI
     }
     
     func configurePageControl() {
-        pageControl = UIPageControl(frame: CGRect(x: 0,y: UIScreen.main.bounds.maxY - 50,width: UIScreen.main.bounds.width,height: 50))
+        pageControl = UIPageControl(frame: CGRect(x: UIScreen.main.bounds.maxX / 2 - 50,y: UIScreen.main.bounds.maxY - 50,width: 100,height: 50))
         self.pageControl.numberOfPages = orderedViewControllers.count
         self.pageControl.currentPage = 0
         self.pageControl.tintColor = UIColor.black

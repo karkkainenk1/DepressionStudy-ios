@@ -17,7 +17,7 @@ class splashViewController: UIViewController{
     @IBOutlet weak var tapToStart: UILabel!
     @IBAction func startStudy(_ sender: UIButton) {
         self.performSegue(withIdentifier: "startStudy", sender: self)
-        userDef.set(true, forKey: hasLaunchedKey)
+        //userDef.set(true, forKey: hasLaunchedKey)
     }
     @IBAction func NextViewController(_ sender: UIButton){
         tapToStart.text = "Loading ..."

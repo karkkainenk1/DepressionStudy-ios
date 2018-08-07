@@ -142,15 +142,15 @@
 		846B531D20EACB12002CF471 /* Health */ = {
 			isa = PBXGroup;
 			children = (
+				8465771E20FD557E0017EA56 /* Health-Bridging-Header.h */,
 				846B531E20EACB12002CF471 /* AppDelegate.swift */,
 				846B532020EACB12002CF471 /* ViewController.swift */,
-				846B532220EACB12002CF471 /* Main.storyboard */,
-				846B532520EACB16002CF471 /* Assets.xcassets */,
-				846B532720EACB16002CF471 /* LaunchScreen.storyboard */,
-				846B532A20EACB16002CF471 /* Info.plist */,
-				8465771E20FD557E0017EA56 /* Health-Bridging-Header.h */,
 				84C19F7621078A6F00C1C932 /* splashViewController.swift */,
 				84C19F7D2107BD6800C1C932 /* PageViewController.swift */,
+				846B532220EACB12002CF471 /* Main.storyboard */,
+				846B532720EACB16002CF471 /* LaunchScreen.storyboard */,
+				846B532520EACB16002CF471 /* Assets.xcassets */,
+				846B532A20EACB16002CF471 /* Info.plist */,
 			);
 			path = Health;
 			sourceTree = "<group>";

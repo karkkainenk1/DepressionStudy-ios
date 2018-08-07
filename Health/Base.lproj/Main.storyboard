@@ -103,7 +103,7 @@ Please get in touch with us to report any issues or recommendations about the ap
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SeB-JJ-hP2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="712.79999999999995" y="-1661.9190404797603"/>
+            <point key="canvasLocation" x="1401" y="-1660"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="H2A-2g-rPS">
@@ -175,7 +175,7 @@ Call (310) 825-0768 or visit CAPS during Brief Screen Hours: Monday-Friday 9am-4
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xsg-Sw-eIM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1421.5999999999999" y="-1661.9190404797603"/>
+            <point key="canvasLocation" x="2110" y="-1660"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="os1-eO-85n">
@@ -226,7 +226,7 @@ Call (310) 825-0768 or visit CAPS during Brief Screen Hours: Monday-Friday 9am-4
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xQT-ri-skr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2098.4000000000001" y="-1661.9190404797603"/>
+            <point key="canvasLocation" x="2786" y="-1660"/>
         </scene>
         <!--Splash View Controller-->
         <scene sceneID="QSY-cx-uSk">
@@ -346,7 +346,7 @@ By selecting AGREE you acknowledge that you have received and understood the ter
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="As0-J4-bXK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2824.8000000000002" y="-1661.9190404797603"/>
+            <point key="canvasLocation" x="3513" y="-1660"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Dgh-sl-0WR">
@@ -375,7 +375,7 @@ By selecting AGREE you acknowledge that you have received and understood the ter
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FyG-Rt-AtT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3513" y="-1662"/>
+            <point key="canvasLocation" x="665" y="-1660"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="axY-09-qmj">
@@ -511,7 +511,7 @@ By selecting AGREE you acknowledge that you have received and understood the ter
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IcC-NA-J1Y" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2824.8000000000002" y="-167.76611694152925"/>
+            <point key="canvasLocation" x="3513" y="-167"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Z9l-8e-mjL">
@@ -536,7 +536,7 @@ By selecting AGREE you acknowledge that you have received and understood the ter
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YB5-5T-UGf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2824.8000000000002" y="728.18590704647681"/>
+            <point key="canvasLocation" x="3513" y="729"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="X9L-Qi-q2j">
@@ -561,7 +561,7 @@ By selecting AGREE you acknowledge that you have received and understood the ter
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c0L-jU-DXo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3489" y="727"/>
+            <point key="canvasLocation" x="4177" y="727"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="BeZ-YU-nXL">
@@ -586,7 +586,7 @@ By selecting AGREE you acknowledge that you have received and understood the ter
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Huw-dR-G4z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2160.8000000000002" y="723.68815592203907"/>
+            <point key="canvasLocation" x="2849" y="725"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="bD2-7J-Pfk">
@@ -604,7 +604,7 @@ By selecting AGREE you acknowledge that you have received and understood the ter
                     </connections>
                 </navigationController>
             </objects>
-            <point key="canvasLocation" x="2825" y="-912"/>
+            <point key="canvasLocation" x="3513" y="-912"/>
         </scene>
     </scenes>
     <resources>

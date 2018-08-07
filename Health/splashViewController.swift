@@ -18,7 +18,8 @@ class splashViewController: UIViewController{
     // Action will begin study and set singleton firstKey's bool to true
     @IBAction func startStudy(_ sender: UIButton) {
         self.performSegue(withIdentifier: "startStudy", sender: self)
-        userDef.set(true, forKey: hasLaunchedKey)
+        // commented for testing
+        //userDef.set(true, forKey: hasLaunchedKey)
     }
     @IBAction func NextViewController(_ sender: UIButton){
         tapToStart.text = "Loading ..."

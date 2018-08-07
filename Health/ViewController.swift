@@ -96,8 +96,9 @@ class ViewController: UIViewController {
         study?.join(withURL: url, completion: { (settings, studyState, error) in
             manager?.addSensors(with: study)
             manager?.createDBTablesOnAwareServer()
-            manager?.setDebugToAllSensors(true)
-            study?.setDebug(true)
+            // debugging messages
+            manager?.setDebugToAllSensors(false)
+            study?.setDebug(false)
             manager?.startAllSensors()
             manager?.syncAllSensors()
         })

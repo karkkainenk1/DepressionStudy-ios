@@ -76,172 +76,8 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.98774117230000003" green="0.68526738880000004" blue="0.6431612968" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo_eWellness" translatesAutoresizingMaskIntoConstraints="NO" id="oDD-Th-3tn">
-                                <rect key="frame" x="123" y="68" width="128" height="125"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                            </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="geQ-op-YEi">
-                                <rect key="frame" x="16" y="201" width="343" height="454"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text">This application is used for data collection of passive sensing of mental health study by UCLA ER (eHealth Research) Lab and MITRE. 
-
-Our goals with this initial data collection effort are two-fold:
-
-1. To build a proof-of-concept technology platform capable of collecting, storing, and analyzing measures.
-2. Determining which metrics best correlate to which measures of mental health.
-
-Please get in touch with us to report any issues or recommendations about the app.</string>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                        </subviews>
-                        <color key="backgroundColor" red="0.98774117231369019" green="0.68526738882064819" blue="0.64316129684448242" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="Fyl-Nc-esV"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="SeB-JJ-hP2" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1401" y="-1660"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="H2A-2g-rPS">
-            <objects>
-                <viewController storyboardIdentifier="term2" id="Zj1-17-vTt" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="H6v-1r-WVO">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background_dep" translatesAutoresizingMaskIntoConstraints="NO" id="Scq-lw-bAN">
-                                <rect key="frame" x="0.0" y="0.0" width="376" height="667"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                            </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Data Collection Permission" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="nt9-gi-ld3">
-                                <rect key="frame" x="20" y="31" width="339" height="55"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" indicatorStyle="black" keyboardDismissMode="interactive" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aQA-Yw-9pl">
-                                <rect key="frame" x="20" y="83" width="339" height="488"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text">We’re about to ask you to allow a bunch of intrusive permissions for our app, so before we do, we wanted to explain precisely what information we will be collecting and how it will be used.
-
-Firstly, please note that we will NOT be collecting any personally identifiable information on you, including taking any photos, videos, or recording any conversations.
-
-Our application will also NOT conduct any activities other than collect sensor data and your survey responses.
-
-So here is precisely what sensors we will be collecting and how it will be used:
-
-● Application use: We’ll monitor the frequency and duration of use of specific phone apps.
-
-● Communication: We’ll monitor a log of incoming and outgoing phone calls and text messages, including the number of texts and phone calls and unique individuals contacted. We won’t be storing specific contact info, just the quantity and diversity of social interactions. This does NOT assess or record the content of communications.
-
-● Location: location using GPS, network and wifi detection.
-
-● Ambient sound detection: We will detect when your external environment is louder than 50 decibels using the phone’s microphone. We will only record decibel levels and NOT record any audio
-
-● Activity and movements: we will use the accelerometer, gyroscope, and GPS tracking to try and determine activity-types
-
-● Light: We will use the camera’s light sensor to detect light level associated with being outside or in a dark location. Video will NOT be collected
-
-● Phone use: We will monitor phone screen on-time
-
-If you have any concerns about the data being collected please let us know. You will have to allow all permissions in order for the application to work properly.
-
-IF YOU ARE EXPERIENCING A LIFE THREATENING EMERGENCY, CALL 9-1-1 OR GO TO YOUR NEAREST HOSPITAL EMERGENCY ROOM.
-
-For emergency assistance:
-
-UC Police Department (UCPD) Call 9-1-1 or (310) 825-1491 Ronald Reagan UCLA Medical Center Map to Medical Center (310) 825-9111 (310) 825-2111 Emergency Department
-
-If you are having thoughts about suicide:
-
-CAPS (24 hours): (310) 825-0768 National Suicide Prevention Hotline: (24 hours): (800) 273-TALK (8255) or chat online Crisis Text Line (24 hours): Text 741-741 from anywhere in the USA, anytime, about any type of crisis.
-
-If you are a UCLA student experiencing a mental health crisis:
-
-Call (310) 825-0768 or visit CAPS during Brief Screen Hours: Monday-Friday 9am-4pm</string>
-                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                        </subviews>
-                        <color key="backgroundColor" red="0.98774117230000003" green="0.68526738880000004" blue="0.6431612968" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="yFx-TJ-5bS"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Xsg-Sw-eIM" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2110" y="-1660"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="os1-eO-85n">
-            <objects>
-                <viewController storyboardIdentifier="term3" id="sac-hz-AW4" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="UL5-Sv-ovE">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background_dep" translatesAutoresizingMaskIntoConstraints="NO" id="z0h-k3-Rlh">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                            </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="A brief note on your mental health:" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="wFs-70-iQR">
-                                <rect key="frame" x="20" y="80" width="339" height="42"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Mental Health Notice" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="uW0-zt-R3N">
-                                <rect key="frame" x="20" y="30" width="339" height="55"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ivJ-Bk-SU2">
-                                <rect key="frame" x="20" y="112" width="339" height="114"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text">Our daily survey will be prompting you for information on your mental well-being. This will include some specific prompts around your feelings of depression and anxiety. Although this information is being recorded for the study, your responses will not be reviewed regularly by researchers.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="J6a-W4-Qsy">
-                                <rect key="frame" x="18" y="234" width="341" height="150"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text">As such, if you ever feel overwhelmed, or that you need help, please do not expect us to detect this and act on your behalf, but instead reach out to the appropriate resource. We’ve included a ‘Need Help?’ tab in the menu with contact info for a variety of UCLA and community resources available to you.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                        </subviews>
-                        <color key="backgroundColor" red="0.98774117230000003" green="0.68526738880000004" blue="0.6431612968" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="BTq-mz-Pia"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xQT-ri-skr" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2786" y="-1660"/>
-        </scene>
-        <!--Splash View Controller-->
-        <scene sceneID="QSY-cx-uSk">
-            <objects>
-                <viewController storyboardIdentifier="term4" id="OOx-j8-ThA" customClass="splashViewController" customModule="Health" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8Fi-w8-lEI">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background_dep" translatesAutoresizingMaskIntoConstraints="NO" id="x2L-na-J8r">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                            </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="dXe-HM-dzX">
-                                <rect key="frame" x="16" y="20" width="343" height="106"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="TdT-oK-Pje">
+                                <rect key="frame" x="21" y="25" width="343" height="106"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">UNIVERSITY OF CALIFORNIA
@@ -250,22 +86,11 @@ STUDY INFORMATION SHEET</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vwp-NY-4HC">
-                                <rect key="frame" x="244" y="580" width="131" height="87"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="Agree">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="startStudy:" destination="OOx-j8-ThA" eventType="touchUpInside" id="iUQ-Ax-SAY"/>
-                                </connections>
-                            </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" indicatorStyle="black" keyboardDismissMode="interactive" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="waR-Fq-bqE">
-                                <rect key="frame" x="16" y="121" width="343" height="451"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" indicatorStyle="black" keyboardDismissMode="interactive" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IJv-wa-Vch">
+                                <rect key="frame" x="47" y="116" width="303" height="469"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text">Passive Sensing of Mental Wellness
+                                <string key="text">     Passive Sensing of Mental Wellness
 
 Dr. Majid Sarrafzadeh, from the Computer Science Department at the University of California, Los Angeles (UCLA) is conducting a research study.
 
@@ -337,6 +162,184 @@ By selecting AGREE you acknowledge that you have received and understood the ter
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
+                        <color key="backgroundColor" red="0.98774117231369019" green="0.68526738882064819" blue="0.64316129684448242" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="Fyl-Nc-esV"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SeB-JJ-hP2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1400.8" y="-1660.1199400299852"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="H2A-2g-rPS">
+            <objects>
+                <viewController storyboardIdentifier="term3" id="Zj1-17-vTt" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="H6v-1r-WVO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background_dep" translatesAutoresizingMaskIntoConstraints="NO" id="Scq-lw-bAN">
+                                <rect key="frame" x="0.0" y="0.0" width="376" height="667"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Data Collection Permission" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="nt9-gi-ld3">
+                                <rect key="frame" x="16" y="31" width="343" height="55"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" indicatorStyle="black" keyboardDismissMode="interactive" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aQA-Yw-9pl">
+                                <rect key="frame" x="52" y="82" width="273" height="503"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">We’re about to ask you to allow a bunch of intrusive permissions for our app, so before we do, we wanted to explain precisely what information we will be collecting and how it will be used.
+
+Firstly, please note that we will NOT be collecting any personally identifiable information on you, including taking any photos, videos, or recording any conversations.
+
+Our application will also NOT conduct any activities other than collect sensor data and your survey responses.
+
+So here is precisely what sensors we will be collecting and how it will be used:
+
+● Application use: We’ll monitor the frequency and duration of use of specific phone apps.
+
+● Communication: We’ll monitor a log of incoming and outgoing phone calls and text messages, including the number of texts and phone calls and unique individuals contacted. We won’t be storing specific contact info, just the quantity and diversity of social interactions. This does NOT assess or record the content of communications.
+
+● Location: location using GPS, network and wifi detection.
+
+● Ambient sound detection: We will detect when your external environment is louder than 50 decibels using the phone’s microphone. We will only record decibel levels and NOT record any audio
+
+● Activity and movements: we will use the accelerometer, gyroscope, and GPS tracking to try and determine activity-types
+
+● Light: We will use the camera’s light sensor to detect light level associated with being outside or in a dark location. Video will NOT be collected
+
+● Phone use: We will monitor phone screen on-time
+
+If you have any concerns about the data being collected please let us know. You will have to allow all permissions in order for the application to work properly.</string>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98774117230000003" green="0.68526738880000004" blue="0.6431612968" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="yFx-TJ-5bS"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xsg-Sw-eIM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2813.5999999999999" y="-1660.1199400299852"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="os1-eO-85n">
+            <objects>
+                <viewController storyboardIdentifier="term2" id="sac-hz-AW4" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UL5-Sv-ovE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background_dep" translatesAutoresizingMaskIntoConstraints="NO" id="z0h-k3-Rlh">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="A brief note on your mental health:" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="wFs-70-iQR">
+                                <rect key="frame" x="20" y="80" width="339" height="42"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Mental Health Notice" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="uW0-zt-R3N">
+                                <rect key="frame" x="20" y="30" width="339" height="55"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ivJ-Bk-SU2">
+                                <rect key="frame" x="20" y="110" width="339" height="139"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Our daily survey will be prompting you for information on your mental well-being. This will include some specific prompts around your feelings of depression and anxiety. Although this information is being recorded for the study, your responses will not be reviewed regularly by researchers.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J6a-W4-Qsy">
+                                <rect key="frame" x="20" y="245" width="339" height="150"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">As such, if you ever feel overwhelmed, or that you need help, please do not expect us to detect this and act on your behalf, but instead reach out to the appropriate resource. We’ve included a ‘Need Help?’ tab in the menu with contact info for a variety of UCLA and community resources available to you.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98774117230000003" green="0.68526738880000004" blue="0.6431612968" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="BTq-mz-Pia"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xQT-ri-skr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2112.8000000000002" y="-1660.1199400299852"/>
+        </scene>
+        <!--Splash View Controller-->
+        <scene sceneID="QSY-cx-uSk">
+            <objects>
+                <viewController storyboardIdentifier="term4" id="OOx-j8-ThA" customClass="splashViewController" customModule="Health" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8Fi-w8-lEI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background_dep" translatesAutoresizingMaskIntoConstraints="NO" id="x2L-na-J8r">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6yu-Ok-7m5">
+                                <rect key="frame" x="16" y="139" width="343" height="88"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">We will ask you to allow several intrusive permissions for the study after you press Agree, so please select allow for each of the requests.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Permission for Study" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="vjx-eI-6mT">
+                                <rect key="frame" x="16" y="30" width="343" height="53"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="By selecting Agree, you acknowledge that you have received and understood the terms of the study. " translatesAutoresizingMaskIntoConstraints="NO" id="1uf-p5-xwI">
+                                <rect key="frame" x="16" y="80" width="343" height="75"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ydv-h1-qUf">
+                                <rect key="frame" x="16" y="216" width="343" height="107"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Finally, a study ID window will appear. We ask that you enter a number, which will serve as your identification for the study. The window will only appear once and cannot be changed.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vwp-NY-4HC">
+                                <rect key="frame" x="244" y="580" width="131" height="87"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Agree">
+                                    <color key="titleColor" red="0.15202015899999999" green="0.1108153976" blue="0.40685718910000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="startStudy:" destination="OOx-j8-ThA" eventType="touchUpInside" id="iUQ-Ax-SAY"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Thank you for your participation, and again, you may choose to opt out of the study at any time." translatesAutoresizingMaskIntoConstraints="NO" id="UdE-uL-WbO">
+                                <rect key="frame" x="16" y="316" width="343" height="150"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" red="0.98774117230000003" green="0.68526738880000004" blue="0.6431612968" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="RA7-yr-kYG"/>
                     </view>
@@ -346,7 +349,7 @@ By selecting AGREE you acknowledge that you have received and understood the ter
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="As0-J4-bXK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3513" y="-1660"/>
+            <point key="canvasLocation" x="3512.8000000000002" y="-1660.1199400299852"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Dgh-sl-0WR">
@@ -361,11 +364,16 @@ By selecting AGREE you acknowledge that you have received and understood the ter
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.98774117230000003" green="0.68526738880000004" blue="0.6431612968" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="This will eventually be the welcome screen" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="FQs-ua-Twk">
-                                <rect key="frame" x="18" y="76" width="339" height="114"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo_eWellness" translatesAutoresizingMaskIntoConstraints="NO" id="oDD-Th-3tn">
+                                <rect key="frame" x="99" y="73" width="176" height="174"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Welcome to eWellness app. This app will monitor your smartphone activity." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="FQs-ua-Twk">
+                                <rect key="frame" x="18" y="262" width="339" height="114"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.15202015902919208" green="0.11081539763281546" blue="0.40685718911917101" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
@@ -375,7 +383,7 @@ By selecting AGREE you acknowledge that you have received and understood the ter
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FyG-Rt-AtT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="665" y="-1660"/>
+            <point key="canvasLocation" x="664.79999999999995" y="-1660.1199400299852"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="axY-09-qmj">
@@ -390,12 +398,12 @@ By selecting AGREE you acknowledge that you have received and understood the ter
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="tcw-JH-6eh">
-                                <rect key="frame" x="16" y="84" width="105" height="200"/>
+                                <rect key="frame" x="16" y="84" width="120" height="200"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ng1-Pb-SVz">
-                                        <rect key="frame" x="0.0" y="0.0" width="77" height="41"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                        <state key="normal" title="Option 1">
+                                        <rect key="frame" x="0.0" y="0.0" width="99" height="47"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                        <state key="normal" title="Information">
                                             <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
@@ -403,9 +411,9 @@ By selecting AGREE you acknowledge that you have received and understood the ter
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S7N-R8-Tp0">
-                                        <rect key="frame" x="0.0" y="56" width="79" height="38"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                        <state key="normal" title="Option 2">
+                                        <rect key="frame" x="0.0" y="62" width="88" height="36"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                        <state key="normal" title="Exit Study">
                                             <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
@@ -413,9 +421,9 @@ By selecting AGREE you acknowledge that you have received and understood the ter
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WPM-CJ-tHV">
-                                        <rect key="frame" x="0.0" y="109" width="80" height="38"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                        <state key="normal" title="Option 3">
+                                        <rect key="frame" x="0.0" y="113" width="103" height="36"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                        <state key="normal" title="Need Help?">
                                             <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
@@ -423,16 +431,19 @@ By selecting AGREE you acknowledge that you have received and understood the ter
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="er4-So-Yof">
-                                        <rect key="frame" x="0.0" y="162" width="80" height="38"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                        <state key="normal" title="Option 4">
+                                        <rect key="frame" x="0.0" y="164" width="104" height="36"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                        <state key="normal" title="Close Menu">
                                             <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="closeMenu:" destination="mqK-y6-MYu" eventType="touchUpInside" id="HNX-tc-HFg"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="L4j-aY-OZ1"/>
-                                    <constraint firstAttribute="width" constant="105" id="hlA-Bu-vrP"/>
+                                    <constraint firstAttribute="width" constant="120" id="QnO-Ar-aKJ"/>
                                 </constraints>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SHv-8p-cTR">
@@ -502,6 +513,9 @@ By selecting AGREE you acknowledge that you have received and understood the ter
                                 <action selector="menuPressedWith_sender:" destination="mqK-y6-MYu" id="ZZM-ih-hDx"/>
                             </connections>
                         </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="eWellness" style="plain" id="ojh-iv-4Ye">
+                            <color key="tintColor" red="0.15202015899999999" green="0.1108153976" blue="0.40685718910000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="leadingConstraint" destination="ASR-iL-FLo" id="jP1-Mx-Qir"/>
@@ -511,7 +525,7 @@ By selecting AGREE you acknowledge that you have received and understood the ter
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IcC-NA-J1Y" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3513" y="-167"/>
+            <point key="canvasLocation" x="3512.8000000000002" y="-167.76611694152925"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Z9l-8e-mjL">
@@ -529,6 +543,43 @@ By selecting AGREE you acknowledge that you have received and understood the ter
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zNy-Cv-GGP">
+                                <rect key="frame" x="18" y="166" width="341" height="70"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">If you wish to exit the study and stop all data collection, press the End Study button below. You may reenter the study at any time.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Are you sure you wish to exit the study? It will stop all data collection." translatesAutoresizingMaskIntoConstraints="NO" id="e0H-Za-aDL">
+                                <rect key="frame" x="18" y="118" width="341" height="56"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Exiting the Study" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="6ri-hf-ADe">
+                                <rect key="frame" x="18" y="72" width="339" height="55"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DaS-ea-kJo">
+                                <rect key="frame" x="134" y="550" width="111" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="End Study">
+                                    <color key="titleColor" red="1" green="0.060806833329999997" blue="0.1107353358" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="(Button currently in progress)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hr6-gB-fl5">
+                                <rect key="frame" x="82" y="505" width="226" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.85716500871497414" blue="0.30664185397853816" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="8Hh-tZ-NV0"/>
@@ -536,7 +587,7 @@ By selecting AGREE you acknowledge that you have received and understood the ter
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YB5-5T-UGf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3513" y="729"/>
+            <point key="canvasLocation" x="3512.8000000000002" y="728.18590704647681"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="X9L-Qi-q2j">
@@ -554,6 +605,38 @@ By selecting AGREE you acknowledge that you have received and understood the ter
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Mental Health Notice" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="E5e-to-vHg">
+                                <rect key="frame" x="19" y="72" width="339" height="55"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="IF YOU ARE EXPERIENCE A LIFE THREATENING EMERGENCY, CALL 9-1-1 OR GO TO YOUR NEAREST HOSPITAL EMERGENCY ROOM" translatesAutoresizingMaskIntoConstraints="NO" id="xnW-ce-ynC">
+                                <rect key="frame" x="18" y="111" width="341" height="95"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pJK-U1-E3c">
+                                <rect key="frame" x="18" y="178" width="341" height="375"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">For emergency assistance:
+
+UC Police Department (UCPD) Call 9-1-1 or (310) 825-1491 Ronald Reagan UCLA Medical Center Map to Medical Center (310) 825-9111 (310) 825-2111 Emergency Department
+
+If you are having thoughts about suicide:
+
+CAPS (24 hours): (310) 825-0768 National Suicide Prevention Hotline: (24 hours): (800) 273-TALK (8255) or chat online Crisis Text Line (24 hours): Text 741-741 from anywhere in the USA, anytime, about any type of crisis.
+
+If you are a UCLA student experiencing a mental health crisis:
+
+Call (310) 825-0768 or visit CAPS during Brief Screen Hours: Monday-Friday 9am-4pm</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.99209848743554507" blue="0.25066154528872875" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="Wet-Fm-QD1"/>
@@ -561,7 +644,7 @@ By selecting AGREE you acknowledge that you have received and understood the ter
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c0L-jU-DXo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4177" y="727"/>
+            <point key="canvasLocation" x="4176.8000000000002" y="726.38680659670172"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="BeZ-YU-nXL">
@@ -579,6 +662,89 @@ By selecting AGREE you acknowledge that you have received and understood the ter
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="QfS-jb-0hC">
+                                <rect key="frame" x="13" y="74" width="343" height="106"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">UNIVERSITY OF CALIFORNIA
+LOS ANGELES (UCLA)
+STUDY INFORMATION SHEET</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" indicatorStyle="black" keyboardDismissMode="interactive" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tot-rX-Sbl">
+                                <rect key="frame" x="36" y="165" width="303" height="469"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">     Passive Sensing of Mental Wellness
+
+Dr. Majid Sarrafzadeh, from the Computer Science Department at the University of California, Los Angeles (UCLA) is conducting a research study.
+
+You were selected as a possible participant in this study because you are a current student, employee or affiliate of the university. Your participation in this research study is voluntary.
+
+Why is this study being done?
+
+This study aims to determine if data that can be collected passively off your phone, can be predictive of your mental wellness at a given time. This data is limited to embedded sensors like GPS, light, and accelerometer, and will not collect any personally identifiable information on you. Our eventual hope is to create a platform that can predict if a person is in crises and direct help to them without them needing to actively seek out help.
+
+What will happen if I take part in this research study?
+
+If you volunteer to participate in this study, the researcher will ask you to do the following:
+
+● Fill out a survey consisting of 24 multiple-choice questions once a week for the duration of the study
+● Fill out a small daily questionnaire of 10 multiple-choice questions.
+● Install the app and have it running on your phone in the background throughout the day.
+
+How long will I be in the research study?
+
+Participation will take a total of about 1 hour spread over the course of a month’s time.
+
+The only time requirements for the study will be installing the application, and taking the surveys.
+
+It is anticipated that the weekly survey will take no more than 5 minutes, and the daily survey no more than 1 minute.
+
+Are there any potential risks or discomforts that I can expect from this study?
+
+● Running a mobile application in the background may negatively impact the battery life and performance of the phone. We have taken steps to diminish the impact of the application, but some degradation is expected.
+● While the questionnaires are minimally intrusive, it is possible that probing your mental wellness state may engender some discomfort or unease. Please immediately discontinue the study if you feel the questioning to be discomforting.
+
+Are there any potential benefits if I participate?
+
+You may benefit from the study by becoming more aware of daily stressors and being more mindful of your mental state.
+
+The results of the research may be included in future grant proposals or research publications. None of your specific data will be included in any public disclosure.
+
+What other choices do I have if I choose not to participate?
+
+As a student or university affiliate, your participation in this study will be entirely voluntary.
+
+Will I be paid for participating?
+
+You will receive an Amazon gift card for the successful participation in the survey. This will require your active participation throughout the data collection process. The precise amount offered will be dependent on the duration and consistency of involvement. Failure to remain actively engaged in the study may result in forfeiture of the gift card
+
+Will information about me and my participation be kept confidential?
+
+Any information that is obtained in connection with this study and that can identify you will remain confidential. It will be disclosed only with your permission or as required by law. Confidentiality will be maintained by limiting collection solely to non-identifiable data. All collected data will be stored on a secure fully encrypted server, and will only be made available to research study investigators.
+
+The researchers will do their best to make sure that your private information is kept confidential. Information about you will be handled as confidentially as possible, but participating in research may involve a loss of privacy and the potential for a breach in confidentiality. Study data will be physically and electronically secured. As with any use of electronic means to store data, there is a risk of breach of data security.
+
+No identifiable information about you will be kept with the research data. All research data and records will be maintained in a secure location at UCLA. Only authorized individuals will have access to it. The research team, authorized UCLA personnel and regulatory agencies such as the Food and Drug Administration (FDA), may have access to study data and records to monitor the study. Research records provided to authorized, non-UCLA personnel will not contain identifiable information about you. Publications and/or presentations that result from this study will not identify you by name. The researchers intend to keep the research data and records indefinitely for future research.
+
+What are my rights if I take part in this study?
+
+● You can choose whether or not you want to be in this study, and you may withdraw your consent and discontinue participation at any time.
+● Whatever decision you make, there will be no penalty to you, and no loss of benefits to which you were otherwise entitled.
+● You may refuse to answer any questions that you do not want to answer and still remain in the study.
+
+Who can I contact if I have questions about this study?
+
+● The research team:
+If you have any questions, comments or concerns about the research, you can talk to the one of the researchers. Please contact: Lionel Levine at 213-444-6622 or Lionel@cs.ucla.edu.
+
+● UCLA Office of the Human Research Protection Program (OHRPP):
+If you have questions about your rights as a research subject, or you have concerns or suggestions and you want to talk to someone other than the researchers, you may contact the UCLA OHRPP by phone: (310) 206-2040; by email: participants@research.ucla.edu or by mail: Box 951406, Los Angeles, CA 90095-1406.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.63864905428051078" blue="0.23291700859725128" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="gR9-Tf-wof"/>
@@ -591,7 +757,6 @@ By selecting AGREE you acknowledge that you have received and understood the ter
         <!--Navigation Controller-->
         <scene sceneID="bD2-7J-Pfk">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hwz-Cd-JOG" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Sms-fI-nIc" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="A2G-OJ-rLQ">
@@ -603,6 +768,7 @@ By selecting AGREE you acknowledge that you have received and understood the ter
                         <segue destination="mqK-y6-MYu" kind="relationship" relationship="rootViewController" id="qew-Je-0bL"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hwz-Cd-JOG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3513" y="-912"/>
         </scene>

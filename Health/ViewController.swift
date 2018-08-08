@@ -37,7 +37,16 @@ class ViewController: UIViewController {
         }) { (animationComplete) in
         }
     }
-
+    @IBAction func closeMenu(_ sender: Any) {
+        leadingConstraint.constant = 0
+        trailingConstraint.constant = 0
+        menuButtonIsVisible = false
+        UIView.animate(withDuration: 0.2, delay: 0.0, options: .curveEaseIn, animations: {
+            self.view.layoutIfNeeded()
+        }) { (animationComplete) in
+        }
+    }
+    
     // Tests
     @IBAction func TestESM2(_ sender: UIButton) {
         startWeeklyESM()

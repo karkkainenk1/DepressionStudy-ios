@@ -34,6 +34,7 @@ class splashViewController: UIViewController{
         }
     }
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }

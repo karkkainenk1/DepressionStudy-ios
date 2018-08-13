@@ -6,6 +6,9 @@
 //  Copyright © 2018 Arthur Lobins. All rights reserved.
 //  The main file of the background sensing
 
+// ** Create a shared singleton for whole app between files:
+// use struct to do this.
+
 import UIKit
 import AWAREFramework
 
@@ -14,6 +17,9 @@ class ViewController: UIViewController {
     let firstKey = "first"
     let userDef = UserDefaults.standard
     lazy var firstLaunched = userDef.bool(forKey: firstKey)
+    // uses key from splashViewController.swift
+    let hasLaunchedKey = "HasLaunched"
+    lazy var hasLaunched = userDef.bool(forKey: hasLaunchedKey)
     
     // Slide Menu Codes
     @IBOutlet weak var trailingConstraint: NSLayoutConstraint!
@@ -53,6 +59,27 @@ class ViewController: UIViewController {
     }
     @IBAction func TestESM(_ sender: UIButton) {
         startDailyESM()
+    }
+    
+    // End study button
+    @IBOutlet weak var endText: UITextView!
+    @IBAction func exitButton(_ sender: Any) {
+        if (hasLaunched) {
+            endText.text = "Thank you for your participation. Exiting study now..."
+            endText.textAlignment = .center
+            // turn off sensors here
+            // deactivate core
+            let core = AWARECore.shared()
+            let manager = AWARESensorManager.shared()
+            //manager?.stopAllSensors()
+            manager?.stopAndRemoveAllSensors()
+            manager?.stopAutoSyncTimer()
+            core?.deactivate()
+            self.userDef.set(false, forKey: self.hasLaunchedKey)
+            DispatchQueue.main.asyncAfter(deadline: .now() + 5.0) {
+                exit(0)
+            }
+        }
     }
     
     // start of main

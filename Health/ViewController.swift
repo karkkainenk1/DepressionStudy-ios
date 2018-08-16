@@ -203,9 +203,9 @@ class ViewController: UIViewController {
     func startWeeklyESM(){
         // weekly ESM (tentative schedule)
         let schdule = ESMSchedule.init()
-        schdule.notificationTitle = "notification title"
-        schdule.notificationBody = "notification body"
-        schdule.scheduleId = "schedule_id"
+        schdule.notificationTitle = "eWellness"
+        schdule.notificationBody = "Weekly Survey Request"
+        schdule.scheduleId = "Scheduled"
         schdule.expirationThreshold = 60
         schdule.startDate = Date.init(timeIntervalSinceNow: -60*60*24*10)
         schdule.endDate = Date.init(timeIntervalSinceNow: 60*60*24*10)
@@ -270,9 +270,9 @@ class ViewController: UIViewController {
     func startDailyESM(){
         // base code from github
         let schdule = ESMSchedule.init()
-        schdule.notificationTitle = "notification title"
-        schdule.notificationBody = "notification body"
-        schdule.scheduleId = "schedule_id"
+        schdule.notificationTitle = "eWellness"
+        schdule.notificationBody = "Daily Survey"
+        schdule.scheduleId = "Scheduled"
         schdule.expirationThreshold = 60
         schdule.startDate = Date.init(timeIntervalSinceNow: -60*60*24*10)
         schdule.endDate = Date.init(timeIntervalSinceNow: 60*60*24*10)
@@ -283,6 +283,7 @@ class ViewController: UIViewController {
         for n in 8...23 {
             schdule.addHour(NSNumber(value: n))
         }
+        
         // testing end (comment above if finished testing)
         let ans = ["None of the time", "A little of the time","Some of the time","Most of the time","All of the time"]
         let title = " of 10] During the PAST DAY, about how often did you feel ..."

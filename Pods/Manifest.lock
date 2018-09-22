@@ -1,0 +1,128 @@
+PODS:
+  - CocoaAsyncSocket (7.6.3)
+  - DeployGateSDK (1.0.7)
+  - EAIntroView (2.9.0):
+    - EARestrictedScrollView (~> 1.1.0)
+  - EARestrictedScrollView (1.1.0)
+  - EstimoteSDK (4.27.0)
+  - EZAudio (1.1.5):
+    - EZAudio/Full (= 1.1.5)
+  - EZAudio/Core (1.1.5)
+  - EZAudio/Full (1.1.5):
+    - EZAudio/Core
+    - TPCircularBuffer (= 1.1)
+  - FirebaseAnalytics (3.9.0):
+    - FirebaseCore (~> 3.6)
+    - FirebaseInstanceID (~> 1.0)
+    - "GoogleToolboxForMac/NSData+zlib (~> 2.1)"
+  - FirebaseCore (3.6.0):
+    - "GoogleToolboxForMac/NSData+zlib (~> 2.1)"
+  - FirebaseInstanceID (1.0.10):
+    - FirebaseCore (~> 3.6)
+  - Google/Core (3.1.0):
+    - FirebaseAnalytics (~> 3.2)
+  - Google/SignIn (3.1.0):
+    - Google/Core
+    - GoogleSignIn (~> 4.0)
+  - GoogleSignIn (4.1.2):
+    - "GoogleToolboxForMac/NSDictionary+URLArguments (~> 2.1)"
+    - "GoogleToolboxForMac/NSString+URLArguments (~> 2.1)"
+    - GTMOAuth2 (~> 1.0)
+    - GTMSessionFetcher/Core (~> 1.1)
+  - GoogleToolboxForMac/DebugUtils (2.1.4):
+    - GoogleToolboxForMac/Defines (= 2.1.4)
+  - GoogleToolboxForMac/Defines (2.1.4)
+  - "GoogleToolboxForMac/NSData+zlib (2.1.4)":
+    - GoogleToolboxForMac/Defines (= 2.1.4)
+  - "GoogleToolboxForMac/NSDictionary+URLArguments (2.1.4)":
+    - GoogleToolboxForMac/DebugUtils (= 2.1.4)
+    - GoogleToolboxForMac/Defines (= 2.1.4)
+    - "GoogleToolboxForMac/NSString+URLArguments (= 2.1.4)"
+  - "GoogleToolboxForMac/NSString+URLArguments (2.1.4)"
+  - GTMOAuth2 (1.1.6):
+    - GTMSessionFetcher (~> 1.1)
+  - GTMSessionFetcher (1.1.15):
+    - GTMSessionFetcher/Full (= 1.1.15)
+  - GTMSessionFetcher/Core (1.1.15)
+  - GTMSessionFetcher/Full (1.1.15):
+    - GTMSessionFetcher/Core (= 1.1.15)
+  - ios-ntp (1.1.9):
+    - CocoaAsyncSocket
+  - macros_blocks (0.0.4):
+    - macros_blocks/core (= 0.0.4)
+  - macros_blocks/core (0.0.4)
+  - MQTTKit (0.1.0)
+  - NXOAuth2Client (1.2.8)
+  - SCNetworkReachability (2.0.6):
+    - SCNetworkReachability/Core (= 2.0.6)
+  - SCNetworkReachability/Core (2.0.6):
+    - macros_blocks (~> 0.0.1)
+  - SVProgressHUD (2.2.5)
+  - TPCircularBuffer (1.1)
+  - UICountingLabel (1.4.1)
+
+DEPENDENCIES:
+  - DeployGateSDK
+  - EAIntroView (~> 2.9.0)
+  - EstimoteSDK
+  - EZAudio
+  - Google/SignIn
+  - ios-ntp
+  - MQTTKit
+  - NXOAuth2Client (~> 1.2.8)
+  - SCNetworkReachability
+  - SVProgressHUD
+  - UICountingLabel
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - CocoaAsyncSocket
+    - DeployGateSDK
+    - EAIntroView
+    - EARestrictedScrollView
+    - EstimoteSDK
+    - EZAudio
+    - FirebaseAnalytics
+    - FirebaseCore
+    - FirebaseInstanceID
+    - Google
+    - GoogleSignIn
+    - GoogleToolboxForMac
+    - GTMOAuth2
+    - GTMSessionFetcher
+    - ios-ntp
+    - macros_blocks
+    - MQTTKit
+    - NXOAuth2Client
+    - SCNetworkReachability
+    - SVProgressHUD
+    - TPCircularBuffer
+    - UICountingLabel
+
+SPEC CHECKSUMS:
+  CocoaAsyncSocket: eafaa68a7e0ec99ead0a7b35015e0bf25d2c8987
+  DeployGateSDK: df3d5838db7e35c05a711c35a3bdeef3c2b016ba
+  EAIntroView: 76f68cc56242f2e25359419e6ecc2344ee7e1756
+  EARestrictedScrollView: b0c2a3f92fb2610bb44d71c5e4893777c89e45ef
+  EstimoteSDK: 61935c7fbcb9fe93b97b0360351aef66fb1c338d
+  EZAudio: 3b1cb4b6d7ebca68f0c2478576d75940aad4aa99
+  FirebaseAnalytics: e5fe8486efc01bec33f6bf82e2fa9fce4b124052
+  FirebaseCore: 9691ee2ade70c098d7cf92440f4303f16d83ca75
+  FirebaseInstanceID: b9eedd6846fb5e1f0f7279e1deaa7a7e4cf8392e
+  Google: 98da4b1a60ed0beb80a290387a28333406a1eb90
+  GoogleSignIn: d9ef55b10f0aa401a5de2747f59b725e4b9732ac
+  GoogleToolboxForMac: 91c824d21e85b31c2aae9bb011c5027c9b4e738f
+  GTMOAuth2: c77fe325e4acd453837e72d91e3b5f13116857b2
+  GTMSessionFetcher: 5fa5b80fd20e439ef5f545fb2cb3ca6c6714caa2
+  ios-ntp: 49a4ef0866aee5343627710c1c7de71d7c064417
+  macros_blocks: cf3ff5810b798f462def9f1e3999817dc45cf2df
+  MQTTKit: a4e6b8aa92db1aeae917d2b773fd72a7749937c4
+  NXOAuth2Client: 98c4d4c594edd2b289cfc34a8928653e1dab7adf
+  SCNetworkReachability: dbb0150b1a7a4579e148420132da19e718b955ce
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  TPCircularBuffer: 4960a919e667280f7f38963d771f45871b64fe62
+  UICountingLabel: faf890b505d96312e324a86718f031fafffb0ccb
+
+PODFILE CHECKSUM: 9433f2e27d86d7d7a8461d2c42b07dac01c7d24a
+
+COCOAPODS: 1.5.3

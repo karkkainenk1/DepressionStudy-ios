@@ -89,7 +89,7 @@ class SurveyViewController: UIViewController {
         schdule.notificationTitle = "eWellness"
         schdule.notificationBody = "Please fill the daily questionnaire"
         schdule.scheduleId = "Daily Questionnaire"
-        schdule.expirationThreshold = 0
+        schdule.expirationThreshold = 1440
         schdule.startDate = Date.init()
         schdule.endDate = Date.init(timeIntervalSinceNow: 7*60*60*24*10)
         schdule.fireHours = [0,9,15,21]
@@ -123,7 +123,7 @@ class SurveyViewController: UIViewController {
         radioLast.setTitle("[10 of 10] During the PAST DAY, about how often did you feel ...")
         radioLast.setInstructions("... worthless?")
         radioLast.setSubmitButtonName("Submit")
-        radioLast.setExpirationWithMinute(0)
+        radioLast.setExpirationWithMinute(1440)
         
         schdule.addESM(radioLast)
         startESM(schedule: schdule, allowClose: true)
@@ -134,7 +134,7 @@ class SurveyViewController: UIViewController {
         schdule.notificationTitle = "eWellness"
         schdule.notificationBody = "Please enter the subject ID"
         schdule.scheduleId = "Subject ID"
-        schdule.expirationThreshold = 0
+        schdule.expirationThreshold = 525600
         schdule.startDate = Date.init()
         schdule.endDate = Date.init(timeIntervalSinceNow: 7*60*60*24*10)
         schdule.fireHours = [0,9,15,21]
@@ -158,7 +158,7 @@ class SurveyViewController: UIViewController {
         esm.setTitle("Study ID")
         esm.setInstructions("Enter your unique ID here:")
         esm.setSubmitButtonName("Submit")
-        esm.setExpirationWithMinute(0)
+        esm.setExpirationWithMinute(525600)
         
         schdule.addESM(esm)
         startESM(schedule: schdule, allowClose: false)
@@ -223,7 +223,8 @@ class SurveyViewController: UIViewController {
 //    }
     
     func hasAnsweredToday() -> Bool {
-        let req = NSFetchRequest<NSFetchRequestResult>.init()
+        // TODO: Fix crash in this code
+        /*let req = NSFetchRequest<NSFetchRequestResult>.init()
         req.entity = NSEntityDescription.entity(forEntityName: NSStringFromClass(EntityESMAnswer.self), in: persistentContainer.viewContext)
         
         let sort = NSSortDescriptor.init(key: "timestamp", ascending: false)
@@ -249,7 +250,7 @@ class SurveyViewController: UIViewController {
         } catch {
             print("Exception thrown when trying to get latest ESM answers")
         }
-        
+        */
     return false
     }
     

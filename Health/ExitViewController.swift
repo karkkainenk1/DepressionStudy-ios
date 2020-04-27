@@ -10,7 +10,7 @@
 // use struct to do this.
 
 import UIKit
-//import AWAREFramework
+import AWAREFramework
 
 class ExitViewController: UIViewController {
     // sets singleton firstKey's bool value to false
@@ -32,14 +32,12 @@ class ExitViewController: UIViewController {
             exitStudyButton.isEnabled = false
             // turn off sensors here
             // deactivate core
-            let delegate = UIApplication.shared.delegate as? AWAREDelegate
-            let core = delegate?.sharedAWARECore
-            let manager = core?.sharedSensorManager
-            //manager?.stopAllSensors()
-            manager?.stopAndRemoveAllSensors()
+            let core = AWARECore.shared()
+            let manager = AWARESensorManager.shared()
+            manager.stopAndRemoveAllSensors()
             //manager?.stopAutoSyncTimer()
-            manager?.stopUploadTimer()
-            core?.deactivate()
+            manager.stopAutoSyncTimer()
+            core.deactivate()
             
             self.userDef.set(false, forKey: self.hasLaunchedKey)
             self.userDef.set(false, forKey: self.firstKey)

@@ -1,27 +1,10 @@
 //
 //  EZAudioDevice.h
-//  EZAudio
+//  MicrophoneTest
 //
-//  Created by Syed Haris Ali on 6/25/15.
+//  Created by Syed Haris Ali on 4/3/15.
 //  Copyright (c) 2015 Syed Haris Ali. All rights reserved.
 //
-//  Permission is hereby granted, free of charge, to any person obtaining a copy
-//  of this software and associated documentation files (the "Software"), to deal
-//  in the Software without restriction, including without limitation the rights
-//  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-//  copies of the Software, and to permit persons to whom the Software is
-//  furnished to do so, subject to the following conditions:
-//
-//  The above copyright notice and this permission notice shall be included in
-//  all copies or substantial portions of the Software.
-//
-//  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-//  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-//  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-//  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-//  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-//  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-//  THE SOFTWARE.
 
 #import <Foundation/Foundation.h>
 #import <AudioToolbox/AudioToolbox.h>
@@ -45,36 +28,19 @@
 //------------------------------------------------------------------------------
 
 /**
- Provides the current EZAudioDevice that is being used to pull input.
- @return An EZAudioDevice instance representing the currently selected input device.
- */
-+ (EZAudioDevice *)currentInputDevice;
-
-//------------------------------------------------------------------------------
-
-/**
- Provides the current EZAudioDevice that is being used to output audio.
- @return An EZAudioDevice instance representing the currently selected ouotput device.
- */
-+ (EZAudioDevice *)currentOutputDevice;
-
-//------------------------------------------------------------------------------
-
-/**
  Enumerates all the available input devices and returns the result in an NSArray of EZAudioDevice instances.
  @return An NSArray containing EZAudioDevice instances, one for each available input device.
  */
 + (NSArray *)inputDevices;
 
-//------------------------------------------------------------------------------
+#if TARGET_OS_IPHONE
 
 /**
- Enumerates all the available output devices and returns the result in an NSArray of EZAudioDevice instances.
- @return An NSArray of output EZAudioDevice instances.
+ Provides the current EZAudioDevice that is being used to pull input.
+    - iOS only
+ @return An EZAudioDevice instance representing the currently selected input device.
  */
-+ (NSArray *)outputDevices;
-
-#if TARGET_OS_IPHONE
++ (EZAudioDevice *)currentInputDevice;
 
 //------------------------------------------------------------------------------
 
@@ -86,16 +52,6 @@
 + (void)enumerateInputDevicesUsingBlock:(void(^)(EZAudioDevice *device,
                                                  BOOL *stop))block;
 
-//------------------------------------------------------------------------------
-
-/**
- Enumerates all the available output devices.
- - iOS only
- @param block When enumerating this block executes repeatedly for each EZAudioDevice found. It contains two arguments - first, the EZAudioDevice found, then a pointer to a stop BOOL to allow breaking out of the enumeration)
- */
-+ (void)enumerateOutputDevicesUsingBlock:(void (^)(EZAudioDevice *device,
-                                                   BOOL *stop))block;
-
 #elif TARGET_OS_MAC
 
 /**
@@ -104,6 +60,15 @@
  @return An NSArray of input and output EZAudioDevice instances.
  */
 + (NSArray *)devices;
+
+//------------------------------------------------------------------------------
+
+/**
+ Enumerates all the available output devices and returns the result in an NSArray of EZAudioDevice instances.
+    - OSX only
+ @return An NSArray of output EZAudioDevice instances.
+ */
++ (NSArray *)outputDevices;
 
 //------------------------------------------------------------------------------
 

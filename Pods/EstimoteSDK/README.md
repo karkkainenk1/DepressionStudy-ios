@@ -2,6 +2,9 @@
 
 ## Table of Contents
 
+
+**Important** If your primary objective is to detect and interact with Estimote Beacons in your vicinity let us introduce you to our brand new [Proximity SDK for iOS](https://github.com/Estimote/iOS-Proximity-SDK).
+
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
@@ -43,7 +46,7 @@ Estimote SDK 4.0 comes to you as a **framework**. To setup, you only need to inc
 
 ## Technical overview
 
-The SDK requires iOS 7+, as it depends on the CoreLocation's support for iBeacon which was first introduced in iOS 7. Features of Estimote SDK are divided into two parts: *Client* and *Utility*.
+The SDK requires iOS 9+. Features of Estimote SDK are divided into two parts: *Client* and *Utility*.
 
 ### Client
 

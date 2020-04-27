@@ -36,7 +36,7 @@
 //------------------------------------------------------------------------------
 
 /**
- The EZMicrophoneDelegate for the EZMicrophone provides a receiver for the incoming audio data events. When the microphone has been successfully internally configured it will try to send its delegate an AudioStreamBasicDescription describing the format of the incoming audio data. 
+ The delegate for the EZMicrophone provides a receiver for the incoming audio data events. When the microphone has been successfully internally configured it will try to send its delegate an AudioStreamBasicDescription describing the format of the incoming audio data. 
  
  The audio data itself is sent back to the delegate in various forms:
  
@@ -55,18 +55,10 @@
 ///-----------------------------------------------------------
 
 /**
- Called anytime the EZMicrophone starts or stops.
- @param output The instance of the EZMicrophone that triggered the event.
- @param isPlaying A BOOL indicating whether the EZMicrophone instance is playing or not.
- */
-- (void)microphone:(EZMicrophone *)microphone changedPlayingState:(BOOL)isPlaying;
-
-//------------------------------------------------------------------------------
-
-/**
- Called anytime the input device changes on an `EZMicrophone` instance.
+ Called anytime the input device changes on an `EZMicrophone` instance. Mac only.
  @param microphone The instance of the EZMicrophone that triggered the event.
  @param device The instance of the new EZAudioDevice the microphone is using to pull input.
+ @param notification Incase the device changed because of a notification (like from AVAudioSession) then we provide that notification to give the full context of the change.
  */
 - (void)microphone:(EZMicrophone *)microphone changedDevice:(EZAudioDevice *)device;
 
@@ -85,7 +77,7 @@
 ///-----------------------------------------------------------
 
 /**
- This method provides an array of float arrays of the audio received, each float array representing a channel of audio data This occurs on the background thread so any drawing code must explicity perform its functions on the main thread.
+ Returns back a float array of the audio received. This occurs on the background thread so any drawing code must explicity perform its functions on the main thread.
  @param microphone       The instance of the EZMicrophone that triggered the event.
  @param buffer           The audio data as an array of float arrays. In a stereo signal buffer[0] represents the left channel while buffer[1] would represent the right channel.
  @param bufferSize       The size of each of the buffers (the length of each float array).
@@ -312,9 +304,7 @@
  */
 - (AudioUnit *)audioUnit;
 
-//------------------------------------------------------------------------------
 #pragma mark - Setters
-//------------------------------------------------------------------------------
 
 ///-----------------------------------------------------------
 /// @name Customizing The Microphone Stream Format

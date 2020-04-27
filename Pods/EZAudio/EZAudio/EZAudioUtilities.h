@@ -25,8 +25,8 @@
 
 #import <Foundation/Foundation.h>
 #import <AudioToolbox/AudioToolbox.h>
-#import <TargetConditionals.h>
 #import "TPCircularBuffer.h"
+
 #if TARGET_OS_IPHONE
 #import <AVFoundation/AVFoundation.h>
 #elif TARGET_OS_MAC
@@ -45,17 +45,6 @@ typedef struct
     int               bufferSize;
     TPCircularBuffer  circularBuffer;
 } EZPlotHistoryInfo;
-
-//------------------------------------------------------------------------------
-
-/**
- A data structure that holds information about a node in the context of an AUGraph.
- */
-typedef struct
-{
-    AudioUnit audioUnit;
-    AUNode    node;
-} EZAudioNodeInfo;
 
 //------------------------------------------------------------------------------
 #pragma mark - Types
@@ -236,7 +225,7 @@ typedef NSRect EZRect;
  @param sampleRate A float representing the sample rate.
  @return A new AudioStreamBasicDescription with the specified format.
  */
-+ (AudioStreamBasicDescription)stereoFloatNonInterleavedFormatWithSampleRate:(float)sampleRate;
++ (AudioStreamBasicDescription)stereoFloatNonInterleavedFormatWithSampleRate:(float)sameRate;
 
 //------------------------------------------------------------------------------
 // @name AudioStreamBasicDescription Helper Functions
@@ -381,13 +370,6 @@ typedef NSRect EZRect;
 + (float)SGN:(float)value;
 
 //------------------------------------------------------------------------------
-#pragma mark - Music Utilities
-//------------------------------------------------------------------------------
-
-+ (NSString *)noteNameStringForFrequency:(float)frequency
-                           includeOctave:(BOOL)includeOctave;
-
-//------------------------------------------------------------------------------
 #pragma mark - OSStatus Utility
 //------------------------------------------------------------------------------
 
@@ -410,28 +392,6 @@ typedef NSRect EZRect;
  @return An NSString with a human readable version of the error code.
  */
 + (NSString *)stringFromUInt32Code:(UInt32)code;
-
-//------------------------------------------------------------------------------
-#pragma mark - Color Utility
-//------------------------------------------------------------------------------
-
-///-----------------------------------------------------------
-/// @name Color Utility
-///-----------------------------------------------------------
-
-/**
- Helper function to get the color components from a CGColorRef in the RGBA colorspace.
- @param color A CGColorRef that represents a color.
- @param red   A pointer to a CGFloat to hold the value of the red component. This value will be between 0 and 1.
- @param green A pointer to a CGFloat to hold the value of the green component. This value will be between 0 and 1.
- @param blue  A pointer to a CGFloat to hold the value of the blue component. This value will be between 0 and 1.
- @param alpha A pointer to a CGFloat to hold the value of the alpha component. This value will be between 0 and 1.
- */
-+ (void)getColorComponentsFromCGColor:(CGColorRef)color
-                                  red:(CGFloat *)red
-                                green:(CGFloat *)green
-                                 blue:(CGFloat *)blue
-                                alpha:(CGFloat *)alpha;
 
 //------------------------------------------------------------------------------
 #pragma mark - Plot Utility
@@ -477,8 +437,8 @@ typedef NSRect EZRect;
 
 /**
  Initializes the circular buffer (just a wrapper around the C method)
- @param circularBuffer Pointer to an instance of the TPCircularBuffer
- @param size           The length of the TPCircularBuffer (usually 1024)
+ *  @param circularBuffer Pointer to an instance of the TPCircularBuffer
+ *  @param size           The length of the TPCircularBuffer (usually 1024)
  */
 + (void)circularBuffer:(TPCircularBuffer*)circularBuffer
               withSize:(int)size;
@@ -501,29 +461,9 @@ typedef NSRect EZRect;
  @param bufferSize  A UInt32 representing the length of the incoming audio buffer
  @param historyInfo A pointer to a EZPlotHistoryInfo structure to use for managing the history buffers
  */
-+ (void)appendBufferRMS:(float *)buffer
-         withBufferSize:(UInt32)bufferSize
-          toHistoryInfo:(EZPlotHistoryInfo *)historyInfo;
-
-//------------------------------------------------------------------------------
-
-/**
- Appends a buffer of audio data to the tail of a EZPlotHistoryInfo data structure. Thread-safe.
- @param buffer      A float array containing the incoming audio buffer to append to the history buffer
- @param bufferSize  A UInt32 representing the length of the incoming audio buffer
- @param historyInfo A pointer to a EZPlotHistoryInfo structure to use for managing the history buffers
- */
 + (void)appendBuffer:(float *)buffer
       withBufferSize:(UInt32)bufferSize
        toHistoryInfo:(EZPlotHistoryInfo *)historyInfo;
-
-//------------------------------------------------------------------------------
-
-/**
- Zeroes out a EZPlotHistoryInfo data structure without freeing the resources.
- @param historyInfo A pointer to a EZPlotHistoryInfo data structure
- */
-+ (void)clearHistoryInfo:(EZPlotHistoryInfo *)historyInfo;
 
 //------------------------------------------------------------------------------
 

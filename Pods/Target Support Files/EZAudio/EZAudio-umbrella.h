@@ -10,18 +10,17 @@
 #endif
 #endif
 
+#import "AEFloatConverter.h"
 #import "EZAudio.h"
 #import "EZAudioDevice.h"
 #import "EZAudioDisplayLink.h"
-#import "EZAudioFFT.h"
 #import "EZAudioFile.h"
 #import "EZAudioFloatConverter.h"
 #import "EZAudioFloatData.h"
-#import "EZAudioiOS.h"
-#import "EZAudioOSX.h"
 #import "EZAudioPlayer.h"
 #import "EZAudioPlot.h"
 #import "EZAudioPlotGL.h"
+#import "EZAudioPlotGLKViewController.h"
 #import "EZAudioUtilities.h"
 #import "EZMicrophone.h"
 #import "EZOutput.h"

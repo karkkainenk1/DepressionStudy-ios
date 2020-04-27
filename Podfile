@@ -10,7 +10,7 @@ target 'Health' do
   
   pod 'MQTTKit' 
   pod 'SCNetworkReachability'
-  pod 'Google/SignIn'
+  pod 'GoogleSignIn'
   pod 'DeployGateSDK'
   pod 'ios-ntp'
   pod 'EZAudio'
@@ -19,6 +19,7 @@ target 'Health' do
   pod 'NXOAuth2Client', '~> 1.2.8'
   pod 'EstimoteSDK'
   pod 'UICountingLabel'
+  pod 'AWAREFramework', '~> 1.10'
 
   target 'HealthTests' do
     inherit! :search_paths

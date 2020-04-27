@@ -25,22 +25,6 @@
 
 #import "EZAudioUtilities.h"
 
-static float    const  EZAudioUtilitiesFixedNoteA       = 440.0f;
-static int      const  EZAudioUtilitiesFixedNoteAIndex  = 9;
-static int      const  EZAudioUtilitiesFixedNoteAOctave = 4;
-static float    const  EZAudioUtilitiesEQFrequencyRatio = 1.059463094359f;
-static int      const  EZAudioUtilitiesNotesLength      = 12;
-static NSString * const EZAudioUtilitiesNotes[EZAudioUtilitiesNotesLength] =
-{
-    @"C", @"C#",
-    @"D", @"D#",
-    @"E",
-    @"F", @"F#",
-    @"G", @"G#",
-    @"A", @"A#",
-    @"B"
-};
-
 BOOL __shouldExitOnCheckResultFail = YES;
 
 @implementation EZAudioUtilities
@@ -69,29 +53,15 @@ BOOL __shouldExitOnCheckResultFail = YES;
                                       numberOfChannels:(UInt32)channels
                                            interleaved:(BOOL)interleaved
 {
-    unsigned nBuffers;
-    unsigned bufferSize;
-    unsigned channelsPerBuffer;
-    if (interleaved)
+    AudioBufferList *audioBufferList = (AudioBufferList*)malloc(sizeof(AudioBufferList) + sizeof(AudioBuffer) * (channels-1));
+    UInt32 outputBufferSize = 32 * frames; // 32 KB
+    audioBufferList->mNumberBuffers = interleaved ? 1 : channels;
+    for(int i = 0; i < audioBufferList->mNumberBuffers; i++)
     {
-        nBuffers = 1;
-        bufferSize = sizeof(float) * frames * channels;
-        channelsPerBuffer = channels;
-    }
-    else
-    {
-        nBuffers = channels;
-        bufferSize = sizeof(float) * frames;
-        channelsPerBuffer = 1;
-    }
-    
-    AudioBufferList *audioBufferList = (AudioBufferList *)malloc(sizeof(AudioBufferList) + sizeof(AudioBuffer) * (channels-1));
-    audioBufferList->mNumberBuffers = nBuffers;
-    for(unsigned i = 0; i < nBuffers; i++)
-    {
-        audioBufferList->mBuffers[i].mNumberChannels = channelsPerBuffer;
-        audioBufferList->mBuffers[i].mDataByteSize = bufferSize;
-        audioBufferList->mBuffers[i].mData = calloc(bufferSize, 1);
+        audioBufferList->mBuffers[i].mNumberChannels = channels;
+        audioBufferList->mBuffers[i].mDataByteSize = channels * outputBufferSize;
+        audioBufferList->mBuffers[i].mData = (float *)malloc(channels * sizeof(float) *outputBufferSize);
+        memset(audioBufferList->mBuffers[i].mData, 0, frames);
     }
     return audioBufferList;
 }
@@ -136,11 +106,6 @@ BOOL __shouldExitOnCheckResultFail = YES;
 
 + (void)freeFloatBuffers:(float **)buffers numberOfChannels:(UInt32)channels
 {
-    if (!buffers || !*buffers)
-    {
-        return;
-    }
-
     for (int i = 0; i < channels; i++)
     {
         free(buffers[i]);
@@ -185,7 +150,7 @@ BOOL __shouldExitOnCheckResultFail = YES;
                                                          NULL,
                                                          &propSize,
                                                          &asbd)
-                        operation:"Failed to fill out the rest of the iLBC AudioStreamBasicDescription"];
+                        operation:"Failed to fill out the rest of the m4a AudioStreamBasicDescription"];
     
     return asbd;
 }
@@ -459,11 +424,11 @@ BOOL __shouldExitOnCheckResultFail = YES;
 
 //------------------------------------------------------------------------------
 
-+ (float)MAP:(float)value
-     leftMin:(float)leftMin
-     leftMax:(float)leftMax
-    rightMin:(float)rightMin
-    rightMax:(float)rightMax
++(float)MAP:(float)value
+    leftMin:(float)leftMin
+    leftMax:(float)leftMax
+   rightMin:(float)rightMin
+   rightMax:(float)rightMax
 {
     float leftSpan    = leftMax  - leftMin;
     float rightSpan   = rightMax - rightMin;
@@ -473,7 +438,8 @@ BOOL __shouldExitOnCheckResultFail = YES;
 
 //------------------------------------------------------------------------------
 
-+ (float)RMS:(float *)buffer   length:(int)bufferSize
++(float)RMS:(float *)buffer
+     length:(int)bufferSize
 {
     float sum = 0.0;
     for(int i = 0; i < bufferSize; i++)
@@ -483,40 +449,9 @@ BOOL __shouldExitOnCheckResultFail = YES;
 
 //------------------------------------------------------------------------------
 
-+ (float)SGN:(float)value
++(float)SGN:(float)value
 {
     return value < 0 ? -1.0f : ( value > 0 ? 1.0f : 0.0f);
-}
-
-//------------------------------------------------------------------------------
-#pragma mark - Music Utilities
-//------------------------------------------------------------------------------
-
-+ (NSString *)noteNameStringForFrequency:(float)frequency
-                           includeOctave:(BOOL)includeOctave
-{
-    NSMutableString *noteName = [NSMutableString string];
-    int halfStepsFromFixedNote = roundf(log(frequency / EZAudioUtilitiesFixedNoteA) / log(EZAudioUtilitiesEQFrequencyRatio));
-    int halfStepsModOctaves = halfStepsFromFixedNote % EZAudioUtilitiesNotesLength;
-    int indexOfNote = EZAudioUtilitiesFixedNoteAIndex + halfStepsModOctaves;
-    float octaves = halfStepsFromFixedNote / EZAudioUtilitiesNotesLength;
-    if (indexOfNote >= EZAudioUtilitiesNotesLength)
-    {
-        indexOfNote -= EZAudioUtilitiesNotesLength;
-        octaves += 1;
-    }
-    else if (indexOfNote < 0)
-    {
-        indexOfNote += EZAudioUtilitiesNotesLength;
-        octaves = -1;
-    }
-    [noteName appendString:EZAudioUtilitiesNotes[indexOfNote]];
-    if (includeOctave)
-    {
-        int noteOctave = EZAudioUtilitiesFixedNoteAOctave + octaves;
-        [noteName appendFormat:@"%i", noteOctave];
-    }
-    return noteName;
 }
 
 //------------------------------------------------------------------------------
@@ -600,31 +535,6 @@ BOOL __shouldExitOnCheckResultFail = YES;
 }
 
 //------------------------------------------------------------------------------
-#pragma mark - Color Utility
-//------------------------------------------------------------------------------
-
-///-----------------------------------------------------------
-/// @name Color Utility
-///-----------------------------------------------------------
-
-+ (void)getColorComponentsFromCGColor:(CGColorRef)color
-                                  red:(CGFloat *)red
-                                green:(CGFloat *)green
-                                 blue:(CGFloat *)blue
-                                alpha:(CGFloat *)alpha
-{
-    size_t componentCount = CGColorGetNumberOfComponents(color);
-    if (componentCount == 4)
-    {
-        const CGFloat *components = CGColorGetComponents(color);
-        *red = components[0];
-        *green = components[1];
-        *blue = components[2];
-        *alpha = components[3];
-    }
-}
-
-//------------------------------------------------------------------------------
 #pragma mark - TPCircularBuffer Utility
 //------------------------------------------------------------------------------
 
@@ -655,21 +565,6 @@ BOOL __shouldExitOnCheckResultFail = YES;
 #pragma mark - EZPlotHistoryInfo Utility
 //------------------------------------------------------------------------------
 
-+ (void)appendBufferRMS:(float *)buffer
-         withBufferSize:(UInt32)bufferSize
-          toHistoryInfo:(EZPlotHistoryInfo *)historyInfo
-{
-    //
-    // Calculate RMS and append to buffer
-    //
-    float rms = [EZAudioUtilities RMS:buffer length:bufferSize];
-    float src[1];
-    src[0] = isnan(rms) ? 0.0 : rms;
-    [self appendBuffer:src withBufferSize:1 toHistoryInfo:historyInfo];
-}
-
-//------------------------------------------------------------------------------
-
 + (void)appendBuffer:(float *)buffer
       withBufferSize:(UInt32)bufferSize
        toHistoryInfo:(EZPlotHistoryInfo *)historyInfo
@@ -685,7 +580,10 @@ BOOL __shouldExitOnCheckResultFail = YES;
     //
     // Update the scroll history datasource
     //
-    TPCircularBufferProduceBytes(&historyInfo->circularBuffer, buffer, bufferSize * sizeof(float));
+    float rms = [EZAudioUtilities RMS:buffer length:bufferSize];
+    float src[1];
+    src[0] = isnan(rms) ? 0.0 : rms;
+    TPCircularBufferProduceBytes(&historyInfo->circularBuffer, src, sizeof(src));
     int32_t targetBytes = historyInfo->bufferSize * sizeof(float);
     int32_t availableBytes = 0;
     float *historyBuffer = TPCircularBufferTail(&historyInfo->circularBuffer, &availableBytes);
@@ -693,16 +591,8 @@ BOOL __shouldExitOnCheckResultFail = YES;
     memmove(historyInfo->buffer, historyBuffer, bytes);
     if (targetBytes <= availableBytes)
     {
-        TPCircularBufferConsume(&historyInfo->circularBuffer, availableBytes - targetBytes);
+        TPCircularBufferConsume(&historyInfo->circularBuffer, sizeof(src));
     }
-}
-
-//------------------------------------------------------------------------------
-
-+ (void)clearHistoryInfo:(EZPlotHistoryInfo *)historyInfo
-{
-    memset(historyInfo->buffer, 0, historyInfo->bufferSize * sizeof(float));
-    TPCircularBufferClear(&historyInfo->circularBuffer);
 }
 
 //------------------------------------------------------------------------------
@@ -711,7 +601,7 @@ BOOL __shouldExitOnCheckResultFail = YES;
 {
     free(historyInfo->buffer);
     free(historyInfo);
-    TPCircularBufferCleanup(&historyInfo->circularBuffer);
+    TPCircularBufferClear(&historyInfo->circularBuffer);
 }
 
 //------------------------------------------------------------------------------

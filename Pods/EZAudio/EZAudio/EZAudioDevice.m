@@ -1,27 +1,10 @@
 //
 //  EZAudioDevice.m
-//  EZAudio
+//  MicrophoneTest
 //
-//  Created by Syed Haris Ali on 6/25/15.
+//  Created by Syed Haris Ali on 4/3/15.
 //  Copyright (c) 2015 Syed Haris Ali. All rights reserved.
 //
-//  Permission is hereby granted, free of charge, to any person obtaining a copy
-//  of this software and associated documentation files (the "Software"), to deal
-//  in the Software without restriction, including without limitation the rights
-//  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-//  copies of the Software, and to permit persons to whom the Software is
-//  furnished to do so, subject to the following conditions:
-//
-//  The above copyright notice and this permission notice shall be included in
-//  all copies or substantial portions of the Software.
-//
-//  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-//  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-//  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-//  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-//  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-//  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-//  THE SOFTWARE.
 
 #import "EZAudioDevice.h"
 #import "EZAudioUtilities.h"
@@ -66,19 +49,6 @@
 
 //------------------------------------------------------------------------------
 
-+ (EZAudioDevice *)currentOutputDevice
-{
-    AVAudioSession *session = [AVAudioSession sharedInstance];
-    AVAudioSessionPortDescription *port = [[[session currentRoute] outputs] firstObject];
-    AVAudioSessionDataSourceDescription *dataSource = [session outputDataSource];
-    EZAudioDevice *device = [[EZAudioDevice alloc] init];
-    device.port = port;
-    device.dataSource = dataSource;
-    return device;
-}
-
-//------------------------------------------------------------------------------
-
 + (NSArray *)inputDevices
 {
     __block NSMutableArray *devices = [NSMutableArray array];
@@ -86,18 +56,6 @@
     {
         [devices addObject:device];
     }];
-    return devices;
-}
-
-//------------------------------------------------------------------------------
-
-+ (NSArray *)outputDevices
-{
-    __block NSMutableArray *devices = [NSMutableArray array];
-    [self enumerateOutputDevicesUsingBlock:^(EZAudioDevice *device, BOOL *stop)
-     {
-         [devices addObject:device];
-     }];
     return devices;
 }
 
@@ -136,42 +94,6 @@
         {
             EZAudioDevice *device = [[EZAudioDevice alloc] init];
             device.port = inputDevicePortDescription;
-            block(device, &stop);
-        }
-    }
-}
-
-//------------------------------------------------------------------------------
-
-+ (void)enumerateOutputDevicesUsingBlock:(void (^)(EZAudioDevice *, BOOL *))block
-{
-    if (!block)
-    {
-        return;
-    }
-    
-    AVAudioSessionRouteDescription *currentRoute = [[AVAudioSession sharedInstance] currentRoute];
-    NSArray *portDescriptions = [currentRoute outputs];
-    
-    BOOL stop;
-    for (AVAudioSessionPortDescription *outputDevicePortDescription in portDescriptions)
-    {
-        // add any additional sub-devices
-        NSArray *dataSources = [outputDevicePortDescription dataSources];
-        if (dataSources.count)
-        {
-            for (AVAudioSessionDataSourceDescription *outputDeviceDataSourceDescription in dataSources)
-            {
-                EZAudioDevice *device = [[EZAudioDevice alloc] init];
-                device.port = outputDevicePortDescription;
-                device.dataSource = outputDeviceDataSourceDescription;
-                block(device, &stop);
-            }
-        }
-        else
-        {
-            EZAudioDevice *device = [[EZAudioDevice alloc] init];
-            device.port = outputDevicePortDescription;
             block(device, &stop);
         }
     }
@@ -234,11 +156,11 @@
     AudioObjectPropertyAddress address = [self addressForPropertySelector:kAudioHardwarePropertyDevices];
     UInt32 devicesDataSize;
     [EZAudioUtilities checkResult:AudioObjectGetPropertyDataSize(kAudioObjectSystemObject,
-                                                                 &address,
-                                                                 0,
-                                                                 NULL,
-                                                                 &devicesDataSize)
-                        operation:"Failed to get data size"];
+                                                     &address,
+                                                     0,
+                                                     NULL,
+                                                     &devicesDataSize)
+            operation:"Failed to get data size"];
     
     // enumerate devices
     NSInteger count = devicesDataSize / sizeof(AudioDeviceID);
@@ -284,44 +206,6 @@
         [devices addObject:device];
     }];
     return devices;
-}
-
-//------------------------------------------------------------------------------
-
-+ (EZAudioDevice *)deviceWithPropertySelector:(AudioObjectPropertySelector)propertySelector
-{
-    AudioDeviceID deviceID;
-    UInt32 propSize = sizeof(AudioDeviceID);
-    AudioObjectPropertyAddress address = [self addressForPropertySelector:propertySelector];
-    [EZAudioUtilities checkResult:AudioObjectGetPropertyData(kAudioObjectSystemObject,
-                                                             &address,
-                                                             0,
-                                                             NULL,
-                                                             &propSize,
-                                                             &deviceID)
-                        operation:"Failed to get device device on OSX"];
-    EZAudioDevice *device = [[EZAudioDevice alloc] init];
-    device.deviceID = deviceID;
-    device.manufacturer = [self manufacturerForDeviceID:deviceID];
-    device.name = [self namePropertyForDeviceID:deviceID];
-    device.UID = [self UIDPropertyForDeviceID:deviceID];
-    device.inputChannelCount = [self channelCountForScope:kAudioObjectPropertyScopeInput forDeviceID:deviceID];
-    device.outputChannelCount = [self channelCountForScope:kAudioObjectPropertyScopeOutput forDeviceID:deviceID];
-    return device;
-}
-
-//------------------------------------------------------------------------------
-
-+ (EZAudioDevice *)currentInputDevice
-{
-    return [self deviceWithPropertySelector:kAudioHardwarePropertyDefaultInputDevice];
-}
-
-//------------------------------------------------------------------------------
-
-+ (EZAudioDevice *)currentOutputDevice
-{
-    return [self deviceWithPropertySelector:kAudioHardwarePropertyDefaultOutputDevice];
 }
 
 //------------------------------------------------------------------------------

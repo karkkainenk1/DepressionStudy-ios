@@ -24,8 +24,9 @@
 //  THE SOFTWARE.
 
 #import <QuartzCore/QuartzCore.h>
+#import "TargetConditionals.h"
+#import "EZAudioUtilities.h"
 #import "EZPlot.h"
-#import "EZAudioDisplayLink.h"
 
 @class EZAudio;
 
@@ -114,16 +115,16 @@ FOUNDATION_EXPORT UInt32 const EZAudioPlotDefaultMaxHistoryBufferLength;
 ///-----------------------------------------------------------
 
 /**
- Sets the length of the rolling history buffer (i.e. the number of points in the rolling plot's buffer). Can grow or shrink the display up to the maximum size specified by the `maximumRollingHistoryLength` method. Will return the actual set value, which will be either the given value if smaller than the `maximumRollingHistoryLength` or `maximumRollingHistoryLength` if a larger value is attempted to be set.
+ The length of the rolling history display. Can grow or shrink the display up to the maximum size specified by the kEZAudioPlotMaxHistoryBufferLength macro. Will return the actual set value, which will be either the given value if smaller than the kEZAudioPlotMaxHistoryBufferLength or kEZAudioPlotMaxHistoryBufferLength if a larger value is attempted to be set.
  @param  historyLength The new length of the rolling history buffer.
- @return The new value equal to the historyLength or the `maximumRollingHistoryLength`.
+ @return The new value equal to the historyLength or the kEZAudioPlotMaxHistoryBufferLength.
  */
 -(int)setRollingHistoryLength:(int)historyLength;
 
 //------------------------------------------------------------------------------
 
 /**
- Provides the length of the rolling history buffer (i.e. the number of points in the rolling plot's buffer).
+ Provides the length of the rolling history buffer
  *  @return An int representing the length of the rolling history buffer
  */
 -(int)rollingHistoryLength;
@@ -158,13 +159,6 @@ FOUNDATION_EXPORT UInt32 const EZAudioPlotDefaultMaxHistoryBufferLength;
 //------------------------------------------------------------------------------
 
 /**
- Called after the view has been created. Subclasses should use to add any additional methods needed instead of overriding the init methods.
- */
-- (void)setupPlot;
-
-//------------------------------------------------------------------------------
-
-/**
  Provides the default number of points that will be used to initialize the graph's points data structure that holds. Essentially the plot starts off as a flat line of this many points. Default is 100.
  @return An int describing the initial number of points the plot should have when flat lined.
  */
@@ -193,15 +187,9 @@ FOUNDATION_EXPORT UInt32 const EZAudioPlotDefaultMaxHistoryBufferLength;
  @param data   A float array of the sample data. Subclasses should copy this data to a separate array to avoid threading issues.
  @param length The length of the float array as an int.
  */
--(void)setSampleData:(float *)data length:(int)length;
+-(void)setSampleData:(float *)data
+              length:(int)length;
 
 //------------------------------------------------------------------------------
 
-@end
-
-@interface EZAudioPlot () <EZAudioDisplayLinkDelegate>
-@property (nonatomic, strong) EZAudioDisplayLink *displayLink;
-@property (nonatomic, assign) EZPlotHistoryInfo  *historyInfo;
-@property (nonatomic, assign) CGPoint            *points;
-@property (nonatomic, assign) UInt32              pointCount;
 @end

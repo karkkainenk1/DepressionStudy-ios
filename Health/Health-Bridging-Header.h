@@ -7,4 +7,4 @@
 //  Required to allow Objective-C to be called via Swift
 //#import "AWAREFramework/AWARECore.h"
 //#import <AWAREFramework/AWARECore.h>
-#import "External/AWAREFramework/Core/AWARE-Bridging-Header.h"
+#import "AWAREFramework/Core/AWARE-Bridging-Header.h"

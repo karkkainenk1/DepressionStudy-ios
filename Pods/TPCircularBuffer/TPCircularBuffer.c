@@ -30,6 +30,7 @@
 #include "TPCircularBuffer.h"
 #include <mach/mach.h>
 #include <stdio.h>
+#include <stdlib.h>
 
 #define reportResult(result,operation) (_reportResult((result),(operation),strrchr(__FILE__, '/')+1,__LINE__))
 static inline bool _reportResult(kern_return_t result, const char *operation, const char* file, int line) {
@@ -40,13 +41,20 @@ static inline bool _reportResult(kern_return_t result, const char *operation, co
     return true;
 }
 
-bool TPCircularBufferInit(TPCircularBuffer *buffer, int32_t length) {
-
+bool _TPCircularBufferInit(TPCircularBuffer *buffer, uint32_t length, size_t structSize) {
+    
+    assert(length > 0);
+    
+    if ( structSize != sizeof(TPCircularBuffer) ) {
+        fprintf(stderr, "TPCircularBuffer: Header version mismatch. Check for old versions of TPCircularBuffer in your project\n");
+        abort();
+    }
+    
     // Keep trying until we get our buffer, needed to handle race conditions
     int retries = 3;
     while ( true ) {
 
-        buffer->length = (int32_t)round_page(length);    // We need whole page sizes
+        buffer->length = (uint32_t)round_page(length);    // We need whole page sizes
 
         // Temporarily allocate twice the length, so we have the contiguous address space to
         // support a second instance of the buffer directly after
@@ -117,6 +125,7 @@ bool TPCircularBufferInit(TPCircularBuffer *buffer, int32_t length) {
         buffer->buffer = (void*)bufferAddress;
         buffer->fillCount = 0;
         buffer->head = buffer->tail = 0;
+        buffer->atomic = true;
         
         return true;
     }
@@ -129,8 +138,12 @@ void TPCircularBufferCleanup(TPCircularBuffer *buffer) {
 }
 
 void TPCircularBufferClear(TPCircularBuffer *buffer) {
-    int32_t fillCount;
+    uint32_t fillCount;
     if ( TPCircularBufferTail(buffer, &fillCount) ) {
         TPCircularBufferConsume(buffer, fillCount);
     }
+}
+
+void  TPCircularBufferSetAtomic(TPCircularBuffer *buffer, bool atomic) {
+    buffer->atomic = atomic;
 }

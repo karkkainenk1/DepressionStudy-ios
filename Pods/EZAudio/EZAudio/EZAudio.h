@@ -25,40 +25,25 @@
 
 #import <Foundation/Foundation.h>
 
-//! Project version number for teat.
-FOUNDATION_EXPORT double EZAudioVersionNumber;
+#pragma mark - 3rd Party Utilties
+#import "TPCircularBuffer.h"
 
-//! Project version string for teat.
-FOUNDATION_EXPORT const unsigned char EZAudioVersionString[];
-
-//------------------------------------------------------------------------------
 #pragma mark - Core Components
-//------------------------------------------------------------------------------
-
-#import "EZAudioDevice.h"
 #import "EZAudioFile.h"
+#import "EZAudioFloatData.h"
 #import "EZMicrophone.h"
 #import "EZOutput.h"
 #import "EZRecorder.h"
+#import "EZAudioUtilities.h"
+
+#pragma mark - Extended Components
 #import "EZAudioPlayer.h"
 
-//------------------------------------------------------------------------------
 #pragma mark - Interface Components
-//------------------------------------------------------------------------------
-
 #import "EZPlot.h"
-#import "EZAudioDisplayLink.h"
 #import "EZAudioPlot.h"
 #import "EZAudioPlotGL.h"
-
-//------------------------------------------------------------------------------
-#pragma mark - Utility Components
-//------------------------------------------------------------------------------
-
-#import "EZAudioFFT.h"
-#import "EZAudioFloatConverter.h"
-#import "EZAudioFloatData.h"
-#import "EZAudioUtilities.h"
+#import "EZAudioPlotGLKViewController.h"
 
 //------------------------------------------------------------------------------
 
@@ -261,7 +246,7 @@ FOUNDATION_EXPORT const unsigned char EZAudioVersionString[];
  @note Please use same method in EZAudioUtilities class instead.
  @return A new AudioStreamBasicDescription with the specified format.
  */
-+ (AudioStreamBasicDescription)stereoFloatNonInterleavedFormatWithSampleRate:(float)sampleRate __attribute__((deprecated));
++ (AudioStreamBasicDescription)stereoFloatNonInterleavedFormatWithSampleRate:(float)sameRate __attribute__((deprecated));
 
 //------------------------------------------------------------------------------
 // @name AudioStreamBasicDescription Helper Functions
@@ -505,8 +490,8 @@ FOUNDATION_EXPORT const unsigned char EZAudioVersionString[];
 
 /**
  Initializes the circular buffer (just a wrapper around the C method)
- @param circularBuffer Pointer to an instance of the TPCircularBuffer
- @param size           The length of the TPCircularBuffer (usually 1024)
+ *  @param circularBuffer Pointer to an instance of the TPCircularBuffer
+ *  @param size           The length of the TPCircularBuffer (usually 1024)
  @deprecated This method is deprecated starting in version 0.1.0.
  @note Please use same method in EZAudioUtilities class instead.
  */

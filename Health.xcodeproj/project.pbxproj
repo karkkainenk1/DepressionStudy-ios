@@ -20,273 +20,6 @@
 		84C19F7E2107BD6800C1C932 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C19F7D2107BD6800C1C932 /* PageViewController.swift */; };
 		DD30CE8A2147453E00249231 /* PermissionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD30CE892147453E00249231 /* PermissionViewController.swift */; };
 		DD97F758214ADFA1005D28FC /* ExitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD97F757214ADFA1005D28FC /* ExitViewController.swift */; };
-		DD97FA13214C6328005D28FC /* Calls.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F763214C6327005D28FC /* Calls.m */; };
-		DD97FA14214C6328005D28FC /* EntityCall+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F765214C6327005D28FC /* EntityCall+CoreDataProperties.m */; };
-		DD97FA15214C6328005D28FC /* EntityCall.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F767214C6327005D28FC /* EntityCall.m */; };
-		DD97FA19214C6328005D28FC /* Orientation.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F777214C6327005D28FC /* Orientation.m */; };
-		DD97FA1A214C6328005D28FC /* EntityTimezone.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F77A214C6327005D28FC /* EntityTimezone.m */; };
-		DD97FA1B214C6328005D28FC /* Timezone.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F77C214C6327005D28FC /* Timezone.m */; };
-		DD97FA1C214C6328005D28FC /* EntityTimezone+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F77E214C6327005D28FC /* EntityTimezone+CoreDataProperties.m */; };
-		DD97FA1D214C6328005D28FC /* EntityGravity+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F781214C6327005D28FC /* EntityGravity+CoreDataProperties.m */; };
-		DD97FA1E214C6328005D28FC /* Gravity.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F783214C6327005D28FC /* Gravity.m */; };
-		DD97FA1F214C6328005D28FC /* EntityGravity.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F784214C6327005D28FC /* EntityGravity.m */; };
-		DD97FA20214C6328005D28FC /* EntityLocation+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F789214C6327005D28FC /* EntityLocation+CoreDataProperties.m */; };
-		DD97FA21214C6328005D28FC /* Locations.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F78A214C6327005D28FC /* Locations.m */; };
-		DD97FA22214C6328005D28FC /* VisitLocations.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F78B214C6327005D28FC /* VisitLocations.m */; };
-		DD97FA23214C6328005D28FC /* EntityLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F78C214C6327005D28FC /* EntityLocation.m */; };
-		DD97FA24214C6328005D28FC /* Processor.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F793214C6327005D28FC /* Processor.m */; };
-		DD97FA25214C6328005D28FC /* EntityProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F794214C6327005D28FC /* EntityProcessor.m */; };
-		DD97FA26214C6328005D28FC /* EntityProcessor+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F795214C6327005D28FC /* EntityProcessor+CoreDataProperties.m */; };
-		DD97FA27214C6328005D28FC /* EntityAccelerometer.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F798214C6327005D28FC /* EntityAccelerometer.m */; };
-		DD97FA28214C6328005D28FC /* EntityAccelerometer+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F79A214C6327005D28FC /* EntityAccelerometer+CoreDataProperties.m */; };
-		DD97FA29214C6328005D28FC /* Accelerometer.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F79C214C6327005D28FC /* Accelerometer.m */; };
-		DD97FA2A214C6328005D28FC /* Network.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F79E214C6327005D28FC /* Network.m */; };
-		DD97FA2B214C6328005D28FC /* EntityNetwork+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F79F214C6327005D28FC /* EntityNetwork+CoreDataProperties.m */; };
-		DD97FA2C214C6328005D28FC /* EntityNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F7A0214C6327005D28FC /* EntityNetwork.m */; };
-		DD97FA2D214C6328005D28FC /* IBeacon.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F7A5214C6327005D28FC /* IBeacon.m */; };
-		DD97FA2E214C6328005D28FC /* EntityMagnetometer.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F7AA214C6327005D28FC /* EntityMagnetometer.m */; };
-		DD97FA2F214C6328005D28FC /* Magnetometer.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F7AB214C6327005D28FC /* Magnetometer.m */; };
-		DD97FA30214C6328005D28FC /* EntityMagnetometer+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F7AC214C6327005D28FC /* EntityMagnetometer+CoreDataProperties.m */; };
-		DD97FA31214C6328005D28FC /* EntityGyroscope+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F7AF214C6327005D28FC /* EntityGyroscope+CoreDataProperties.m */; };
-		DD97FA32214C6328005D28FC /* EntityGyroscope.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F7B2214C6327005D28FC /* EntityGyroscope.m */; };
-		DD97FA33214C6328005D28FC /* Gyroscope.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F7B4214C6327005D28FC /* Gyroscope.m */; };
-		DD97FA34214C6328005D28FC /* Pedometer.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F7B6214C6327005D28FC /* Pedometer.m */; };
-		DD97FA35214C6328005D28FC /* AmbientLight.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F7BA214C6327005D28FC /* AmbientLight.m */; };
-		DD97FA36214C6328005D28FC /* EntityProximity+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F7BC214C6327005D28FC /* EntityProximity+CoreDataProperties.m */; };
-		DD97FA37214C6328005D28FC /* EntityProximity.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F7BD214C6327005D28FC /* EntityProximity.m */; };
-		DD97FA38214C6328005D28FC /* Proximity.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F7BE214C6327005D28FC /* Proximity.m */; };
-		DD97FA39214C6328005D28FC /* EntityScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F7D7214C6328005D28FC /* EntityScreen.m */; };
-		DD97FA3A214C6328005D28FC /* Screen.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F7D8214C6328005D28FC /* Screen.m */; };
-		DD97FA3B214C6328005D28FC /* EntityScreen+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F7D9214C6328005D28FC /* EntityScreen+CoreDataProperties.m */; };
-		DD97FA42214C6328005D28FC /* EntityBatteryCharge+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F7EF214C6328005D28FC /* EntityBatteryCharge+CoreDataProperties.m */; };
-		DD97FA43214C6328005D28FC /* EntityBattery+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F7F0214C6328005D28FC /* EntityBattery+CoreDataProperties.m */; };
-		DD97FA44214C6328005D28FC /* BatteryCharge.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F7F7214C6328005D28FC /* BatteryCharge.m */; };
-		DD97FA45214C6328005D28FC /* Battery.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F7F8214C6328005D28FC /* Battery.m */; };
-		DD97FA46214C6328005D28FC /* EntityBattery.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F7FB214C6328005D28FC /* EntityBattery.m */; };
-		DD97FA47214C6328005D28FC /* EntityBatteryDischarge.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F7FC214C6328005D28FC /* EntityBatteryDischarge.m */; };
-		DD97FA48214C6328005D28FC /* EntityBatteryCharge.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F7FE214C6328005D28FC /* EntityBatteryCharge.m */; };
-		DD97FA49214C6328005D28FC /* EntityBatteryDischarge+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F7FF214C6328005D28FC /* EntityBatteryDischarge+CoreDataProperties.m */; };
-		DD97FA4A214C6328005D28FC /* BatteryDischarge.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F800214C6328005D28FC /* BatteryDischarge.m */; };
-		DD97FA4B214C6328005D28FC /* EntityRotation+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F802214C6328005D28FC /* EntityRotation+CoreDataProperties.m */; };
-		DD97FA4C214C6328005D28FC /* EntityRotation.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F803214C6328005D28FC /* EntityRotation.m */; };
-		DD97FA4D214C6328005D28FC /* Rotation.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F807214C6328005D28FC /* Rotation.m */; };
-		DD97FA4E214C6328005D28FC /* LinearAccelerometer.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F809214C6328005D28FC /* LinearAccelerometer.m */; };
-		DD97FA4F214C6328005D28FC /* EntityLinearAccelerometer.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F80A214C6328005D28FC /* EntityLinearAccelerometer.m */; };
-		DD97FA50214C6328005D28FC /* EntityLinearAccelerometer+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F80B214C6328005D28FC /* EntityLinearAccelerometer+CoreDataProperties.m */; };
-		DD97FA51214C6328005D28FC /* EntityDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F813214C6328005D28FC /* EntityDebug.m */; };
-		DD97FA52214C6328005D28FC /* Debug.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F814214C6328005D28FC /* Debug.m */; };
-		DD97FA53214C6328005D28FC /* EntityDebug+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F815214C6328005D28FC /* EntityDebug+CoreDataProperties.m */; };
-		DD97FA54214C6328005D28FC /* EntityBarometer+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F818214C6328005D28FC /* EntityBarometer+CoreDataProperties.m */; };
-		DD97FA55214C6328005D28FC /* EntityBarometer.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F81A214C6328005D28FC /* EntityBarometer.m */; };
-		DD97FA56214C6328005D28FC /* Barometer.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F81C214C6328005D28FC /* Barometer.m */; };
-		DD97FA57214C6328005D28FC /* AWARECore.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F81E214C6328005D28FC /* AWARECore.m */; };
-		DD97FA58214C6328005D28FC /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F81F214C6328005D28FC /* Reachability.m */; };
-		DD97FA59214C6328005D28FC /* AWAREKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F821214C6328005D28FC /* AWAREKeys.m */; };
-		DD97FA5A214C6328005D28FC /* AWARESensorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F822214C6328005D28FC /* AWARESensorManager.m */; };
-		DD97FA5B214C6328005D28FC /* TCQMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F825214C6328005D28FC /* TCQMaker.m */; };
-		DD97FA5C214C6328005D28FC /* SSLManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F830214C6328005D28FC /* SSLManager.m */; };
-		DD97FA5D214C6328005D28FC /* AWARESchedule.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F831214C6328005D28FC /* AWARESchedule.m */; };
-		DD97FA5E214C6328005D28FC /* AWARESensors.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F832214C6328005D28FC /* AWARESensors.m */; };
-		DD97FA5F214C6328005D28FC /* AWARECoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F835214C6328005D28FC /* AWARECoreDataManager.m */; };
-		DD97FA60214C6328005D28FC /* AWARESensor.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F838214C6328005D28FC /* AWARESensor.m */; };
-		DD97FA61214C6328005D28FC /* AWAREUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F839214C6328005D28FC /* AWAREUtils.m */; };
-		DD97FA62214C6328005D28FC /* AWAREPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F83A214C6328005D28FC /* AWAREPlugin.m */; };
-		DD97FA63214C6328005D28FC /* AWAREDataUploader.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F83D214C6328005D28FC /* AWAREDataUploader.m */; };
-		DD97FA64214C6328005D28FC /* AWAREDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F83E214C6328005D28FC /* AWAREDelegate.m */; };
-		DD97FA65214C6328005D28FC /* AWAREStudy.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F83F214C6328005D28FC /* AWAREStudy.m */; };
-		DD97FA66214C6328005D28FC /* LocalFileStorageHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F840214C6328005D28FC /* LocalFileStorageHelper.m */; };
-		DD97FA67214C6328005D28FC /* DBTableCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F841214C6328005D28FC /* DBTableCreator.m */; };
-		DD97FA68214C6328005D28FC /* AWAREUploader.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F842214C6328005D28FC /* AWAREUploader.m */; };
-		DD97FA69214C6328005D28FC /* AWAREDebugMessageLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F845214C6328005D28FC /* AWAREDebugMessageLogger.m */; };
-		DD97FA6A214C6328005D28FC /* SQLiteSyncExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F846214C6328005D28FC /* SQLiteSyncExecutor.m */; };
-		DD97FA6B214C6328005D28FC /* EntityESM+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F848214C6328005D28FC /* EntityESM+CoreDataClass.m */; };
-		DD97FA6C214C6328005D28FC /* AWAREEsmUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F84B214C6328005D28FC /* AWAREEsmUtils.m */; };
-		DD97FA6D214C6328005D28FC /* ESMStorageHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F84C214C6328005D28FC /* ESMStorageHelper.m */; };
-		DD97FA6E214C6328005D28FC /* EntityESMAnswer+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F84D214C6328005D28FC /* EntityESMAnswer+CoreDataProperties.m */; };
-		DD97FA70214C6328005D28FC /* IOSESMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F84F214C6328005D28FC /* IOSESMViewController.m */; };
-		DD97FA71214C6328005D28FC /* EntityESMHistory+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F850214C6328005D28FC /* EntityESMHistory+CoreDataProperties.m */; };
-		DD97FA72214C6328005D28FC /* ESMManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F853214C6328005D28FC /* ESMManager.m */; };
-		DD97FA73214C6328005D28FC /* IOSESMScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F854214C6328005D28FC /* IOSESMScrollViewController.m */; };
-		DD97FA74214C6328005D28FC /* EntityESMHistory.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F855214C6328005D28FC /* EntityESMHistory.m */; };
-		DD97FA75214C6328005D28FC /* EntityESMAnswer.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F857214C6328005D28FC /* EntityESMAnswer.m */; };
-		DD97FA76214C6328005D28FC /* PamSchema.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F859214C6328005D28FC /* PamSchema.m */; };
-		DD97FA77214C6328005D28FC /* 12_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DD97F85C214C6328005D28FC /* 12_2.jpg */; };
-		DD97FA78214C6328005D28FC /* 12_3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DD97F85D214C6328005D28FC /* 12_3.jpg */; };
-		DD97FA79214C6328005D28FC /* 12_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DD97F85E214C6328005D28FC /* 12_1.jpg */; };
-		DD97FA7A214C6328005D28FC /* 11_3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DD97F860214C6328005D28FC /* 11_3.jpg */; };
-		DD97FA7B214C6328005D28FC /* 11_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DD97F861214C6328005D28FC /* 11_2.jpg */; };
-		DD97FA7C214C6328005D28FC /* 11_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DD97F862214C6328005D28FC /* 11_1.jpg */; };
-		DD97FA7D214C6328005D28FC /* 5_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DD97F864214C6328005D28FC /* 5_1.jpg */; };
-		DD97FA7E214C6328005D28FC /* 5_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DD97F865214C6328005D28FC /* 5_2.jpg */; };
-		DD97FA7F214C6328005D28FC /* 5_3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DD97F866214C6328005D28FC /* 5_3.jpg */; };
-		DD97FA80214C6328005D28FC /* 3_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DD97F868214C6328005D28FC /* 3_1.jpg */; };
-		DD97FA81214C6328005D28FC /* 3_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DD97F869214C6328005D28FC /* 3_2.jpg */; };
-		DD97FA82214C6328005D28FC /* 3_3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DD97F86A214C6328005D28FC /* 3_3.jpg */; };
-		DD97FA83214C6328005D28FC /* 14_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DD97F86C214C6328005D28FC /* 14_2.jpg */; };
-		DD97FA84214C6328005D28FC /* 14_3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DD97F86D214C6328005D28FC /* 14_3.jpg */; };
-		DD97FA85214C6328005D28FC /* 14_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DD97F86E214C6328005D28FC /* 14_1.jpg */; };
-		DD97FA86214C6328005D28FC /* 15_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DD97F870214C6328005D28FC /* 15_1.jpg */; };
-		DD97FA87214C6328005D28FC /* 15_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DD97F871214C6328005D28FC /* 15_2.jpg */; };
-		DD97FA88214C6328005D28FC /* 15_3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DD97F872214C6328005D28FC /* 15_3.jpg */; };
-		DD97FA89214C6328005D28FC /* 4_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DD97F874214C6328005D28FC /* 4_2.jpg */; };
-		DD97FA8A214C6328005D28FC /* 4_3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DD97F875214C6328005D28FC /* 4_3.jpg */; };
-		DD97FA8B214C6328005D28FC /* 4_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DD97F876214C6328005D28FC /* 4_1.jpg */; };
-		DD97FA8C214C6328005D28FC /* 2_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DD97F878214C6328005D28FC /* 2_2.jpg */; };
-		DD97FA8D214C6328005D28FC /* 2_3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DD97F879214C6328005D28FC /* 2_3.jpg */; };
-		DD97FA8E214C6328005D28FC /* 2_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DD97F87A214C6328005D28FC /* 2_1.jpg */; };
-		DD97FA8F214C6328005D28FC /* 7_3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DD97F87C214C6328005D28FC /* 7_3.jpg */; };
-		DD97FA90214C6328005D28FC /* 7_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DD97F87D214C6328005D28FC /* 7_2.jpg */; };
-		DD97FA91214C6328005D28FC /* 7_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DD97F87E214C6328005D28FC /* 7_1.jpg */; };
-		DD97FA92214C6328005D28FC /* 8_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DD97F880214C6328005D28FC /* 8_1.jpg */; };
-		DD97FA93214C6328005D28FC /* 8_3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DD97F881214C6328005D28FC /* 8_3.jpg */; };
-		DD97FA94214C6328005D28FC /* 8_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DD97F882214C6328005D28FC /* 8_2.jpg */; };
-		DD97FA95214C6328005D28FC /* 6_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DD97F884214C6328005D28FC /* 6_1.jpg */; };
-		DD97FA96214C6328005D28FC /* 6_3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DD97F885214C6328005D28FC /* 6_3.jpg */; };
-		DD97FA97214C6328005D28FC /* 6_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DD97F886214C6328005D28FC /* 6_2.jpg */; };
-		DD97FA98214C6328005D28FC /* 10_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DD97F888214C6328005D28FC /* 10_1.jpg */; };
-		DD97FA99214C6328005D28FC /* 10_3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DD97F889214C6328005D28FC /* 10_3.jpg */; };
-		DD97FA9A214C6328005D28FC /* 10_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DD97F88A214C6328005D28FC /* 10_2.jpg */; };
-		DD97FA9B214C6328005D28FC /* 13_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DD97F88C214C6328005D28FC /* 13_1.jpg */; };
-		DD97FA9C214C6328005D28FC /* 13_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DD97F88D214C6328005D28FC /* 13_2.jpg */; };
-		DD97FA9D214C6328005D28FC /* 13_3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DD97F88E214C6328005D28FC /* 13_3.jpg */; };
-		DD97FA9E214C6328005D28FC /* 1_3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DD97F890214C6328005D28FC /* 1_3.jpg */; };
-		DD97FA9F214C6328005D28FC /* 1_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DD97F891214C6328005D28FC /* 1_2.jpg */; };
-		DD97FAA0214C6328005D28FC /* 1_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DD97F892214C6328005D28FC /* 1_1.jpg */; };
-		DD97FAA1214C6328005D28FC /* 16_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DD97F894214C6328005D28FC /* 16_1.jpg */; };
-		DD97FAA2214C6328005D28FC /* 16_3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DD97F895214C6328005D28FC /* 16_3.jpg */; };
-		DD97FAA3214C6328005D28FC /* 16_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DD97F896214C6328005D28FC /* 16_2.jpg */; };
-		DD97FAA4214C6328005D28FC /* 9_3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DD97F898214C6328005D28FC /* 9_3.jpg */; };
-		DD97FAA5214C6328005D28FC /* 9_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DD97F899214C6328005D28FC /* 9_2.jpg */; };
-		DD97FAA6214C6328005D28FC /* 9_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DD97F89A214C6328005D28FC /* 9_1.jpg */; };
-		DD97FAA7214C6328005D28FC /* EntityESMSchedule+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F89D214C6328005D28FC /* EntityESMSchedule+CoreDataProperties.m */; };
-		DD97FAA8214C6328005D28FC /* EntityESM+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F89E214C6328005D28FC /* EntityESM+CoreDataProperties.m */; };
-		DD97FAA9214C6328005D28FC /* ESMSchedule.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F89F214C6328005D28FC /* ESMSchedule.m */; };
-		DD97FAAA214C6328005D28FC /* ESMPAMView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F8A3214C6328005D28FC /* ESMPAMView.m */; };
-		DD97FAAB214C6328005D28FC /* ESMRadioView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F8A6214C6328005D28FC /* ESMRadioView.m */; };
-		DD97FAAC214C6328005D28FC /* ESMScaleView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F8A9214C6328005D28FC /* ESMScaleView.m */; };
-		DD97FAAD214C6328005D28FC /* ESMDateTimePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F8AD214C6328005D28FC /* ESMDateTimePickerView.m */; };
-		DD97FAAE214C6328005D28FC /* ESMLikertScaleView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F8B0214C6328005D28FC /* ESMLikertScaleView.m */; };
-		DD97FAAF214C6328005D28FC /* ESMNumberView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F8B2214C6328005D28FC /* ESMNumberView.m */; };
-		DD97FAB0214C6328005D28FC /* ESMVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F8B5214C6328005D28FC /* ESMVideoView.m */; };
-		DD97FAB1214C6328005D28FC /* BaseESMView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F8B7214C6328005D28FC /* BaseESMView.m */; };
-		DD97FAB2214C6328005D28FC /* ESMPictureView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F8B9214C6328005D28FC /* ESMPictureView.m */; };
-		DD97FAB3214C6328005D28FC /* ESMFreeTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F8BD214C6328005D28FC /* ESMFreeTextView.m */; };
-		DD97FAB4214C6328005D28FC /* ESMWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F8C0214C6328005D28FC /* ESMWebView.m */; };
-		DD97FAB5214C6328005D28FC /* ESMClockLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F8C5214C6328005D28FC /* ESMClockLineView.m */; };
-		DD97FAB6214C6328005D28FC /* ESMClockTimePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F8C6214C6328005D28FC /* ESMClockTimePickerView.m */; };
-		DD97FAB7214C6328005D28FC /* BaseESMView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD97F8C7214C6328005D28FC /* BaseESMView.xib */; };
-		DD97FAB8214C6328005D28FC /* ESMQuickAnswerView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F8C9214C6328005D28FC /* ESMQuickAnswerView.m */; };
-		DD97FAB9214C6328005D28FC /* ESMAudioView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F8CC214C6328005D28FC /* ESMAudioView.m */; };
-		DD97FABA214C6328005D28FC /* ESMCheckBoxView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F8D0214C6328005D28FC /* ESMCheckBoxView.m */; };
-		DD97FABB214C6328005D28FC /* ESM.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F8DA214C6328005D28FC /* ESM.m */; };
-		DD97FABC214C6328005D28FC /* AWAREEsmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F8DB214C6328005D28FC /* AWAREEsmViewController.m */; };
-		DD97FABD214C6328005D28FC /* SingleESMObject.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F8DD214C6328005D28FC /* SingleESMObject.m */; };
-		DD97FABE214C6328005D28FC /* MultiESMObject.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F8E0214C6328005D28FC /* MultiESMObject.m */; };
-		DD97FADD214C6329005D28FC /* EntityIOSActivityRecognition+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F920214C6328005D28FC /* EntityIOSActivityRecognition+CoreDataProperties.m */; };
-		DD97FADE214C6329005D28FC /* IOSActivityRecognition.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F924214C6328005D28FC /* IOSActivityRecognition.m */; };
-		DD97FADF214C6329005D28FC /* EntityIOSActivityRecognition+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F925214C6328005D28FC /* EntityIOSActivityRecognition+CoreDataClass.m */; };
-		DD97FAE0214C6329005D28FC /* EntityLocationVisit.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F927214C6328005D28FC /* EntityLocationVisit.m */; };
-		DD97FAE1214C6329005D28FC /* FusedLocations.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F92B214C6328005D28FC /* FusedLocations.m */; };
-		DD97FAE2214C6329005D28FC /* EntityLocationVisit+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F92C214C6328005D28FC /* EntityLocationVisit+CoreDataProperties.m */; };
-		DD97FAE3214C6329005D28FC /* BalacnedCampusESMScheduler.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F92E214C6328005D28FC /* BalacnedCampusESMScheduler.m */; };
-		DD97FAE4214C6329005D28FC /* EntityESMAnswerBC+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F92F214C6328005D28FC /* EntityESMAnswerBC+CoreDataClass.m */; };
-		DD97FAE5214C6329005D28FC /* EntityESMAnswerBC+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F933214C6328005D28FC /* EntityESMAnswerBC+CoreDataProperties.m */; };
-		DD97FAE6214C6329005D28FC /* EntityCalendar+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F935214C6328005D28FC /* EntityCalendar+CoreDataClass.m */; };
-		DD97FAE7214C6329005D28FC /* EntityCalendar+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F936214C6328005D28FC /* EntityCalendar+CoreDataProperties.m */; };
-		DD97FAE8214C6329005D28FC /* Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD97F939214C6328005D28FC /* Calendar.swift */; };
-		DD97FAE9214C6329005D28FC /* EntityActivityRecognition.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F93B214C6328005D28FC /* EntityActivityRecognition.m */; };
-		DD97FAEA214C6329005D28FC /* ActivityRecognition.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F93C214C6328005D28FC /* ActivityRecognition.m */; };
-		DD97FAEB214C6329005D28FC /* EntityActivityRecognition+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F93D214C6328005D28FC /* EntityActivityRecognition+CoreDataProperties.m */; };
-		DD97FAEC214C6329005D28FC /* Memory.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F942214C6328005D28FC /* Memory.m */; };
-		DD97FAED214C6329005D28FC /* EntityMemory.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F943214C6328005D28FC /* EntityMemory.m */; };
-		DD97FAEE214C6329005D28FC /* EntityMemory+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F947214C6328005D28FC /* EntityMemory+CoreDataProperties.m */; };
-		DD97FAEF214C6329005D28FC /* WebESM.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F94A214C6328005D28FC /* WebESM.m */; };
-		DD97FAF0214C6329005D28FC /* AWAREHealthKitQuantity.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F94C214C6328005D28FC /* AWAREHealthKitQuantity.m */; };
-		DD97FAF1214C6329005D28FC /* AWAREHealthKitWorkout.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F951214C6328005D28FC /* AWAREHealthKitWorkout.m */; };
-		DD97FAF2214C6329005D28FC /* AWAREHealthKitCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F952214C6328005D28FC /* AWAREHealthKitCategory.m */; };
-		DD97FAF3214C6329005D28FC /* AWAREHealthKit.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F953214C6328005D28FC /* AWAREHealthKit.m */; };
-		DD97FAF4214C6329005D28FC /* EntityContact+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F955214C6328005D28FC /* EntityContact+CoreDataClass.m */; };
-		DD97FAF5214C6329005D28FC /* Contacts.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F956214C6328005D28FC /* Contacts.m */; };
-		DD97FAF6214C6329005D28FC /* EntityContact+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F95A214C6328005D28FC /* EntityContact+CoreDataProperties.m */; };
-		DD97FAF7214C6329005D28FC /* EntityLabel+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F95D214C6328005D28FC /* EntityLabel+CoreDataProperties.m */; };
-		DD97FAF8214C6329005D28FC /* Labels.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F95E214C6328005D28FC /* Labels.m */; };
-		DD97FAF9214C6329005D28FC /* EntityLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F95F214C6328005D28FC /* EntityLabel.m */; };
-		DD97FAFA214C6329005D28FC /* EntityFitbitDevice+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F963214C6328005D28FC /* EntityFitbitDevice+CoreDataProperties.m */; };
-		DD97FAFB214C6329005D28FC /* FitbitData.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F964214C6328005D28FC /* FitbitData.m */; };
-		DD97FAFC214C6329005D28FC /* Fitbit.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F965214C6328005D28FC /* Fitbit.m */; };
-		DD97FAFD214C6329005D28FC /* EntityFitbitData+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F966214C6328005D28FC /* EntityFitbitData+CoreDataClass.m */; };
-		DD97FAFE214C6329005D28FC /* EntityFitbitDevice+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F967214C6328005D28FC /* EntityFitbitDevice+CoreDataClass.m */; };
-		DD97FAFF214C6329005D28FC /* EntityFitbitData+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F968214C6328005D28FC /* EntityFitbitData+CoreDataProperties.m */; };
-		DD97FB00214C6329005D28FC /* FitbitDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F970214C6328005D28FC /* FitbitDevice.m */; };
-		DD97FB01214C6329005D28FC /* Observer.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F973214C6328005D28FC /* Observer.m */; };
-		DD97FB02214C6329005D28FC /* GoogleCalPush.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F975214C6328005D28FC /* GoogleCalPush.m */; };
-		DD97FB03214C6329005D28FC /* BasicSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F979214C6328005D28FC /* BasicSettings.m */; };
-		DD97FB04214C6329005D28FC /* IOSESM.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F97C214C6328005D28FC /* IOSESM.m */; };
-		DD97FB05214C6329005D28FC /* SensorTag.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F97E214C6328005D28FC /* SensorTag.m */; };
-		DD97FB06214C6329005D28FC /* CalEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F981214C6328005D28FC /* CalEvent.m */; };
-		DD97FB07214C6329005D28FC /* GoogleCalPull.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F983214C6328005D28FC /* GoogleCalPull.m */; };
-		DD97FB09214C6329005D28FC /* Meal.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F988214C6328005D28FC /* Meal.m */; };
-		DD97FB0A214C6329005D28FC /* EntityAmbientNoise+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F98F214C6328005D28FC /* EntityAmbientNoise+CoreDataProperties.m */; };
-		DD97FB0B214C6329005D28FC /* AudioAnalysis.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F990214C6328005D28FC /* AudioAnalysis.m */; };
-		DD97FB0C214C6329005D28FC /* AmbientNoise.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F991214C6328005D28FC /* AmbientNoise.m */; };
-		DD97FB0D214C6329005D28FC /* EntityAmbientNoise+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F992214C6328005D28FC /* EntityAmbientNoise+CoreDataClass.m */; };
-		DD97FB11214C6329005D28FC /* EntityDeviceUsage.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F99C214C6328005D28FC /* EntityDeviceUsage.m */; };
-		DD97FB12214C6329005D28FC /* EntityDeviceUsage+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F99D214C6328005D28FC /* EntityDeviceUsage+CoreDataProperties.m */; };
-		DD97FB13214C6329005D28FC /* DeviceUsage.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F99E214C6328005D28FC /* DeviceUsage.m */; };
-		DD97FB14214C6329005D28FC /* EstimoteAmbientLight.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F9A3214C6328005D28FC /* EstimoteAmbientLight.m */; };
-		DD97FB15214C6329005D28FC /* EntityEstimoteTemperature+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F9A4214C6328005D28FC /* EntityEstimoteTemperature+CoreDataClass.m */; };
-		DD97FB16214C6329005D28FC /* EntityEstimoteMotion+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F9A6214C6328005D28FC /* EntityEstimoteMotion+CoreDataProperties.m */; };
-		DD97FB17214C6329005D28FC /* EntityEstimoteAmbientLight+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F9A7214C6328005D28FC /* EntityEstimoteAmbientLight+CoreDataClass.m */; };
-		DD97FB18214C6329005D28FC /* EstimoteTemperature.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F9A9214C6328005D28FC /* EstimoteTemperature.m */; };
-		DD97FB19214C6329005D28FC /* EntityEstimoteAirpressure+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F9AA214C6328005D28FC /* EntityEstimoteAirpressure+CoreDataClass.m */; };
-		DD97FB1A214C6329005D28FC /* EstimoteMotion.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F9AD214C6328005D28FC /* EstimoteMotion.m */; };
-		DD97FB1B214C6329005D28FC /* EntityEstimoteMotion+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F9AE214C6328005D28FC /* EntityEstimoteMotion+CoreDataClass.m */; };
-		DD97FB1C214C6329005D28FC /* Estimote.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F9B1214C6328005D28FC /* Estimote.m */; };
-		DD97FB1D214C6329005D28FC /* EstimoteAirpressure.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F9B4214C6328005D28FC /* EstimoteAirpressure.m */; };
-		DD97FB1E214C6329005D28FC /* EntityEstimoteAirpressure+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F9B7214C6328005D28FC /* EntityEstimoteAirpressure+CoreDataProperties.m */; };
-		DD97FB1F214C6329005D28FC /* EntityEstimoteTemperature+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F9BA214C6328005D28FC /* EntityEstimoteTemperature+CoreDataProperties.m */; };
-		DD97FB20214C6329005D28FC /* EntityEstimoteAmbientLight+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F9BB214C6328005D28FC /* EntityEstimoteAmbientLight+CoreDataProperties.m */; };
-		DD97FB21214C6329005D28FC /* EntityNTPTime+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F9BE214C6328005D28FC /* EntityNTPTime+CoreDataProperties.m */; };
-		DD97FB22214C6329005D28FC /* EntityNTPTime.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F9C0214C6328005D28FC /* EntityNTPTime.m */; };
-		DD97FB23214C6329005D28FC /* NTPTime.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F9C2214C6328005D28FC /* NTPTime.m */; };
-		DD97FB24214C6329005D28FC /* EntityOpenWeather+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F9C5214C6328005D28FC /* EntityOpenWeather+CoreDataProperties.m */; };
-		DD97FB25214C6329005D28FC /* EntityOpenWeather.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F9C6214C6328005D28FC /* EntityOpenWeather.m */; };
-		DD97FB26214C6329005D28FC /* OpenWeather.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F9C7214C6328005D28FC /* OpenWeather.m */; };
-		DD97FB27214C6329005D28FC /* EntityPushNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F9CE214C6328005D28FC /* EntityPushNotification.m */; };
-		DD97FB28214C6329005D28FC /* PushNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F9CF214C6328005D28FC /* PushNotification.m */; };
-		DD97FB29214C6329005D28FC /* EntityPushNotification+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F9D0214C6328005D28FC /* EntityPushNotification+CoreDataProperties.m */; };
-		DD97FB2A214C6329005D28FC /* EntityBLEHeartRate+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F9D2214C6328005D28FC /* EntityBLEHeartRate+CoreDataProperties.m */; };
-		DD97FB2B214C6329005D28FC /* EntityBLEHeartRate.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F9D4214C6328005D28FC /* EntityBLEHeartRate.m */; };
-		DD97FB2C214C6329005D28FC /* BLEHeartRate.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F9D5214C6328005D28FC /* BLEHeartRate.m */; };
-		DD97FB2D214C6329005D28FC /* GoogleLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F9DA214C6328005D28FC /* GoogleLogin.m */; };
-		DD97FB2E214C6329005D28FC /* FitbitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F9DC214C6328005D28FC /* FitbitViewController.m */; };
-		DD97FB2F214C6329005D28FC /* PNPieChartDataItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F9E1214C6328005D28FC /* PNPieChartDataItem.m */; };
-		DD97FB30214C6329005D28FC /* PNChartLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F9E6214C6328005D28FC /* PNChartLabel.m */; };
-		DD97FB31214C6329005D28FC /* PNScatterChartDataItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F9E8214C6328005D28FC /* PNScatterChartDataItem.m */; };
-		DD97FB32214C6329005D28FC /* PNRadarChartDataItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F9EA214C6328005D28FC /* PNRadarChartDataItem.m */; };
-		DD97FB33214C6329005D28FC /* PNGenericChart.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F9EB214C6328005D28FC /* PNGenericChart.m */; };
-		DD97FB34214C6329005D28FC /* PNBarChart.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F9EC214C6328005D28FC /* PNBarChart.m */; };
-		DD97FB35214C6329005D28FC /* PNLineChart.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F9ED214C6328005D28FC /* PNLineChart.m */; };
-		DD97FB36214C6329005D28FC /* PNCircleChart.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F9EE214C6328005D28FC /* PNCircleChart.m */; };
-		DD97FB37214C6329005D28FC /* PNLineChartData.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F9EF214C6328005D28FC /* PNLineChartData.m */; };
-		DD97FB38214C6329005D28FC /* PNLineChartDataItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F9F0214C6328005D28FC /* PNLineChartDataItem.m */; };
-		DD97FB39214C6329005D28FC /* PNPieChart.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F9F2214C6328005D28FC /* PNPieChart.m */; };
-		DD97FB3A214C6329005D28FC /* PNRadarChart.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F9F3214C6328005D28FC /* PNRadarChart.m */; };
-		DD97FB3B214C6329005D28FC /* PNColor.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F9F5214C6328005D28FC /* PNColor.m */; };
-		DD97FB3C214C6329005D28FC /* PNScatterChartData.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F9F6214C6328005D28FC /* PNScatterChartData.m */; };
-		DD97FB3D214C6329005D28FC /* PNBar.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F9F7214C6328005D28FC /* PNBar.m */; };
-		DD97FB3E214C6329005D28FC /* PNScatterChart.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F9FB214C6328005D28FC /* PNScatterChart.m */; };
-		DD97FB3F214C6329005D28FC /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97FA05214C6328005D28FC /* WebViewController.m */; };
-		DD97FB40214C6329005D28FC /* QRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97FA06214C6328005D28FC /* QRCodeViewController.m */; };
-		DD97FB42214C6329005D28FC /* DataVisualizationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97FA09214C6328005D28FC /* DataVisualizationViewController.m */; };
-		DD97FB43214C6329005D28FC /* SettingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97FA0A214C6328005D28FC /* SettingTableViewController.m */; };
-		DD97FB44214C6329005D28FC /* GoogleLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97FA0B214C6328005D28FC /* GoogleLoginViewController.m */; };
-		DD97FB45214C6329005D28FC /* AppSettingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97FA0C214C6328005D28FC /* AppSettingTableViewController.m */; };
-		DD97FB46214C6329005D28FC /* IntroPage5.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD97FA0D214C6328005D28FC /* IntroPage5.xib */; };
-		DD97FB47214C6329005D28FC /* AWAREMqtt.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97FA12214C6328005D28FC /* AWAREMqtt.m */; };
-		DD97FB48214C648A005D28FC /* EntityESMSchedule.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97F84E214C6328005D28FC /* EntityESMSchedule.m */; };
-		DD97FB4C214C7E0E005D28FC /* EntityAmbientNoise.m in Sources */ = {isa = PBXBuildFile; fileRef = DD97FB4B214C7E0E005D28FC /* EntityAmbientNoise.m */; };
-		DD97FB52214C812F005D28FC /* AWARE.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DD97FB4D214C812F005D28FC /* AWARE.xcdatamodeld */; };
 		F93348ADB98AF13F3E6CB019 /* Pods_HealthTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 897EFA36D6834949B1D6139B /* Pods_HealthTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -2520,59 +2253,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD97FA9E214C6328005D28FC /* 1_3.jpg in Resources */,
-				DD97FA93214C6328005D28FC /* 8_3.jpg in Resources */,
-				DD97FA8D214C6328005D28FC /* 2_3.jpg in Resources */,
-				DD97FA98214C6328005D28FC /* 10_1.jpg in Resources */,
-				DD97FA81214C6328005D28FC /* 3_2.jpg in Resources */,
-				DD97FB46214C6329005D28FC /* IntroPage5.xib in Resources */,
 				846B532920EACB16002CF471 /* LaunchScreen.storyboard in Resources */,
-				DD97FA8E214C6328005D28FC /* 2_1.jpg in Resources */,
-				DD97FA87214C6328005D28FC /* 15_2.jpg in Resources */,
-				DD97FA94214C6328005D28FC /* 8_2.jpg in Resources */,
-				DD97FA92214C6328005D28FC /* 8_1.jpg in Resources */,
-				DD97FAA4214C6328005D28FC /* 9_3.jpg in Resources */,
-				DD97FAB7214C6328005D28FC /* BaseESMView.xib in Resources */,
-				DD97FA85214C6328005D28FC /* 14_1.jpg in Resources */,
-				DD97FA97214C6328005D28FC /* 6_2.jpg in Resources */,
 				846B532620EACB16002CF471 /* Assets.xcassets in Resources */,
-				DD97FA7C214C6328005D28FC /* 11_1.jpg in Resources */,
-				DD97FA9C214C6328005D28FC /* 13_2.jpg in Resources */,
-				DD97FA86214C6328005D28FC /* 15_1.jpg in Resources */,
-				DD97FAA2214C6328005D28FC /* 16_3.jpg in Resources */,
-				DD97FA95214C6328005D28FC /* 6_1.jpg in Resources */,
-				DD97FA7B214C6328005D28FC /* 11_2.jpg in Resources */,
-				DD97FA79214C6328005D28FC /* 12_1.jpg in Resources */,
-				DD97FA8F214C6328005D28FC /* 7_3.jpg in Resources */,
-				DD97FAA1214C6328005D28FC /* 16_1.jpg in Resources */,
-				DD97FA82214C6328005D28FC /* 3_3.jpg in Resources */,
-				DD97FA80214C6328005D28FC /* 3_1.jpg in Resources */,
-				DD97FA84214C6328005D28FC /* 14_3.jpg in Resources */,
-				DD97FA90214C6328005D28FC /* 7_2.jpg in Resources */,
-				DD97FA9F214C6328005D28FC /* 1_2.jpg in Resources */,
-				DD97FA9D214C6328005D28FC /* 13_3.jpg in Resources */,
-				DD97FA7D214C6328005D28FC /* 5_1.jpg in Resources */,
-				DD97FA78214C6328005D28FC /* 12_3.jpg in Resources */,
-				DD97FA99214C6328005D28FC /* 10_3.jpg in Resources */,
 				846B532420EACB12002CF471 /* Main.storyboard in Resources */,
-				DD97FA7A214C6328005D28FC /* 11_3.jpg in Resources */,
-				DD97FA9B214C6328005D28FC /* 13_1.jpg in Resources */,
-				DD97FA8C214C6328005D28FC /* 2_2.jpg in Resources */,
-				DD97FA7F214C6328005D28FC /* 5_3.jpg in Resources */,
-				DD97FA83214C6328005D28FC /* 14_2.jpg in Resources */,
-				DD97FAA5214C6328005D28FC /* 9_2.jpg in Resources */,
-				DD97FA8B214C6328005D28FC /* 4_1.jpg in Resources */,
-				DD97FAA0214C6328005D28FC /* 1_1.jpg in Resources */,
-				DD97FA7E214C6328005D28FC /* 5_2.jpg in Resources */,
-				DD97FA9A214C6328005D28FC /* 10_2.jpg in Resources */,
-				DD97FA96214C6328005D28FC /* 6_3.jpg in Resources */,
-				DD97FA8A214C6328005D28FC /* 4_3.jpg in Resources */,
-				DD97FAA6214C6328005D28FC /* 9_1.jpg in Resources */,
-				DD97FA77214C6328005D28FC /* 12_2.jpg in Resources */,
-				DD97FA91214C6328005D28FC /* 7_1.jpg in Resources */,
-				DD97FA88214C6328005D28FC /* 15_3.jpg in Resources */,
-				DD97FA89214C6328005D28FC /* 4_2.jpg in Resources */,
-				DD97FAA3214C6328005D28FC /* 16_2.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2636,13 +2319,13 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Health/Pods-Health-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AppAuth/AppAuth.framework",
 				"${BUILT_PRODUCTS_DIR}/CocoaAsyncSocket/CocoaAsyncSocket.framework",
 				"${BUILT_PRODUCTS_DIR}/EAIntroView/EAIntroView.framework",
 				"${BUILT_PRODUCTS_DIR}/EARestrictedScrollView/EARestrictedScrollView.framework",
 				"${BUILT_PRODUCTS_DIR}/EZAudio/EZAudio.framework",
-				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMAppAuth/GTMAppAuth.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/MQTTKit/MQTTKit.framework",
 				"${BUILT_PRODUCTS_DIR}/NXOAuth2Client/NXOAuth2Client.framework",
 				"${BUILT_PRODUCTS_DIR}/SCNetworkReachability/SCNetworkReachability.framework",
@@ -2653,13 +2336,13 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AppAuth.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaAsyncSocket.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EAIntroView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EARestrictedScrollView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EZAudio.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMAppAuth.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MQTTKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NXOAuth2Client.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SCNetworkReachability.framework",
@@ -2698,12 +2381,30 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Health/Pods-Health-resources.sh",
+				"${PODS_ROOT}/AWAREFramework/AWAREFramework/Assets/AWARE.xcdatamodeld",
+				"${PODS_ROOT}/AWAREFramework/AWAREFramework/Classes/Sensors/Accelerometer/ObjectModels/AWARE_Accelerometer.xcdatamodeld",
+				"${PODS_ROOT}/AWAREFramework/AWAREFramework/Classes/Sensors/Barometer/ObjectModels/AWARE_Barometer.xcdatamodeld",
+				"${PODS_ROOT}/AWAREFramework/AWAREFramework/Classes/Sensors/Gravity/ObjectModels/AWARE_Gravity.xcdatamodeld",
+				"${PODS_ROOT}/AWAREFramework/AWAREFramework/Classes/Sensors/Gyroscope/ObjectModels/AWARE_Gyroscope.xcdatamodeld",
+				"${PODS_ROOT}/AWAREFramework/AWAREFramework/Classes/Sensors/LinearAccelerometer/ObjectModels/AWARE_LinearAccelerometer.xcdatamodeld",
+				"${PODS_ROOT}/AWAREFramework/AWAREFramework/Classes/Sensors/Magnetometer/ObjectModels/AWARE_Magnetometer.xcdatamodeld",
+				"${PODS_ROOT}/AWAREFramework/AWAREFramework/Classes/Sensors/Rotation/ObjectModels/AWARE_Rotation.xcdatamodeld",
+				"${PODS_CONFIGURATION_BUILD_DIR}/AWAREFramework/AWAREFramework.bundle",
 				"${PODS_ROOT}/DeployGateSDK/DeployGateSDK1.0.7.embeddedframework/DeployGateSDK.framework/Versions/A/Resources/en.lproj",
 				"${PODS_ROOT}/DeployGateSDK/DeployGateSDK1.0.7.embeddedframework/DeployGateSDK.framework/Versions/A/Resources/ja.lproj",
 				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AWARE.momd",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AWARE_Accelerometer.momd",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AWARE_Barometer.momd",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AWARE_Gravity.momd",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AWARE_Gyroscope.momd",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AWARE_LinearAccelerometer.momd",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AWARE_Magnetometer.momd",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AWARE_Rotation.momd",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AWAREFramework.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/en.lproj",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ja.lproj",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
@@ -2720,229 +2421,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD97FB48214C648A005D28FC /* EntityESMSchedule.m in Sources */,
-				DD97FB32214C6329005D28FC /* PNRadarChartDataItem.m in Sources */,
-				DD97FB3B214C6329005D28FC /* PNColor.m in Sources */,
-				DD97FAFF214C6329005D28FC /* EntityFitbitData+CoreDataProperties.m in Sources */,
-				DD97FA74214C6328005D28FC /* EntityESMHistory.m in Sources */,
-				DD97FA25214C6328005D28FC /* EntityProcessor.m in Sources */,
-				DD97FA5D214C6328005D28FC /* AWARESchedule.m in Sources */,
 				846B532120EACB12002CF471 /* SurveyViewController.swift in Sources */,
-				DD97FA34214C6328005D28FC /* Pedometer.m in Sources */,
-				DD97FA64214C6328005D28FC /* AWAREDelegate.m in Sources */,
-				DD97FAA9214C6328005D28FC /* ESMSchedule.m in Sources */,
-				DD97FA29214C6328005D28FC /* Accelerometer.m in Sources */,
-				DD97FAF5214C6329005D28FC /* Contacts.m in Sources */,
-				DD97FB35214C6329005D28FC /* PNLineChart.m in Sources */,
-				DD97FB18214C6329005D28FC /* EstimoteTemperature.m in Sources */,
-				DD97FA22214C6328005D28FC /* VisitLocations.m in Sources */,
-				DD97FB1A214C6329005D28FC /* EstimoteMotion.m in Sources */,
-				DD97FB3E214C6329005D28FC /* PNScatterChart.m in Sources */,
-				DD97FA36214C6328005D28FC /* EntityProximity+CoreDataProperties.m in Sources */,
-				DD97FAF3214C6329005D28FC /* AWAREHealthKit.m in Sources */,
-				DD97FA71214C6328005D28FC /* EntityESMHistory+CoreDataProperties.m in Sources */,
-				DD97FA38214C6328005D28FC /* Proximity.m in Sources */,
-				DD97FADE214C6329005D28FC /* IOSActivityRecognition.m in Sources */,
-				DD97FA27214C6328005D28FC /* EntityAccelerometer.m in Sources */,
-				DD97FA65214C6328005D28FC /* AWAREStudy.m in Sources */,
-				DD97FAE4214C6329005D28FC /* EntityESMAnswerBC+CoreDataClass.m in Sources */,
-				DD97FB02214C6329005D28FC /* GoogleCalPush.m in Sources */,
-				DD97FA70214C6328005D28FC /* IOSESMViewController.m in Sources */,
-				DD97FAE2214C6329005D28FC /* EntityLocationVisit+CoreDataProperties.m in Sources */,
-				DD97FB2D214C6329005D28FC /* GoogleLogin.m in Sources */,
-				DD97FAA7214C6328005D28FC /* EntityESMSchedule+CoreDataProperties.m in Sources */,
-				DD97FA35214C6328005D28FC /* AmbientLight.m in Sources */,
-				DD97FA58214C6328005D28FC /* Reachability.m in Sources */,
-				DD97FB22214C6329005D28FC /* EntityNTPTime.m in Sources */,
-				DD97FA73214C6328005D28FC /* IOSESMScrollViewController.m in Sources */,
-				DD97FB31214C6329005D28FC /* PNScatterChartDataItem.m in Sources */,
-				DD97FAF0214C6329005D28FC /* AWAREHealthKitQuantity.m in Sources */,
-				DD97FB3A214C6329005D28FC /* PNRadarChart.m in Sources */,
-				DD97FA1B214C6328005D28FC /* Timezone.m in Sources */,
-				DD97FAFB214C6329005D28FC /* FitbitData.m in Sources */,
-				DD97FB45214C6329005D28FC /* AppSettingTableViewController.m in Sources */,
-				DD97FB33214C6329005D28FC /* PNGenericChart.m in Sources */,
-				DD97FABE214C6328005D28FC /* MultiESMObject.m in Sources */,
-				DD97FB28214C6329005D28FC /* PushNotification.m in Sources */,
-				DD97FAB4214C6328005D28FC /* ESMWebView.m in Sources */,
-				DD97FAEC214C6329005D28FC /* Memory.m in Sources */,
-				DD97FA20214C6328005D28FC /* EntityLocation+CoreDataProperties.m in Sources */,
-				DD97FAAF214C6328005D28FC /* ESMNumberView.m in Sources */,
-				DD97FA13214C6328005D28FC /* Calls.m in Sources */,
-				DD97FA56214C6328005D28FC /* Barometer.m in Sources */,
-				DD97FAAB214C6328005D28FC /* ESMRadioView.m in Sources */,
-				DD97FA68214C6328005D28FC /* AWAREUploader.m in Sources */,
 				84C19F7E2107BD6800C1C932 /* PageViewController.swift in Sources */,
-				DD97FAEA214C6329005D28FC /* ActivityRecognition.m in Sources */,
-				DD97FAE0214C6329005D28FC /* EntityLocationVisit.m in Sources */,
 				846B531F20EACB12002CF471 /* AppDelegate.swift in Sources */,
-				DD97FAAA214C6328005D28FC /* ESMPAMView.m in Sources */,
-				DD97FB36214C6329005D28FC /* PNCircleChart.m in Sources */,
-				DD97FA33214C6328005D28FC /* Gyroscope.m in Sources */,
-				DD97FA67214C6328005D28FC /* DBTableCreator.m in Sources */,
-				DD97FB07214C6329005D28FC /* GoogleCalPull.m in Sources */,
-				DD97FAB3214C6328005D28FC /* ESMFreeTextView.m in Sources */,
-				DD97FB03214C6329005D28FC /* BasicSettings.m in Sources */,
-				DD97FA72214C6328005D28FC /* ESMManager.m in Sources */,
-				DD97FA51214C6328005D28FC /* EntityDebug.m in Sources */,
-				DD97FAF4214C6329005D28FC /* EntityContact+CoreDataClass.m in Sources */,
-				DD97FAA8214C6328005D28FC /* EntityESM+CoreDataProperties.m in Sources */,
-				DD97FA4E214C6328005D28FC /* LinearAccelerometer.m in Sources */,
-				DD97FB0B214C6329005D28FC /* AudioAnalysis.m in Sources */,
-				DD97FB26214C6329005D28FC /* OpenWeather.m in Sources */,
-				DD97FB52214C812F005D28FC /* AWARE.xcdatamodeld in Sources */,
-				DD97FB4C214C7E0E005D28FC /* EntityAmbientNoise.m in Sources */,
-				DD97FAE7214C6329005D28FC /* EntityCalendar+CoreDataProperties.m in Sources */,
-				DD97FA52214C6328005D28FC /* Debug.m in Sources */,
 				84C19F7721078A6F00C1C932 /* SplashViewController.swift in Sources */,
-				DD97FA6E214C6328005D28FC /* EntityESMAnswer+CoreDataProperties.m in Sources */,
-				DD97FA59214C6328005D28FC /* AWAREKeys.m in Sources */,
-				DD97FA37214C6328005D28FC /* EntityProximity.m in Sources */,
-				DD97FAED214C6329005D28FC /* EntityMemory.m in Sources */,
-				DD97FA61214C6328005D28FC /* AWAREUtils.m in Sources */,
-				DD97FB0D214C6329005D28FC /* EntityAmbientNoise+CoreDataClass.m in Sources */,
-				DD97FA47214C6328005D28FC /* EntityBatteryDischarge.m in Sources */,
-				DD97FAB9214C6328005D28FC /* ESMAudioView.m in Sources */,
-				DD97FA45214C6328005D28FC /* Battery.m in Sources */,
-				DD97FA1F214C6328005D28FC /* EntityGravity.m in Sources */,
-				DD97FB14214C6329005D28FC /* EstimoteAmbientLight.m in Sources */,
-				DD97FB19214C6329005D28FC /* EntityEstimoteAirpressure+CoreDataClass.m in Sources */,
-				DD97FA5A214C6328005D28FC /* AWARESensorManager.m in Sources */,
-				DD97FAB0214C6328005D28FC /* ESMVideoView.m in Sources */,
-				DD97FB37214C6329005D28FC /* PNLineChartData.m in Sources */,
-				DD97FA1A214C6328005D28FC /* EntityTimezone.m in Sources */,
-				DD97FAFC214C6329005D28FC /* Fitbit.m in Sources */,
-				DD97FA1C214C6328005D28FC /* EntityTimezone+CoreDataProperties.m in Sources */,
-				DD97FA75214C6328005D28FC /* EntityESMAnswer.m in Sources */,
-				DD97FA42214C6328005D28FC /* EntityBatteryCharge+CoreDataProperties.m in Sources */,
-				DD97FB43214C6329005D28FC /* SettingTableViewController.m in Sources */,
-				DD97FB0C214C6329005D28FC /* AmbientNoise.m in Sources */,
-				DD97FAE8214C6329005D28FC /* Calendar.swift in Sources */,
-				DD97FA2A214C6328005D28FC /* Network.m in Sources */,
-				DD97FB47214C6329005D28FC /* AWAREMqtt.m in Sources */,
-				DD97FA6D214C6328005D28FC /* ESMStorageHelper.m in Sources */,
-				DD97FB29214C6329005D28FC /* EntityPushNotification+CoreDataProperties.m in Sources */,
-				DD97FB04214C6329005D28FC /* IOSESM.m in Sources */,
-				DD97FA2C214C6328005D28FC /* EntityNetwork.m in Sources */,
-				DD97FB44214C6329005D28FC /* GoogleLoginViewController.m in Sources */,
-				DD97FA57214C6328005D28FC /* AWARECore.m in Sources */,
-				DD97FA6A214C6328005D28FC /* SQLiteSyncExecutor.m in Sources */,
-				DD97FB05214C6329005D28FC /* SensorTag.m in Sources */,
-				DD97FA21214C6328005D28FC /* Locations.m in Sources */,
-				DD97FA4A214C6328005D28FC /* BatteryDischarge.m in Sources */,
-				DD97FA3A214C6328005D28FC /* Screen.m in Sources */,
-				DD97FB00214C6329005D28FC /* FitbitDevice.m in Sources */,
-				DD97FAF1214C6329005D28FC /* AWAREHealthKitWorkout.m in Sources */,
-				DD97FA26214C6328005D28FC /* EntityProcessor+CoreDataProperties.m in Sources */,
-				DD97FA4F214C6328005D28FC /* EntityLinearAccelerometer.m in Sources */,
-				DD97FA32214C6328005D28FC /* EntityGyroscope.m in Sources */,
-				DD97FA6C214C6328005D28FC /* AWAREEsmUtils.m in Sources */,
-				DD97FA63214C6328005D28FC /* AWAREDataUploader.m in Sources */,
-				DD97FB25214C6329005D28FC /* EntityOpenWeather.m in Sources */,
-				DD97FA1E214C6328005D28FC /* Gravity.m in Sources */,
-				DD97FAE6214C6329005D28FC /* EntityCalendar+CoreDataClass.m in Sources */,
-				DD97FAAC214C6328005D28FC /* ESMScaleView.m in Sources */,
-				DD97FAE5214C6329005D28FC /* EntityESMAnswerBC+CoreDataProperties.m in Sources */,
-				DD97FB38214C6329005D28FC /* PNLineChartDataItem.m in Sources */,
-				DD97FAE3214C6329005D28FC /* BalacnedCampusESMScheduler.m in Sources */,
-				DD97FB2A214C6329005D28FC /* EntityBLEHeartRate+CoreDataProperties.m in Sources */,
-				DD97FAB6214C6328005D28FC /* ESMClockTimePickerView.m in Sources */,
-				DD97FA39214C6328005D28FC /* EntityScreen.m in Sources */,
-				DD97FA62214C6328005D28FC /* AWAREPlugin.m in Sources */,
-				DD97FABD214C6328005D28FC /* SingleESMObject.m in Sources */,
-				DD97FAAE214C6328005D28FC /* ESMLikertScaleView.m in Sources */,
-				DD97FAFD214C6329005D28FC /* EntityFitbitData+CoreDataClass.m in Sources */,
-				DD97FA55214C6328005D28FC /* EntityBarometer.m in Sources */,
-				DD97FB42214C6329005D28FC /* DataVisualizationViewController.m in Sources */,
-				DD97FA4B214C6328005D28FC /* EntityRotation+CoreDataProperties.m in Sources */,
-				DD97FB11214C6329005D28FC /* EntityDeviceUsage.m in Sources */,
 				DD97F758214ADFA1005D28FC /* ExitViewController.swift in Sources */,
-				DD97FABA214C6328005D28FC /* ESMCheckBoxView.m in Sources */,
-				DD97FAF7214C6329005D28FC /* EntityLabel+CoreDataProperties.m in Sources */,
-				DD97FB2F214C6329005D28FC /* PNPieChartDataItem.m in Sources */,
-				DD97FAFE214C6329005D28FC /* EntityFitbitDevice+CoreDataClass.m in Sources */,
-				DD97FAAD214C6328005D28FC /* ESMDateTimePickerView.m in Sources */,
-				DD97FAB8214C6328005D28FC /* ESMQuickAnswerView.m in Sources */,
-				DD97FAB2214C6328005D28FC /* ESMPictureView.m in Sources */,
-				DD97FB21214C6329005D28FC /* EntityNTPTime+CoreDataProperties.m in Sources */,
-				DD97FA76214C6328005D28FC /* PamSchema.m in Sources */,
-				DD97FA54214C6328005D28FC /* EntityBarometer+CoreDataProperties.m in Sources */,
-				DD97FB01214C6329005D28FC /* Observer.m in Sources */,
-				DD97FA14214C6328005D28FC /* EntityCall+CoreDataProperties.m in Sources */,
-				DD97FA46214C6328005D28FC /* EntityBattery.m in Sources */,
 				DD30CE8A2147453E00249231 /* PermissionViewController.swift in Sources */,
-				DD97FAEE214C6329005D28FC /* EntityMemory+CoreDataProperties.m in Sources */,
-				DD97FB34214C6329005D28FC /* PNBarChart.m in Sources */,
-				DD97FA3B214C6328005D28FC /* EntityScreen+CoreDataProperties.m in Sources */,
-				DD97FA19214C6328005D28FC /* Orientation.m in Sources */,
-				DD97FA28214C6328005D28FC /* EntityAccelerometer+CoreDataProperties.m in Sources */,
-				DD97FAF8214C6329005D28FC /* Labels.m in Sources */,
-				DD97FA31214C6328005D28FC /* EntityGyroscope+CoreDataProperties.m in Sources */,
-				DD97FA30214C6328005D28FC /* EntityMagnetometer+CoreDataProperties.m in Sources */,
-				DD97FB3C214C6329005D28FC /* PNScatterChartData.m in Sources */,
-				DD97FA2E214C6328005D28FC /* EntityMagnetometer.m in Sources */,
-				DD97FABC214C6328005D28FC /* AWAREEsmViewController.m in Sources */,
-				DD97FB24214C6329005D28FC /* EntityOpenWeather+CoreDataProperties.m in Sources */,
-				DD97FA5F214C6328005D28FC /* AWARECoreDataManager.m in Sources */,
-				DD97FA43214C6328005D28FC /* EntityBattery+CoreDataProperties.m in Sources */,
-				DD97FB1E214C6329005D28FC /* EntityEstimoteAirpressure+CoreDataProperties.m in Sources */,
-				DD97FA15214C6328005D28FC /* EntityCall.m in Sources */,
-				DD97FB20214C6329005D28FC /* EntityEstimoteAmbientLight+CoreDataProperties.m in Sources */,
-				DD97FA50214C6328005D28FC /* EntityLinearAccelerometer+CoreDataProperties.m in Sources */,
-				DD97FB15214C6329005D28FC /* EntityEstimoteTemperature+CoreDataClass.m in Sources */,
-				DD97FA4D214C6328005D28FC /* Rotation.m in Sources */,
-				DD97FB1C214C6329005D28FC /* Estimote.m in Sources */,
-				DD97FA5B214C6328005D28FC /* TCQMaker.m in Sources */,
-				DD97FA60214C6328005D28FC /* AWARESensor.m in Sources */,
-				DD97FB0A214C6329005D28FC /* EntityAmbientNoise+CoreDataProperties.m in Sources */,
-				DD97FAFA214C6329005D28FC /* EntityFitbitDevice+CoreDataProperties.m in Sources */,
-				DD97FB2E214C6329005D28FC /* FitbitViewController.m in Sources */,
-				DD97FAF6214C6329005D28FC /* EntityContact+CoreDataProperties.m in Sources */,
-				DD97FB13214C6329005D28FC /* DeviceUsage.m in Sources */,
-				DD97FB17214C6329005D28FC /* EntityEstimoteAmbientLight+CoreDataClass.m in Sources */,
-				DD97FA69214C6328005D28FC /* AWAREDebugMessageLogger.m in Sources */,
-				DD97FA2D214C6328005D28FC /* IBeacon.m in Sources */,
-				DD97FB1F214C6329005D28FC /* EntityEstimoteTemperature+CoreDataProperties.m in Sources */,
-				DD97FAF9214C6329005D28FC /* EntityLabel.m in Sources */,
-				DD97FB3D214C6329005D28FC /* PNBar.m in Sources */,
-				DD97FB06214C6329005D28FC /* CalEvent.m in Sources */,
-				DD97FAF2214C6329005D28FC /* AWAREHealthKitCategory.m in Sources */,
-				DD97FA5C214C6328005D28FC /* SSLManager.m in Sources */,
-				DD97FA1D214C6328005D28FC /* EntityGravity+CoreDataProperties.m in Sources */,
-				DD97FA24214C6328005D28FC /* Processor.m in Sources */,
-				DD97FB16214C6329005D28FC /* EntityEstimoteMotion+CoreDataProperties.m in Sources */,
-				DD97FA5E214C6328005D28FC /* AWARESensors.m in Sources */,
-				DD97FADF214C6329005D28FC /* EntityIOSActivityRecognition+CoreDataClass.m in Sources */,
-				DD97FAB1214C6328005D28FC /* BaseESMView.m in Sources */,
-				DD97FAE1214C6329005D28FC /* FusedLocations.m in Sources */,
-				DD97FA4C214C6328005D28FC /* EntityRotation.m in Sources */,
-				DD97FB09214C6329005D28FC /* Meal.m in Sources */,
-				DD97FB39214C6329005D28FC /* PNPieChart.m in Sources */,
-				DD97FAEB214C6329005D28FC /* EntityActivityRecognition+CoreDataProperties.m in Sources */,
-				DD97FA66214C6328005D28FC /* LocalFileStorageHelper.m in Sources */,
-				DD97FB2C214C6329005D28FC /* BLEHeartRate.m in Sources */,
-				DD97FA23214C6328005D28FC /* EntityLocation.m in Sources */,
-				DD97FA6B214C6328005D28FC /* EntityESM+CoreDataClass.m in Sources */,
-				DD97FB1D214C6329005D28FC /* EstimoteAirpressure.m in Sources */,
-				DD97FB12214C6329005D28FC /* EntityDeviceUsage+CoreDataProperties.m in Sources */,
-				DD97FABB214C6328005D28FC /* ESM.m in Sources */,
-				DD97FA2F214C6328005D28FC /* Magnetometer.m in Sources */,
-				DD97FAE9214C6329005D28FC /* EntityActivityRecognition.m in Sources */,
-				DD97FB1B214C6329005D28FC /* EntityEstimoteMotion+CoreDataClass.m in Sources */,
-				DD97FB30214C6329005D28FC /* PNChartLabel.m in Sources */,
-				DD97FA2B214C6328005D28FC /* EntityNetwork+CoreDataProperties.m in Sources */,
-				DD97FB40214C6329005D28FC /* QRCodeViewController.m in Sources */,
-				DD97FA53214C6328005D28FC /* EntityDebug+CoreDataProperties.m in Sources */,
-				DD97FAB5214C6328005D28FC /* ESMClockLineView.m in Sources */,
-				DD97FAEF214C6329005D28FC /* WebESM.m in Sources */,
-				DD97FB27214C6329005D28FC /* EntityPushNotification.m in Sources */,
-				DD97FA48214C6328005D28FC /* EntityBatteryCharge.m in Sources */,
-				DD97FA44214C6328005D28FC /* BatteryCharge.m in Sources */,
-				DD97FADD214C6329005D28FC /* EntityIOSActivityRecognition+CoreDataProperties.m in Sources */,
-				DD97FB3F214C6329005D28FC /* WebViewController.m in Sources */,
-				DD97FB23214C6329005D28FC /* NTPTime.m in Sources */,
-				DD97FB2B214C6329005D28FC /* EntityBLEHeartRate.m in Sources */,
-				DD97FA49214C6328005D28FC /* EntityBatteryDischarge+CoreDataProperties.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3118,25 +2602,22 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6B8PP2XLB5;
+				DEVELOPMENT_TEAM = 9HWKFPBULP;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/EZAudio\"",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/SVProgressHUD\"",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/TPCircularBuffer\"",
 				);
-				HEADER_SEARCH_PATHS = (
-					"$(PROJECT_DIR)/Health/External/AWAREFramework/**",
-					"$(PROJECT_DIR)/Health/External/AWAREFramework/Core/**",
-				);
+				HEADER_SEARCH_PATHS = "$(inherited)/**";
 				INFOPLIST_FILE = Health/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Application.eHealth;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tylerd.eHealth;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Health/Health-Bridging-Header.h";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -3150,25 +2631,22 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6B8PP2XLB5;
+				DEVELOPMENT_TEAM = 9HWKFPBULP;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/EZAudio\"",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/SVProgressHUD\"",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/TPCircularBuffer\"",
 				);
-				HEADER_SEARCH_PATHS = (
-					"$(PROJECT_DIR)/Health/External/AWAREFramework/**",
-					"$(PROJECT_DIR)/Health/External/AWAREFramework/Core/**",
-				);
+				HEADER_SEARCH_PATHS = "$(inherited)/**";
 				INFOPLIST_FILE = Health/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Application.eHealth;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tylerd.eHealth;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Health/Health-Bridging-Header.h";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

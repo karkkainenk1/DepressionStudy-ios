@@ -78,7 +78,7 @@ class SurveyViewController: UIViewController {
         esm.setTitle(str2)
         esm.setInstructions(radioInstr)
         esm.setSubmitButtonName("Next")
-        esm.setExpirationWithMinute(0)
+        esm.setExpirationWithMinute(1440)
         
         sch.addESM(esm)
     }
@@ -92,7 +92,7 @@ class SurveyViewController: UIViewController {
         schdule.expirationThreshold = 1440
         schdule.startDate = Date.init()
         schdule.endDate = Date.init(timeIntervalSinceNow: 7*60*60*24*10)
-        schdule.fireHours = [0,9,15,21]
+        schdule.fireHours = [9]
         
         // testing end (comment above if finished testing)
         let ans = ["None of the time", "A little of the time","Some of the time","Most of the time","All of the time"]
@@ -107,17 +107,6 @@ class SurveyViewController: UIViewController {
         radioButtons(radioNum: 7, radioTitle: title, radioInstr: "... depressed?", radioAns: ans, sch: schdule)
         radioButtons(radioNum: 8, radioTitle: title, radioInstr: "... so depressed that nothing could cheer you up?", radioAns: ans, sch: schdule)
         radioButtons(radioNum: 9, radioTitle: title, radioInstr: "... that everything was an effort?", radioAns: ans,  sch: schdule)
-        // Last radio completed manually
-        
-//        let radioLast = SingleESMObject.getEsmDictionaryAsRadio(withDeviceId: deviceId,
-//                                                                timestamp: NSDate.init().timeIntervalSince1970,
-//                                                                title: "[10 of 10] During the PAST DAY, about how often did you feel ...",
-//                                                                instructions: "... worthless?",
-//                                                                submit: "Submit",
-//                                                                expirationThreshold: 0,
-//                                                                trigger: "10_radio",
-//                                                                radios: ans)
-//                    as NSDictionary? as! [AnyHashable : Any]
         
         let radioLast = ESMItem.init(asRadioESMWithTrigger: "10_radio", radioItems: ans)
         radioLast.setTitle("[10 of 10] During the PAST DAY, about how often did you feel ...")
@@ -137,22 +126,7 @@ class SurveyViewController: UIViewController {
         schdule.expirationThreshold = 525600
         schdule.startDate = Date.init()
         schdule.endDate = Date.init(timeIntervalSinceNow: 7*60*60*24*10)
-        schdule.fireHours = [0,9,15,21]
-        
-//        let esm = SingleESMObject.getEsmDictionaryAsFreeText(withDeviceId: deviceId,
-//                                                             timestamp: NSDate.init().timeIntervalSince1970,
-//                                                             title: "Study ID",
-//                                                             instructions: "Enter your unique ID here:",
-//                                                             submit: "Submit",
-//                                                             expirationThreshold: 0,
-//                                                             trigger: "studyid")
-//        let esm = ESMItem.initWithConfiguration(device_id: deviceId,
-//                            timestamp: NSDate.init().timeIntervalSince1970,
-//                            title: "Study ID",
-//                            instructions: "Enter your unique ID here:",
-//                            submit: "Submit",
-//                            expirationThreshold: 0,
-//                            trigger: "studyid")
+        schdule.fireHours = [9]
             
         let esm = ESMItem.init(asTextESMWithTrigger: "studyid")
         esm.setTitle("Study ID")
@@ -181,8 +155,9 @@ class SurveyViewController: UIViewController {
         if allowClose {
             esmViewController.navigationItem.leftBarButtonItem = UIBarButtonItem.init(title: "Close", style: UIBarButtonItem.Style.done, target: self, action: #selector(dismissESM))
         }
-        
-        self.present(naviController, animated: true) {}
+
+        naviController.modalPresentationStyle = .fullScreen
+        self.present(naviController, animated: true) { }
     }
     
     @objc

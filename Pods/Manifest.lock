@@ -12,12 +12,6 @@ PODS:
     - SCNetworkReachability (~> 2.0)
     - TPCircularBuffer (~> 1.6)
   - CocoaAsyncSocket (7.6.4)
-  - DeployGateSDK (1.0.7)
-  - EAIntroView (2.9.0):
-    - EARestrictedScrollView (~> 1.1.0)
-  - EARestrictedScrollView (1.1.0)
-  - EstimoteSDK (4.28.0)
-  - EZAudio (0.2.0)
   - GoogleSignIn (5.0.2):
     - AppAuth (~> 1.2)
     - GTMAppAuth (~> 1.0)
@@ -35,73 +29,40 @@ PODS:
   - macros_blocks (0.0.4):
     - macros_blocks/core (= 0.0.4)
   - macros_blocks/core (0.0.4)
-  - MQTTKit (0.1.0)
-  - NXOAuth2Client (1.2.8)
   - SCNetworkReachability (2.0.6):
     - SCNetworkReachability/Core (= 2.0.6)
   - SCNetworkReachability/Core (2.0.6):
     - macros_blocks (~> 0.0.1)
-  - SVProgressHUD (2.2.5)
   - TPCircularBuffer (1.6.1)
-  - UICountingLabel (1.4.1)
 
 DEPENDENCIES:
   - AWAREFramework (~> 1.10)
-  - DeployGateSDK
-  - EAIntroView (~> 2.9.0)
-  - EstimoteSDK
-  - EZAudio
-  - GoogleSignIn
-  - ios-ntp
-  - MQTTKit
-  - NXOAuth2Client (~> 1.2.8)
-  - SCNetworkReachability
-  - SVProgressHUD
-  - UICountingLabel
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
     - AppAuth
     - AWAREFramework
     - CocoaAsyncSocket
-    - DeployGateSDK
-    - EAIntroView
-    - EARestrictedScrollView
-    - EstimoteSDK
-    - EZAudio
     - GoogleSignIn
     - GTMAppAuth
     - GTMSessionFetcher
     - ios-ntp
     - macros_blocks
-    - MQTTKit
-    - NXOAuth2Client
     - SCNetworkReachability
-    - SVProgressHUD
     - TPCircularBuffer
-    - UICountingLabel
 
 SPEC CHECKSUMS:
   AppAuth: 73574f3013a1e65b9601a3ddc8b3158cce68c09d
   AWAREFramework: 25996f2f32fb0b0ded5a500655857e96f83bed1c
   CocoaAsyncSocket: 694058e7c0ed05a9e217d1b3c7ded962f4180845
-  DeployGateSDK: df3d5838db7e35c05a711c35a3bdeef3c2b016ba
-  EAIntroView: 76f68cc56242f2e25359419e6ecc2344ee7e1756
-  EARestrictedScrollView: b0c2a3f92fb2610bb44d71c5e4893777c89e45ef
-  EstimoteSDK: cd930e53cd15ec32f9a738f339843a73b83620f6
-  EZAudio: 8a026361d8fb914c377018b65c9a84c85d87c6ec
   GoogleSignIn: 7137d297ddc022a7e0aa4619c86d72c909fa7213
   GTMAppAuth: 4deac854479704f348309e7b66189e604cf5e01e
   GTMSessionFetcher: cea130bbfe5a7edc8d06d3f0d17288c32ffe9925
   ios-ntp: 49a4ef0866aee5343627710c1c7de71d7c064417
   macros_blocks: cf3ff5810b798f462def9f1e3999817dc45cf2df
-  MQTTKit: a4e6b8aa92db1aeae917d2b773fd72a7749937c4
-  NXOAuth2Client: 98c4d4c594edd2b289cfc34a8928653e1dab7adf
   SCNetworkReachability: dbb0150b1a7a4579e148420132da19e718b955ce
-  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   TPCircularBuffer: c13243556527551c4d320709c7b14a6d20cdc30a
-  UICountingLabel: faf890b505d96312e324a86718f031fafffb0ccb
 
-PODFILE CHECKSUM: eb72041736cd08d3c772bd81e3bed848e69a39dd
+PODFILE CHECKSUM: 4e1b46bd55b3e6813da56aadbcc3fb8fced997b7
 
-COCOAPODS: 1.5.2
+COCOAPODS: 1.9.0

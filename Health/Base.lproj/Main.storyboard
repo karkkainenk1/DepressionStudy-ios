@@ -11,7 +11,9 @@
         <!--Page View Controller-->
         <scene sceneID="DKb-Pm-4dX">
             <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="ZPf-Ga-P1T" customClass="PageViewController" customModule="Health" customModuleProvider="target" sceneMemberID="viewController"/>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" modalPresentationStyle="fullScreen" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="ZPf-Ga-P1T" customClass="PageViewController" customModule="Health" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="3z7-dO-Apf"/>
+                </pageViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cKv-UP-nBq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-145" y="-1660"/>
@@ -415,7 +417,8 @@ Thank you for your participation, and again, you may choose to opt out of the st
         <!--Tab Bar Controller-->
         <scene sceneID="hRd-9m-abO">
             <objects>
-                <tabBarController id="mfZ-bm-Fjy" sceneMemberID="viewController">
+                <tabBarController modalPresentationStyle="fullScreen" id="mfZ-bm-Fjy" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Tc7-ja-7vr"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Qzg-eJ-geC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -455,7 +458,7 @@ If you wish to exit the study and stop all data collection, press the End Study 
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Exiting the Study" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="6ri-hf-ADe">
-                                <rect key="frame" x="-1" y="40" width="378" height="124"/>
+                                <rect key="frame" x="0.0" y="40" width="378" height="124"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
@@ -507,7 +510,7 @@ If you wish to exit the study and stop all data collection, press the End Study 
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Mental Health Notice" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="E5e-to-vHg">
-                                <rect key="frame" x="-1" y="40" width="378" height="124"/>
+                                <rect key="frame" x="0.0" y="40" width="378" height="124"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
@@ -557,7 +560,7 @@ Call (310) 825-0768 or visit CAPS during Brief Screen Hours: Monday-Friday 9am-4
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="QfS-jb-0hC">
-                                <rect key="frame" x="-9" y="20" width="394" height="121"/>
+                                <rect key="frame" x="0.0" y="20" width="394" height="121"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">UNIVERSITY OF CALIFORNIA
@@ -652,7 +655,7 @@ If you have questions about your rights as a research subject, or you have conce
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="jZb-sk-fOh"/>
+        <segue reference="VJg-f8-XsH"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="background_dep" width="452" height="723"/>

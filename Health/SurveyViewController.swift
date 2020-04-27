@@ -175,6 +175,7 @@ class SurveyViewController: UIViewController {
         manager.add(schedule)
         
         let esmViewController = ESMScrollViewController.init()
+        esmViewController.view.backgroundColor = .white
         let naviController = UINavigationController.init(rootViewController: esmViewController)
         
         if allowClose {

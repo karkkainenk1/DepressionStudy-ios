@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0930"
+   LastUpgradeVersion = "1100"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F1FDEA4676E7C0212D742FC48F372F45"
+               BlueprintIdentifier = "D29FE46C3F13E990CE27A204B2A5F981"
+               BuildableName = "SCNetworkReachability.framework"
                BlueprintName = "SCNetworkReachability"
-               ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "SCNetworkReachability.framework">
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

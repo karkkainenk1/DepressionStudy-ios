@@ -3,10 +3,15 @@ set -e
 set -u
 set -o pipefail
 
+function on_error {
+  echo "$(realpath -mq "${0}"):$1: error: Unexpected failure"
+}
+trap 'on_error $LINENO' ERR
+
 if [ -z ${UNLOCALIZED_RESOURCES_FOLDER_PATH+x} ]; then
-    # If UNLOCALIZED_RESOURCES_FOLDER_PATH is not set, then there's nowhere for us to copy
-    # resources to, so exit 0 (signalling the script phase was successful).
-    exit 0
+  # If UNLOCALIZED_RESOURCES_FOLDER_PATH is not set, then there's nowhere for us to copy
+  # resources to, so exit 0 (signalling the script phase was successful).
+  exit 0
 fi
 
 mkdir -p "${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"
@@ -92,13 +97,27 @@ EOM
   esac
 }
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_resource "${PODS_ROOT}/DeployGateSDK/DeployGateSDK1.0.7.embeddedframework/DeployGateSDK.framework/Versions/A/Resources/en.lproj"
-  install_resource "${PODS_ROOT}/DeployGateSDK/DeployGateSDK1.0.7.embeddedframework/DeployGateSDK.framework/Versions/A/Resources/ja.lproj"
+  install_resource "${PODS_ROOT}/AWAREFramework/AWAREFramework/Assets/AWARE.xcdatamodeld"
+  install_resource "${PODS_ROOT}/AWAREFramework/AWAREFramework/Classes/Sensors/Accelerometer/ObjectModels/AWARE_Accelerometer.xcdatamodeld"
+  install_resource "${PODS_ROOT}/AWAREFramework/AWAREFramework/Classes/Sensors/Barometer/ObjectModels/AWARE_Barometer.xcdatamodeld"
+  install_resource "${PODS_ROOT}/AWAREFramework/AWAREFramework/Classes/Sensors/Gravity/ObjectModels/AWARE_Gravity.xcdatamodeld"
+  install_resource "${PODS_ROOT}/AWAREFramework/AWAREFramework/Classes/Sensors/Gyroscope/ObjectModels/AWARE_Gyroscope.xcdatamodeld"
+  install_resource "${PODS_ROOT}/AWAREFramework/AWAREFramework/Classes/Sensors/LinearAccelerometer/ObjectModels/AWARE_LinearAccelerometer.xcdatamodeld"
+  install_resource "${PODS_ROOT}/AWAREFramework/AWAREFramework/Classes/Sensors/Magnetometer/ObjectModels/AWARE_Magnetometer.xcdatamodeld"
+  install_resource "${PODS_ROOT}/AWAREFramework/AWAREFramework/Classes/Sensors/Rotation/ObjectModels/AWARE_Rotation.xcdatamodeld"
+  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/AWAREFramework/AWAREFramework.bundle"
   install_resource "${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_resource "${PODS_ROOT}/DeployGateSDK/DeployGateSDK1.0.7.embeddedframework/DeployGateSDK.framework/Versions/A/Resources/en.lproj"
-  install_resource "${PODS_ROOT}/DeployGateSDK/DeployGateSDK1.0.7.embeddedframework/DeployGateSDK.framework/Versions/A/Resources/ja.lproj"
+  install_resource "${PODS_ROOT}/AWAREFramework/AWAREFramework/Assets/AWARE.xcdatamodeld"
+  install_resource "${PODS_ROOT}/AWAREFramework/AWAREFramework/Classes/Sensors/Accelerometer/ObjectModels/AWARE_Accelerometer.xcdatamodeld"
+  install_resource "${PODS_ROOT}/AWAREFramework/AWAREFramework/Classes/Sensors/Barometer/ObjectModels/AWARE_Barometer.xcdatamodeld"
+  install_resource "${PODS_ROOT}/AWAREFramework/AWAREFramework/Classes/Sensors/Gravity/ObjectModels/AWARE_Gravity.xcdatamodeld"
+  install_resource "${PODS_ROOT}/AWAREFramework/AWAREFramework/Classes/Sensors/Gyroscope/ObjectModels/AWARE_Gyroscope.xcdatamodeld"
+  install_resource "${PODS_ROOT}/AWAREFramework/AWAREFramework/Classes/Sensors/LinearAccelerometer/ObjectModels/AWARE_LinearAccelerometer.xcdatamodeld"
+  install_resource "${PODS_ROOT}/AWAREFramework/AWAREFramework/Classes/Sensors/Magnetometer/ObjectModels/AWARE_Magnetometer.xcdatamodeld"
+  install_resource "${PODS_ROOT}/AWAREFramework/AWAREFramework/Classes/Sensors/Rotation/ObjectModels/AWARE_Rotation.xcdatamodeld"
+  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/AWAREFramework/AWAREFramework.bundle"
   install_resource "${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle"
 fi
 
@@ -113,7 +132,7 @@ rm -f "$RESOURCES_TO_COPY"
 if [[ -n "${WRAPPER_EXTENSION}" ]] && [ "`xcrun --find actool`" ] && [ -n "${XCASSET_FILES:-}" ]
 then
   # Find all other xcassets (this unfortunately includes those of path pods and other targets).
-  OTHER_XCASSETS=$(find "$PWD" -iname "*.xcassets" -type d)
+  OTHER_XCASSETS=$(find -L "$PWD" -iname "*.xcassets" -type d)
   while read line; do
     if [[ $line != "${PODS_ROOT}*" ]]; then
       XCASSET_FILES+=("$line")

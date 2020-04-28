@@ -55,7 +55,7 @@ typedef struct {
  * @param timestamp         The timestamp associated with the buffer, or NULL. Note that you can also pass a timestamp into TPCircularBufferProduceAudioBufferList, to set it there instead.
  * @return The empty buffer list, or NULL if circular buffer has insufficient space
  */
-AudioBufferList *TPCircularBufferPrepareEmptyAudioBufferList(TPCircularBuffer *buffer, int numberOfBuffers, int bytesPerBuffer, const AudioTimeStamp *timestamp);
+AudioBufferList *TPCircularBufferPrepareEmptyAudioBufferList(TPCircularBuffer *buffer, UInt32 numberOfBuffers, UInt32 bytesPerBuffer, const AudioTimeStamp *timestamp);
 
 /*!
  * Prepare an empty buffer list, stored on the circular buffer, using an audio description to automatically configure buffer
@@ -76,7 +76,7 @@ AudioBufferList *TPCircularBufferPrepareEmptyAudioBufferListWithAudioFormat(TPCi
  *  TPCircularBufferPrepareEmptyAudioBufferList.
  *
  * @param buffer            Circular buffer
- * @param timestamp         The timestamp associated with the buffer, or NULL to leave as-is. Note that you can also pass a timestamp into TPCircularBufferPrepareEmptyAudioBufferList, to set it there instead.
+ * @param inTimestamp       The timestamp associated with the buffer, or NULL to leave as-is. Note that you can also pass a timestamp into TPCircularBufferPrepareEmptyAudioBufferList, to set it there instead.
  */
 void TPCircularBufferProduceAudioBufferList(TPCircularBuffer *buffer, const AudioTimeStamp *inTimestamp);
 
@@ -100,7 +100,7 @@ bool TPCircularBufferCopyAudioBufferList(TPCircularBuffer *buffer, const AudioBu
  * @return Pointer to the next buffer list in the buffer
  */
 static __inline__ __attribute__((always_inline)) AudioBufferList *TPCircularBufferNextBufferList(TPCircularBuffer *buffer, AudioTimeStamp *outTimestamp) {
-    int32_t dontcare; // Length of segment is contained within buffer list, so we can ignore this
+    uint32_t dontcare; // Length of segment is contained within buffer list, so we can ignore this
     TPCircularBufferABLBlockHeader *block = (TPCircularBufferABLBlockHeader*)TPCircularBufferTail(buffer, &dontcare);
     if ( !block ) {
         if ( outTimestamp ) {
@@ -122,7 +122,7 @@ static __inline__ __attribute__((always_inline)) AudioBufferList *TPCircularBuff
  * @param outTimestamp      On output, if not NULL, the timestamp corresponding to the buffer
  * @return Pointer to the next buffer list in the buffer, or NULL
  */
-AudioBufferList *TPCircularBufferNextBufferListAfter(TPCircularBuffer *buffer, AudioBufferList *bufferList, AudioTimeStamp *outTimestamp);
+AudioBufferList *TPCircularBufferNextBufferListAfter(TPCircularBuffer *buffer, const AudioBufferList *bufferList, AudioTimeStamp *outTimestamp);
 
 /*!
  * Consume the next buffer list
@@ -130,7 +130,7 @@ AudioBufferList *TPCircularBufferNextBufferListAfter(TPCircularBuffer *buffer, A
  * @param buffer Circular buffer
  */
 static __inline__ __attribute__((always_inline)) void TPCircularBufferConsumeNextBufferList(TPCircularBuffer *buffer) {
-    int32_t dontcare;
+    uint32_t dontcare;
     TPCircularBufferABLBlockHeader *block = (TPCircularBufferABLBlockHeader*)TPCircularBufferTail(buffer, &dontcare);
     if ( !block ) return;
     TPCircularBufferConsume(buffer, block->totalLength);
@@ -146,7 +146,7 @@ static __inline__ __attribute__((always_inline)) void TPCircularBufferConsumeNex
  * @param framesToConsume The number of frames to consume from the buffer list
  * @param audioFormat The AudioStreamBasicDescription describing the audio
  */
-void TPCircularBufferConsumeNextBufferListPartial(TPCircularBuffer *buffer, int framesToConsume, const AudioStreamBasicDescription *audioFormat);
+void TPCircularBufferConsumeNextBufferListPartial(TPCircularBuffer *buffer, UInt32 framesToConsume, const AudioStreamBasicDescription *audioFormat);
 
 /*!
  * Consume a certain number of frames from the buffer, possibly from multiple queued buffer lists
@@ -162,7 +162,7 @@ void TPCircularBufferConsumeNextBufferListPartial(TPCircularBuffer *buffer, int 
  * @param outTimestamp      On output, if not NULL, the timestamp corresponding to the first audio frame returned
  * @param audioFormat       The format of the audio stored in the buffer
  */
-void TPCircularBufferDequeueBufferListFrames(TPCircularBuffer *buffer, UInt32 *ioLengthInFrames, AudioBufferList *outputBufferList, AudioTimeStamp *outTimestamp, const AudioStreamBasicDescription *audioFormat);
+void TPCircularBufferDequeueBufferListFrames(TPCircularBuffer *buffer, UInt32 *ioLengthInFrames, const AudioBufferList *outputBufferList, AudioTimeStamp *outTimestamp, const AudioStreamBasicDescription *audioFormat);
 
 /*!
  * Determine how many frames of audio are buffered
@@ -172,7 +172,7 @@ void TPCircularBufferDequeueBufferListFrames(TPCircularBuffer *buffer, UInt32 *i
  *  Note: This function should only be used on the consumer thread, not the producer thread.
  *
  * @param buffer            Circular buffer
- * @param outTimestamp      On output, if not NULL, the timestamp corresponding to the first audio frame returned
+ * @param outTimestamp      On output, if not NULL, the timestamp corresponding to the first audio frame
  * @param audioFormat       The format of the audio stored in the buffer
  * @return The number of frames in the given audio format that are in the buffer
  */
@@ -187,12 +187,30 @@ UInt32 TPCircularBufferPeek(TPCircularBuffer *buffer, AudioTimeStamp *outTimesta
  *  Note: This function should only be used on the consumer thread, not the producer thread.
  *
  * @param buffer            Circular buffer
- * @param outTimestamp      On output, if not NULL, the timestamp corresponding to the first audio frame returned
+ * @param outTimestamp      On output, if not NULL, the timestamp corresponding to the first audio frame
  * @param audioFormat       The format of the audio stored in the buffer
  * @param contiguousToleranceSampleTime The number of samples of discrepancy to tolerate
  * @return The number of frames in the given audio format that are in the buffer
  */
 UInt32 TPCircularBufferPeekContiguous(TPCircularBuffer *buffer, AudioTimeStamp *outTimestamp, const AudioStreamBasicDescription *audioFormat, UInt32 contiguousToleranceSampleTime);
+    
+/*!
+ * Determine how many contiguous frames of audio are buffered, with wrap around
+ *
+ *  Like TPCircularBufferPeekContiguous, determines how many contiguous frames are buffered,
+ *  but considers audio that wraps around a region of a given length as also contiguous. This
+ *  is good for audio that loops.
+ *
+ *  Note: This function should only be used on the consumer thread, not the producer thread.
+ *
+ * @param buffer            Circular buffer
+ * @param outTimestamp      On output, if not NULL, the timestamp corresponding to the first audio frame
+ * @param audioFormat       The format of the audio stored in the buffer
+ * @param contiguousToleranceSampleTime The number of samples of discrepancy to tolerate
+ * @param wrapPoint         The point around which the audio may wrap and still be considered contiguous, or 0 to disable
+ * @return The number of frames in the given audio format that are in the buffer
+ */
+UInt32 TPCircularBufferPeekContiguousWrapped(TPCircularBuffer *buffer, AudioTimeStamp *outTimestamp, const AudioStreamBasicDescription *audioFormat, UInt32 contiguousToleranceSampleTime, UInt32 wrapPoint);
 
 /*!
  * Determine how many much space there is in the buffer

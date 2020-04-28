@@ -8,17 +8,7 @@ target 'Health' do
   # Pods for Health
   #pod 'AWAREFramework', :git=>'https://github.com/tetujin/AWAREFramework-iOS.git'
   
-  pod 'MQTTKit' 
-  pod 'SCNetworkReachability'
-  pod 'Google/SignIn'
-  pod 'DeployGateSDK'
-  pod 'ios-ntp'
-  pod 'EZAudio'
-  pod 'SVProgressHUD'
-  pod 'EAIntroView', '~> 2.9.0'
-  pod 'NXOAuth2Client', '~> 1.2.8'
-  pod 'EstimoteSDK'
-  pod 'UICountingLabel'
+  pod 'AWAREFramework', '~> 1.10'
 
   target 'HealthTests' do
     inherit! :search_paths

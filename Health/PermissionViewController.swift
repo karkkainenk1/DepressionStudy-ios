@@ -7,6 +7,7 @@
 //  This file is for the detection of first installation of the application
 
 import UIKit
+import AWAREFramework
 
 class PermissionViewController: UIViewController{
     // sets singleton firstKey's bool value to false
@@ -20,23 +21,22 @@ class PermissionViewController: UIViewController{
         self.agreeButton.isEnabled = false
         activityIndicator.startAnimating()
         
-        let delegate = UIApplication.shared.delegate as? AWAREDelegate
-        let core = delegate?.sharedAWARECore
-        let manager = core?.sharedSensorManager
-        let study = core?.sharedAwareStudy
+
+        let manager = AWARESensorManager.shared()
+        let study   = AWAREStudy.shared()
         
         // AWAREFramework database (Need Author's E-Mail to access)
         let appDelegate = UIApplication.shared.delegate as? AppDelegate
-        study?.setStudyInformationWithURL(appDelegate?.studyURL)
+        study.setStudyURL(appDelegate!.studyURL)
         
-        study?.setDebugState(false)
-        manager?.startAllSensors()
-        manager?.syncAllSensorsWithDBInBackground()
+        study.setDebug(false)
+        manager.startAllSensors()
+        manager.startAutoSyncTimer()
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 10.0, execute: {
-            for sensor in (manager?.getAllSensors())! {
-                if let sensor = sensor as? AWARESensor {
-                    print(sensor.getSensorName())
+            for sensor in (manager.getAllSensors()) {
+                if sensor.getName() != nil {
+                    print(sensor.getName()!)
                 }
             }
             

@@ -10,38 +10,36 @@ import UIKit
 import AWAREFramework
 
 class PermissionViewController: UIViewController{
-    // sets singleton firstKey's bool value to false
-    let hasLaunchedKey = "HasLaunched"
-    let userDef = UserDefaults.standard
-    
     @IBOutlet weak var agreeButton: UIButton!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     // Action will begin study and set singleton firstKey's bool to true
     @IBAction func startStudy(_ sender: UIButton) {
-        self.agreeButton.isEnabled = false
+        agreeButton.isEnabled = false
         activityIndicator.startAnimating()
         
-
         let manager = AWARESensorManager.shared()
         let study   = AWAREStudy.shared()
+        study.setDebug(true)
         
         // AWAREFramework database (Need Author's E-Mail to access)
         let appDelegate = UIApplication.shared.delegate as? AppDelegate
-        study.setStudyURL(appDelegate!.studyURL)
-        
-        study.setDebug(false)
-        manager.startAllSensors()
-        manager.startAutoSyncTimer()
-        
-        DispatchQueue.main.asyncAfter(deadline: .now() + 10.0, execute: {
-            for sensor in (manager.getAllSensors()) {
-                if sensor.getName() != nil {
-                    print(sensor.getName()!)
-                }
+        study.join(withURL: appDelegate!.studyURL, completion: { (_, _, error) in
+            if error != nil {
+                // #TODO: ERROR HANDLING
+                print(error!)
+                self.agreeButton.isEnabled = true
+                self.activityIndicator.stopAnimating()
+                return
             }
             
+            manager.addSensors(with: study)
+            manager.setDebugToAllSensors(true)
+            manager.setDebugToAllStorage(true)
+            manager.startAllSensors()
+            manager.startAutoSyncTimer()
+            print("Sensors: ", manager.getAllSensors())
+            
             self.performSegue(withIdentifier: "startStudy", sender: self)
-            self.userDef.set(true, forKey: self.hasLaunchedKey)
         })
     }
 }

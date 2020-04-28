@@ -13,13 +13,6 @@ import UIKit
 import AWAREFramework
 
 class SurveyViewController: UIViewController {
-    // sets singleton firstKey's bool value to false
-    let firstKey = "first"
-    let userDef = UserDefaults.standard
-    lazy var firstLaunched = userDef.bool(forKey: firstKey)
-    // uses key from splashViewController.swift
-    let hasLaunchedKey = "HasLaunched"
-    lazy var hasLaunched = userDef.bool(forKey: hasLaunchedKey)
     @IBOutlet weak var hasAnsweredLabel: UILabel!
     
     let delegate = UIApplication.shared.delegate
@@ -40,10 +33,10 @@ class SurveyViewController: UIViewController {
     // start of main
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        if (!self.firstLaunched){
+        let appdelegate = UIApplication.shared.delegate! as! AppDelegate
+        if (!appdelegate.hasLaunched()){
             self.startSubjectID()
-            self.userDef.set(true, forKey: self.firstKey)
+            appdelegate.setHasLaunched(true)
         }
     }
     
@@ -52,27 +45,11 @@ class SurveyViewController: UIViewController {
         
         hasAnsweredLabel.isHidden = !hasAnsweredToday()
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
     func radioButtons(radioNum: Int, radioTitle: String, radioInstr: String, radioAns: [String], sch: ESMSchedule) {
         //generic radio button creation function
         let str1 = String(radioNum) + "_radio"
         let str2 = "[" + String(radioNum) + radioTitle
-        
-        
-//        let esm = SingleESMObject.getEsmDictionaryAsRadio(withDeviceId: deviceId,
-//                                                          timestamp: NSDate.init().timeIntervalSince1970,
-//                                                          title: str2,
-//                                                          instructions: radioInstr,
-//                                                          submit: "Next",
-//                                                          expirationThreshold: 0,
-//                                                          trigger: str1,
-//                                                          radios: radioAns)
-//            as NSDictionary? as! [AnyHashable : Any]
         
         let esm = ESMItem.init(asRadioESMWithTrigger: str1, radioItems: radioAns)
         esm.setTitle(str2)
@@ -84,7 +61,6 @@ class SurveyViewController: UIViewController {
     }
     
     @IBAction func dailyESMPressed(_ sender: Any) {
-        // base code from github
         let schdule = ESMSchedule.init()
         schdule.notificationTitle = "eWellness"
         schdule.notificationBody = "Please fill the daily questionnaire"
@@ -92,9 +68,8 @@ class SurveyViewController: UIViewController {
         schdule.expirationThreshold = 1440
         schdule.startDate = Date.init()
         schdule.endDate = Date.init(timeIntervalSinceNow: 7*60*60*24*10)
-        schdule.fireHours = [9]
+        schdule.fireHours = [-1]
         
-        // testing end (comment above if finished testing)
         let ans = ["None of the time", "A little of the time","Some of the time","Most of the time","All of the time"]
         let title = " of 10] During the PAST DAY, about how often did you feel ..."
         // Radio button questions (10)
@@ -126,7 +101,7 @@ class SurveyViewController: UIViewController {
         schdule.expirationThreshold = 525600
         schdule.startDate = Date.init()
         schdule.endDate = Date.init(timeIntervalSinceNow: 7*60*60*24*10)
-        schdule.fireHours = [9]
+        schdule.fireHours = [-1]
             
         let esm = ESMItem.init(asNumericESMWithTrigger: "studyid")
         esm.setTitle("Study ID")
@@ -141,8 +116,6 @@ class SurveyViewController: UIViewController {
     func startESM(schedule: ESMSchedule, allowClose: Bool) {
         schedule.interface = 1
         
-//        let iOSESM = ESM.init(awareStudy: study, dbType: AwareDBTypeCoreData)
-//        let iOSESM = ESM.init(awareStudy: study)
         let manager = ESMScheduleManager.shared()
         manager.debug = true
         manager.removeAllSchedulesFromDB()
@@ -165,111 +138,38 @@ class SurveyViewController: UIViewController {
         self.dismiss(animated: true)
     }
     
-//    func hasAnsweredToday() -> Bool {
-//        if let ctx = delegate?.managedObjectContext {
-//            let req = NSFetchRequest<NSFetchRequestResult>.init()
-//            req.entity = NSEntityDescription.entity(forEntityName: NSStringFromClass(EntityESMAnswer.self), in: ctx)
-//
-//            let sort = NSSortDescriptor.init(key: "timestamp", ascending: false)
-//            req.sortDescriptors = [sort]
-//            let resultsController = NSFetchedResultsController.init(fetchRequest: req, managedObjectContext: ctx, sectionNameKeyPath: nil, cacheName: nil)
-//
-//            do {
-//                try resultsController.performFetch()
-//                let results = resultsController.fetchedObjects
-//
-//                if let results = results {
-//                    if results.count < 10 {
-//                        return false
-//                    }
-//
-//                    if let answer = results.last as? EntityESMAnswer {
-//                        let calendar = NSCalendar.current
-//                        let latestDate = Date.init(timeIntervalSince1970: TimeInterval(Int(answer.timestamp!) / 1000))
-//                        return calendar.isDateInToday(latestDate)
-//                    }
-//                }
-//
-//            } catch {
-//                print("Exception thrown when trying to get latest ESM answers")
-//            }
-//
-//        }
-//        return false
-//    }
-    
     func hasAnsweredToday() -> Bool {
-        // TODO: Fix crash in this code
-        /*let req = NSFetchRequest<NSFetchRequestResult>.init()
-        req.entity = NSEntityDescription.entity(forEntityName: NSStringFromClass(EntityESMAnswer.self), in: persistentContainer.viewContext)
-        
-        let sort = NSSortDescriptor.init(key: "timestamp", ascending: false)
-        req.sortDescriptors = [sort]
-        let resultsController = NSFetchedResultsController.init(fetchRequest: req, managedObjectContext: persistentContainer.viewContext, sectionNameKeyPath: nil, cacheName: nil)
-        
-        do {
-            try resultsController.performFetch()
-            let results = resultsController.fetchedObjects
+        if let context = CoreDataHandler.shared().managedObjectContext {
+            context.persistentStoreCoordinator = CoreDataHandler.shared().persistentStoreCoordinator
             
-            if let results = results {
-                if results.count < 10 {
-                    return false
-                }
-                
-                if let answer = results.last as? EntityESMAnswer {
-                    let calendar = NSCalendar.current
-                    let latestDate = Date.init(timeIntervalSince1970: TimeInterval(Int(truncating: answer.timestamp!) / 1000))
-                    return calendar.isDateInToday(latestDate)
-                }
-            }
+            let req = NSFetchRequest<NSFetchRequestResult>.init()
+            req.entity = NSEntityDescription.entity(forEntityName: NSStringFromClass(EntityESMAnswer.self), in: context)
             
-        } catch {
-            print("Exception thrown when trying to get latest ESM answers")
-        }
-        */
-    return false
-    }
-    
-    lazy var persistentContainer: NSPersistentContainer = {
-        /*
-         The persistent container for the application. This implementation
-         creates and returns a container, having loaded the store for the
-         application to it. This property is optional since there are legitimate
-         error conditions that could cause the creation of the store to fail.
-        */
-        let container = NSPersistentContainer(name: "AWARE_ScheduleESM")
-        container.loadPersistentStores(completionHandler: { (storeDescription, error) in
-            if let error = error as NSError? {
-                // Replace this implementation with code to handle the error appropriately.
-                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-                 
-                /*
-                 Typical reasons for an error here include:
-                 * The parent directory does not exist, cannot be created, or disallows writing.
-                 * The persistent store is not accessible, due to permissions or data protection when the device is locked.
-                 * The device is out of space.
-                 * The store could not be migrated to the current model version.
-                 Check the error message to determine what the actual problem was.
-                 */
-                fatalError("Unresolved error \(error), \(error.userInfo)")
-            }
-        })
-        return container
-    }()
-
-    // MARK: - Core Data Saving support
-    func saveContext () {
-        let context = persistentContainer.viewContext
-        if context.hasChanges {
+            let sort = NSSortDescriptor.init(key: "timestamp", ascending: false)
+            req.sortDescriptors = [sort]
+            let resultsController = NSFetchedResultsController.init(fetchRequest: req, managedObjectContext: context, sectionNameKeyPath: nil, cacheName: nil)
+            
             do {
-                try context.save()
+                try resultsController.performFetch()
+                let results = resultsController.fetchedObjects
+                
+                if let results = results {
+                    if results.count < 10 {
+                        return false
+                    }
+                    
+                    if let answer = results.last as? EntityESMAnswer {
+                        let calendar = NSCalendar.current
+                        let latestDate = Date.init(timeIntervalSince1970: TimeInterval(Int(truncating: answer.timestamp!) / 1000))
+                        return calendar.isDateInToday(latestDate)
+                    }
+                }
             } catch {
-                // Replace this implementation with code to handle the error appropriately.
-                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-                let nserror = error as NSError
-                fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
+                print("Exception thrown when trying to get latest ESM answers")
             }
         }
+        
+        return false
     }
 }
 

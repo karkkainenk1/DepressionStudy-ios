@@ -128,7 +128,7 @@ class SurveyViewController: UIViewController {
         schdule.endDate = Date.init(timeIntervalSinceNow: 7*60*60*24*10)
         schdule.fireHours = [9]
             
-        let esm = ESMItem.init(asTextESMWithTrigger: "studyid")
+        let esm = ESMItem.init(asNumericESMWithTrigger: "studyid")
         esm.setTitle("Study ID")
         esm.setInstructions("Enter your unique ID here:")
         esm.setSubmitButtonName("Submit")

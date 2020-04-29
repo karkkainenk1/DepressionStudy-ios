@@ -31,9 +31,10 @@
 	<key>NSMicrophoneUsageDescription</key>
 	<string>This application needs to access your microphone</string>
 	<key>NSMotionUsageDescription</key>
-	<string>Motion permission</string>
+	<string>This application needs to access your motion data</string>
 	<key>UIBackgroundModes</key>
 	<array>
+		<string>audio</string>
 		<string>fetch</string>
 		<string>location</string>
 		<string>remote-notification</string>

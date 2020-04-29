@@ -9,6 +9,8 @@ target 'Health' do
   #pod 'AWAREFramework', :git=>'https://github.com/tetujin/AWAREFramework-iOS.git'
   
   pod 'AWAREFramework', '~> 1.10'
+  pod 'AWAREFramework/MotionActivity'
+  pod 'AWAREFramework/Microphone'
 
   target 'HealthTests' do
     inherit! :search_paths

@@ -64,7 +64,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Fwu-NZ-2ru">
                                 <rect key="frame" x="46" y="44" width="285" height="767"/>
                                 <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Data Collection Permission" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="m3m-2R-8wL">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Data Collection Permission" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="m3m-2R-8wL">
                                         <rect key="frame" x="0.0" y="0.0" width="285" height="65"/>
                                         <accessibility key="accessibilityConfiguration">
                                             <accessibilityTraits key="traits" notEnabled="YES"/>
@@ -76,7 +76,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="HMM-Ko-cqB">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="HMM-Ko-cqB">
                                         <rect key="frame" x="0.0" y="65" width="285" height="702"/>
                                         <mutableString key="text">We’re about to ask you to allow a bunch of intrusive permissions for our app, so before we do, we wanted to explain precisely what information we will be collecting and how it will be used.
 
@@ -147,7 +147,7 @@ If you have any concerns about the data being collected please let us know. You 
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Rsl-by-aNi">
                                 <rect key="frame" x="45" y="44" width="285" height="392"/>
                                 <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Mental Health Notice" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="q7s-ae-Hu1">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Mental Health Notice" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="q7s-ae-Hu1">
                                         <rect key="frame" x="0.0" y="0.0" width="285" height="65"/>
                                         <accessibility key="accessibilityConfiguration">
                                             <accessibilityTraits key="traits" notEnabled="YES"/>
@@ -159,7 +159,7 @@ If you have any concerns about the data being collected please let us know. You 
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="GuG-m5-0AQ">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="GuG-m5-0AQ">
                                         <rect key="frame" x="0.0" y="65" width="285" height="327"/>
                                         <mutableString key="text">A brief note on your mental health:
 
@@ -210,7 +210,7 @@ As such, if you ever feel overwhelmed, or that you need help, please do not expe
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="aZS-BT-Z9R">
                                 <rect key="frame" x="45" y="44" width="285" height="445"/>
                                 <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Permission For Study" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="syP-AQ-goA">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Permission For Study" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="syP-AQ-goA">
                                         <rect key="frame" x="0.0" y="0.0" width="285" height="65"/>
                                         <accessibility key="accessibilityConfiguration">
                                             <accessibilityTraits key="traits" notEnabled="YES"/>
@@ -222,7 +222,7 @@ As such, if you ever feel overwhelmed, or that you need help, please do not expe
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="dyh-rl-BiF">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="dyh-rl-BiF">
                                         <rect key="frame" x="0.0" y="65" width="285" height="318"/>
                                         <mutableString key="text">By selecting Agree, you acknowledge that you have received and understood the terms of the study. 
 
@@ -527,47 +527,65 @@ By selecting AGREE you acknowledge that you have received and understood the ter
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background_dep" translatesAutoresizingMaskIntoConstraints="NO" id="gCf-zI-cZP">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
+                                <rect key="frame" x="-39" y="0.0" width="453" height="741"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e0H-Za-aDL">
-                                <rect key="frame" x="38" y="90" width="300" height="193"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text">Are you sure you wish to exit the study? It will stop all data collection.
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Mzk-jo-KXl">
+                                <rect key="frame" x="45" y="20" width="285" height="267"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Exiting the Study" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="INm-sn-pqa">
+                                        <rect key="frame" x="0.0" y="0.0" width="285" height="65"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" notEnabled="YES"/>
+                                        </accessibility>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="65" id="rWz-bA-6yK"/>
+                                        </constraints>
+                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="opm-QS-nxu">
+                                        <rect key="frame" x="0.0" y="65" width="285" height="140"/>
+                                        <string key="text">Are you sure you wish to exit the study? It will stop all data collection.
 
 If you wish to exit the study and stop all data collection, press the End Study button below. You may reenter the study at any time.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Exiting the Study" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="6ri-hf-ADe">
-                                <rect key="frame" x="0.0" y="40" width="378" height="124"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="aOY-UN-K8U">
-                                <rect key="frame" x="178" y="300" width="20" height="20"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </activityIndicatorView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="DaS-ea-kJo">
-                                <rect key="frame" x="38" y="221" width="300" height="71"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <inset key="titleEdgeInsets" minX="0.0" minY="20" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="Exit Study">
-                                    <color key="titleColor" red="1" green="0.060806833329999997" blue="0.1107353358" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <state key="disabled">
-                                    <color key="titleColor" red="0.99949163198471069" green="0.061163268983364105" blue="0.10819018632173538" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="exitButton:" destination="eiJ-Of-QAF" eventType="touchUpInside" id="yZP-ab-X8i"/>
-                                </connections>
-                            </button>
+                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        <dataDetectorType key="dataDetectorTypes" phoneNumber="YES"/>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="DaS-ea-kJo">
+                                        <rect key="frame" x="0.0" y="205" width="285" height="42"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <inset key="titleEdgeInsets" minX="0.0" minY="20" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Exit Study">
+                                            <color key="titleColor" red="1" green="0.060806833329999997" blue="0.1107353358" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <state key="disabled">
+                                            <color key="titleColor" red="0.99949163198471069" green="0.061163268983364105" blue="0.10819018632173538" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="exitButton:" destination="eiJ-Of-QAF" eventType="touchUpInside" id="yZP-ab-X8i"/>
+                                        </connections>
+                                    </button>
+                                    <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="aOY-UN-K8U">
+                                        <rect key="frame" x="0.0" y="247" width="285" height="20"/>
+                                    </activityIndicatorView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="opm-QS-nxu" firstAttribute="centerX" secondItem="Mzk-jo-KXl" secondAttribute="centerX" id="Kj9-Ef-xvJ"/>
+                                    <constraint firstItem="INm-sn-pqa" firstAttribute="centerX" secondItem="Mzk-jo-KXl" secondAttribute="centerX" id="WFb-iz-1jh"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.85716500871497414" blue="0.30664185397853816" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Mzk-jo-KXl" firstAttribute="leading" secondItem="VF9-es-O87" secondAttribute="leading" constant="45" id="OXg-UC-xOy"/>
+                            <constraint firstItem="Mzk-jo-KXl" firstAttribute="centerX" secondItem="VF9-es-O87" secondAttribute="centerX" id="Ose-SF-hGU"/>
+                            <constraint firstItem="Mzk-jo-KXl" firstAttribute="top" secondItem="VF9-es-O87" secondAttribute="top" constant="20" id="UWA-Jr-VCm"/>
+                            <constraint firstItem="VF9-es-O87" firstAttribute="bottom" secondItem="Mzk-jo-KXl" secondAttribute="bottom" constant="388" id="vD8-H3-iVT"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="VF9-es-O87"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Exit Study" image="exit" id="T55-RF-bFc"/>
@@ -578,7 +596,7 @@ If you wish to exit the study and stop all data collection, press the End Study 
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YB5-5T-UGf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4218.840579710145" y="723.91304347826087"/>
+            <point key="canvasLocation" x="4218.3999999999996" y="723.39901477832518"/>
         </scene>
         <!--Mental Health-->
         <scene sceneID="X9L-Qi-q2j">
@@ -592,18 +610,24 @@ If you wish to exit the study and stop all data collection, press the End Study 
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Mental Health Notice" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="E5e-to-vHg">
-                                <rect key="frame" x="0.0" y="40" width="378" height="124"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pJK-U1-E3c">
-                                <rect key="frame" x="38" y="84" width="300" height="625"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text">IF YOU ARE EXPERIENCE A LIFE THREATENING EMERGENCY, CALL 9-1-1 OR GO TO YOUR NEAREST HOSPITAL EMERGENCY ROOM
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ShS-xN-a2i">
+                                <rect key="frame" x="45" y="20" width="285" height="655"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Mental Health Notice" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="6pt-IJ-oK4">
+                                        <rect key="frame" x="0.0" y="0.0" width="285" height="65"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" notEnabled="YES"/>
+                                        </accessibility>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="65" id="doV-Lr-ij7"/>
+                                        </constraints>
+                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="5WA-hL-MYo">
+                                        <rect key="frame" x="0.0" y="65" width="285" height="590"/>
+                                        <mutableString key="text">IF YOU ARE EXPERIENCE A LIFE THREATENING EMERGENCY, CALL 9-1-1 OR GO TO YOUR NEAREST HOSPITAL EMERGENCY ROOM
 
 For emergency assistance:
 
@@ -615,13 +639,26 @@ CAPS (24 hours): (310) 825-0768 National Suicide Prevention Hotline: (24 hours):
 
 If you are a UCLA student experiencing a mental health crisis:
 
-Call (310) 825-0768 or visit CAPS during Brief Screen Hours: Monday-Friday 9am-4pm</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES"/>
-                            </textView>
+Call (310) 825-0768 or visit CAPS during Brief Screen Hours: Monday-Friday 9am-4pm</mutableString>
+                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        <dataDetectorType key="dataDetectorTypes" phoneNumber="YES"/>
+                                    </textView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="6pt-IJ-oK4" firstAttribute="centerX" secondItem="ShS-xN-a2i" secondAttribute="centerX" id="naC-Vb-yI1"/>
+                                    <constraint firstItem="5WA-hL-MYo" firstAttribute="centerX" secondItem="ShS-xN-a2i" secondAttribute="centerX" id="q4e-fl-x4E"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.99209848743554507" blue="0.25066154528872875" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ShS-xN-a2i" firstAttribute="top" secondItem="1cD-IC-GLX" secondAttribute="top" constant="20" id="7ee-Cy-3ZS"/>
+                            <constraint firstItem="1cD-IC-GLX" firstAttribute="trailing" secondItem="ShS-xN-a2i" secondAttribute="trailing" constant="45" id="DUV-wf-97h"/>
+                            <constraint firstItem="ShS-xN-a2i" firstAttribute="leading" secondItem="1cD-IC-GLX" secondAttribute="leading" constant="45" id="qmx-f0-Kgf"/>
+                            <constraint firstItem="1cD-IC-GLX" firstAttribute="bottom" secondItem="ShS-xN-a2i" secondAttribute="bottom" id="xQT-Hg-KlO"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="1cD-IC-GLX"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Help" image="help" id="FYq-4z-tIs"/>
@@ -642,21 +679,27 @@ Call (310) 825-0768 or visit CAPS during Brief Screen Hours: Monday-Friday 9am-4
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="QfS-jb-0hC">
-                                <rect key="frame" x="0.0" y="20" width="394" height="121"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text">UNIVERSITY OF CALIFORNIA
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="pqj-9U-x7M">
+                                <rect key="frame" x="45" y="20" width="285" height="655"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="GkM-mf-hy2">
+                                        <rect key="frame" x="0.0" y="0.0" width="285" height="145"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" notEnabled="YES"/>
+                                        </accessibility>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="145" id="cFl-Dx-5bg"/>
+                                        </constraints>
+                                        <string key="text">UNIVERSITY OF CALIFORNIA
 LOS ANGELES (UCLA)
 STUDY INFORMATION SHEET</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" indicatorStyle="black" keyboardDismissMode="interactive" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tot-rX-Sbl">
-                                <rect key="frame" x="38" y="136" width="300" height="573"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text">     Passive Sensing of Mental Wellness
+                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="sEv-49-dJb">
+                                        <rect key="frame" x="0.0" y="145" width="285" height="510"/>
+                                        <mutableString key="text">Passive Sensing of Mental Wellness
 
 Dr. Majid Sarrafzadeh, from the Computer Science Department at the University of California, Los Angeles (UCLA) is conducting a research study.
 
@@ -721,20 +764,28 @@ Who can I contact if I have questions about this study?
 If you have any questions, comments or concerns about the research, you can talk to the one of the researchers. Please contact: Lionel Levine at 213-444-6622 or Lionel@cs.ucla.edu.
 
 ● UCLA Office of the Human Research Protection Program (OHRPP):
-If you have questions about your rights as a research subject, or you have concerns or suggestions and you want to talk to someone other than the researchers, you may contact the UCLA OHRPP by phone: (310) 206-2040; by email: participants@research.ucla.edu or by mail: Box 951406, Los Angeles, CA 90095-1406.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES"/>
-                            </textView>
+If you have questions about your rights as a research subject, or you have concerns or suggestions and you want to talk to someone other than the researchers, you may contact the UCLA OHRPP by phone: (310) 206-2040; by email: participants@research.ucla.edu or by mail: Box 951406, Los Angeles, CA 90095-1406.</mutableString>
+                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.63864905428051078" blue="0.23291700859725128" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="pqj-9U-x7M" firstAttribute="leading" secondItem="w1I-a3-ess" secondAttribute="leading" constant="45" id="2OF-iI-gP0"/>
+                            <constraint firstItem="pqj-9U-x7M" firstAttribute="top" secondItem="w1I-a3-ess" secondAttribute="top" constant="20" id="RxY-eH-RB6"/>
+                            <constraint firstItem="w1I-a3-ess" firstAttribute="trailing" secondItem="pqj-9U-x7M" secondAttribute="trailing" constant="45" id="XHa-f6-PaJ"/>
+                            <constraint firstItem="w1I-a3-ess" firstAttribute="bottom" secondItem="pqj-9U-x7M" secondAttribute="bottom" id="ZRI-N1-HbW"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="w1I-a3-ess"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Info" image="info" id="CCZ-87-CDf"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Huw-dR-G4z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2812.5" y="723.75"/>
+            <point key="canvasLocation" x="2812" y="723.39901477832518"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>

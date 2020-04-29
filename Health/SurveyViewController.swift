@@ -38,11 +38,21 @@ class SurveyViewController: UIViewController {
             self.startSubjectID()
             appdelegate.setHasLaunched(true)
         }
+        NotificationCenter.default.addObserver(self, selector: #selector(updateUI), name: UIApplication.didBecomeActiveNotification, object: nil)
+    }
+    
+    deinit {
+        NotificationCenter.default.removeObserver(self, name: UIApplication.didBecomeActiveNotification, object: nil)
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
+        updateUI()
+    }
+    
+    @objc
+    func updateUI() {
         hasAnsweredLabel.isHidden = !hasAnsweredToday()
     }
     

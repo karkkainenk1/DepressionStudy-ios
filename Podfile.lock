@@ -11,6 +11,10 @@ PODS:
     - ios-ntp (~> 1.1)
     - SCNetworkReachability (~> 2.0)
     - TPCircularBuffer (~> 1.6)
+  - AWAREFramework/Microphone (1.10.5):
+    - AWAREFramework/Core
+  - AWAREFramework/MotionActivity (1.10.5):
+    - AWAREFramework/Core
   - CocoaAsyncSocket (7.6.4)
   - GoogleSignIn (5.0.2):
     - AppAuth (~> 1.2)
@@ -37,6 +41,8 @@ PODS:
 
 DEPENDENCIES:
   - AWAREFramework (~> 1.10)
+  - AWAREFramework/Microphone
+  - AWAREFramework/MotionActivity
 
 SPEC REPOS:
   trunk:
@@ -63,6 +69,6 @@ SPEC CHECKSUMS:
   SCNetworkReachability: dbb0150b1a7a4579e148420132da19e718b955ce
   TPCircularBuffer: c13243556527551c4d320709c7b14a6d20cdc30a
 
-PODFILE CHECKSUM: 4e1b46bd55b3e6813da56aadbcc3fb8fced997b7
+PODFILE CHECKSUM: cdf01fc18319beb096e60b823199e9ca017b2371
 
 COCOAPODS: 1.9.0

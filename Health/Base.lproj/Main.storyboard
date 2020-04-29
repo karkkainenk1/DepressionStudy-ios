@@ -647,7 +647,7 @@ If you have questions about your rights as a research subject, or you have conce
                         <color key="backgroundColor" red="1" green="0.63864905428051078" blue="0.23291700859725128" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="w1I-a3-ess"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Info" image="info" id="CCZ-87-CDf"/>
+                    <tabBarItem key="tabBarItem" title="Info" image="info" catalog="system" id="CCZ-87-CDf"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Huw-dR-G4z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -661,9 +661,9 @@ If you have questions about your rights as a research subject, or you have conce
         <image name="background_dep" width="452" height="723"/>
         <image name="background_eWellness" width="150.33332824707031" height="241"/>
         <image name="exit" width="23" height="23"/>
-        <image name="hambaga" width="50" height="50"/>
+        <image name="hambaga" width="25" height="25"/>
         <image name="help" width="23" height="23"/>
-        <image name="info" width="23" height="23"/>
+        <image name="info" catalog="system" width="93" height="128"/>
         <image name="logo_eWellness" width="763" height="764"/>
         <image name="pencil" width="23" height="23"/>
     </resources>

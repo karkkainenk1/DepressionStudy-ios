@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  Health
+
+  Created by Tyler Davis on 4/29/20.
+  Copyright © 2020 Admin. All rights reserved.
+*/
+
+
+CONSENT_NAME_SECTION_TITLE = "Enter your name";

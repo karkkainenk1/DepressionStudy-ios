@@ -36,8 +36,8 @@ class OnboardingViewController: UIViewController {
         
         // Welcome View Controller
         let welcomeStep = ORKInstructionStep(identifier: "welcomeStepIdentifier")
-        welcomeStep.title = "Welcome Title"
-        welcomeStep.detailText = "This is the detailed introduction"
+        welcomeStep.title = "Welcome to eWellness"
+        welcomeStep.detailText = "This study aims to determine if data that can be collected passively off your phone, can be predictive of your mental wellness at a given time.  Our eventual hope is to create a platform that can predict if a person is in crises and direct help to them without them needing to actively seek out help."
         welcomeStep.iconImage = UIImage(named: "graph")!.withRenderingMode(.alwaysTemplate)
         
         
@@ -60,12 +60,12 @@ class OnboardingViewController: UIViewController {
         
         // What to Expect
         let whatToExpectStep = ORKTableStep(identifier: "whatToExpectStep")
-        whatToExpectStep.title = "Here's what to expect"
-        whatToExpectStep.text = "The long text on what to expect"
+        whatToExpectStep.title = "What to Expect"
+        whatToExpectStep.text = "You'll keep the eWellness app on your phone for the duration of the study, and it will collect some information potentially relevant to your mental state. Some additional key points follow:"
         whatToExpectStep.items = [
-            "Use your phone to do some work" as NSString,
-            "This study will last for one month" as NSString,
-            "This study is run by Tyler" as NSString
+            "You'll use your phone to respond to short questionnaires" as NSString,
+            "This study will last for approximately one month" as NSString,
+            "This study is run by the ER-Lab at UCLA" as NSString
         ]
         whatToExpectStep.bulletIconNames = ["phone", "calendar", "share"]
         whatToExpectStep.bulletType = .image
@@ -78,16 +78,51 @@ class OnboardingViewController: UIViewController {
         let signature = consentDocument.signatures!.first!
         
         let reviewConsentStep = ORKConsentReviewStep(identifier: "ConsentReviewStep", signature: signature, in: consentDocument)
+        reviewConsentStep.requiresScrollToBottom = true
         
         reviewConsentStep.text = "Review the consent form."
         reviewConsentStep.reasonForConsent = "Consent to join the eWellness Research Study."
         
         
+        let permissionsStep = ORKTableStep(identifier: "permissionsStepIdentifier")
+        permissionsStep.title = "Data Permissions"
+        permissionsStep.text =
+        """
+        We’re about to ask you to allow a bunch of intrusive permissions for our app, so before we do, we wanted to explain precisely what information we will be collecting and how it will be used.
+
+        Firstly, please note that we will NOT be collecting any personally identifiable information on you, including taking any photos, videos, or recording any conversations.
+
+        Our application will also NOT conduct any activities other than collect sensor data and your survey responses.
+        
+        If you have any concerns about the data being collected please let us know. You will have to allow all permissions in order for the application to work properly.
+
+        So here is precisely what sensors we will be collecting and how it will be used:
+        """
+        permissionsStep.items = [
+           "Application use: We’ll monitor the frequency and duration of use of specific phone apps." as NSString,
+           "Communication: We’ll monitor a log of incoming and outgoing phone calls, including the number of phone calls . We won’t be storing specific contact info, just the quantity of social interactions. This does NOT assess or record the content of communications." as NSString,
+           "Location: location using GPS, network and wifi detection." as NSString,
+            "Ambient sound detection: We will detect when your external environment is louder than 50 decibels using the phone’s microphone. We will only record decibel levels and NOT record any audio." as NSString,
+            "Activity and movements: we will use the accelerometer, gyroscope, and GPS tracking to try and determine activity-types." as NSString,
+            "Light: We will use the camera’s light sensor to detect light level associated with being outside or in a dark location. Video will NOT be collected." as NSString,
+            "Phone use: We will monitor phone screen on-time." as NSString,
+        ]
+       
+        permissionsStep.bulletType = .circle
+        
         let completionStep = ORKCompletionStep(identifier: "CompletionStep")
         completionStep.title = "Welcome aboard."
-        completionStep.text = "Thank you for joining this study."
+        completionStep.text = """
+        After pressing continue, two things will happen.
+        
+        1. A number of windows will appear requesting permissions. These are necessary for the study.
+        
+        2. A study ID window will appear. Please enter any four digit combination. This number will serve as your identifier for the study and it cannot be changed.
+
+        Thank you for your participation.
+        """
          
-        let orderedTask = ORKOrderedTask(identifier: "Join", steps: [welcomeStep, whatToExpectStep, mentalStep, reviewConsentStep, completionStep])
+        let orderedTask = ORKOrderedTask(identifier: "Join", steps: [welcomeStep, whatToExpectStep, mentalStep, reviewConsentStep, permissionsStep, completionStep])
         let taskViewController = ORKTaskViewController(task: orderedTask, taskRun: nil)
         taskViewController.delegate = self
         

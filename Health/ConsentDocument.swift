@@ -125,7 +125,7 @@ class ConsentDocument: ORKConsentDocument {
     override init() {
         super.init()
         
-        title = NSLocalizedString("Research Health Study Consent Form", comment: "")
+        title = NSLocalizedString("eWellness Study Consent Form", comment: "")
         
         let sectionTypes: [ORKConsentSectionType] = [
             .overview,

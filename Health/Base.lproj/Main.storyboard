@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="o1u-dZ-Gtq">
-    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -23,15 +23,15 @@
             <objects>
                 <viewController id="o1u-dZ-Gtq" customClass="SplashViewController" customModule="Health" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="V0E-gd-rEB">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="background_eWellness" translatesAutoresizingMaskIntoConstraints="NO" id="2T3-MQ-Vta">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="eWellness" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qsc-9C-m3Z">
-                                <rect key="frame" x="49" y="367" width="277" height="78"/>
+                                <rect key="frame" x="69" y="409" width="277" height="78"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="65"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -55,7 +55,7 @@
             <objects>
                 <viewController storyboardIdentifier="term5" title="Onboarding View Controller" id="mEy-Wx-sdE" customClass="OnboardingViewController" customModule="Health" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gfz-x6-KHN">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rIx-va-6PO">
@@ -81,17 +81,17 @@
             <objects>
                 <viewController storyboardIdentifier="term3" title="Data Collection Permission" id="Zj1-17-vTt" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="H6v-1r-WVO">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_dep" translatesAutoresizingMaskIntoConstraints="NO" id="Scq-lw-bAN">
-                                <rect key="frame" x="0.0" y="0.0" width="377" height="812"/>
+                                <rect key="frame" x="0.0" y="0.0" width="416" height="896"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Fwu-NZ-2ru">
-                                <rect key="frame" x="46" y="44" width="285" height="767"/>
+                                <rect key="frame" x="46" y="44" width="324" height="851"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Data Collection Permission" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="m3m-2R-8wL">
-                                        <rect key="frame" x="0.0" y="0.0" width="285" height="65"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="324" height="65"/>
                                         <accessibility key="accessibilityConfiguration">
                                             <accessibilityTraits key="traits" notEnabled="YES"/>
                                         </accessibility>
@@ -103,7 +103,7 @@
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="HMM-Ko-cqB">
-                                        <rect key="frame" x="0.0" y="65" width="285" height="702"/>
+                                        <rect key="frame" x="0.0" y="65" width="324" height="786"/>
                                         <string key="text">We’re about to ask you to allow a bunch of intrusive permissions for our app, so before we do, we wanted to explain precisely what information we will be collecting and how it will be used.
 
 Firstly, please note that we will NOT be collecting any personally identifiable information on you, including taking any photos, videos, or recording any conversations.
@@ -164,17 +164,17 @@ If you have any concerns about the data being collected please let us know. You 
             <objects>
                 <viewController storyboardIdentifier="term2" title="Mental Health Notice" id="sac-hz-AW4" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UL5-Sv-ovE">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_dep" translatesAutoresizingMaskIntoConstraints="NO" id="z0h-k3-Rlh">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Rsl-by-aNi">
-                                <rect key="frame" x="45" y="44" width="285" height="392"/>
+                                <rect key="frame" x="45" y="44" width="324" height="476"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Mental Health Notice" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="q7s-ae-Hu1">
-                                        <rect key="frame" x="0.0" y="0.0" width="285" height="65"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="324" height="65"/>
                                         <accessibility key="accessibilityConfiguration">
                                             <accessibilityTraits key="traits" notEnabled="YES"/>
                                         </accessibility>
@@ -186,7 +186,7 @@ If you have any concerns about the data being collected please let us know. You 
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="GuG-m5-0AQ">
-                                        <rect key="frame" x="0.0" y="65" width="285" height="327"/>
+                                        <rect key="frame" x="0.0" y="65" width="324" height="411"/>
                                         <string key="text">A brief note on your mental health:
 
 Our daily survey will be prompting you for information on your mental well-being. This will include some specific prompts around your feelings of depression and anxiety. Although this information is being recorded for the study, your responses will not be reviewed regularly by researchers.
@@ -227,17 +227,17 @@ As such, if you ever feel overwhelmed, or that you need help, please do not expe
             <objects>
                 <viewController storyboardIdentifier="term4" id="OOx-j8-ThA" customClass="PermissionViewController" customModule="Health" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8Fi-w8-lEI">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_dep" translatesAutoresizingMaskIntoConstraints="NO" id="x2L-na-J8r">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="aZS-BT-Z9R">
-                                <rect key="frame" x="45" y="44" width="285" height="445"/>
+                                <rect key="frame" x="45" y="44" width="324" height="529"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Permission For Study" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="syP-AQ-goA">
-                                        <rect key="frame" x="0.0" y="0.0" width="285" height="65"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="324" height="65"/>
                                         <accessibility key="accessibilityConfiguration">
                                             <accessibilityTraits key="traits" notEnabled="YES"/>
                                         </accessibility>
@@ -249,7 +249,7 @@ As such, if you ever feel overwhelmed, or that you need help, please do not expe
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="dyh-rl-BiF">
-                                        <rect key="frame" x="0.0" y="65" width="285" height="318"/>
+                                        <rect key="frame" x="0.0" y="65" width="324" height="50"/>
                                         <string key="text">By selecting Agree, you acknowledge that you have received and understood the terms of the study. 
 
 We will ask you to allow several intrusive permissions for the study after you press Agree, so please select allow for each of the requests.
@@ -262,7 +262,7 @@ Thank you for your participation, and again, you may choose to opt out of the st
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vwp-NY-4HC">
-                                        <rect key="frame" x="0.0" y="383" width="285" height="42"/>
+                                        <rect key="frame" x="0.0" y="115" width="324" height="394"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <state key="normal" title="Agree"/>
                                         <connections>
@@ -270,7 +270,7 @@ Thank you for your participation, and again, you may choose to opt out of the st
                                         </connections>
                                     </button>
                                     <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="eho-ed-EJ1">
-                                        <rect key="frame" x="0.0" y="425" width="285" height="20"/>
+                                        <rect key="frame" x="0.0" y="509" width="324" height="20"/>
                                     </activityIndicatorView>
                                 </subviews>
                                 <constraints>
@@ -307,17 +307,17 @@ Thank you for your participation, and again, you may choose to opt out of the st
             <objects>
                 <viewController storyboardIdentifier="term1" title="Study Information" id="8E8-ef-RB6" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GwW-4A-irh">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_dep" translatesAutoresizingMaskIntoConstraints="NO" id="fGi-C2-Mrw">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ACZ-rp-SKh">
-                                <rect key="frame" x="45" y="44" width="285" height="769"/>
+                                <rect key="frame" x="45" y="44" width="324" height="853"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="STUDY INFORMATION SHEET" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="oCd-Gc-J86">
-                                        <rect key="frame" x="0.0" y="0.0" width="285" height="65"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="324" height="65"/>
                                         <accessibility key="accessibilityConfiguration">
                                             <accessibilityTraits key="traits" notEnabled="YES"/>
                                         </accessibility>
@@ -329,7 +329,7 @@ Thank you for your participation, and again, you may choose to opt out of the st
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="rT3-GQ-hyW">
-                                        <rect key="frame" x="0.0" y="65" width="285" height="704"/>
+                                        <rect key="frame" x="0.0" y="65" width="324" height="788"/>
                                         <string key="text">Passive Sensing of Mental Wellness  Dr. Majid Sarrafzadeh, from the Computer Science Department at the University of California, Los Angeles (UCLA) is conducting a research study.
 
 You were selected as a possible participant in this study because you are a current student, employee or affiliate of the university. Your participation in this research study is voluntary.
@@ -430,20 +430,20 @@ By selecting AGREE you acknowledge that you have received and understood the ter
             <objects>
                 <viewController storyboardIdentifier="term0" id="jn6-Ej-AfV" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WTs-6b-XUG">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background_dep" translatesAutoresizingMaskIntoConstraints="NO" id="VAP-yG-Euz">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.98774117230000003" green="0.68526738880000004" blue="0.6431612968" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo_eWellness" translatesAutoresizingMaskIntoConstraints="NO" id="oDD-Th-3tn">
-                                <rect key="frame" x="100" y="73" width="176" height="174"/>
+                                <rect key="frame" x="120" y="73" width="176" height="174"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Welcome to eWellness app. This app will monitor your smartphone activity." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="FQs-ua-Twk">
-                                <rect key="frame" x="16" y="262" width="339" height="114"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Welcome to eWellness app" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="FQs-ua-Twk">
+                                <rect key="frame" x="33" y="262" width="339" height="114"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="textColor" red="0.15202015902919208" green="0.11081539763281546" blue="0.40685718911917101" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -474,19 +474,19 @@ By selecting AGREE you acknowledge that you have received and understood the ter
             <objects>
                 <viewController id="mqK-y6-MYu" customClass="SurveyViewController" customModule="Health" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GLC-jb-poK">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SHv-8p-cTR">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="709"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="793"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background_dep" translatesAutoresizingMaskIntoConstraints="NO" id="9QN-2l-Noj">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="709"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="793"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8KA-2g-AnE">
-                                        <rect key="frame" x="61" y="172" width="252" height="77"/>
+                                        <rect key="frame" x="61" y="172" width="291" height="77"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <state key="normal" title="Take Assessment"/>
@@ -495,14 +495,14 @@ By selecting AGREE you acknowledge that you have received and understood the ter
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Instruction: When you want to complete the daily survey, press the button to view the questionnaire:" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FXz-EV-MJA">
-                                        <rect key="frame" x="24" y="86" width="326" height="78"/>
+                                        <rect key="frame" x="24" y="86" width="365" height="78"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You have already taken the daily survey today. You can change your answers by taking the survey again." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M23-Jj-EeW">
-                                        <rect key="frame" x="37" y="257" width="300" height="75"/>
+                                        <rect key="frame" x="56" y="257" width="300" height="75"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -559,18 +559,18 @@ By selecting AGREE you acknowledge that you have received and understood the ter
             <objects>
                 <viewController id="eiJ-Of-QAF" userLabel="Exit" customClass="ExitViewController" customModule="Health" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jbR-Is-Qfa">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background_dep" translatesAutoresizingMaskIntoConstraints="NO" id="gCf-zI-cZP">
-                                <rect key="frame" x="-39" y="0.0" width="453" height="741"/>
+                                <rect key="frame" x="-39" y="0.0" width="492" height="825"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Mzk-jo-KXl">
-                                <rect key="frame" x="45" y="20" width="285" height="267"/>
+                                <rect key="frame" x="45" y="20" width="324" height="351"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Exiting the Study" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="INm-sn-pqa">
-                                        <rect key="frame" x="0.0" y="0.0" width="285" height="65"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="324" height="65"/>
                                         <accessibility key="accessibilityConfiguration">
                                             <accessibilityTraits key="traits" notEnabled="YES"/>
                                         </accessibility>
@@ -582,7 +582,7 @@ By selecting AGREE you acknowledge that you have received and understood the ter
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="opm-QS-nxu">
-                                        <rect key="frame" x="0.0" y="65" width="285" height="140"/>
+                                        <rect key="frame" x="0.0" y="65" width="324" height="63"/>
                                         <string key="text">Are you sure you wish to exit the study? It will stop all data collection.
 
 If you wish to exit the study and stop all data collection, press the End Study button below. You may reenter the study at any time.</string>
@@ -592,7 +592,7 @@ If you wish to exit the study and stop all data collection, press the End Study 
                                         <dataDetectorType key="dataDetectorTypes" phoneNumber="YES"/>
                                     </textView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="DaS-ea-kJo">
-                                        <rect key="frame" x="0.0" y="205" width="285" height="42"/>
+                                        <rect key="frame" x="0.0" y="128" width="324" height="203"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <inset key="titleEdgeInsets" minX="0.0" minY="20" maxX="0.0" maxY="0.0"/>
                                         <state key="normal" title="Exit Study">
@@ -606,7 +606,7 @@ If you wish to exit the study and stop all data collection, press the End Study 
                                         </connections>
                                     </button>
                                     <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="aOY-UN-K8U">
-                                        <rect key="frame" x="0.0" y="247" width="285" height="20"/>
+                                        <rect key="frame" x="0.0" y="331" width="324" height="20"/>
                                     </activityIndicatorView>
                                 </subviews>
                                 <constraints>
@@ -639,18 +639,18 @@ If you wish to exit the study and stop all data collection, press the End Study 
             <objects>
                 <viewController id="f9A-nN-gng" userLabel="Mental Health" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pCD-vd-fdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background_dep" translatesAutoresizingMaskIntoConstraints="NO" id="UjZ-hA-Oex">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ShS-xN-a2i">
-                                <rect key="frame" x="45" y="20" width="285" height="655"/>
+                                <rect key="frame" x="45" y="20" width="324" height="739"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Mental Health Notice" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="6pt-IJ-oK4">
-                                        <rect key="frame" x="0.0" y="0.0" width="285" height="65"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="324" height="65"/>
                                         <accessibility key="accessibilityConfiguration">
                                             <accessibilityTraits key="traits" notEnabled="YES"/>
                                         </accessibility>
@@ -662,7 +662,7 @@ If you wish to exit the study and stop all data collection, press the End Study 
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="5WA-hL-MYo">
-                                        <rect key="frame" x="0.0" y="65" width="285" height="590"/>
+                                        <rect key="frame" x="0.0" y="65" width="324" height="674"/>
                                         <string key="text">IF YOU ARE EXPERIENCE A LIFE THREATENING EMERGENCY, CALL 9-1-1 OR GO TO YOUR NEAREST HOSPITAL EMERGENCY ROOM
 
 For emergency assistance:
@@ -708,18 +708,18 @@ Call (310) 825-0768 or visit CAPS during Brief Screen Hours: Monday-Friday 9am-4
             <objects>
                 <viewController id="4ov-V9-wJ8" userLabel="Info" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3kN-JK-X8H">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background_dep" translatesAutoresizingMaskIntoConstraints="NO" id="dYn-hI-oAN">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="pqj-9U-x7M">
-                                <rect key="frame" x="45" y="20" width="285" height="655"/>
+                                <rect key="frame" x="45" y="20" width="324" height="739"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="GkM-mf-hy2">
-                                        <rect key="frame" x="0.0" y="0.0" width="285" height="145"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="324" height="145"/>
                                         <accessibility key="accessibilityConfiguration">
                                             <accessibilityTraits key="traits" notEnabled="YES"/>
                                         </accessibility>
@@ -734,7 +734,7 @@ STUDY INFORMATION SHEET</string>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="sEv-49-dJb">
-                                        <rect key="frame" x="0.0" y="145" width="285" height="510"/>
+                                        <rect key="frame" x="0.0" y="145" width="324" height="594"/>
                                         <string key="text">Passive Sensing of Mental Wellness
 
 Dr. Majid Sarrafzadeh, from the Computer Science Department at the University of California, Los Angeles (UCLA) is conducting a research study.
@@ -829,7 +829,7 @@ If you have questions about your rights as a research subject, or you have conce
     </inferredMetricsTieBreakers>
     <resources>
         <image name="background_dep" width="452" height="723"/>
-        <image name="background_eWellness" width="150.33332824707031" height="241"/>
+        <image name="background_eWellness" width="225.5" height="361.5"/>
         <image name="exit" width="23" height="23"/>
         <image name="hambaga" width="25" height="25"/>
         <image name="help" width="23" height="23"/>

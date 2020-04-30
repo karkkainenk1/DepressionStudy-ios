@@ -18,12 +18,13 @@
 		846B533F20EACB16002CF471 /* HealthUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846B533E20EACB16002CF471 /* HealthUITests.swift */; };
 		84C19F7721078A6F00C1C932 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C19F7621078A6F00C1C932 /* SplashViewController.swift */; };
 		84C19F7E2107BD6800C1C932 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C19F7D2107BD6800C1C932 /* PageViewController.swift */; };
+		CB6CA806245AAD200053503E /* ResearchKit.strings in Resources */ = {isa = PBXBuildFile; fileRef = CB6CA808245AAD200053503E /* ResearchKit.strings */; };
 		CBDC93B2245A52A600BA8F02 /* ResearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBDC93AB245A523700BA8F02 /* ResearchKit.framework */; };
 		CBDC93B3245A52A600BA8F02 /* ResearchKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CBDC93AB245A523700BA8F02 /* ResearchKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CBDC93BE245A55B400BA8F02 /* HealthDataStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDC93B7245A55B400BA8F02 /* HealthDataStep.swift */; };
 		CBDC93BF245A55B400BA8F02 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDC93BB245A55B400BA8F02 /* OnboardingViewController.swift */; };
 		CBDC93C0245A55B400BA8F02 /* HealthDataStepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDC93BC245A55B400BA8F02 /* HealthDataStepViewController.swift */; };
-		CBDC93C1245A55B400BA8F02 /* ConsentDocument copy.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDC93BD245A55B400BA8F02 /* ConsentDocument copy.swift */; };
+		CBDC93C1245A55B400BA8F02 /* ConsentDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDC93BD245A55B400BA8F02 /* ConsentDocument.swift */; };
 		DD30CE8A2147453E00249231 /* PermissionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD30CE892147453E00249231 /* PermissionViewController.swift */; };
 		DD97F758214ADFA1005D28FC /* ExitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD97F757214ADFA1005D28FC /* ExitViewController.swift */; };
 		F93348ADB98AF13F3E6CB019 /* Pods_HealthTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 897EFA36D6834949B1D6139B /* Pods_HealthTests.framework */; };
@@ -98,11 +99,12 @@
 		897EFA36D6834949B1D6139B /* Pods_HealthTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HealthTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B19D708FE10C4BA1612F9939 /* Pods-HealthTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HealthTests/Pods-HealthTests.release.xcconfig"; sourceTree = "<group>"; };
 		B5409A9D44D52EE4A868AE71 /* Pods-Health.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Health.release.xcconfig"; path = "Pods/Target Support Files/Pods-Health/Pods-Health.release.xcconfig"; sourceTree = "<group>"; };
+		CB6CA807245AAD200053503E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/ResearchKit.strings; sourceTree = "<group>"; };
 		CBDC93A4245A523700BA8F02 /* ResearchKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ResearchKit.xcodeproj; path = "../../../Downloads/ResearchKit-master/ResearchKit.xcodeproj"; sourceTree = "<group>"; };
 		CBDC93B7245A55B400BA8F02 /* HealthDataStep.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthDataStep.swift; sourceTree = "<group>"; };
 		CBDC93BB245A55B400BA8F02 /* OnboardingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		CBDC93BC245A55B400BA8F02 /* HealthDataStepViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthDataStepViewController.swift; sourceTree = "<group>"; };
-		CBDC93BD245A55B400BA8F02 /* ConsentDocument copy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ConsentDocument copy.swift"; sourceTree = "<group>"; };
+		CBDC93BD245A55B400BA8F02 /* ConsentDocument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsentDocument.swift; sourceTree = "<group>"; };
 		DD30CE892147453E00249231 /* PermissionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionViewController.swift; sourceTree = "<group>"; };
 		DD97F757214ADFA1005D28FC /* ExitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExitViewController.swift; sourceTree = "<group>"; };
 		DD97FB49214C67AE005D28FC /* AppDelegate-Swift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate-Swift.h"; sourceTree = "<group>"; };
@@ -195,7 +197,8 @@
 				DD97FB4D214C812F005D28FC /* AWARE.xcdatamodeld */,
 				8465771E20FD557E0017EA56 /* Health-Bridging-Header.h */,
 				846B531E20EACB12002CF471 /* AppDelegate.swift */,
-				CBDC93BD245A55B400BA8F02 /* ConsentDocument copy.swift */,
+				CBDC93BD245A55B400BA8F02 /* ConsentDocument.swift */,
+				CB6CA808245AAD200053503E /* ResearchKit.strings */,
 				CBDC93B7245A55B400BA8F02 /* HealthDataStep.swift */,
 				CBDC93BC245A55B400BA8F02 /* HealthDataStepViewController.swift */,
 				CBDC93BB245A55B400BA8F02 /* OnboardingViewController.swift */,
@@ -382,6 +385,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				846B532920EACB16002CF471 /* LaunchScreen.storyboard in Resources */,
+				CB6CA806245AAD200053503E /* ResearchKit.strings in Resources */,
 				846B532620EACB16002CF471 /* Assets.xcassets in Resources */,
 				846B532420EACB12002CF471 /* Main.storyboard in Resources */,
 			);
@@ -502,7 +506,7 @@
 				846B532120EACB12002CF471 /* SurveyViewController.swift in Sources */,
 				84C19F7E2107BD6800C1C932 /* PageViewController.swift in Sources */,
 				CBDC93C0245A55B400BA8F02 /* HealthDataStepViewController.swift in Sources */,
-				CBDC93C1245A55B400BA8F02 /* ConsentDocument copy.swift in Sources */,
+				CBDC93C1245A55B400BA8F02 /* ConsentDocument.swift in Sources */,
 				CBDC93BE245A55B400BA8F02 /* HealthDataStep.swift in Sources */,
 				CBDC93BF245A55B400BA8F02 /* OnboardingViewController.swift in Sources */,
 				846B531F20EACB12002CF471 /* AppDelegate.swift in Sources */,
@@ -558,6 +562,14 @@
 				846B532820EACB16002CF471 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		CB6CA808245AAD200053503E /* ResearchKit.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB6CA807245AAD200053503E /* en */,
+			);
+			name = ResearchKit.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

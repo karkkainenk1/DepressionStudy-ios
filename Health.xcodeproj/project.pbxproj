@@ -18,6 +18,15 @@
 		846B533F20EACB16002CF471 /* HealthUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846B533E20EACB16002CF471 /* HealthUITests.swift */; };
 		84C19F7721078A6F00C1C932 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C19F7621078A6F00C1C932 /* SplashViewController.swift */; };
 		84C19F7E2107BD6800C1C932 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C19F7D2107BD6800C1C932 /* PageViewController.swift */; };
+		CB390417245B77E800902E5C /* ConsentDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB390410245B77E700902E5C /* ConsentDocument.swift */; };
+		CB390418245B77E800902E5C /* PermissionStepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB390411245B77E700902E5C /* PermissionStepViewController.swift */; };
+		CB390419245B77E800902E5C /* ResearchContainerSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB390412245B77E700902E5C /* ResearchContainerSegue.swift */; };
+		CB39041A245B77E800902E5C /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB390413245B77E700902E5C /* OnboardingViewController.swift */; };
+		CB39041B245B77E800902E5C /* HealthDataStepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB390414245B77E700902E5C /* HealthDataStepViewController.swift */; };
+		CB39041C245B77E800902E5C /* HealthDataStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB390415245B77E700902E5C /* HealthDataStep.swift */; };
+		CB39041D245B77E800902E5C /* PermissionStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB390416245B77E700902E5C /* PermissionStep.swift */; };
+		CB6AB853245B791300BBA04C /* ResearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB6AB850245B78ED00BBA04C /* ResearchKit.framework */; };
+		CB6AB854245B791300BBA04C /* ResearchKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CB6AB850245B78ED00BBA04C /* ResearchKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DD06B739245A15DD00B0A11D /* ContextCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD06B738245A15DD00B0A11D /* ContextCardViewController.swift */; };
 		DD06B743245A187400B0A11D /* BarChartCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD06B73E245A187300B0A11D /* BarChartCard.swift */; };
 		DD06B744245A187400B0A11D /* ContextCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD06B73C245A187300B0A11D /* ContextCard.swift */; };
@@ -46,7 +55,35 @@
 			remoteGlobalIDString = 846B531A20EACB12002CF471;
 			remoteInfo = Health;
 		};
+		CB6AB84F245B78ED00BBA04C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB6AB849245B78ED00BBA04C /* ResearchKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B183A5951A8535D100C76870;
+			remoteInfo = ResearchKit;
+		};
+		CB6AB851245B78ED00BBA04C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB6AB849245B78ED00BBA04C /* ResearchKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 86CC8E9A1AC09332001CCD89;
+			remoteInfo = ResearchKitTests;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CB6AB855245B791300BBA04C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CB6AB854245B791300BBA04C /* ResearchKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		46A1E6933B2D8524039C3282 /* Pods_Health.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Health.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,6 +109,14 @@
 		897EFA36D6834949B1D6139B /* Pods_HealthTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HealthTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B19D708FE10C4BA1612F9939 /* Pods-HealthTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HealthTests/Pods-HealthTests.release.xcconfig"; sourceTree = "<group>"; };
 		B5409A9D44D52EE4A868AE71 /* Pods-Health.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Health.release.xcconfig"; path = "Pods/Target Support Files/Pods-Health/Pods-Health.release.xcconfig"; sourceTree = "<group>"; };
+		CB390410245B77E700902E5C /* ConsentDocument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConsentDocument.swift; path = Health/ConsentDocument.swift; sourceTree = "<group>"; };
+		CB390411245B77E700902E5C /* PermissionStepViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PermissionStepViewController.swift; path = Health/PermissionStepViewController.swift; sourceTree = "<group>"; };
+		CB390412245B77E700902E5C /* ResearchContainerSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResearchContainerSegue.swift; path = Health/ResearchContainerSegue.swift; sourceTree = "<group>"; };
+		CB390413245B77E700902E5C /* OnboardingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OnboardingViewController.swift; path = Health/OnboardingViewController.swift; sourceTree = "<group>"; };
+		CB390414245B77E700902E5C /* HealthDataStepViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HealthDataStepViewController.swift; path = Health/HealthDataStepViewController.swift; sourceTree = "<group>"; };
+		CB390415245B77E700902E5C /* HealthDataStep.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HealthDataStep.swift; path = Health/HealthDataStep.swift; sourceTree = "<group>"; };
+		CB390416245B77E700902E5C /* PermissionStep.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PermissionStep.swift; path = Health/PermissionStep.swift; sourceTree = "<group>"; };
+		CB6AB849245B78ED00BBA04C /* ResearchKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ResearchKit.xcodeproj; path = "../../Downloads/ResearchKit-master/ResearchKit.xcodeproj"; sourceTree = "<group>"; };
 		DD06B738245A15DD00B0A11D /* ContextCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextCardViewController.swift; sourceTree = "<group>"; };
 		DD06B73C245A187300B0A11D /* ContextCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextCard.swift; sourceTree = "<group>"; };
 		DD06B73D245A187300B0A11D /* ContextCard.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContextCard.xib; sourceTree = "<group>"; };
@@ -96,6 +141,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB6AB853245B791300BBA04C /* ResearchKit.framework in Frameworks */,
 				3B279804517B9EF8813A2AC0 /* Pods_Health.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -145,6 +191,14 @@
 		846B531220EACB12002CF471 = {
 			isa = PBXGroup;
 			children = (
+				CB6AB849245B78ED00BBA04C /* ResearchKit.xcodeproj */,
+				CB390410245B77E700902E5C /* ConsentDocument.swift */,
+				CB390415245B77E700902E5C /* HealthDataStep.swift */,
+				CB390414245B77E700902E5C /* HealthDataStepViewController.swift */,
+				CB390413245B77E700902E5C /* OnboardingViewController.swift */,
+				CB390416245B77E700902E5C /* PermissionStep.swift */,
+				CB390411245B77E700902E5C /* PermissionStepViewController.swift */,
+				CB390412245B77E700902E5C /* ResearchContainerSegue.swift */,
 				846B531D20EACB12002CF471 /* Health */,
 				846B533220EACB16002CF471 /* HealthTests */,
 				846B533D20EACB16002CF471 /* HealthUITests */,
@@ -204,6 +258,15 @@
 			path = HealthUITests;
 			sourceTree = "<group>";
 		};
+		CB6AB84A245B78ED00BBA04C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CB6AB850245B78ED00BBA04C /* ResearchKit.framework */,
+				CB6AB852245B78ED00BBA04C /* ResearchKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		DD06B73B245A186800B0A11D /* ContextCard */ = {
 			isa = PBXGroup;
 			children = (
@@ -231,6 +294,7 @@
 				846B531920EACB12002CF471 /* Resources */,
 				D96886818E44EF958DF0E663 /* [CP] Embed Pods Frameworks */,
 				F3224E830EF523AE21AE6DFC /* [CP] Copy Pods Resources */,
+				CB6AB855245B791300BBA04C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -321,6 +385,12 @@
 			mainGroup = 846B531220EACB12002CF471;
 			productRefGroup = 846B531C20EACB12002CF471 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = CB6AB84A245B78ED00BBA04C /* Products */;
+					ProjectRef = CB6AB849245B78ED00BBA04C /* ResearchKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				846B531A20EACB12002CF471 /* Health */,
@@ -329,6 +399,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		CB6AB850245B78ED00BBA04C /* ResearchKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ResearchKit.framework;
+			remoteRef = CB6AB84F245B78ED00BBA04C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CB6AB852245B78ED00BBA04C /* ResearchKitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ResearchKitTests.xctest;
+			remoteRef = CB6AB851245B78ED00BBA04C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		846B531920EACB12002CF471 /* Resources */ = {
@@ -454,12 +541,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB390419245B77E800902E5C /* ResearchContainerSegue.swift in Sources */,
 				846B532120EACB12002CF471 /* SurveyViewController.swift in Sources */,
+				CB39041B245B77E800902E5C /* HealthDataStepViewController.swift in Sources */,
 				DD06B739245A15DD00B0A11D /* ContextCardViewController.swift in Sources */,
+				CB39041D245B77E800902E5C /* PermissionStep.swift in Sources */,
+				CB39041A245B77E800902E5C /* OnboardingViewController.swift in Sources */,
 				84C19F7E2107BD6800C1C932 /* PageViewController.swift in Sources */,
 				DD06B747245A187400B0A11D /* DeviceUsageCard.swift in Sources */,
 				DD06B748245A187400B0A11D /* MapCard.swift in Sources */,
+				CB390418245B77E800902E5C /* PermissionStepViewController.swift in Sources */,
+				CB390417245B77E800902E5C /* ConsentDocument.swift in Sources */,
 				846B531F20EACB12002CF471 /* AppDelegate.swift in Sources */,
+				CB39041C245B77E800902E5C /* HealthDataStep.swift in Sources */,
 				DD06B744245A187400B0A11D /* ContextCard.swift in Sources */,
 				84C19F7721078A6F00C1C932 /* SplashViewController.swift in Sources */,
 				DD97F758214ADFA1005D28FC /* ExitViewController.swift in Sources */,
@@ -642,7 +736,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6B8PP2XLB5;
+				DEVELOPMENT_TEAM = 9HWKFPBULP;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/EZAudio\"",
@@ -655,7 +749,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = edu.ucla.eHealth;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tylerd.eHealth;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_INSTALL_OBJC_HEADER = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";

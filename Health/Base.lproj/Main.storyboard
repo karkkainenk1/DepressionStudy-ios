@@ -65,9 +65,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CjS-em-93e">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CjS-em-93e">
                                 <rect key="frame" x="155" y="489" width="101" height="39"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="Join Study"/>
                                 <connections>
@@ -76,6 +75,10 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="CjS-em-93e" firstAttribute="centerX" secondItem="h2n-U5-Igk" secondAttribute="centerX" id="E1K-zP-nhL"/>
+                            <constraint firstItem="CjS-em-93e" firstAttribute="centerY" secondItem="h2n-U5-Igk" secondAttribute="centerY" id="KD8-rW-yUO"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="h2n-U5-Igk"/>
                     </view>
                     <navigationItem key="navigationItem" id="97n-yX-hJd"/>

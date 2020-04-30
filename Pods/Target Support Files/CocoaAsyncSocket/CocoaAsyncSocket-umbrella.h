@@ -10,9 +10,7 @@
 #endif
 #endif
 
-#import "GCDAsyncSocket 2.h"
 #import "GCDAsyncSocket.h"
-#import "GCDAsyncUdpSocket 2.h"
 #import "GCDAsyncUdpSocket.h"
 
 FOUNDATION_EXPORT double CocoaAsyncSocketVersionNumber;

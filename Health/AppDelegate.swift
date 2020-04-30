@@ -7,6 +7,7 @@
 //  Helpful Source: "https://github.com/tetujin/AWAREFramework-iOS"
 
 import UIKit
+import ResearchKit
 import AWAREFramework
 
 @UIApplicationMain

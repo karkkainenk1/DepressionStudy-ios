@@ -18,6 +18,8 @@
 		846B533F20EACB16002CF471 /* HealthUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846B533E20EACB16002CF471 /* HealthUITests.swift */; };
 		84C19F7721078A6F00C1C932 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C19F7621078A6F00C1C932 /* SplashViewController.swift */; };
 		84C19F7E2107BD6800C1C932 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C19F7D2107BD6800C1C932 /* PageViewController.swift */; };
+		CBDC93B2245A52A600BA8F02 /* ResearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBDC93AB245A523700BA8F02 /* ResearchKit.framework */; };
+		CBDC93B3245A52A600BA8F02 /* ResearchKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CBDC93AB245A523700BA8F02 /* ResearchKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DD30CE8A2147453E00249231 /* PermissionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD30CE892147453E00249231 /* PermissionViewController.swift */; };
 		DD97F758214ADFA1005D28FC /* ExitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD97F757214ADFA1005D28FC /* ExitViewController.swift */; };
 		F93348ADB98AF13F3E6CB019 /* Pods_HealthTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 897EFA36D6834949B1D6139B /* Pods_HealthTests.framework */; };
@@ -38,7 +40,35 @@
 			remoteGlobalIDString = 846B531A20EACB12002CF471;
 			remoteInfo = Health;
 		};
+		CBDC93AA245A523700BA8F02 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CBDC93A4245A523700BA8F02 /* ResearchKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B183A5951A8535D100C76870;
+			remoteInfo = ResearchKit;
+		};
+		CBDC93AC245A523700BA8F02 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CBDC93A4245A523700BA8F02 /* ResearchKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 86CC8E9A1AC09332001CCD89;
+			remoteInfo = ResearchKitTests;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CBDC93B4245A52A600BA8F02 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CBDC93B3245A52A600BA8F02 /* ResearchKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		46A1E6933B2D8524039C3282 /* Pods_Health.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Health.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,6 +94,7 @@
 		897EFA36D6834949B1D6139B /* Pods_HealthTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HealthTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B19D708FE10C4BA1612F9939 /* Pods-HealthTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HealthTests/Pods-HealthTests.release.xcconfig"; sourceTree = "<group>"; };
 		B5409A9D44D52EE4A868AE71 /* Pods-Health.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Health.release.xcconfig"; path = "Pods/Target Support Files/Pods-Health/Pods-Health.release.xcconfig"; sourceTree = "<group>"; };
+		CBDC93A4245A523700BA8F02 /* ResearchKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ResearchKit.xcodeproj; path = "../../../Downloads/ResearchKit-master/ResearchKit.xcodeproj"; sourceTree = "<group>"; };
 		DD30CE892147453E00249231 /* PermissionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionViewController.swift; sourceTree = "<group>"; };
 		DD97F757214ADFA1005D28FC /* ExitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExitViewController.swift; sourceTree = "<group>"; };
 		DD97FB49214C67AE005D28FC /* AppDelegate-Swift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate-Swift.h"; sourceTree = "<group>"; };
@@ -80,6 +111,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBDC93B2245A52A600BA8F02 /* ResearchKit.framework in Frameworks */,
 				3B279804517B9EF8813A2AC0 /* Pods_Health.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -151,6 +183,7 @@
 		846B531D20EACB12002CF471 /* Health */ = {
 			isa = PBXGroup;
 			children = (
+				CBDC93A4245A523700BA8F02 /* ResearchKit.xcodeproj */,
 				DD97FB4D214C812F005D28FC /* AWARE.xcdatamodeld */,
 				8465771E20FD557E0017EA56 /* Health-Bridging-Header.h */,
 				846B531E20EACB12002CF471 /* AppDelegate.swift */,
@@ -186,6 +219,15 @@
 			path = HealthUITests;
 			sourceTree = "<group>";
 		};
+		CBDC93A5245A523700BA8F02 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CBDC93AB245A523700BA8F02 /* ResearchKit.framework */,
+				CBDC93AD245A523700BA8F02 /* ResearchKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -199,6 +241,7 @@
 				846B531920EACB12002CF471 /* Resources */,
 				D96886818E44EF958DF0E663 /* [CP] Embed Pods Frameworks */,
 				F3224E830EF523AE21AE6DFC /* [CP] Copy Pods Resources */,
+				CBDC93B4245A52A600BA8F02 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -289,6 +332,12 @@
 			mainGroup = 846B531220EACB12002CF471;
 			productRefGroup = 846B531C20EACB12002CF471 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = CBDC93A5245A523700BA8F02 /* Products */;
+					ProjectRef = CBDC93A4245A523700BA8F02 /* ResearchKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				846B531A20EACB12002CF471 /* Health */,
@@ -297,6 +346,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		CBDC93AB245A523700BA8F02 /* ResearchKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ResearchKit.framework;
+			remoteRef = CBDC93AA245A523700BA8F02 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CBDC93AD245A523700BA8F02 /* ResearchKitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ResearchKitTests.xctest;
+			remoteRef = CBDC93AC245A523700BA8F02 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		846B531920EACB12002CF471 /* Resources */ = {

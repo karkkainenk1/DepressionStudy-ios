@@ -11,14 +11,14 @@ import UIKit
 class PageViewController: UIPageViewController, UIPageViewControllerDelegate, UIPageViewControllerDataSource {
     
     var pageControl = UIPageControl()
-    
     // add pages to viewcontroller here (needs storyboard id)
     lazy var orderedViewControllers: [UIViewController] = {
         return [self.newVc(viewController: "term0"),
                 self.newVc(viewController: "term1"),
                 self.newVc(viewController: "term2"),
                 self.newVc(viewController: "term3"),
-                self.newVc(viewController: "term4")]
+                self.newVc(viewController: "term4"),
+                self.newVc(viewController: "term5")]
     }()
     
     override func viewDidLoad() {

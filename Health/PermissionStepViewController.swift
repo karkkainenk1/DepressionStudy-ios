@@ -8,20 +8,19 @@
 
 import ResearchKit
 
-class PermissionDataStepViewController: ORKInstructionStepViewController {
+class PermissionDataStepViewController: ORKTableStepViewController {
     // MARK: Properties
     
     var permissionStep: PermissionStep? {
         return step as? PermissionStep
     }
     
-    // MARK: ORKInstructionStepViewController
+    // MARK: ORKTableStepViewController
     
     override func goForward() {
-        permissionStep?.startStudy() { succeeded, _ in
-            // The second part of the guard condition allows the app to proceed on the Simulator (where health data is not available)
-            guard succeeded || (TARGET_OS_SIMULATOR != 0) else { return }
-            
+        
+        OperationQueue.main.addOperation { super.goForward() }
+        if permissionStep?.startStudy() ?? false {
             OperationQueue.main.addOperation {
                 super.goForward()
             }

@@ -41,35 +41,6 @@
             <point key="canvasLocation" x="-906.39999999999998" y="-911.69415292353835"/>
         </scene>
         <!--Onboarding View Controller-->
-        <scene sceneID="oZr-DZ-DiE">
-            <objects>
-                <viewController storyboardIdentifier="term5" title="Onboarding View Controller" id="mEy-Wx-sdE" customClass="OnboardingViewController" customModule="Health" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="gfz-x6-KHN">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rIx-va-6PO">
-                                <rect key="frame" x="142" y="386" width="108" height="58"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="38"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="bruhButton:" destination="mEy-Wx-sdE" eventType="touchUpInside" id="bKh-Gr-R15"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="mmE-9D-fvf"/>
-                    </view>
-                    <connections>
-                        <segue destination="mfZ-bm-Fjy" kind="show" identifier="toStudy" id="NHg-0k-CGJ"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="zCW-Xa-R2o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4371" y="-1662"/>
-        </scene>
-        <!--Onboarding View Controller-->
         <scene sceneID="Dgh-sl-0WR">
             <objects>
                 <viewController storyboardIdentifier="term0" id="jn6-Ej-AfV" customClass="OnboardingViewController" customModule="Health" customModuleProvider="target" sceneMemberID="viewController">
@@ -472,7 +443,7 @@ If you have questions about your rights as a research subject, or you have conce
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="NHg-0k-CGJ"/>
+        <segue reference="5ah-Zh-WIq"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="background_dep" width="452" height="723"/>

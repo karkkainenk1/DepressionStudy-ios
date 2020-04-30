@@ -18,6 +18,14 @@
 		846B533F20EACB16002CF471 /* HealthUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846B533E20EACB16002CF471 /* HealthUITests.swift */; };
 		84C19F7721078A6F00C1C932 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C19F7621078A6F00C1C932 /* SplashViewController.swift */; };
 		84C19F7E2107BD6800C1C932 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C19F7D2107BD6800C1C932 /* PageViewController.swift */; };
+		DD06B739245A15DD00B0A11D /* ContextCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD06B738245A15DD00B0A11D /* ContextCardViewController.swift */; };
+		DD06B743245A187400B0A11D /* BarChartCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD06B73E245A187300B0A11D /* BarChartCard.swift */; };
+		DD06B744245A187400B0A11D /* ContextCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD06B73C245A187300B0A11D /* ContextCard.swift */; };
+		DD06B745245A187400B0A11D /* ScatterChartCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD06B73F245A187300B0A11D /* ScatterChartCard.swift */; };
+		DD06B746245A187400B0A11D /* ESMCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD06B741245A187300B0A11D /* ESMCard.swift */; };
+		DD06B747245A187400B0A11D /* DeviceUsageCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD06B742245A187300B0A11D /* DeviceUsageCard.swift */; };
+		DD06B748245A187400B0A11D /* MapCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD06B740245A187300B0A11D /* MapCard.swift */; };
+		DD06B749245A1B2600B0A11D /* ContextCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD06B73D245A187300B0A11D /* ContextCard.xib */; };
 		DD30CE8A2147453E00249231 /* PermissionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD30CE892147453E00249231 /* PermissionViewController.swift */; };
 		DD97F758214ADFA1005D28FC /* ExitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD97F757214ADFA1005D28FC /* ExitViewController.swift */; };
 		F93348ADB98AF13F3E6CB019 /* Pods_HealthTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 897EFA36D6834949B1D6139B /* Pods_HealthTests.framework */; };
@@ -64,6 +72,14 @@
 		897EFA36D6834949B1D6139B /* Pods_HealthTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HealthTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B19D708FE10C4BA1612F9939 /* Pods-HealthTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HealthTests/Pods-HealthTests.release.xcconfig"; sourceTree = "<group>"; };
 		B5409A9D44D52EE4A868AE71 /* Pods-Health.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Health.release.xcconfig"; path = "Pods/Target Support Files/Pods-Health/Pods-Health.release.xcconfig"; sourceTree = "<group>"; };
+		DD06B738245A15DD00B0A11D /* ContextCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextCardViewController.swift; sourceTree = "<group>"; };
+		DD06B73C245A187300B0A11D /* ContextCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextCard.swift; sourceTree = "<group>"; };
+		DD06B73D245A187300B0A11D /* ContextCard.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContextCard.xib; sourceTree = "<group>"; };
+		DD06B73E245A187300B0A11D /* BarChartCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartCard.swift; sourceTree = "<group>"; };
+		DD06B73F245A187300B0A11D /* ScatterChartCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScatterChartCard.swift; sourceTree = "<group>"; };
+		DD06B740245A187300B0A11D /* MapCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapCard.swift; sourceTree = "<group>"; };
+		DD06B741245A187300B0A11D /* ESMCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ESMCard.swift; sourceTree = "<group>"; };
+		DD06B742245A187300B0A11D /* DeviceUsageCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceUsageCard.swift; sourceTree = "<group>"; };
 		DD30CE892147453E00249231 /* PermissionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionViewController.swift; sourceTree = "<group>"; };
 		DD97F757214ADFA1005D28FC /* ExitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExitViewController.swift; sourceTree = "<group>"; };
 		DD97FB49214C67AE005D28FC /* AppDelegate-Swift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate-Swift.h"; sourceTree = "<group>"; };
@@ -151,6 +167,7 @@
 		846B531D20EACB12002CF471 /* Health */ = {
 			isa = PBXGroup;
 			children = (
+				DD06B73B245A186800B0A11D /* ContextCard */,
 				DD97FB4D214C812F005D28FC /* AWARE.xcdatamodeld */,
 				8465771E20FD557E0017EA56 /* Health-Bridging-Header.h */,
 				846B531E20EACB12002CF471 /* AppDelegate.swift */,
@@ -164,6 +181,7 @@
 				DD30CE892147453E00249231 /* PermissionViewController.swift */,
 				DD97F757214ADFA1005D28FC /* ExitViewController.swift */,
 				DD97FB49214C67AE005D28FC /* AppDelegate-Swift.h */,
+				DD06B738245A15DD00B0A11D /* ContextCardViewController.swift */,
 			);
 			path = Health;
 			sourceTree = "<group>";
@@ -184,6 +202,20 @@
 				846B534020EACB16002CF471 /* Info.plist */,
 			);
 			path = HealthUITests;
+			sourceTree = "<group>";
+		};
+		DD06B73B245A186800B0A11D /* ContextCard */ = {
+			isa = PBXGroup;
+			children = (
+				DD06B73E245A187300B0A11D /* BarChartCard.swift */,
+				DD06B73C245A187300B0A11D /* ContextCard.swift */,
+				DD06B73D245A187300B0A11D /* ContextCard.xib */,
+				DD06B742245A187300B0A11D /* DeviceUsageCard.swift */,
+				DD06B741245A187300B0A11D /* ESMCard.swift */,
+				DD06B740245A187300B0A11D /* MapCard.swift */,
+				DD06B73F245A187300B0A11D /* ScatterChartCard.swift */,
+			);
+			path = ContextCard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -306,6 +338,7 @@
 				846B532920EACB16002CF471 /* LaunchScreen.storyboard in Resources */,
 				846B532620EACB16002CF471 /* Assets.xcassets in Resources */,
 				846B532420EACB12002CF471 /* Main.storyboard in Resources */,
+				DD06B749245A1B2600B0A11D /* ContextCard.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,11 +455,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				846B532120EACB12002CF471 /* SurveyViewController.swift in Sources */,
+				DD06B739245A15DD00B0A11D /* ContextCardViewController.swift in Sources */,
 				84C19F7E2107BD6800C1C932 /* PageViewController.swift in Sources */,
+				DD06B747245A187400B0A11D /* DeviceUsageCard.swift in Sources */,
+				DD06B748245A187400B0A11D /* MapCard.swift in Sources */,
 				846B531F20EACB12002CF471 /* AppDelegate.swift in Sources */,
+				DD06B744245A187400B0A11D /* ContextCard.swift in Sources */,
 				84C19F7721078A6F00C1C932 /* SplashViewController.swift in Sources */,
 				DD97F758214ADFA1005D28FC /* ExitViewController.swift in Sources */,
+				DD06B743245A187400B0A11D /* BarChartCard.swift in Sources */,
 				DD30CE8A2147453E00249231 /* PermissionViewController.swift in Sources */,
+				DD06B746245A187400B0A11D /* ESMCard.swift in Sources */,
+				DD06B745245A187400B0A11D /* ScatterChartCard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -602,7 +642,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9HWKFPBULP;
+				DEVELOPMENT_TEAM = 6B8PP2XLB5;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/EZAudio\"",
@@ -615,7 +655,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.tylerd.eHealth;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.ucla.eHealth;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_INSTALL_OBJC_HEADER = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -631,7 +671,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9HWKFPBULP;
+				DEVELOPMENT_TEAM = 6B8PP2XLB5;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/EZAudio\"",
@@ -644,7 +684,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.tylerd.eHealth;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.ucla.eHealth;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_INSTALL_OBJC_HEADER = YES;
 				SWIFT_VERSION = 5.0;

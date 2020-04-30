@@ -11,6 +11,9 @@ target 'Health' do
   pod 'AWAREFramework', '~> 1.10'
   pod 'AWAREFramework/MotionActivity'
   pod 'AWAREFramework/Microphone'
+  
+  pod 'Charts'
+  pod 'DynamicColor'
 
   target 'HealthTests' do
     inherit! :search_paths

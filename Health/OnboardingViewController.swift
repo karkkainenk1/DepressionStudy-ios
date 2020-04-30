@@ -32,8 +32,7 @@ import UIKit
 import ResearchKit
 
 class OnboardingViewController: UIViewController {
-    @IBAction func bruhButton(_ sender: Any) {
-        
+    @IBAction func startOnboarding(_ sender: Any) {        
         // Welcome View Controller
         let welcomeStep = ORKInstructionStep(identifier: "welcomeStepIdentifier")
         welcomeStep.title = "Welcome to eWellness"

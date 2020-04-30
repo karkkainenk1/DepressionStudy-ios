@@ -10,10 +10,15 @@
 #endif
 #endif
 
+#import "SCReachabilityFlagsParser 3.h"
 #import "SCReachabilityFlagsParser.h"
+#import "SCReachabilityRefBuilder 3.h"
 #import "SCReachabilityRefBuilder.h"
+#import "SCReachabilityScheduler 3.h"
 #import "SCReachabilityScheduler.h"
+#import "SCNetworkReachability 3.h"
 #import "SCNetworkReachability.h"
+#import "SCNetworkStatus 3.h"
 #import "SCNetworkStatus.h"
 
 FOUNDATION_EXPORT double SCNetworkReachabilityVersionNumber;

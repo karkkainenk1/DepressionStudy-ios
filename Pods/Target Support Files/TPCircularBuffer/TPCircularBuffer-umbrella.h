@@ -10,6 +10,8 @@
 #endif
 #endif
 
+#import "TPCircularBuffer 3.h"
+#import "TPCircularBuffer+AudioBufferList 3.h"
 #import "TPCircularBuffer+AudioBufferList.h"
 #import "TPCircularBuffer.h"
 

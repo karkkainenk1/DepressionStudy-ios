@@ -25,8 +25,6 @@
 		CB39041B245B77E800902E5C /* HealthDataStepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB390414245B77E700902E5C /* HealthDataStepViewController.swift */; };
 		CB39041C245B77E800902E5C /* HealthDataStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB390415245B77E700902E5C /* HealthDataStep.swift */; };
 		CB39041D245B77E800902E5C /* PermissionStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB390416245B77E700902E5C /* PermissionStep.swift */; };
-		CB6AB853245B791300BBA04C /* ResearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB6AB850245B78ED00BBA04C /* ResearchKit.framework */; };
-		CB6AB854245B791300BBA04C /* ResearchKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CB6AB850245B78ED00BBA04C /* ResearchKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DD06B739245A15DD00B0A11D /* ContextCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD06B738245A15DD00B0A11D /* ContextCardViewController.swift */; };
 		DD06B743245A187400B0A11D /* BarChartCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD06B73E245A187300B0A11D /* BarChartCard.swift */; };
 		DD06B744245A187400B0A11D /* ContextCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD06B73C245A187300B0A11D /* ContextCard.swift */; };
@@ -55,20 +53,6 @@
 			remoteGlobalIDString = 846B531A20EACB12002CF471;
 			remoteInfo = Health;
 		};
-		CB6AB84F245B78ED00BBA04C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CB6AB849245B78ED00BBA04C /* ResearchKit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = B183A5951A8535D100C76870;
-			remoteInfo = ResearchKit;
-		};
-		CB6AB851245B78ED00BBA04C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CB6AB849245B78ED00BBA04C /* ResearchKit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 86CC8E9A1AC09332001CCD89;
-			remoteInfo = ResearchKitTests;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -78,7 +62,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				CB6AB854245B791300BBA04C /* ResearchKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -116,7 +99,6 @@
 		CB390414245B77E700902E5C /* HealthDataStepViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HealthDataStepViewController.swift; path = Health/HealthDataStepViewController.swift; sourceTree = "<group>"; };
 		CB390415245B77E700902E5C /* HealthDataStep.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HealthDataStep.swift; path = Health/HealthDataStep.swift; sourceTree = "<group>"; };
 		CB390416245B77E700902E5C /* PermissionStep.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PermissionStep.swift; path = Health/PermissionStep.swift; sourceTree = "<group>"; };
-		CB6AB849245B78ED00BBA04C /* ResearchKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ResearchKit.xcodeproj; path = "../../Downloads/ResearchKit-master/ResearchKit.xcodeproj"; sourceTree = "<group>"; };
 		DD06B738245A15DD00B0A11D /* ContextCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextCardViewController.swift; sourceTree = "<group>"; };
 		DD06B73C245A187300B0A11D /* ContextCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextCard.swift; sourceTree = "<group>"; };
 		DD06B73D245A187300B0A11D /* ContextCard.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContextCard.xib; sourceTree = "<group>"; };
@@ -141,7 +123,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB6AB853245B791300BBA04C /* ResearchKit.framework in Frameworks */,
 				3B279804517B9EF8813A2AC0 /* Pods_Health.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -191,7 +172,6 @@
 		846B531220EACB12002CF471 = {
 			isa = PBXGroup;
 			children = (
-				CB6AB849245B78ED00BBA04C /* ResearchKit.xcodeproj */,
 				CB390410245B77E700902E5C /* ConsentDocument.swift */,
 				CB390415245B77E700902E5C /* HealthDataStep.swift */,
 				CB390414245B77E700902E5C /* HealthDataStepViewController.swift */,
@@ -256,15 +236,6 @@
 				846B534020EACB16002CF471 /* Info.plist */,
 			);
 			path = HealthUITests;
-			sourceTree = "<group>";
-		};
-		CB6AB84A245B78ED00BBA04C /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				CB6AB850245B78ED00BBA04C /* ResearchKit.framework */,
-				CB6AB852245B78ED00BBA04C /* ResearchKitTests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		DD06B73B245A186800B0A11D /* ContextCard */ = {
@@ -385,12 +356,6 @@
 			mainGroup = 846B531220EACB12002CF471;
 			productRefGroup = 846B531C20EACB12002CF471 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = CB6AB84A245B78ED00BBA04C /* Products */;
-					ProjectRef = CB6AB849245B78ED00BBA04C /* ResearchKit.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				846B531A20EACB12002CF471 /* Health */,
@@ -399,23 +364,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		CB6AB850245B78ED00BBA04C /* ResearchKit.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = ResearchKit.framework;
-			remoteRef = CB6AB84F245B78ED00BBA04C /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		CB6AB852245B78ED00BBA04C /* ResearchKitTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = ResearchKitTests.xctest;
-			remoteRef = CB6AB851245B78ED00BBA04C /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		846B531920EACB12002CF471 /* Resources */ = {

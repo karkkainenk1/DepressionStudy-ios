@@ -166,14 +166,68 @@
                     </tabBar>
                     <connections>
                         <segue destination="mqK-y6-MYu" kind="relationship" relationship="viewControllers" id="IYe-iU-3yb"/>
-                        <segue destination="4ov-V9-wJ8" kind="relationship" relationship="viewControllers" id="DKb-OK-PE0"/>
+                        <segue destination="sry-HM-yoK" kind="relationship" relationship="viewControllers" id="uej-Mk-QxC"/>
                         <segue destination="f9A-nN-gng" kind="relationship" relationship="viewControllers" id="3uy-8J-y6b"/>
+                        <segue destination="4ov-V9-wJ8" kind="relationship" relationship="viewControllers" id="DKb-OK-PE0"/>
                         <segue destination="eiJ-Of-QAF" kind="relationship" relationship="viewControllers" id="g4v-FB-lfL"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4TK-RV-mWf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3513" y="-912"/>
+        </scene>
+        <!--Charts-->
+        <scene sceneID="Zgf-LY-HaC">
+            <objects>
+                <viewController id="sry-HM-yoK" customClass="ContextCardViewController" customModule="Health" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="W9d-nF-0YW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CUk-9Y-VdB">
+                                <rect key="frame" x="0.0" y="44" width="375" height="685"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="nwd-PI-giv">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="20.333333333333332"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hidden label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9tA-nM-Mgp">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="20.333333333333332"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="nwd-PI-giv" secondAttribute="trailing" id="Ahs-HZ-GgF"/>
+                                    <constraint firstItem="9tA-nM-Mgp" firstAttribute="width" secondItem="CUk-9Y-VdB" secondAttribute="width" id="GJS-BO-6hg"/>
+                                    <constraint firstAttribute="bottom" secondItem="nwd-PI-giv" secondAttribute="bottom" id="U0d-UA-ObM"/>
+                                    <constraint firstItem="nwd-PI-giv" firstAttribute="top" secondItem="CUk-9Y-VdB" secondAttribute="top" id="Ypk-M9-rWA"/>
+                                    <constraint firstItem="nwd-PI-giv" firstAttribute="leading" secondItem="CUk-9Y-VdB" secondAttribute="leading" id="jDi-MP-wnt"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="Qjn-fL-LtO"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="cPW-Pw-ClZ"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="XZk-ao-Nkd" firstAttribute="trailing" secondItem="CUk-9Y-VdB" secondAttribute="trailing" id="ce0-nY-PLc"/>
+                            <constraint firstItem="CUk-9Y-VdB" firstAttribute="leading" secondItem="XZk-ao-Nkd" secondAttribute="leading" id="cyC-Fh-zlb"/>
+                            <constraint firstItem="XZk-ao-Nkd" firstAttribute="bottom" secondItem="CUk-9Y-VdB" secondAttribute="bottom" id="gGQ-8c-NYy"/>
+                            <constraint firstItem="CUk-9Y-VdB" firstAttribute="top" secondItem="XZk-ao-Nkd" secondAttribute="top" id="xTj-ri-u8c"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="XZk-ao-Nkd"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Charts" image="chart.bar.fill" catalog="system" selectedImage="chart.bar.fill" id="Dx3-Ix-EHs"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="mainStackView" destination="nwd-PI-giv" id="djD-2g-8ad"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MDs-df-k2p" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4929" y="723"/>
         </scene>
         <!--Exit-->
         <scene sceneID="Z9l-8e-mjL">
@@ -450,7 +504,8 @@ If you have questions about your rights as a research subject, or you have conce
     </inferredMetricsTieBreakers>
     <resources>
         <image name="background_dep" width="452" height="723"/>
-        <image name="background_eWellness" width="225.5" height="361.5"/>
+        <image name="background_eWellness" width="150.33332824707031" height="241"/>
+        <image name="chart.bar.fill" catalog="system" width="128" height="89"/>
         <image name="exit" width="23" height="23"/>
         <image name="hambaga" width="25" height="25"/>
         <image name="help" width="23" height="23"/>

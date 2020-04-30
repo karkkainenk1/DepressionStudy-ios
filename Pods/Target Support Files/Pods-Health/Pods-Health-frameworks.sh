@@ -197,8 +197,11 @@ if [ -r "${ARTIFACT_LIST_FILE}" ]; then
 fi
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "${PODS_ROOT}/AWAREFramework/AWAREFramework/Frameworks/StudentLifeAudio.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/AppAuth/AppAuth.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Charts/Charts.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/CocoaAsyncSocket/CocoaAsyncSocket.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/DynamicColor/DynamicColor.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/GTMAppAuth/GTMAppAuth.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SCNetworkReachability/SCNetworkReachability.framework"
@@ -206,8 +209,11 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/ios-ntp/ios_ntp.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "${PODS_ROOT}/AWAREFramework/AWAREFramework/Frameworks/StudentLifeAudio.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/AppAuth/AppAuth.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Charts/Charts.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/CocoaAsyncSocket/CocoaAsyncSocket.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/DynamicColor/DynamicColor.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/GTMAppAuth/GTMAppAuth.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SCNetworkReachability/SCNetworkReachability.framework"

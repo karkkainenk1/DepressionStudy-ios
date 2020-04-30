@@ -31,12 +31,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if hasLaunched() {
             let study = AWAREStudy.shared()
             study.setDebug(true)
-            let manager = AWARESensorManager.shared()
-            manager.addSensors(with: study)
-            manager.setDebugToAllSensors(true)
-            manager.setDebugToAllStorage(true)
-            manager.startAllSensors()
-            manager.startAutoSyncTimer()
+            study.join(withURL: studyURL, completion: { (_, _, _) in
+                let manager = AWARESensorManager.shared()
+                manager.addSensors(with: study)
+                manager.setDebugToAllSensors(true)
+                manager.setDebugToAllStorage(true)
+                manager.startAllSensors()
+                manager.startAutoSyncTimer()
+            })
+           
         }
         
         

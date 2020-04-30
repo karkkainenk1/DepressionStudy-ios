@@ -16,10 +16,27 @@ class SplashViewController: UIViewController{
             let appdelegate = UIApplication.shared.delegate! as! AppDelegate
 
             if (!appdelegate.hasLaunched()){
-                self.performSegue(withIdentifier: "firstLaunch", sender: self)
+                self.toOnboarding()
             } else {
-                self.performSegue(withIdentifier: "launchedBefore", sender: self)
+                self.toStudy()
             }
         }
+    }
+    
+    
+    // MARK: Unwind segues
+    
+    @IBAction func unwindToStudy(_ segue: UIStoryboardSegue) {
+        toStudy()
+    }
+    
+    // MARK: Transitions
+
+    func toOnboarding() {
+        performSegue(withIdentifier: "firstLaunch", sender: self)
+    }
+    
+    func toStudy() {
+        performSegue(withIdentifier: "launchedBefore", sender: self)
     }
 }

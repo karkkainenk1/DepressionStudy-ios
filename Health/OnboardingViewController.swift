@@ -135,7 +135,9 @@ extension OnboardingViewController: ORKTaskViewControllerDelegate {
     public func taskViewController(_ taskViewController: ORKTaskViewController, didFinishWith reason: ORKTaskViewControllerFinishReason, error: Error?) {
         switch reason {
             case .completed:
-                performSegue(withIdentifier: "unwindToStudy", sender: nil)
+//                performSegue(withIdentifier: "unwindToStudy", sender: nil)
+//                performSegue(withIdentifier: "startStudy", sender: nil)
+                performSegue(withIdentifier: "toStudy", sender: self)
 
             case .discarded, .failed, .saved:
                 dismiss(animated: true, completion: nil)

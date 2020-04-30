@@ -42,8 +42,8 @@
                         <viewLayoutGuide key="safeArea" id="Ooq-bH-f1Y"/>
                     </view>
                     <connections>
-                        <segue destination="ZPf-Ga-P1T" kind="show" identifier="firstLaunch" animates="NO" id="Jwo-IU-2X9"/>
-                        <segue destination="mfZ-bm-Fjy" kind="show" identifier="launchedBefore" id="VJg-f8-XsH"/>
+                        <segue destination="ZPf-Ga-P1T" kind="custom" identifier="firstLaunch" customClass="ResearchContainerSegue" customModule="Health" customModuleProvider="target" id="Jwo-IU-2X9"/>
+                        <segue destination="mfZ-bm-Fjy" kind="custom" identifier="launchedBefore" customClass="ResearchContainerSegue" customModule="Health" customModuleProvider="target" id="VJg-f8-XsH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="66Z-7c-xf9" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -71,10 +71,13 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="mmE-9D-fvf"/>
                     </view>
+                    <connections>
+                        <segue destination="mfZ-bm-Fjy" kind="show" identifier="toStudy" id="NHg-0k-CGJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zCW-Xa-R2o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4255" y="-1660"/>
+            <point key="canvasLocation" x="4371" y="-1662"/>
         </scene>
         <!--Data Collection Permission-->
         <scene sceneID="H2A-2g-rPS">
@@ -531,7 +534,7 @@ By selecting AGREE you acknowledge that you have received and understood the ter
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IcC-NA-J1Y" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2141.25" y="726.25"/>
+            <point key="canvasLocation" x="2474" y="-64"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="hRd-9m-abO">
@@ -632,7 +635,7 @@ If you wish to exit the study and stop all data collection, press the End Study 
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YB5-5T-UGf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4218.3999999999996" y="723.39901477832518"/>
+            <point key="canvasLocation" x="4551" y="-66"/>
         </scene>
         <!--Mental Health-->
         <scene sceneID="X9L-Qi-q2j">
@@ -701,7 +704,7 @@ Call (310) 825-0768 or visit CAPS during Brief Screen Hours: Monday-Friday 9am-4
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c0L-jU-DXo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3512.8000000000002" y="724.58770614692662"/>
+            <point key="canvasLocation" x="3845" y="-65"/>
         </scene>
         <!--Info-->
         <scene sceneID="BeZ-YU-nXL">
@@ -821,11 +824,11 @@ If you have questions about your rights as a research subject, or you have conce
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Huw-dR-G4z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2812" y="723.39901477832518"/>
+            <point key="canvasLocation" x="3145" y="-66"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="jZb-sk-fOh"/>
+        <segue reference="NHg-0k-CGJ"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="background_dep" width="452" height="723"/>

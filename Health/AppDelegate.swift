@@ -7,6 +7,7 @@
 //  Helpful Source: "https://github.com/tetujin/AWAREFramework-iOS"
 
 import UIKit
+import ResearchKit
 import AWAREFramework
 
 @UIApplicationMain
@@ -27,7 +28,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        
         if hasLaunched() {
             let study = AWAREStudy.shared()
             study.setDebug(true)

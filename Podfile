@@ -14,7 +14,7 @@ target 'Health' do
   
   pod 'Charts'
   pod 'DynamicColor'
-
+  pod 'ResearchKit', :git => 'https://github.com/ResearchKit/ResearchKit.git', :commit => '50a2b3427ac232c85f524b1ce63db8f3e1d501ef'
   target 'HealthTests' do
     inherit! :search_paths
     # Pods for testing

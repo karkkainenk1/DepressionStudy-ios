@@ -37,6 +37,7 @@ PODS:
   - macros_blocks (0.0.4):
     - macros_blocks/core (= 0.0.4)
   - macros_blocks/core (0.0.4)
+  - ResearchKit (2.1.0-beta)
   - SCNetworkReachability (2.0.6):
     - SCNetworkReachability/Core (= 2.0.6)
   - SCNetworkReachability/Core (2.0.6):
@@ -49,6 +50,7 @@ DEPENDENCIES:
   - AWAREFramework/MotionActivity
   - Charts
   - DynamicColor
+  - ResearchKit (from `https://github.com/ResearchKit/ResearchKit.git`, commit `50a2b3427ac232c85f524b1ce63db8f3e1d501ef`)
 
 SPEC REPOS:
   trunk:
@@ -65,6 +67,16 @@ SPEC REPOS:
     - SCNetworkReachability
     - TPCircularBuffer
 
+EXTERNAL SOURCES:
+  ResearchKit:
+    :commit: 50a2b3427ac232c85f524b1ce63db8f3e1d501ef
+    :git: https://github.com/ResearchKit/ResearchKit.git
+
+CHECKOUT OPTIONS:
+  ResearchKit:
+    :commit: 50a2b3427ac232c85f524b1ce63db8f3e1d501ef
+    :git: https://github.com/ResearchKit/ResearchKit.git
+
 SPEC CHECKSUMS:
   AppAuth: 73574f3013a1e65b9601a3ddc8b3158cce68c09d
   AWAREFramework: 25996f2f32fb0b0ded5a500655857e96f83bed1c
@@ -76,9 +88,10 @@ SPEC CHECKSUMS:
   GTMSessionFetcher: cea130bbfe5a7edc8d06d3f0d17288c32ffe9925
   ios-ntp: 49a4ef0866aee5343627710c1c7de71d7c064417
   macros_blocks: cf3ff5810b798f462def9f1e3999817dc45cf2df
+  ResearchKit: b948fcbadd4454d6b835d2b64471980a467a96a7
   SCNetworkReachability: dbb0150b1a7a4579e148420132da19e718b955ce
   TPCircularBuffer: c13243556527551c4d320709c7b14a6d20cdc30a
 
-PODFILE CHECKSUM: c3b0944ef520434485e183e1f2bb0619c4a2ae82
+PODFILE CHECKSUM: b0c8c5b9723685aa2fa18506ba3d351cc72c1532
 
-COCOAPODS: 1.9.0
+COCOAPODS: 1.9.1

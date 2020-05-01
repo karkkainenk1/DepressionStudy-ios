@@ -78,7 +78,7 @@
                                     </textView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="HMM-Ko-cqB">
                                         <rect key="frame" x="0.0" y="65" width="285" height="702"/>
-                                        <mutableString key="text">We’re about to ask you to allow a bunch of intrusive permissions for our app, so before we do, we wanted to explain precisely what information we will be collecting and how it will be used.
+                                        <string key="text">We’re about to ask you to allow a bunch of intrusive permissions for our app, so before we do, we wanted to explain precisely what information we will be collecting and how it will be used.
 
 Firstly, please note that we will NOT be collecting any personally identifiable information on you, including taking any photos, videos, or recording any conversations.
 
@@ -103,7 +103,7 @@ So here is precisely what sensors we will be collecting and how it will be used:
 If you have any concerns about the data being collected please let us know. You will have to allow all permissions in order for the application to work properly.
 
 
-</mutableString>
+</string>
                                         <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -161,11 +161,11 @@ If you have any concerns about the data being collected please let us know. You 
                                     </textView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="GuG-m5-0AQ">
                                         <rect key="frame" x="0.0" y="65" width="285" height="327"/>
-                                        <mutableString key="text">A brief note on your mental health:
+                                        <string key="text">A brief note on your mental health:
 
 Our daily survey will be prompting you for information on your mental well-being. This will include some specific prompts around your feelings of depression and anxiety. Although this information is being recorded for the study, your responses will not be reviewed regularly by researchers.
 
-As such, if you ever feel overwhelmed, or that you need help, please do not expect us to detect this and act on your behalf, but instead reach out to the appropriate resource. We’ve included a ‘Need Help?’ tab in the menu with contact info for a variety of UCLA and community resources available to you.</mutableString>
+As such, if you ever feel overwhelmed, or that you need help, please do not expect us to detect this and act on your behalf, but instead reach out to the appropriate resource. We’ve included a ‘Need Help?’ tab in the menu with contact info for a variety of UCLA and community resources available to you.</string>
                                         <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -224,13 +224,13 @@ As such, if you ever feel overwhelmed, or that you need help, please do not expe
                                     </textView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="dyh-rl-BiF">
                                         <rect key="frame" x="0.0" y="65" width="285" height="318"/>
-                                        <mutableString key="text">By selecting Agree, you acknowledge that you have received and understood the terms of the study. 
+                                        <string key="text">By selecting Agree, you acknowledge that you have received and understood the terms of the study. 
 
 We will ask you to allow several intrusive permissions for the study after you press Agree, so please select allow for each of the requests.
 
 Finally, a study ID window will appear. We ask that you enter a number, which will serve as your identification for the study. The window will only appear once and the ID cannot be changed.
 
-Thank you for your participation, and again, you may choose to opt out of the study at any time.</mutableString>
+Thank you for your participation, and again, you may choose to opt out of the study at any time.</string>
                                         <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -304,7 +304,7 @@ Thank you for your participation, and again, you may choose to opt out of the st
                                     </textView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="rT3-GQ-hyW">
                                         <rect key="frame" x="0.0" y="65" width="285" height="704"/>
-                                        <mutableString key="text">Passive Sensing of Mental Wellness  Dr. Majid Sarrafzadeh, from the Computer Science Department at the University of California, Los Angeles (UCLA) is conducting a research study.
+                                        <string key="text">Passive Sensing of Mental Wellness  Dr. Majid Sarrafzadeh, from the Computer Science Department at the University of California, Los Angeles (UCLA) is conducting a research study.
 
 You were selected as a possible participant in this study because you are a current student, employee or affiliate of the university. Your participation in this research study is voluntary.
 
@@ -369,7 +369,7 @@ If you have any questions, comments or concerns about the research, you can talk
 ● UCLA Office of the Human Research Protection Program (OHRPP):
 If you have questions about your rights as a research subject, or you have concerns or suggestions and you want to talk to someone other than the researchers, you may contact the UCLA OHRPP by phone: (310) 206-2040; by email: participants@research.ucla.edu or by mail: Box 951406, Los Angeles, CA 90095-1406.
 
-By selecting AGREE you acknowledge that you have received and understood the terms of the study. By proceeding to study enrollment you are agreeing to participate in the study.</mutableString>
+By selecting AGREE you acknowledge that you have received and understood the terms of the study. By proceeding to study enrollment you are agreeing to participate in the study.</string>
                                         <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -509,10 +509,10 @@ By selecting AGREE you acknowledge that you have received and understood the ter
                     </tabBar>
                     <connections>
                         <segue destination="mqK-y6-MYu" kind="relationship" relationship="viewControllers" id="IYe-iU-3yb"/>
-                        <segue destination="sry-HM-yoK" kind="relationship" relationship="viewControllers" id="uej-Mk-QxC"/>
                         <segue destination="f9A-nN-gng" kind="relationship" relationship="viewControllers" id="3uy-8J-y6b"/>
                         <segue destination="4ov-V9-wJ8" kind="relationship" relationship="viewControllers" id="DKb-OK-PE0"/>
                         <segue destination="eiJ-Of-QAF" kind="relationship" relationship="viewControllers" id="g4v-FB-lfL"/>
+                        <segue destination="eEx-mN-aTe" kind="relationship" relationship="viewControllers" id="HfK-bn-4We"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4TK-RV-mWf" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -572,10 +572,26 @@ By selecting AGREE you acknowledge that you have received and understood the ter
             </objects>
             <point key="canvasLocation" x="4929" y="723"/>
         </scene>
+        <!--Trends-->
+        <scene sceneID="7F5-yN-ldv">
+            <objects>
+                <viewController id="eEx-mN-aTe" customClass="CKChartViewController" customModule="Health" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="G4K-1o-Ryw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="LS7-Hf-YWT"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Trends" image="chart.bar" catalog="system" selectedImage="chart.bar" id="bme-wi-Igu"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YLC-mM-1ED" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5804" y="729"/>
+        </scene>
         <!--Exit-->
         <scene sceneID="Z9l-8e-mjL">
             <objects>
-                <viewController id="eiJ-Of-QAF" userLabel="Exit" customClass="ExitViewController" customModule="Health" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Exit Study" id="eiJ-Of-QAF" userLabel="Exit" customClass="ExitViewController" customModule="Health" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jbR-Is-Qfa">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -655,7 +671,7 @@ If you wish to exit the study and stop all data collection, press the End Study 
         <!--Mental Health-->
         <scene sceneID="X9L-Qi-q2j">
             <objects>
-                <viewController id="f9A-nN-gng" userLabel="Mental Health" sceneMemberID="viewController">
+                <viewController title="Mental Health Notice" id="f9A-nN-gng" userLabel="Mental Health" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pCD-vd-fdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -681,7 +697,7 @@ If you wish to exit the study and stop all data collection, press the End Study 
                                     </textView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="5WA-hL-MYo">
                                         <rect key="frame" x="0.0" y="65" width="285" height="590"/>
-                                        <mutableString key="text">IF YOU ARE EXPERIENCE A LIFE THREATENING EMERGENCY, CALL 9-1-1 OR GO TO YOUR NEAREST HOSPITAL EMERGENCY ROOM
+                                        <string key="text">IF YOU ARE EXPERIENCE A LIFE THREATENING EMERGENCY, CALL 9-1-1 OR GO TO YOUR NEAREST HOSPITAL EMERGENCY ROOM
 
 For emergency assistance:
 
@@ -693,7 +709,7 @@ CAPS (24 hours): (310) 825-0768  National Suicide Prevention Hotline (24 hours
 
 If you are a UCLA student experiencing a mental health crisis:
 
-Call (310) 825-0768 or visit CAPS during Brief Screen Hours: Monday-Friday 9am-4pm</mutableString>
+Call (310) 825-0768 or visit CAPS during Brief Screen Hours: Monday-Friday 9am-4pm</string>
                                         <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -753,7 +769,7 @@ STUDY INFORMATION SHEET</string>
                                     </textView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="sEv-49-dJb">
                                         <rect key="frame" x="0.0" y="145" width="285" height="510"/>
-                                        <mutableString key="text">Passive Sensing of Mental Wellness
+                                        <string key="text">Passive Sensing of Mental Wellness
 
 Dr. Majid Sarrafzadeh, from the Computer Science Department at the University of California, Los Angeles (UCLA) is conducting a research study.
 
@@ -818,7 +834,7 @@ Who can I contact if I have questions about this study?
 If you have any questions, comments or concerns about the research, you can talk to the one of the researchers. Please contact: Lionel Levine at 213-444-6622 or Lionel@cs.ucla.edu.
 
 ● UCLA Office of the Human Research Protection Program (OHRPP):
-If you have questions about your rights as a research subject, or you have concerns or suggestions and you want to talk to someone other than the researchers, you may contact the UCLA OHRPP by phone: (310) 206-2040; by email: participants@research.ucla.edu or by mail: Box 951406, Los Angeles, CA 90095-1406.</mutableString>
+If you have questions about your rights as a research subject, or you have concerns or suggestions and you want to talk to someone other than the researchers, you may contact the UCLA OHRPP by phone: (310) 206-2040; by email: participants@research.ucla.edu or by mail: Box 951406, Los Angeles, CA 90095-1406.</string>
                                         <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -848,6 +864,7 @@ If you have questions about your rights as a research subject, or you have conce
     <resources>
         <image name="background_dep" width="452" height="723"/>
         <image name="background_eWellness" width="150.33332824707031" height="241"/>
+        <image name="chart.bar" catalog="system" width="128" height="90"/>
         <image name="chart.bar.fill" catalog="system" width="128" height="89"/>
         <image name="exit" width="23" height="23"/>
         <image name="hambaga" width="25" height="25"/>

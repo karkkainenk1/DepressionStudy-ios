@@ -18,6 +18,10 @@
 		846B533F20EACB16002CF471 /* HealthUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846B533E20EACB16002CF471 /* HealthUITests.swift */; };
 		84C19F7721078A6F00C1C932 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C19F7621078A6F00C1C932 /* SplashViewController.swift */; };
 		84C19F7E2107BD6800C1C932 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C19F7D2107BD6800C1C932 /* PageViewController.swift */; };
+		CB6AB865245B8CA900BBA04C /* CareKitUI in Frameworks */ = {isa = PBXBuildFile; productRef = CB6AB864245B8CA900BBA04C /* CareKitUI */; };
+		CB6AB867245B8CA900BBA04C /* CareKit in Frameworks */ = {isa = PBXBuildFile; productRef = CB6AB866245B8CA900BBA04C /* CareKit */; };
+		CB6AB869245B8CA900BBA04C /* CareKitStore in Frameworks */ = {isa = PBXBuildFile; productRef = CB6AB868245B8CA900BBA04C /* CareKitStore */; };
+		CB6AB86B245B8E7000BBA04C /* CKChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6AB86A245B8E7000BBA04C /* CKChartViewController.swift */; };
 		DD06B739245A15DD00B0A11D /* ContextCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD06B738245A15DD00B0A11D /* ContextCardViewController.swift */; };
 		DD06B743245A187400B0A11D /* BarChartCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD06B73E245A187300B0A11D /* BarChartCard.swift */; };
 		DD06B744245A187400B0A11D /* ContextCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD06B73C245A187300B0A11D /* ContextCard.swift */; };
@@ -72,6 +76,7 @@
 		897EFA36D6834949B1D6139B /* Pods_HealthTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HealthTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B19D708FE10C4BA1612F9939 /* Pods-HealthTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HealthTests/Pods-HealthTests.release.xcconfig"; sourceTree = "<group>"; };
 		B5409A9D44D52EE4A868AE71 /* Pods-Health.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Health.release.xcconfig"; path = "Pods/Target Support Files/Pods-Health/Pods-Health.release.xcconfig"; sourceTree = "<group>"; };
+		CB6AB86A245B8E7000BBA04C /* CKChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKChartViewController.swift; sourceTree = "<group>"; };
 		DD06B738245A15DD00B0A11D /* ContextCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextCardViewController.swift; sourceTree = "<group>"; };
 		DD06B73C245A187300B0A11D /* ContextCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextCard.swift; sourceTree = "<group>"; };
 		DD06B73D245A187300B0A11D /* ContextCard.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContextCard.xib; sourceTree = "<group>"; };
@@ -96,6 +101,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB6AB869245B8CA900BBA04C /* CareKitStore in Frameworks */,
+				CB6AB867245B8CA900BBA04C /* CareKit in Frameworks */,
+				CB6AB865245B8CA900BBA04C /* CareKitUI in Frameworks */,
 				3B279804517B9EF8813A2AC0 /* Pods_Health.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -182,6 +190,7 @@
 				DD97F757214ADFA1005D28FC /* ExitViewController.swift */,
 				DD97FB49214C67AE005D28FC /* AppDelegate-Swift.h */,
 				DD06B738245A15DD00B0A11D /* ContextCardViewController.swift */,
+				CB6AB86A245B8E7000BBA04C /* CKChartViewController.swift */,
 			);
 			path = Health;
 			sourceTree = "<group>";
@@ -237,6 +246,11 @@
 			dependencies = (
 			);
 			name = Health;
+			packageProductDependencies = (
+				CB6AB864245B8CA900BBA04C /* CareKitUI */,
+				CB6AB866245B8CA900BBA04C /* CareKit */,
+				CB6AB868245B8CA900BBA04C /* CareKitStore */,
+			);
 			productName = Health;
 			productReference = 846B531B20EACB12002CF471 /* Health.app */;
 			productType = "com.apple.product-type.application";
@@ -319,6 +333,9 @@
 				Base,
 			);
 			mainGroup = 846B531220EACB12002CF471;
+			packageReferences = (
+				CB6AB863245B8CA900BBA04C /* XCRemoteSwiftPackageReference "CareKit" */,
+			);
 			productRefGroup = 846B531C20EACB12002CF471 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -455,6 +472,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				846B532120EACB12002CF471 /* SurveyViewController.swift in Sources */,
+				CB6AB86B245B8E7000BBA04C /* CKChartViewController.swift in Sources */,
 				DD06B739245A15DD00B0A11D /* ContextCardViewController.swift in Sources */,
 				84C19F7E2107BD6800C1C932 /* PageViewController.swift in Sources */,
 				DD06B747245A187400B0A11D /* DeviceUsageCard.swift in Sources */,
@@ -651,6 +669,7 @@
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)/**";
 				INFOPLIST_FILE = Health/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -680,6 +699,7 @@
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)/**";
 				INFOPLIST_FILE = Health/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -818,6 +838,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CB6AB863245B8CA900BBA04C /* XCRemoteSwiftPackageReference "CareKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/carekit-apple/CareKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CB6AB864245B8CA900BBA04C /* CareKitUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CB6AB863245B8CA900BBA04C /* XCRemoteSwiftPackageReference "CareKit" */;
+			productName = CareKitUI;
+		};
+		CB6AB866245B8CA900BBA04C /* CareKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CB6AB863245B8CA900BBA04C /* XCRemoteSwiftPackageReference "CareKit" */;
+			productName = CareKit;
+		};
+		CB6AB868245B8CA900BBA04C /* CareKitStore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CB6AB863245B8CA900BBA04C /* XCRemoteSwiftPackageReference "CareKit" */;
+			productName = CareKitStore;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		DD97FB4D214C812F005D28FC /* AWARE.xcdatamodeld */ = {

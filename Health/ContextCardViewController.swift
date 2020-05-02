@@ -8,6 +8,7 @@
 
 import UIKit
 import AWAREFramework
+import ResearchKit
 
 class ContextCardViewController: UIViewController {
 
@@ -29,6 +30,14 @@ class ContextCardViewController: UIViewController {
             setupContextCards()
         }
         //_ = LocationPermissionManager().isAuthorizedAlways(with: self)
+        
+        /*print("usage:", getDataForYesterday(sensorName: SENSOR_PLUGIN_DEVICE_USAGE))
+        print("pedometer:", getPedometerForLastWeek())
+        print("activities:", getActivityForLastWeek())
+        
+        print("noise:", getDataForYesterday(sensorName: SENSOR_AMBIENT_NOISE))
+        print("locations:", getDataForYesterday(sensorName: SENSOR_LOCATIONS))*/
+        //print("activity:", getDataForYesterday(sensorName: SENSOR_IOS_ACTIVITY_RECOGNITION))
     }
     
     override func viewDidDisappear(_ animated: Bool) {
@@ -47,7 +56,7 @@ class ContextCardViewController: UIViewController {
     @objc func willEnterForegroundNotification(notification: NSNotification) {
         let esmManager = ESMScheduleManager.shared()
         let schedules = esmManager.getValidSchedules()
-        if(schedules.count > 0){
+        if(schedules.count > 0) {
             if !IOSESM.hasESMAppearedInThisSession(){
                 self.tabBarController?.selectedIndex = 0
             }
@@ -56,9 +65,8 @@ class ContextCardViewController: UIViewController {
     }
     
     func removeAllContextCards(){
-        for card in contextCards {
-            card.baseStackView.isHidden = true
-            self.mainStackView.removeArrangedSubview(card)
+        for subview in mainStackView.subviews[1..<mainStackView.subviews.count] {
+            mainStackView.removeArrangedSubview(subview)
         }
         contextCards.removeAll()
     }
@@ -73,67 +81,6 @@ class ContextCardViewController: UIViewController {
         addDeviceUsageCard()
         addSignificantMotionCard()
         addLocationCard()
-        /*
-        for name in getCurrentContextCardNames() {
-            print(name)
-            switch name {
-            case SENSOR_ACCELEROMETER:
-                addAccelereomterCard()
-                break
-            case SENSOR_GYROSCOPE:
-                addGyroscopeCard()
-                break
-            case SENSOR_BATTERY:
-                addBatteryCard()
-                break
-            case SENSOR_AMBIENT_NOISE:
-                addAmbientNoiseCard()
-                break
-            case SENSOR_BAROMETER:
-                addBarometerCard()
-                break
-            case SENSOR_IOS_ACTIVITY_RECOGNITION:
-                addActivityRecognitionCard()
-                break
-            case SENSOR_PLUGIN_OPEN_WEATHER:
-                addOpenWeatherChart()
-                break
-            case SENSOR_SCREEN:
-                addScreenEventCard()
-                break
-            case SENSOR_PLUGIN_PEDOMETER:
-                addPedometerCard()
-                break
-            case SENSOR_HEALTH_KIT:
-                addHealthKitCard()
-                break
-            case SENSOR_PLUGIN_DEVICE_USAGE:
-                addDeviceUsageCard()
-                break
-            case SENSOR_SIGNIFICANT_MOTION:
-                addSignificantMotionCard()
-                break
-            case SENSOR_IOS_ESM:
-                addESMCard()
-                break
-            case "locations":
-                addLocationCard()
-                break
-            case "google_fused_location":
-                addLocationCard()
-                break
-            default:
-                break
-            }
-        }*/
-        
-        /*if contextCards.count == 0 {
-            refreshButton.isEnabled = false
-            deleteButton.isEnabled = false
-        }else{
-            refreshButton.isEnabled = true
-            deleteButton.isEnabled = true
-        }*/
     }
     
     var supportedContextCards = [SENSOR_BATTERY,
@@ -435,29 +382,6 @@ class ContextCardViewController: UIViewController {
             self.contextCards.append(contextCard)
             self.mainStackView.addArrangedSubview(contextCard)
         }
-    }
-    
-    func addHealthKitCard(){
-        /*
-        if let sensor = AWARESensorManager.shared().getSensor(SENSOR_HEALTH_KIT) as? AWAREHealthKit{
-            // HKQuantityTypeIdentifierHeartRate
-            let quantity = sensor.awareHKHeartRate
-            let contextCard = ScatterChartCard(frame: CGRect(x:0, y:0,
-                                                             width: self.view.frame.width,
-                                                             height:300))
-            contextCard.xAxisLabels = ["0","6","12","18","24"];
-            contextCard.setTodaysChart(sensor: quantity, xKey:"timestamp_start", yKeys: ["value"])
-            contextCard.titleLabel.text = NSLocalizedString("Heart Rate", comment: "")
-            
-            self.contextCards.append(contextCard)
-            self.mainStackView.addArrangedSubview(contextCard)
-            
-//          HKQuantityTypeIdentifierActiveEnergyBurned
-//          HKQuantityTypeIdentifierStepCount
-//          HKQuantityTypeIdentifierDistanceWalkingRunning
-//          HKQuantityTypeIdentifierBasalEnergyBurned
-            
-        }*/
     }
     
     func addLocationCard(){

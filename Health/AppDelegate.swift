@@ -30,12 +30,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         if hasLaunched() {
             let study = AWAREStudy.shared()
-            study.setDebug(true)
+            study.setDebug(false)
             study.join(withURL: studyURL, completion: { (_, _, _) in
                 let manager = AWARESensorManager.shared()
                 manager.addSensors(with: study)
-                manager.setDebugToAllSensors(true)
-                manager.setDebugToAllStorage(true)
+                manager.setDebugToAllSensors(false)
+                manager.setDebugToAllStorage(false)
                 manager.startAllSensors()
                 manager.startAutoSyncTimer()
             })

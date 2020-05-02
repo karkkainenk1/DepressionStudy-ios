@@ -33,6 +33,11 @@
 		DD06B747245A187400B0A11D /* DeviceUsageCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD06B742245A187300B0A11D /* DeviceUsageCard.swift */; };
 		DD06B748245A187400B0A11D /* MapCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD06B740245A187300B0A11D /* MapCard.swift */; };
 		DD06B749245A1B2600B0A11D /* ContextCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD06B73D245A187300B0A11D /* ContextCard.xib */; };
+		DD06B74D245CCE0700B0A11D /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD06B74C245CCE0700B0A11D /* DateExtensions.swift */; };
+		DD06B750245DF49800B0A11D /* PedometerDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD06B74F245DF49800B0A11D /* PedometerDataSource.swift */; };
+		DD06B754245E039400B0A11D /* DataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD06B753245E039400B0A11D /* DataHelpers.swift */; };
+		DD06B756245E0CC700B0A11D /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD06B755245E0CC700B0A11D /* ChartViewController.swift */; };
+		DD06B758245E130000B0A11D /* ActivityDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD06B757245E130000B0A11D /* ActivityDataSource.swift */; };
 		DD30CE8A2147453E00249231 /* PermissionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD30CE892147453E00249231 /* PermissionViewController.swift */; };
 		DD97F758214ADFA1005D28FC /* ExitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD97F757214ADFA1005D28FC /* ExitViewController.swift */; };
 		F93348ADB98AF13F3E6CB019 /* Pods_HealthTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 897EFA36D6834949B1D6139B /* Pods_HealthTests.framework */; };
@@ -107,6 +112,11 @@
 		DD06B740245A187300B0A11D /* MapCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapCard.swift; sourceTree = "<group>"; };
 		DD06B741245A187300B0A11D /* ESMCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ESMCard.swift; sourceTree = "<group>"; };
 		DD06B742245A187300B0A11D /* DeviceUsageCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceUsageCard.swift; sourceTree = "<group>"; };
+		DD06B74C245CCE0700B0A11D /* DateExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
+		DD06B74F245DF49800B0A11D /* PedometerDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PedometerDataSource.swift; sourceTree = "<group>"; };
+		DD06B753245E039400B0A11D /* DataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataHelpers.swift; sourceTree = "<group>"; };
+		DD06B755245E0CC700B0A11D /* ChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
+		DD06B757245E130000B0A11D /* ActivityDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityDataSource.swift; sourceTree = "<group>"; };
 		DD30CE892147453E00249231 /* PermissionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionViewController.swift; sourceTree = "<group>"; };
 		DD97F757214ADFA1005D28FC /* ExitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExitViewController.swift; sourceTree = "<group>"; };
 		DD97FB49214C67AE005D28FC /* AppDelegate-Swift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate-Swift.h"; sourceTree = "<group>"; };
@@ -172,6 +182,7 @@
 		846B531220EACB12002CF471 = {
 			isa = PBXGroup;
 			children = (
+				DD06B74C245CCE0700B0A11D /* DateExtensions.swift */,
 				CB390410245B77E700902E5C /* ConsentDocument.swift */,
 				CB390415245B77E700902E5C /* HealthDataStep.swift */,
 				CB390414245B77E700902E5C /* HealthDataStepViewController.swift */,
@@ -201,6 +212,7 @@
 		846B531D20EACB12002CF471 /* Health */ = {
 			isa = PBXGroup;
 			children = (
+				DD06B74E245DF47A00B0A11D /* Charts */,
 				DD06B73B245A186800B0A11D /* ContextCard */,
 				DD97FB4D214C812F005D28FC /* AWARE.xcdatamodeld */,
 				8465771E20FD557E0017EA56 /* Health-Bridging-Header.h */,
@@ -216,6 +228,7 @@
 				DD97F757214ADFA1005D28FC /* ExitViewController.swift */,
 				DD97FB49214C67AE005D28FC /* AppDelegate-Swift.h */,
 				DD06B738245A15DD00B0A11D /* ContextCardViewController.swift */,
+				DD06B755245E0CC700B0A11D /* ChartViewController.swift */,
 			);
 			path = Health;
 			sourceTree = "<group>";
@@ -250,6 +263,16 @@
 				DD06B73F245A187300B0A11D /* ScatterChartCard.swift */,
 			);
 			path = ContextCard;
+			sourceTree = "<group>";
+		};
+		DD06B74E245DF47A00B0A11D /* Charts */ = {
+			isa = PBXGroup;
+			children = (
+				DD06B74F245DF49800B0A11D /* PedometerDataSource.swift */,
+				DD06B753245E039400B0A11D /* DataHelpers.swift */,
+				DD06B757245E130000B0A11D /* ActivityDataSource.swift */,
+			);
+			path = Charts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -492,7 +515,9 @@
 				CB390419245B77E800902E5C /* ResearchContainerSegue.swift in Sources */,
 				846B532120EACB12002CF471 /* SurveyViewController.swift in Sources */,
 				CB39041B245B77E800902E5C /* HealthDataStepViewController.swift in Sources */,
+				DD06B754245E039400B0A11D /* DataHelpers.swift in Sources */,
 				DD06B739245A15DD00B0A11D /* ContextCardViewController.swift in Sources */,
+				DD06B756245E0CC700B0A11D /* ChartViewController.swift in Sources */,
 				CB39041D245B77E800902E5C /* PermissionStep.swift in Sources */,
 				CB39041A245B77E800902E5C /* OnboardingViewController.swift in Sources */,
 				84C19F7E2107BD6800C1C932 /* PageViewController.swift in Sources */,
@@ -503,10 +528,13 @@
 				846B531F20EACB12002CF471 /* AppDelegate.swift in Sources */,
 				CB39041C245B77E800902E5C /* HealthDataStep.swift in Sources */,
 				DD06B744245A187400B0A11D /* ContextCard.swift in Sources */,
+				DD06B74D245CCE0700B0A11D /* DateExtensions.swift in Sources */,
 				84C19F7721078A6F00C1C932 /* SplashViewController.swift in Sources */,
 				DD97F758214ADFA1005D28FC /* ExitViewController.swift in Sources */,
 				DD06B743245A187400B0A11D /* BarChartCard.swift in Sources */,
 				DD30CE8A2147453E00249231 /* PermissionViewController.swift in Sources */,
+				DD06B758245E130000B0A11D /* ActivityDataSource.swift in Sources */,
+				DD06B750245DF49800B0A11D /* PedometerDataSource.swift in Sources */,
 				DD06B746245A187400B0A11D /* ESMCard.swift in Sources */,
 				DD06B745245A187400B0A11D /* ScatterChartCard.swift in Sources */,
 			);
@@ -684,7 +712,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9HWKFPBULP;
+				DEVELOPMENT_TEAM = 6B8PP2XLB5;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/EZAudio\"",
@@ -697,7 +725,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.tylerd.eHealth;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.ucla.eHealth;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_INSTALL_OBJC_HEADER = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";

@@ -19,7 +19,7 @@ class PermissionViewController: UIViewController{
         
         let manager = AWARESensorManager.shared()
         let study   = AWAREStudy.shared()
-        study.setDebug(true)
+        study.setDebug(false)
         
         // AWAREFramework database (Need Author's E-Mail to access)
         let appDelegate = UIApplication.shared.delegate as? AppDelegate
@@ -33,8 +33,8 @@ class PermissionViewController: UIViewController{
             }
             
             manager.addSensors(with: study)
-            manager.setDebugToAllSensors(true)
-            manager.setDebugToAllStorage(true)
+            manager.setDebugToAllSensors(false)
+            manager.setDebugToAllStorage(false)
             manager.startAllSensors()
             manager.startAutoSyncTimer()
             print("Sensors: ", manager.getAllSensors())

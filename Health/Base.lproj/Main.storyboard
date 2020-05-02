@@ -166,7 +166,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="mqK-y6-MYu" kind="relationship" relationship="viewControllers" id="IYe-iU-3yb"/>
-                        <segue destination="sry-HM-yoK" kind="relationship" relationship="viewControllers" id="uej-Mk-QxC"/>
+                        <segue destination="GM2-uE-eb6" kind="relationship" relationship="viewControllers" id="G7n-pC-48c"/>
                         <segue destination="f9A-nN-gng" kind="relationship" relationship="viewControllers" id="3uy-8J-y6b"/>
                         <segue destination="4ov-V9-wJ8" kind="relationship" relationship="viewControllers" id="DKb-OK-PE0"/>
                         <segue destination="eiJ-Of-QAF" kind="relationship" relationship="viewControllers" id="g4v-FB-lfL"/>
@@ -181,17 +181,17 @@
             <objects>
                 <viewController id="sry-HM-yoK" customClass="ContextCardViewController" customModule="Health" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="W9d-nF-0YW">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CUk-9Y-VdB">
-                                <rect key="frame" x="0.0" y="44" width="375" height="685"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="nwd-PI-giv">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="20.333333333333332"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="20.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hidden label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9tA-nM-Mgp">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="20.333333333333332"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -227,7 +227,97 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MDs-df-k2p" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4929" y="723"/>
+            <point key="canvasLocation" x="5267" y="-66"/>
+        </scene>
+        <!--Charts-->
+        <scene sceneID="491-RB-0F6">
+            <objects>
+                <viewController id="GM2-uE-eb6" customClass="ChartViewController" customModule="Health" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XRK-hn-Jxb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qS6-Lx-ITF" customClass="ORKLineGraphChartView">
+                                <rect key="frame" x="20" y="106" width="374" height="300"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QMZ-EV-Oph" customClass="ORKLineGraphChartView">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="300"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pedometer (steps)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ofu-Aa-3r5">
+                                                <rect key="frame" x="8" y="-30" width="143" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstItem="ofu-Aa-3r5" firstAttribute="leading" secondItem="QMZ-EV-Oph" secondAttribute="leading" constant="8" id="7na-Ya-l6C"/>
+                                            <constraint firstItem="ofu-Aa-3r5" firstAttribute="top" secondItem="QMZ-EV-Oph" secondAttribute="top" constant="-30" id="FJT-vz-HkN"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="QMZ-EV-Oph" firstAttribute="top" secondItem="qS6-Lx-ITF" secondAttribute="top" id="GKW-6d-rJV"/>
+                                    <constraint firstItem="QMZ-EV-Oph" firstAttribute="centerY" secondItem="qS6-Lx-ITF" secondAttribute="centerY" id="wE8-1K-Ort"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sbU-E2-heu" customClass="ORKLineGraphChartView">
+                                <rect key="frame" x="20" y="451" width="374" height="300"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FGQ-HH-wpE" customClass="ORKLineGraphChartView">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="300"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Physical activity (hours)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="An5-ca-UqV" userLabel="Physical activity (hours)">
+                                                <rect key="frame" x="8" y="-30" width="183" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstItem="An5-ca-UqV" firstAttribute="top" secondItem="FGQ-HH-wpE" secondAttribute="top" constant="-30" id="aNa-ua-a07"/>
+                                            <constraint firstItem="An5-ca-UqV" firstAttribute="leading" secondItem="FGQ-HH-wpE" secondAttribute="leading" constant="8" id="m4x-Rc-SDk"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="FGQ-HH-wpE" firstAttribute="leading" secondItem="sbU-E2-heu" secondAttribute="leading" id="5te-f3-9rw"/>
+                                    <constraint firstItem="FGQ-HH-wpE" firstAttribute="centerX" secondItem="sbU-E2-heu" secondAttribute="centerX" id="7U7-Gp-vIp"/>
+                                    <constraint firstItem="FGQ-HH-wpE" firstAttribute="centerY" secondItem="sbU-E2-heu" secondAttribute="centerY" id="uV7-pU-gck"/>
+                                    <constraint firstItem="FGQ-HH-wpE" firstAttribute="top" secondItem="sbU-E2-heu" secondAttribute="top" id="xM1-MF-fxu"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="qS6-Lx-ITF" firstAttribute="top" secondItem="ZCO-Fw-2r3" secondAttribute="top" constant="62" id="AtW-IU-YFa"/>
+                            <constraint firstItem="sbU-E2-heu" firstAttribute="leading" secondItem="qS6-Lx-ITF" secondAttribute="leading" id="FIV-OV-cGl"/>
+                            <constraint firstAttribute="bottom" secondItem="qS6-Lx-ITF" secondAttribute="bottom" constant="490" id="IXf-ab-9eU"/>
+                            <constraint firstItem="QMZ-EV-Oph" firstAttribute="leading" secondItem="ZCO-Fw-2r3" secondAttribute="leading" constant="20" id="PbW-Ar-MMG"/>
+                            <constraint firstItem="sbU-E2-heu" firstAttribute="top" secondItem="qS6-Lx-ITF" secondAttribute="bottom" constant="45" id="Zrw-zz-Jhu"/>
+                            <constraint firstItem="ZCO-Fw-2r3" firstAttribute="bottom" secondItem="sbU-E2-heu" secondAttribute="bottom" constant="62" id="bDF-DU-ATq"/>
+                            <constraint firstItem="QMZ-EV-Oph" firstAttribute="width" secondItem="XRK-hn-Jxb" secondAttribute="width" multiplier="0.903382" id="dso-uu-txI"/>
+                            <constraint firstItem="qS6-Lx-ITF" firstAttribute="trailing" secondItem="XRK-hn-Jxb" secondAttribute="trailingMargin" id="gpu-Nq-OK0"/>
+                            <constraint firstItem="qS6-Lx-ITF" firstAttribute="leading" secondItem="XRK-hn-Jxb" secondAttribute="leadingMargin" id="tTR-eo-LXy"/>
+                            <constraint firstItem="QMZ-EV-Oph" firstAttribute="centerX" secondItem="ZCO-Fw-2r3" secondAttribute="centerX" id="x6B-JF-cos"/>
+                            <constraint firstItem="sbU-E2-heu" firstAttribute="trailing" secondItem="qS6-Lx-ITF" secondAttribute="trailing" id="zsB-5a-vQC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ZCO-Fw-2r3"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Charts" image="chart.bar.fill" catalog="system" id="P5r-f6-BpK"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="activityGraphView" destination="sbU-E2-heu" id="5jO-bG-51t"/>
+                        <outlet property="pedometerGraphView" destination="qS6-Lx-ITF" id="Hv1-Hc-Fc7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uay-jT-KA2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6044.9275362318849" y="-66.294642857142861"/>
         </scene>
         <!--Exit-->
         <scene sceneID="Z9l-8e-mjL">
@@ -504,7 +594,7 @@ If you have questions about your rights as a research subject, or you have conce
     </inferredMetricsTieBreakers>
     <resources>
         <image name="background_dep" width="452" height="723"/>
-        <image name="background_eWellness" width="150.33332824707031" height="241"/>
+        <image name="background_eWellness" width="225.5" height="361.5"/>
         <image name="chart.bar.fill" catalog="system" width="128" height="89"/>
         <image name="exit" width="23" height="23"/>
         <image name="hambaga" width="25" height="25"/>

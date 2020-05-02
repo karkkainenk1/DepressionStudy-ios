@@ -51,7 +51,7 @@ class PermissionStep: ORKTableStep {
     func startStudy() -> Bool {
         let manager = AWARESensorManager.shared()
         let study   = AWAREStudy.shared()
-        study.setDebug(true)
+        study.setDebug(false)
         // AWAREFramework database (Need Author's E-Mail to access)
         let appDelegate = UIApplication.shared.delegate as? AppDelegate
         study.join(withURL: appDelegate!.studyURL, completion: { (_, _, error) in
@@ -62,8 +62,8 @@ class PermissionStep: ORKTableStep {
             }
             
             manager.addSensors(with: study)
-            manager.setDebugToAllSensors(true)
-            manager.setDebugToAllStorage(true)
+            manager.setDebugToAllSensors(false)
+            manager.setDebugToAllStorage(false)
             manager.startAllSensors()
             manager.startAutoSyncTimer()
             print("Sensors: ", manager.getAllSensors())

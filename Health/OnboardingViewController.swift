@@ -72,7 +72,7 @@ class OnboardingViewController: UIViewController {
         let consentDocument = ConsentDocument()
 //        let consentStep = ORKVisualConsentStep(identifier: "VisualConsentStep", document: consentDocument)
 
-//        let healthDataStep = HealthDataStep(identifier: "Health")
+        let healthDataStep = HealthDataStep(identifier: "Health")
         
         let signature = consentDocument.signatures!.first!
         
@@ -96,7 +96,7 @@ class OnboardingViewController: UIViewController {
         Thank you for your participation.
         """
          
-        let orderedTask = ORKOrderedTask(identifier: "Join", steps: [welcomeStep, whatToExpectStep, mentalStep, reviewConsentStep, permissionsStep, completionStep])
+        let orderedTask = ORKOrderedTask(identifier: "Join", steps: [welcomeStep, whatToExpectStep, mentalStep, reviewConsentStep, healthDataStep, permissionsStep, completionStep])
         let taskViewController = ORKTaskViewController(task: orderedTask, taskRun: nil)
         taskViewController.delegate = self
         
@@ -122,6 +122,9 @@ extension OnboardingViewController: ORKTaskViewControllerDelegate {
         if step is PermissionStep {
             let permissionStepViewController = PermissionDataStepViewController(step: step)
             return permissionStepViewController
+        } else if step is HealthDataStep {
+            let healthDataStepViewController = HealthDataStepViewController(step: step)
+            return healthDataStepViewController
         }
         
         return nil

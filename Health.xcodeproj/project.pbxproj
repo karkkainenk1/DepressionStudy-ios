@@ -18,6 +18,7 @@
 		846B533F20EACB16002CF471 /* HealthUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846B533E20EACB16002CF471 /* HealthUITests.swift */; };
 		84C19F7721078A6F00C1C932 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C19F7621078A6F00C1C932 /* SplashViewController.swift */; };
 		84C19F7E2107BD6800C1C932 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C19F7D2107BD6800C1C932 /* PageViewController.swift */; };
+		CB2A77DB2461349C00508D52 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB2A77DA2461349C00508D52 /* HealthKit.framework */; };
 		CB390417245B77E800902E5C /* ConsentDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB390410245B77E700902E5C /* ConsentDocument.swift */; };
 		CB390418245B77E800902E5C /* PermissionStepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB390411245B77E700902E5C /* PermissionStepViewController.swift */; };
 		CB390419245B77E800902E5C /* ResearchContainerSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB390412245B77E700902E5C /* ResearchContainerSegue.swift */; };
@@ -97,6 +98,8 @@
 		897EFA36D6834949B1D6139B /* Pods_HealthTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HealthTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B19D708FE10C4BA1612F9939 /* Pods-HealthTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HealthTests/Pods-HealthTests.release.xcconfig"; sourceTree = "<group>"; };
 		B5409A9D44D52EE4A868AE71 /* Pods-Health.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Health.release.xcconfig"; path = "Pods/Target Support Files/Pods-Health/Pods-Health.release.xcconfig"; sourceTree = "<group>"; };
+		CB2A77D92461349C00508D52 /* Health.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Health.entitlements; sourceTree = "<group>"; };
+		CB2A77DA2461349C00508D52 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		CB390410245B77E700902E5C /* ConsentDocument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConsentDocument.swift; path = Health/ConsentDocument.swift; sourceTree = "<group>"; };
 		CB390411245B77E700902E5C /* PermissionStepViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PermissionStepViewController.swift; path = Health/PermissionStepViewController.swift; sourceTree = "<group>"; };
 		CB390412245B77E700902E5C /* ResearchContainerSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResearchContainerSegue.swift; path = Health/ResearchContainerSegue.swift; sourceTree = "<group>"; };
@@ -134,6 +137,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B279804517B9EF8813A2AC0 /* Pods_Health.framework in Frameworks */,
+				CB2A77DB2461349C00508D52 /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,6 +176,7 @@
 		6DBE0431A1CFDD2A419EDEEE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CB2A77DA2461349C00508D52 /* HealthKit.framework */,
 				46A1E6933B2D8524039C3282 /* Pods_Health.framework */,
 				897EFA36D6834949B1D6139B /* Pods_HealthTests.framework */,
 				4A81C0E3BBDF336B324C6CA7 /* Pods_HealthUITests.framework */,
@@ -212,6 +217,7 @@
 		846B531D20EACB12002CF471 /* Health */ = {
 			isa = PBXGroup;
 			children = (
+				CB2A77D92461349C00508D52 /* Health.entitlements */,
 				DD06B74E245DF47A00B0A11D /* Charts */,
 				DD06B73B245A186800B0A11D /* ContextCard */,
 				DD97FB4D214C812F005D28FC /* AWARE.xcdatamodeld */,
@@ -711,8 +717,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Health/Health.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6B8PP2XLB5;
+				DEVELOPMENT_TEAM = 9HWKFPBULP;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/EZAudio\"",
@@ -725,7 +732,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = edu.ucla.eHealth;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tylerd.eHealth;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_INSTALL_OBJC_HEADER = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -740,8 +747,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Health/Health.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6B8PP2XLB5;
+				DEVELOPMENT_TEAM = 9HWKFPBULP;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/EZAudio\"",
@@ -754,7 +762,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = edu.ucla.eHealth;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tylerd.eHealth;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_INSTALL_OBJC_HEADER = YES;
 				SWIFT_VERSION = 5.0;

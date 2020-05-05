@@ -40,18 +40,13 @@ class HealthDataStep: ORKInstructionStep {
         HKObjectType.quantityType(forIdentifier: HKQuantityTypeIdentifier.bodyMass)!
     ]
     
-    let healthDataItemsToWrite: Set<HKSampleType> = [
-        HKObjectType.quantityType(forIdentifier: HKQuantityTypeIdentifier.bodyMass)!,
-        HKObjectType.workoutType()
-    ]
-    
     // MARK: Initialization
     
     override init(identifier: String) {
         super.init(identifier: identifier)
         
         title = NSLocalizedString("Health Data", comment: "")
-        text = NSLocalizedString("On the next screen, you will be prompted to grant access to read and write some of your general and health information, such as height, weight, and steps taken so you don't have to enter it again.", comment: "")
+        text = NSLocalizedString("On the next screen, you will be prompted to grant access to read some of your health information, such as heart rate, hours slept, and steps taken so you don't have to enter it again.", comment: "")
     }
 
     required init(coder aDecoder: NSCoder) {
@@ -62,7 +57,7 @@ class HealthDataStep: ORKInstructionStep {
     
     func getHealthAuthorization(_ completion: @escaping (_ success: Bool, _ error: NSError?) -> Void) {
         guard HKHealthStore.isHealthDataAvailable() else {
-            let error = NSError(domain: "com.example.apple-samplecode.ORKSample", code: 2, userInfo: [NSLocalizedDescriptionKey: "Health data is not available on this device."])
+            let error = NSError(domain: "com.tylerd.eHealth", code: 2, userInfo: [NSLocalizedDescriptionKey: "Health data is not available on this device."])
             
             completion(false, error)
             
@@ -70,7 +65,7 @@ class HealthDataStep: ORKInstructionStep {
         }
         
         // Get authorization to access the data
-        HKHealthStore().requestAuthorization(toShare: healthDataItemsToWrite, read: healthDataItemsToRead) { (success, error) -> Void in
+        HKHealthStore().requestAuthorization(toShare: nil, read: healthDataItemsToRead) { (success, error) -> Void in
             completion(success, error as NSError?)
         }
     }

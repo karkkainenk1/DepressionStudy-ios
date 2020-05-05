@@ -25,6 +25,7 @@
 		CB39041B245B77E800902E5C /* HealthDataStepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB390414245B77E700902E5C /* HealthDataStepViewController.swift */; };
 		CB39041C245B77E800902E5C /* HealthDataStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB390415245B77E700902E5C /* HealthDataStep.swift */; };
 		CB39041D245B77E800902E5C /* PermissionStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB390416245B77E700902E5C /* PermissionStep.swift */; };
+		CBEE21F42460E41900CA01E8 /* ConsentDoc.html in Resources */ = {isa = PBXBuildFile; fileRef = CBEE21F32460E41900CA01E8 /* ConsentDoc.html */; };
 		DD06B739245A15DD00B0A11D /* ContextCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD06B738245A15DD00B0A11D /* ContextCardViewController.swift */; };
 		DD06B743245A187400B0A11D /* BarChartCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD06B73E245A187300B0A11D /* BarChartCard.swift */; };
 		DD06B744245A187400B0A11D /* ContextCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD06B73C245A187300B0A11D /* ContextCard.swift */; };
@@ -97,13 +98,14 @@
 		897EFA36D6834949B1D6139B /* Pods_HealthTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HealthTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B19D708FE10C4BA1612F9939 /* Pods-HealthTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HealthTests/Pods-HealthTests.release.xcconfig"; sourceTree = "<group>"; };
 		B5409A9D44D52EE4A868AE71 /* Pods-Health.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Health.release.xcconfig"; path = "Pods/Target Support Files/Pods-Health/Pods-Health.release.xcconfig"; sourceTree = "<group>"; };
-		CB390410245B77E700902E5C /* ConsentDocument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConsentDocument.swift; path = Health/ConsentDocument.swift; sourceTree = "<group>"; };
+		CB390410245B77E700902E5C /* ConsentDocument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsentDocument.swift; sourceTree = "<group>"; };
 		CB390411245B77E700902E5C /* PermissionStepViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PermissionStepViewController.swift; path = Health/PermissionStepViewController.swift; sourceTree = "<group>"; };
 		CB390412245B77E700902E5C /* ResearchContainerSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResearchContainerSegue.swift; path = Health/ResearchContainerSegue.swift; sourceTree = "<group>"; };
 		CB390413245B77E700902E5C /* OnboardingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OnboardingViewController.swift; path = Health/OnboardingViewController.swift; sourceTree = "<group>"; };
 		CB390414245B77E700902E5C /* HealthDataStepViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HealthDataStepViewController.swift; path = Health/HealthDataStepViewController.swift; sourceTree = "<group>"; };
 		CB390415245B77E700902E5C /* HealthDataStep.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HealthDataStep.swift; path = Health/HealthDataStep.swift; sourceTree = "<group>"; };
 		CB390416245B77E700902E5C /* PermissionStep.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PermissionStep.swift; path = Health/PermissionStep.swift; sourceTree = "<group>"; };
+		CBEE21F32460E41900CA01E8 /* ConsentDoc.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = ConsentDoc.html; sourceTree = "<group>"; };
 		DD06B738245A15DD00B0A11D /* ContextCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextCardViewController.swift; sourceTree = "<group>"; };
 		DD06B73C245A187300B0A11D /* ContextCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextCard.swift; sourceTree = "<group>"; };
 		DD06B73D245A187300B0A11D /* ContextCard.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContextCard.xib; sourceTree = "<group>"; };
@@ -183,7 +185,6 @@
 			isa = PBXGroup;
 			children = (
 				DD06B74C245CCE0700B0A11D /* DateExtensions.swift */,
-				CB390410245B77E700902E5C /* ConsentDocument.swift */,
 				CB390415245B77E700902E5C /* HealthDataStep.swift */,
 				CB390414245B77E700902E5C /* HealthDataStepViewController.swift */,
 				CB390413245B77E700902E5C /* OnboardingViewController.swift */,
@@ -212,6 +213,7 @@
 		846B531D20EACB12002CF471 /* Health */ = {
 			isa = PBXGroup;
 			children = (
+				CBEE21F52460E47D00CA01E8 /* Consent */,
 				DD06B74E245DF47A00B0A11D /* Charts */,
 				DD06B73B245A186800B0A11D /* ContextCard */,
 				DD97FB4D214C812F005D28FC /* AWARE.xcdatamodeld */,
@@ -249,6 +251,15 @@
 				846B534020EACB16002CF471 /* Info.plist */,
 			);
 			path = HealthUITests;
+			sourceTree = "<group>";
+		};
+		CBEE21F52460E47D00CA01E8 /* Consent */ = {
+			isa = PBXGroup;
+			children = (
+				CB390410245B77E700902E5C /* ConsentDocument.swift */,
+				CBEE21F32460E41900CA01E8 /* ConsentDoc.html */,
+			);
+			path = Consent;
 			sourceTree = "<group>";
 		};
 		DD06B73B245A186800B0A11D /* ContextCard */ = {
@@ -396,6 +407,7 @@
 				846B532920EACB16002CF471 /* LaunchScreen.storyboard in Resources */,
 				846B532620EACB16002CF471 /* Assets.xcassets in Resources */,
 				846B532420EACB12002CF471 /* Main.storyboard in Resources */,
+				CBEE21F42460E41900CA01E8 /* ConsentDoc.html in Resources */,
 				DD06B749245A1B2600B0A11D /* ContextCard.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

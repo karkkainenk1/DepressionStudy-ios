@@ -6,36 +6,35 @@
 //  Copyright © 2020 Admin. All rights reserved.
 //
 
-import UIKit
 import ResearchKit
+import UIKit
 
 class ChartViewController: UIViewController {
 
-    @IBOutlet weak var pedometerGraphView: ORKLineGraphChartView!
-    @IBOutlet weak var activityGraphView: ORKLineGraphChartView!
-    
-    let pedometerDatasource = PedometerDataSource()
-    let activityDatasource = ActivityDataSource()
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
+  @IBOutlet weak var pedometerGraphView: ORKLineGraphChartView!
+  @IBOutlet weak var activityGraphView: ORKLineGraphChartView!
 
-        pedometerGraphView.dataSource = pedometerDatasource
-        pedometerGraphView.showsVerticalReferenceLines = true
-        pedometerGraphView.showsHorizontalReferenceLines = true
-        activityGraphView.dataSource = activityDatasource
-        activityGraphView.showsVerticalReferenceLines = true
-        activityGraphView.showsHorizontalReferenceLines = true
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        pedometerGraphView.reloadData()
-        activityGraphView.reloadData()
-    }
-    
+  let pedometerDatasource = PedometerDataSource()
+  let activityDatasource = ActivityDataSource()
 
-    /*
+  override func viewDidLoad() {
+    super.viewDidLoad()
+
+    pedometerGraphView.dataSource = pedometerDatasource
+    pedometerGraphView.showsVerticalReferenceLines = true
+    pedometerGraphView.showsHorizontalReferenceLines = true
+    activityGraphView.dataSource = activityDatasource
+    activityGraphView.showsVerticalReferenceLines = true
+    activityGraphView.showsHorizontalReferenceLines = true
+  }
+
+  override func viewDidAppear(_ animated: Bool) {
+    super.viewDidAppear(animated)
+    pedometerGraphView.reloadData()
+    activityGraphView.reloadData()
+  }
+
+  /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation

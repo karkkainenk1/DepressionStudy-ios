@@ -8,35 +8,34 @@
 
 import UIKit
 
-class SplashViewController: UIViewController{
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
-            let appdelegate = UIApplication.shared.delegate! as! AppDelegate
+class SplashViewController: UIViewController {
+  override func viewDidAppear(_ animated: Bool) {
+    super.viewDidAppear(animated)
 
-            if (!appdelegate.hasLaunched()){
-                self.toOnboarding()
-            } else {
-                self.toStudy()
-            }
-        }
-    }
-    
-    
-    // MARK: Unwind segues
-    
-    @IBAction func unwindToStudy(_ segue: UIStoryboardSegue) {
-        toStudy()
-    }
-    
-    // MARK: Transitions
+    DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+      let appdelegate = UIApplication.shared.delegate! as! AppDelegate
 
-    func toOnboarding() {
-        performSegue(withIdentifier: "firstLaunch", sender: self)
+      if !appdelegate.hasLaunched() {
+        self.toOnboarding()
+      } else {
+        self.toStudy()
+      }
     }
-    
-    func toStudy() {
-        performSegue(withIdentifier: "launchedBefore", sender: self)
-    }
+  }
+
+  // MARK: Unwind segues
+
+  @IBAction func unwindToStudy(_ segue: UIStoryboardSegue) {
+    toStudy()
+  }
+
+  // MARK: Transitions
+
+  func toOnboarding() {
+    performSegue(withIdentifier: "firstLaunch", sender: self)
+  }
+
+  func toStudy() {
+    performSegue(withIdentifier: "launchedBefore", sender: self)
+  }
 }

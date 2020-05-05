@@ -28,26 +28,26 @@ OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
 
-import ResearchKit
 import HealthKit
+import ResearchKit
 
 class HealthDataStepViewController: ORKInstructionStepViewController {
-    // MARK: Properties
-    
-    var healthDataStep: HealthDataStep? {
-        return step as? HealthDataStep
+  // MARK: Properties
+
+  var healthDataStep: HealthDataStep? {
+    return step as? HealthDataStep
+  }
+
+  // MARK: ORKInstructionStepViewController
+
+  override func goForward() {
+    healthDataStep?.getHealthAuthorization { succeeded, _ in
+      // The second part of the guard condition allows the app to proceed on the Simulator (where health data is not available)
+      guard succeeded || (TARGET_OS_SIMULATOR != 0) else { return }
+
+      OperationQueue.main.addOperation {
+        super.goForward()
+      }
     }
-    
-    // MARK: ORKInstructionStepViewController
-    
-    override func goForward() {
-        healthDataStep?.getHealthAuthorization() { succeeded, _ in
-            // The second part of the guard condition allows the app to proceed on the Simulator (where health data is not available)
-            guard succeeded || (TARGET_OS_SIMULATOR != 0) else { return }
-            
-            OperationQueue.main.addOperation {
-                super.goForward()
-            }
-        }
-    }
+  }
 }

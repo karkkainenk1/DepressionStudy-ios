@@ -48,36 +48,46 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background_dep" translatesAutoresizingMaskIntoConstraints="NO" id="VAP-yG-Euz">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_dep" translatesAutoresizingMaskIntoConstraints="NO" id="VAP-yG-Euz">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.98774117230000003" green="0.68526738880000004" blue="0.6431612968" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo_eWellness" translatesAutoresizingMaskIntoConstraints="NO" id="oDD-Th-3tn">
-                                <rect key="frame" x="120" y="73" width="176" height="174"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Welcome to eWellness app" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="FQs-ua-Twk">
-                                <rect key="frame" x="33" y="262" width="339" height="114"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="textColor" red="0.15202015902919208" green="0.11081539763281546" blue="0.40685718911917101" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CjS-em-93e">
-                                <rect key="frame" x="155" y="489" width="101" height="39"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CjS-em-93e">
+                                <rect key="frame" x="156.5" y="433.5" width="101" height="39"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="Join Study"/>
                                 <connections>
                                     <action selector="startOnboarding:" destination="jn6-Ej-AfV" eventType="touchUpInside" id="Nbv-3i-DZ8"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A mental wellbeing study" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="in5-US-Ajo">
+                                <rect key="frame" x="61" y="297" width="292" height="58"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="Ltb-ww-8qV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" red="0.15202015899999999" green="0.1108153976" blue="0.40685718910000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_eWellness" translatesAutoresizingMaskIntoConstraints="NO" id="oDD-Th-3tn">
+                                <rect key="frame" x="119" y="96" width="176" height="174"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="in5-US-Ajo" firstAttribute="centerX" secondItem="VAP-yG-Euz" secondAttribute="centerX" id="AW5-Z8-DZY"/>
                             <constraint firstItem="CjS-em-93e" firstAttribute="centerX" secondItem="h2n-U5-Igk" secondAttribute="centerX" id="E1K-zP-nhL"/>
+                            <constraint firstItem="VAP-yG-Euz" firstAttribute="top" secondItem="WTs-6b-XUG" secondAttribute="topMargin" constant="-44" id="GvP-qM-MxF"/>
+                            <constraint firstItem="VAP-yG-Euz" firstAttribute="centerY" secondItem="WTs-6b-XUG" secondAttribute="centerY" id="Ich-i6-fqv"/>
+                            <constraint firstItem="oDD-Th-3tn" firstAttribute="leading" secondItem="h2n-U5-Igk" secondAttribute="leading" constant="119" id="JVi-ot-r0u"/>
                             <constraint firstItem="CjS-em-93e" firstAttribute="centerY" secondItem="h2n-U5-Igk" secondAttribute="centerY" id="KD8-rW-yUO"/>
+                            <constraint firstItem="VAP-yG-Euz" firstAttribute="leading" secondItem="h2n-U5-Igk" secondAttribute="leading" id="QKJ-PY-yi6"/>
+                            <constraint firstItem="oDD-Th-3tn" firstAttribute="top" secondItem="h2n-U5-Igk" secondAttribute="top" constant="52" id="RiL-BV-zjE"/>
+                            <constraint firstItem="in5-US-Ajo" firstAttribute="leading" secondItem="h2n-U5-Igk" secondAttribute="leading" constant="61" id="cxx-gC-QBz"/>
+                            <constraint firstItem="in5-US-Ajo" firstAttribute="top" secondItem="oDD-Th-3tn" secondAttribute="bottom" constant="27" id="egf-h1-9AQ"/>
+                            <constraint firstItem="in5-US-Ajo" firstAttribute="centerX" secondItem="oDD-Th-3tn" secondAttribute="centerX" id="haA-uA-zRh"/>
+                            <constraint firstItem="in5-US-Ajo" firstAttribute="centerX" secondItem="CjS-em-93e" secondAttribute="centerX" id="mrU-FA-S7j"/>
+                            <constraint firstItem="CjS-em-93e" firstAttribute="top" secondItem="in5-US-Ajo" secondAttribute="bottom" constant="78.5" id="pZW-n2-ew4"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="h2n-U5-Igk"/>
                     </view>
@@ -88,7 +98,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FyG-Rt-AtT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="549" y="-1662"/>
+            <point key="canvasLocation" x="547.82608695652175" y="-1662.0535714285713"/>
         </scene>
         <!--eWellness-->
         <scene sceneID="axY-09-qmj">

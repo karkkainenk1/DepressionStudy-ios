@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="o1u-dZ-Gtq">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -194,10 +194,10 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="769"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="nwd-PI-giv">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="20.333333333333332"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hidden label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9tA-nM-Mgp">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="20.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="20.333333333333332"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -240,14 +240,14 @@
             <objects>
                 <viewController id="GM2-uE-eb6" customClass="ChartViewController" customModule="Health" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XRK-hn-Jxb">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qS6-Lx-ITF" customClass="ORKLineGraphChartView">
-                                <rect key="frame" x="20" y="106" width="374" height="300"/>
+                                <rect key="frame" x="16" y="62" width="288" height="16"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QMZ-EV-Oph" customClass="ORKLineGraphChartView">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="300"/>
+                                        <rect key="frame" x="4" y="0.0" width="289" height="16"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pedometer (steps)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ofu-Aa-3r5">
                                                 <rect key="frame" x="8" y="-30" width="143" height="21"/>
@@ -270,10 +270,10 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sbU-E2-heu" customClass="ORKLineGraphChartView">
-                                <rect key="frame" x="20" y="451" width="374" height="300"/>
+                                <rect key="frame" x="16" y="123" width="288" height="334"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FGQ-HH-wpE" customClass="ORKLineGraphChartView">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="300"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="334"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Physical activity (hours)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="An5-ca-UqV" userLabel="Physical activity (hours)">
                                                 <rect key="frame" x="8" y="-30" width="183" height="21"/>
@@ -333,73 +333,64 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Mzk-jo-KXl">
-                                <rect key="frame" x="45" y="20" width="324" height="351"/>
-                                <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Exiting the Study" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="INm-sn-pqa">
-                                        <rect key="frame" x="0.0" y="0.0" width="324" height="65"/>
-                                        <accessibility key="accessibilityConfiguration">
-                                            <accessibilityTraits key="traits" notEnabled="YES"/>
-                                        </accessibility>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="65" id="rWz-bA-6yK"/>
-                                        </constraints>
-                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="opm-QS-nxu">
-                                        <rect key="frame" x="0.0" y="65" width="324" height="63"/>
-                                        <string key="text">Are you sure you wish to exit the study? It will stop all data collection.
+                           <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Exiting the Study" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B5p-h7-aOH">
+                                <rect key="frame" x="126.66666666666669" y="20" width="161" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="opm-QS-nxu">
+                                <rect key="frame" x="45" y="84" width="324" height="116.33333333333331"/>
+                                <string key="text">Are you sure you wish to exit the study? It will stop all data collection.
 
-If you wish to exit the study and stop all data collection, press the End Study button below. You may reenter the study at any time.</string>
-                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                        <dataDetectorType key="dataDetectorTypes" phoneNumber="YES"/>
-                                    </textView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="DaS-ea-kJo">
-                                        <rect key="frame" x="0.0" y="128" width="324" height="203"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                        <inset key="titleEdgeInsets" minX="0.0" minY="20" maxX="0.0" maxY="0.0"/>
-                                        <state key="normal" title="Exit Study">
-                                            <color key="titleColor" red="1" green="0.060806833329999997" blue="0.1107353358" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                        <state key="disabled">
-                                            <color key="titleColor" red="0.99949163198471069" green="0.061163268983364105" blue="0.10819018632173538" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="exitButton:" destination="eiJ-Of-QAF" eventType="touchUpInside" id="yZP-ab-X8i"/>
-                                        </connections>
-                                    </button>
-                                    <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="aOY-UN-K8U">
-                                        <rect key="frame" x="0.0" y="331" width="324" height="20"/>
-                                    </activityIndicatorView>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="opm-QS-nxu" firstAttribute="centerX" secondItem="Mzk-jo-KXl" secondAttribute="centerX" id="Kj9-Ef-xvJ"/>
-                                    <constraint firstItem="INm-sn-pqa" firstAttribute="centerX" secondItem="Mzk-jo-KXl" secondAttribute="centerX" id="WFb-iz-1jh"/>
-                                </constraints>
-                            </stackView>
+If you wish to exit the study and stop all data collection, press the Exit Study button below. You may reenter the study at any time.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="DaS-ea-kJo">
+                                <rect key="frame" x="152.66666666666666" y="208.33333333333334" width="108.99999999999997" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <inset key="titleEdgeInsets" minX="0.0" minY="20" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Exit Study">
+                                    <color key="titleColor" red="1" green="0.060806833329999997" blue="0.1107353358" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <state key="disabled">
+                                    <color key="titleColor" red="0.99949163198471069" green="0.061163268983364105" blue="0.10819018632173538" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="exitButton:" destination="eiJ-Of-QAF" eventType="touchUpInside" id="yZP-ab-X8i"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="tMo-As-ihG">
+                                <rect key="frame" x="197" y="258.33333333333331" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="Mzk-jo-KXl" firstAttribute="leading" secondItem="VF9-es-O87" secondAttribute="leading" constant="45" id="OXg-UC-xOy"/>
-                            <constraint firstItem="Mzk-jo-KXl" firstAttribute="centerX" secondItem="VF9-es-O87" secondAttribute="centerX" id="Ose-SF-hGU"/>
-                            <constraint firstItem="Mzk-jo-KXl" firstAttribute="top" secondItem="VF9-es-O87" secondAttribute="top" constant="20" id="UWA-Jr-VCm"/>
-                            <constraint firstItem="VF9-es-O87" firstAttribute="bottom" secondItem="Mzk-jo-KXl" secondAttribute="bottom" constant="388" id="vD8-H3-iVT"/>
+                            <constraint firstItem="DaS-ea-kJo" firstAttribute="centerX" secondItem="VF9-es-O87" secondAttribute="centerX" id="5Kf-WM-XAs"/>
+                            <constraint firstItem="tMo-As-ihG" firstAttribute="centerX" secondItem="VF9-es-O87" secondAttribute="centerX" id="I0v-WN-ykb"/>
+                            <constraint firstItem="opm-QS-nxu" firstAttribute="top" secondItem="B5p-h7-aOH" secondAttribute="bottom" constant="37" id="JKq-cS-rdV"/>
+                            <constraint firstItem="opm-QS-nxu" firstAttribute="centerX" secondItem="VF9-es-O87" secondAttribute="centerX" id="MVM-l6-zHc"/>
+                            <constraint firstItem="tMo-As-ihG" firstAttribute="top" secondItem="DaS-ea-kJo" secondAttribute="bottom" constant="8" id="QD6-6K-t9H"/>
+                            <constraint firstItem="opm-QS-nxu" firstAttribute="leading" secondItem="VF9-es-O87" secondAttribute="leading" constant="45" id="UBx-my-hkE"/>
+                            <constraint firstItem="VF9-es-O87" firstAttribute="trailing" secondItem="opm-QS-nxu" secondAttribute="trailing" constant="45" id="el5-O2-rCk"/>
+                            <constraint firstItem="B5p-h7-aOH" firstAttribute="top" secondItem="VF9-es-O87" secondAttribute="top" constant="20" id="n93-k7-kym"/>
+                            <constraint firstItem="B5p-h7-aOH" firstAttribute="centerX" secondItem="VF9-es-O87" secondAttribute="centerX" id="qto-hl-kAm"/>
+                            <constraint firstItem="DaS-ea-kJo" firstAttribute="top" secondItem="opm-QS-nxu" secondAttribute="bottom" constant="8" id="xeP-eL-eLS"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="VF9-es-O87"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Exit Study" image="exit" id="T55-RF-bFc"/>
                     <connections>
-                        <outlet property="activityIndicator" destination="aOY-UN-K8U" id="lLs-v1-5KN"/>
+                        <outlet property="activityIndicator" destination="tMo-As-ihG" id="SO4-WY-1O4"/>
                         <outlet property="exitStudyButton" destination="DaS-ea-kJo" id="lSx-Rk-BTI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YB5-5T-UGf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4551" y="-66"/>
+            <point key="canvasLocation" x="4550.625" y="-66.549295774647888"/>
         </scene>
         <!--Mental Health-->
         <scene sceneID="X9L-Qi-q2j">
@@ -494,7 +485,7 @@ STUDY INFORMATION SHEET</string>
                                     </textView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="sEv-49-dJb">
                                         <rect key="frame" x="0.0" y="145" width="324" height="594"/>
-                                        <string key="text">Passive Sensing of Mental Wellness
+                                        <mutableString key="text">Passive Sensing of Mental Wellness
 
 Dr. Majid Sarrafzadeh, from the Computer Science Department at the University of California, Los Angeles (UCLA) is conducting a research study.
 
@@ -559,7 +550,7 @@ Who can I contact if I have questions about this study?
 If you have any questions, comments or concerns about the research, you can talk to the one of the researchers. Please contact: Lionel Levine at 213-444-6622 or Lionel@cs.ucla.edu.
 
 ● UCLA Office of the Human Research Protection Program (OHRPP):
-If you have questions about your rights as a research subject, or you have concerns or suggestions and you want to talk to someone other than the researchers, you may contact the UCLA OHRPP by phone: (310) 206-2040; by email: participants@research.ucla.edu or by mail: Box 951406, Los Angeles, CA 90095-1406.</string>
+If you have questions about your rights as a research subject, or you have concerns or suggestions and you want to talk to someone other than the researchers, you may contact the UCLA OHRPP by phone: (310) 206-2040; by email: participants@research.ucla.edu or by mail: Box 951406, Los Angeles, CA 90095-1406.</mutableString>
                                         <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -588,7 +579,7 @@ If you have questions about your rights as a research subject, or you have conce
     </inferredMetricsTieBreakers>
     <resources>
         <image name="background_dep" width="452" height="723"/>
-        <image name="background_eWellness" width="225.5" height="361.5"/>
+        <image name="background_eWellness" width="150.33332824707031" height="241"/>
         <image name="chart.bar.fill" catalog="system" width="128" height="89"/>
         <image name="exit" width="23" height="23"/>
         <image name="hambaga" width="25" height="25"/>

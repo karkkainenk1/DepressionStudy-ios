@@ -25,13 +25,13 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-	<string>This application needs to access your location</string>
+	<string>We use your location to understand your movement patterns throughout the day</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>This application needs to access your location</string>
+	<string>We use your location to understand your movement patterns throughout the day</string>
 	<key>NSMicrophoneUsageDescription</key>
-	<string>This application needs to access your microphone</string>
+	<string>We use your microphone to calculate noise exposure</string>
 	<key>NSMotionUsageDescription</key>
-	<string>This application needs to access your motion data</string>
+	<string>We use your motion data to help count steps and understand your activity</string>
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>audio</string>

@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="o1u-dZ-Gtq">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -53,7 +52,7 @@
                                 <color key="backgroundColor" red="0.98774117230000003" green="0.68526738880000004" blue="0.6431612968" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CjS-em-93e">
-                                <rect key="frame" x="156.5" y="433.5" width="101" height="39"/>
+                                <rect key="frame" x="156.66666666666666" y="433.66666666666669" width="100.99999999999997" height="39"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="Join Study"/>
                                 <connections>
@@ -183,147 +182,34 @@
             <point key="canvasLocation" x="3513" y="-912"/>
         </scene>
         <!--Charts-->
-        <scene sceneID="Zgf-LY-HaC">
+        <scene sceneID="491-RB-0F6">
             <objects>
-                <viewController id="sry-HM-yoK" customClass="ContextCardViewController" customModule="Health" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="W9d-nF-0YW">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uay-jT-KA2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController id="GM2-uE-eb6" customClass="ChartViewController" customModule="Health" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XRK-hn-Jxb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CUk-9Y-VdB">
-                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="nwd-PI-giv">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="20.333333333333332"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hidden label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9tA-nM-Mgp">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="20.333333333333332"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                    </stackView>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="nwd-PI-giv" secondAttribute="trailing" id="Ahs-HZ-GgF"/>
-                                    <constraint firstItem="9tA-nM-Mgp" firstAttribute="width" secondItem="CUk-9Y-VdB" secondAttribute="width" id="GJS-BO-6hg"/>
-                                    <constraint firstAttribute="bottom" secondItem="nwd-PI-giv" secondAttribute="bottom" id="U0d-UA-ObM"/>
-                                    <constraint firstItem="nwd-PI-giv" firstAttribute="top" secondItem="CUk-9Y-VdB" secondAttribute="top" id="Ypk-M9-rWA"/>
-                                    <constraint firstItem="nwd-PI-giv" firstAttribute="leading" secondItem="CUk-9Y-VdB" secondAttribute="leading" id="jDi-MP-wnt"/>
-                                </constraints>
-                                <viewLayoutGuide key="contentLayoutGuide" id="Qjn-fL-LtO"/>
-                                <viewLayoutGuide key="frameLayoutGuide" id="cPW-Pw-ClZ"/>
-                            </scrollView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="IZY-YG-EMf">
+                                <rect key="frame" x="188.66666666666666" y="410" width="37" height="37"/>
+                                <color key="color" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="XZk-ao-Nkd" firstAttribute="trailing" secondItem="CUk-9Y-VdB" secondAttribute="trailing" id="ce0-nY-PLc"/>
-                            <constraint firstItem="CUk-9Y-VdB" firstAttribute="leading" secondItem="XZk-ao-Nkd" secondAttribute="leading" id="cyC-Fh-zlb"/>
-                            <constraint firstItem="XZk-ao-Nkd" firstAttribute="bottom" secondItem="CUk-9Y-VdB" secondAttribute="bottom" id="gGQ-8c-NYy"/>
-                            <constraint firstItem="CUk-9Y-VdB" firstAttribute="top" secondItem="XZk-ao-Nkd" secondAttribute="top" id="xTj-ri-u8c"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="XZk-ao-Nkd"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Charts" image="chart.bar.fill" catalog="system" selectedImage="chart.bar.fill" id="Dx3-Ix-EHs"/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <connections>
-                        <outlet property="mainStackView" destination="nwd-PI-giv" id="djD-2g-8ad"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="MDs-df-k2p" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="5267" y="-66"/>
-        </scene>
-        <!--Charts-->
-        <scene sceneID="491-RB-0F6">
-            <objects>
-                <viewController id="GM2-uE-eb6" customClass="ChartViewController" customModule="Health" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="XRK-hn-Jxb">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qS6-Lx-ITF" customClass="ORKLineGraphChartView">
-                                <rect key="frame" x="16" y="62" width="288" height="16"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QMZ-EV-Oph" customClass="ORKLineGraphChartView">
-                                        <rect key="frame" x="4" y="0.0" width="289" height="16"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pedometer (steps)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ofu-Aa-3r5">
-                                                <rect key="frame" x="8" y="-30" width="143" height="21"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                        <constraints>
-                                            <constraint firstItem="ofu-Aa-3r5" firstAttribute="leading" secondItem="QMZ-EV-Oph" secondAttribute="leading" constant="8" id="7na-Ya-l6C"/>
-                                            <constraint firstItem="ofu-Aa-3r5" firstAttribute="top" secondItem="QMZ-EV-Oph" secondAttribute="top" constant="-30" id="FJT-vz-HkN"/>
-                                        </constraints>
-                                    </view>
-                                </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <constraints>
-                                    <constraint firstItem="QMZ-EV-Oph" firstAttribute="top" secondItem="qS6-Lx-ITF" secondAttribute="top" id="GKW-6d-rJV"/>
-                                    <constraint firstItem="QMZ-EV-Oph" firstAttribute="centerY" secondItem="qS6-Lx-ITF" secondAttribute="centerY" id="wE8-1K-Ort"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sbU-E2-heu" customClass="ORKLineGraphChartView">
-                                <rect key="frame" x="16" y="123" width="288" height="334"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FGQ-HH-wpE" customClass="ORKLineGraphChartView">
-                                        <rect key="frame" x="0.0" y="0.0" width="288" height="334"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Physical activity (hours)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="An5-ca-UqV" userLabel="Physical activity (hours)">
-                                                <rect key="frame" x="8" y="-30" width="183" height="21"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                        <constraints>
-                                            <constraint firstItem="An5-ca-UqV" firstAttribute="top" secondItem="FGQ-HH-wpE" secondAttribute="top" constant="-30" id="aNa-ua-a07"/>
-                                            <constraint firstItem="An5-ca-UqV" firstAttribute="leading" secondItem="FGQ-HH-wpE" secondAttribute="leading" constant="8" id="m4x-Rc-SDk"/>
-                                        </constraints>
-                                    </view>
-                                </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <constraints>
-                                    <constraint firstItem="FGQ-HH-wpE" firstAttribute="leading" secondItem="sbU-E2-heu" secondAttribute="leading" id="5te-f3-9rw"/>
-                                    <constraint firstItem="FGQ-HH-wpE" firstAttribute="centerX" secondItem="sbU-E2-heu" secondAttribute="centerX" id="7U7-Gp-vIp"/>
-                                    <constraint firstItem="FGQ-HH-wpE" firstAttribute="centerY" secondItem="sbU-E2-heu" secondAttribute="centerY" id="uV7-pU-gck"/>
-                                    <constraint firstItem="FGQ-HH-wpE" firstAttribute="top" secondItem="sbU-E2-heu" secondAttribute="top" id="xM1-MF-fxu"/>
-                                </constraints>
-                            </view>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="qS6-Lx-ITF" firstAttribute="top" secondItem="ZCO-Fw-2r3" secondAttribute="top" constant="62" id="AtW-IU-YFa"/>
-                            <constraint firstItem="sbU-E2-heu" firstAttribute="leading" secondItem="qS6-Lx-ITF" secondAttribute="leading" id="FIV-OV-cGl"/>
-                            <constraint firstAttribute="bottom" secondItem="qS6-Lx-ITF" secondAttribute="bottom" constant="490" id="IXf-ab-9eU"/>
-                            <constraint firstItem="QMZ-EV-Oph" firstAttribute="leading" secondItem="ZCO-Fw-2r3" secondAttribute="leading" constant="20" id="PbW-Ar-MMG"/>
-                            <constraint firstItem="sbU-E2-heu" firstAttribute="top" secondItem="qS6-Lx-ITF" secondAttribute="bottom" constant="45" id="Zrw-zz-Jhu"/>
-                            <constraint firstItem="ZCO-Fw-2r3" firstAttribute="bottom" secondItem="sbU-E2-heu" secondAttribute="bottom" constant="62" id="bDF-DU-ATq"/>
-                            <constraint firstItem="QMZ-EV-Oph" firstAttribute="width" secondItem="XRK-hn-Jxb" secondAttribute="width" multiplier="0.903382" id="dso-uu-txI"/>
-                            <constraint firstItem="qS6-Lx-ITF" firstAttribute="trailing" secondItem="XRK-hn-Jxb" secondAttribute="trailingMargin" id="gpu-Nq-OK0"/>
-                            <constraint firstItem="qS6-Lx-ITF" firstAttribute="leading" secondItem="XRK-hn-Jxb" secondAttribute="leadingMargin" id="tTR-eo-LXy"/>
-                            <constraint firstItem="QMZ-EV-Oph" firstAttribute="centerX" secondItem="ZCO-Fw-2r3" secondAttribute="centerX" id="x6B-JF-cos"/>
-                            <constraint firstItem="sbU-E2-heu" firstAttribute="trailing" secondItem="qS6-Lx-ITF" secondAttribute="trailing" id="zsB-5a-vQC"/>
+                            <constraint firstItem="IZY-YG-EMf" firstAttribute="centerX" secondItem="ZCO-Fw-2r3" secondAttribute="centerX" id="HtJ-ER-BqX"/>
+                            <constraint firstItem="IZY-YG-EMf" firstAttribute="centerY" secondItem="ZCO-Fw-2r3" secondAttribute="centerY" id="iCO-gs-5x5"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ZCO-Fw-2r3"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Charts" image="chart.bar.fill" catalog="system" id="P5r-f6-BpK"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="activityGraphView" destination="sbU-E2-heu" id="5jO-bG-51t"/>
-                        <outlet property="pedometerGraphView" destination="qS6-Lx-ITF" id="Hv1-Hc-Fc7"/>
+                        <outlet property="activityIndicator" destination="IZY-YG-EMf" id="EbU-vw-WhV"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="uay-jT-KA2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6044.9275362318849" y="-66.294642857142861"/>
+            <point key="canvasLocation" x="5268" y="-67"/>
         </scene>
         <!--Exit-->
         <scene sceneID="Z9l-8e-mjL">
@@ -333,7 +219,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                           <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Exiting the Study" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B5p-h7-aOH">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Exiting the Study" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B5p-h7-aOH">
                                 <rect key="frame" x="126.66666666666669" y="20" width="161" height="27"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <nil key="textColor"/>
@@ -485,7 +371,7 @@ STUDY INFORMATION SHEET</string>
                                     </textView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="sEv-49-dJb">
                                         <rect key="frame" x="0.0" y="145" width="324" height="594"/>
-                                        <mutableString key="text">Passive Sensing of Mental Wellness
+                                        <string key="text">Passive Sensing of Mental Wellness
 
 Dr. Majid Sarrafzadeh, from the Computer Science Department at the University of California, Los Angeles (UCLA) is conducting a research study.
 
@@ -550,7 +436,7 @@ Who can I contact if I have questions about this study?
 If you have any questions, comments or concerns about the research, you can talk to the one of the researchers. Please contact: Lionel Levine at 213-444-6622 or Lionel@cs.ucla.edu.
 
 ● UCLA Office of the Human Research Protection Program (OHRPP):
-If you have questions about your rights as a research subject, or you have concerns or suggestions and you want to talk to someone other than the researchers, you may contact the UCLA OHRPP by phone: (310) 206-2040; by email: participants@research.ucla.edu or by mail: Box 951406, Los Angeles, CA 90095-1406.</mutableString>
+If you have questions about your rights as a research subject, or you have concerns or suggestions and you want to talk to someone other than the researchers, you may contact the UCLA OHRPP by phone: (310) 206-2040; by email: participants@research.ucla.edu or by mail: Box 951406, Los Angeles, CA 90095-1406.</string>
                                         <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>

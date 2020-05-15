@@ -26,21 +26,13 @@
 		CB39041C245B77E800902E5C /* HealthDataStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB390415245B77E700902E5C /* HealthDataStep.swift */; };
 		CB39041D245B77E800902E5C /* PermissionStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB390416245B77E700902E5C /* PermissionStep.swift */; };
 		CBEE21F42460E41900CA01E8 /* ConsentDoc.html in Resources */ = {isa = PBXBuildFile; fileRef = CBEE21F32460E41900CA01E8 /* ConsentDoc.html */; };
-		DD06B739245A15DD00B0A11D /* ContextCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD06B738245A15DD00B0A11D /* ContextCardViewController.swift */; };
-		DD06B743245A187400B0A11D /* BarChartCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD06B73E245A187300B0A11D /* BarChartCard.swift */; };
-		DD06B744245A187400B0A11D /* ContextCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD06B73C245A187300B0A11D /* ContextCard.swift */; };
-		DD06B745245A187400B0A11D /* ScatterChartCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD06B73F245A187300B0A11D /* ScatterChartCard.swift */; };
-		DD06B746245A187400B0A11D /* ESMCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD06B741245A187300B0A11D /* ESMCard.swift */; };
-		DD06B747245A187400B0A11D /* DeviceUsageCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD06B742245A187300B0A11D /* DeviceUsageCard.swift */; };
-		DD06B748245A187400B0A11D /* MapCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD06B740245A187300B0A11D /* MapCard.swift */; };
-		DD06B749245A1B2600B0A11D /* ContextCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD06B73D245A187300B0A11D /* ContextCard.xib */; };
 		DD06B74D245CCE0700B0A11D /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD06B74C245CCE0700B0A11D /* DateExtensions.swift */; };
-		DD06B750245DF49800B0A11D /* PedometerDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD06B74F245DF49800B0A11D /* PedometerDataSource.swift */; };
 		DD06B754245E039400B0A11D /* DataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD06B753245E039400B0A11D /* DataHelpers.swift */; };
 		DD06B756245E0CC700B0A11D /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD06B755245E0CC700B0A11D /* ChartViewController.swift */; };
-		DD06B758245E130000B0A11D /* ActivityDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD06B757245E130000B0A11D /* ActivityDataSource.swift */; };
 		DD30CE8A2147453E00249231 /* PermissionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD30CE892147453E00249231 /* PermissionViewController.swift */; };
 		DD97F758214ADFA1005D28FC /* ExitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD97F757214ADFA1005D28FC /* ExitViewController.swift */; };
+		DDD8D562246A11750023F2A0 /* CareKitUI in Frameworks */ = {isa = PBXBuildFile; productRef = DDD8D561246A11750023F2A0 /* CareKitUI */; };
+		DDD8D564246A11750023F2A0 /* CareKit in Frameworks */ = {isa = PBXBuildFile; productRef = DDD8D563246A11750023F2A0 /* CareKit */; };
 		F93348ADB98AF13F3E6CB019 /* Pods_HealthTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 897EFA36D6834949B1D6139B /* Pods_HealthTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -106,19 +98,9 @@
 		CB390415245B77E700902E5C /* HealthDataStep.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HealthDataStep.swift; path = Health/HealthDataStep.swift; sourceTree = "<group>"; };
 		CB390416245B77E700902E5C /* PermissionStep.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PermissionStep.swift; path = Health/PermissionStep.swift; sourceTree = "<group>"; };
 		CBEE21F32460E41900CA01E8 /* ConsentDoc.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = ConsentDoc.html; sourceTree = "<group>"; };
-		DD06B738245A15DD00B0A11D /* ContextCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextCardViewController.swift; sourceTree = "<group>"; };
-		DD06B73C245A187300B0A11D /* ContextCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextCard.swift; sourceTree = "<group>"; };
-		DD06B73D245A187300B0A11D /* ContextCard.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContextCard.xib; sourceTree = "<group>"; };
-		DD06B73E245A187300B0A11D /* BarChartCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartCard.swift; sourceTree = "<group>"; };
-		DD06B73F245A187300B0A11D /* ScatterChartCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScatterChartCard.swift; sourceTree = "<group>"; };
-		DD06B740245A187300B0A11D /* MapCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapCard.swift; sourceTree = "<group>"; };
-		DD06B741245A187300B0A11D /* ESMCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ESMCard.swift; sourceTree = "<group>"; };
-		DD06B742245A187300B0A11D /* DeviceUsageCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceUsageCard.swift; sourceTree = "<group>"; };
 		DD06B74C245CCE0700B0A11D /* DateExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
-		DD06B74F245DF49800B0A11D /* PedometerDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PedometerDataSource.swift; sourceTree = "<group>"; };
 		DD06B753245E039400B0A11D /* DataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataHelpers.swift; sourceTree = "<group>"; };
 		DD06B755245E0CC700B0A11D /* ChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
-		DD06B757245E130000B0A11D /* ActivityDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityDataSource.swift; sourceTree = "<group>"; };
 		DD30CE892147453E00249231 /* PermissionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionViewController.swift; sourceTree = "<group>"; };
 		DD97F757214ADFA1005D28FC /* ExitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExitViewController.swift; sourceTree = "<group>"; };
 		DD97FB49214C67AE005D28FC /* AppDelegate-Swift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate-Swift.h"; sourceTree = "<group>"; };
@@ -135,6 +117,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDD8D564246A11750023F2A0 /* CareKit in Frameworks */,
+				DDD8D562246A11750023F2A0 /* CareKitUI in Frameworks */,
 				3B279804517B9EF8813A2AC0 /* Pods_Health.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -215,7 +199,6 @@
 			children = (
 				CBEE21F52460E47D00CA01E8 /* Consent */,
 				DD06B74E245DF47A00B0A11D /* Charts */,
-				DD06B73B245A186800B0A11D /* ContextCard */,
 				DD97FB4D214C812F005D28FC /* AWARE.xcdatamodeld */,
 				8465771E20FD557E0017EA56 /* Health-Bridging-Header.h */,
 				846B531E20EACB12002CF471 /* AppDelegate.swift */,
@@ -229,8 +212,6 @@
 				DD30CE892147453E00249231 /* PermissionViewController.swift */,
 				DD97F757214ADFA1005D28FC /* ExitViewController.swift */,
 				DD97FB49214C67AE005D28FC /* AppDelegate-Swift.h */,
-				DD06B738245A15DD00B0A11D /* ContextCardViewController.swift */,
-				DD06B755245E0CC700B0A11D /* ChartViewController.swift */,
 			);
 			path = Health;
 			sourceTree = "<group>";
@@ -262,26 +243,11 @@
 			path = Consent;
 			sourceTree = "<group>";
 		};
-		DD06B73B245A186800B0A11D /* ContextCard */ = {
-			isa = PBXGroup;
-			children = (
-				DD06B73E245A187300B0A11D /* BarChartCard.swift */,
-				DD06B73C245A187300B0A11D /* ContextCard.swift */,
-				DD06B73D245A187300B0A11D /* ContextCard.xib */,
-				DD06B742245A187300B0A11D /* DeviceUsageCard.swift */,
-				DD06B741245A187300B0A11D /* ESMCard.swift */,
-				DD06B740245A187300B0A11D /* MapCard.swift */,
-				DD06B73F245A187300B0A11D /* ScatterChartCard.swift */,
-			);
-			path = ContextCard;
-			sourceTree = "<group>";
-		};
 		DD06B74E245DF47A00B0A11D /* Charts */ = {
 			isa = PBXGroup;
 			children = (
-				DD06B74F245DF49800B0A11D /* PedometerDataSource.swift */,
 				DD06B753245E039400B0A11D /* DataHelpers.swift */,
-				DD06B757245E130000B0A11D /* ActivityDataSource.swift */,
+				DD06B755245E0CC700B0A11D /* ChartViewController.swift */,
 			);
 			path = Charts;
 			sourceTree = "<group>";
@@ -306,6 +272,10 @@
 			dependencies = (
 			);
 			name = Health;
+			packageProductDependencies = (
+				DDD8D561246A11750023F2A0 /* CareKitUI */,
+				DDD8D563246A11750023F2A0 /* CareKit */,
+			);
 			productName = Health;
 			productReference = 846B531B20EACB12002CF471 /* Health.app */;
 			productType = "com.apple.product-type.application";
@@ -388,6 +358,9 @@
 				Base,
 			);
 			mainGroup = 846B531220EACB12002CF471;
+			packageReferences = (
+				DDD8D560246A11750023F2A0 /* XCRemoteSwiftPackageReference "CareKit" */,
+			);
 			productRefGroup = 846B531C20EACB12002CF471 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -408,7 +381,6 @@
 				846B532620EACB16002CF471 /* Assets.xcassets in Resources */,
 				846B532420EACB12002CF471 /* Main.storyboard in Resources */,
 				CBEE21F42460E41900CA01E8 /* ConsentDoc.html in Resources */,
-				DD06B749245A1B2600B0A11D /* ContextCard.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -528,27 +500,18 @@
 				846B532120EACB12002CF471 /* SurveyViewController.swift in Sources */,
 				CB39041B245B77E800902E5C /* HealthDataStepViewController.swift in Sources */,
 				DD06B754245E039400B0A11D /* DataHelpers.swift in Sources */,
-				DD06B739245A15DD00B0A11D /* ContextCardViewController.swift in Sources */,
 				DD06B756245E0CC700B0A11D /* ChartViewController.swift in Sources */,
 				CB39041D245B77E800902E5C /* PermissionStep.swift in Sources */,
 				CB39041A245B77E800902E5C /* OnboardingViewController.swift in Sources */,
 				84C19F7E2107BD6800C1C932 /* PageViewController.swift in Sources */,
-				DD06B747245A187400B0A11D /* DeviceUsageCard.swift in Sources */,
-				DD06B748245A187400B0A11D /* MapCard.swift in Sources */,
 				CB390418245B77E800902E5C /* PermissionStepViewController.swift in Sources */,
 				CB390417245B77E800902E5C /* ConsentDocument.swift in Sources */,
 				846B531F20EACB12002CF471 /* AppDelegate.swift in Sources */,
 				CB39041C245B77E800902E5C /* HealthDataStep.swift in Sources */,
-				DD06B744245A187400B0A11D /* ContextCard.swift in Sources */,
 				DD06B74D245CCE0700B0A11D /* DateExtensions.swift in Sources */,
 				84C19F7721078A6F00C1C932 /* SplashViewController.swift in Sources */,
 				DD97F758214ADFA1005D28FC /* ExitViewController.swift in Sources */,
-				DD06B743245A187400B0A11D /* BarChartCard.swift in Sources */,
 				DD30CE8A2147453E00249231 /* PermissionViewController.swift in Sources */,
-				DD06B758245E130000B0A11D /* ActivityDataSource.swift in Sources */,
-				DD06B750245DF49800B0A11D /* PedometerDataSource.swift in Sources */,
-				DD06B746245A187400B0A11D /* ESMCard.swift in Sources */,
-				DD06B745245A187400B0A11D /* ScatterChartCard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -902,6 +865,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DDD8D560246A11750023F2A0 /* XCRemoteSwiftPackageReference "CareKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/carekit-apple/CareKit";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 2.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DDD8D561246A11750023F2A0 /* CareKitUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DDD8D560246A11750023F2A0 /* XCRemoteSwiftPackageReference "CareKit" */;
+			productName = CareKitUI;
+		};
+		DDD8D563246A11750023F2A0 /* CareKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DDD8D560246A11750023F2A0 /* XCRemoteSwiftPackageReference "CareKit" */;
+			productName = CareKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		DD97FB4D214C812F005D28FC /* AWARE.xcdatamodeld */ = {
